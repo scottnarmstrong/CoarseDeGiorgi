@@ -1,7 +1,12 @@
-import CoarseDeGiorgi.Endpoint.CubeInterface
-import CoarseDeGiorgi.Harnack.Moments.MomentComparison
+module
+
+public import CoarseDeGiorgi.Endpoint.CubeInterface
+public import CoarseDeGiorgi.Harnack.Moments.MomentComparison
 
 /-! Absorption of fixed constants and path lengths into the Harnack exponential. -/
+
+@[expose] public section
+
 namespace CoarseDeGiorgi.Endpoint
 open Homogenization MeasureTheory
 open scoped ENNReal

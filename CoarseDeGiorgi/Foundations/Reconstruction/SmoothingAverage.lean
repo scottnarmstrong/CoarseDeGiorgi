@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.SmoothingKernel
-import CoarseDeGiorgi.Foundations.Reconstruction.SchurIntegral
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.SmoothingKernel
+public import CoarseDeGiorgi.Foundations.Reconstruction.SchurIntegral
 
 /-! # Jensen estimate for the actual periodic probability smoother -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.SharpnessExamples.ScalarGradient
-import CoarseDeGiorgi.SharpnessExamples.ScalarAxialBounds
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.ScalarGradient
+public import CoarseDeGiorgi.SharpnessExamples.ScalarAxialBounds
 
 /-! # Quantitative radial and gradient bounds in each cylinder region -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set
 open CoarseDeGiorgi.Sharpness

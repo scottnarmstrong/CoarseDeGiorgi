@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Assembly.HybridFractional
-import CoarseDeGiorgi.Weighted.Truncation.PositivePart
+module
+
+public import CoarseDeGiorgi.Assembly.HybridFractional
+public import CoarseDeGiorgi.Weighted.Truncation.PositivePart
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.Selection
 

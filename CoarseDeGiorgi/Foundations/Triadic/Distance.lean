@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Foundations.Triadic.Admissibility
-import Mathlib.Topology.MetricSpace.HausdorffDistance
+module
+
+public import CoarseDeGiorgi.Foundations.Triadic.Admissibility
+public import Mathlib.Topology.MetricSpace.HausdorffDistance
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Triadic
 

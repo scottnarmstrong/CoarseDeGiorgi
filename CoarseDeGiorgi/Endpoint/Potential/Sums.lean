@@ -1,6 +1,10 @@
-import Mathlib.Analysis.SpecificLimits.Basic
-import Mathlib.Analysis.SpecialFunctions.Pow.NNReal
-import Mathlib.Topology.Algebra.InfiniteSum.NatInt
+module
+
+public import Mathlib.Analysis.SpecificLimits.Basic
+public import Mathlib.Analysis.SpecialFunctions.Pow.NNReal
+public import Mathlib.Topology.Algebra.InfiniteSum.NatInt
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint.Potential
 

@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Foundations.FracGeometry.FaceHausdorff
-import CoarseDeGiorgi.Foundations.Slicing.AnnularTail
+module
+
+public import CoarseDeGiorgi.Foundations.FracGeometry.FaceHausdorff
+public import CoarseDeGiorgi.Foundations.Slicing.AnnularTail
 
 /-! Euclidean ball growth and uniform exterior kernel tails for cube surfaces. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Slicing
 

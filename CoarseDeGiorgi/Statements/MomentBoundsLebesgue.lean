@@ -1,13 +1,18 @@
-import Homogenization.Ambient.CoefficientField
-import Homogenization.CoarseGraining.Definitions
-import Mathlib.MeasureTheory.Function.LpSeminorm.Basic
-import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
-import CoarseDeGiorgi.Statements.Contrast
-import CoarseDeGiorgi.Statements.LowerMoment
-import CoarseDeGiorgi.Statements.OriginCube
-import CoarseDeGiorgi.Statements.UpperMoment
+module
 
-import CoarseDeGiorgi.CoefficientConditions.Lebesgue
+public import Homogenization.Ambient.CoefficientField
+public import Homogenization.CoarseGraining.Definitions
+public import Mathlib.MeasureTheory.Function.LpSeminorm.Basic
+public import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
+public import CoarseDeGiorgi.Statements.Contrast
+public import CoarseDeGiorgi.Statements.LowerMoment
+public import CoarseDeGiorgi.Statements.OriginCube
+public import CoarseDeGiorgi.Statements.UpperMoment
+
+public import CoarseDeGiorgi.CoefficientConditions.Lebesgue
+
+@[expose] public section
+
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator
 

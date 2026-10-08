@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Harnack.Powers.SourceIntegrability
-import CoarseDeGiorgi.Weighted.Testing
+module
+
+public import CoarseDeGiorgi.Harnack.Powers.SourceIntegrability
+public import CoarseDeGiorgi.Weighted.Testing
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.Powers
 

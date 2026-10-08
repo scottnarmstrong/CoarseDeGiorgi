@@ -1,4 +1,8 @@
-import CoarseDeGiorgi.Foundations.FractionalSobolev.SurfaceEmbeddingCharts
+module
+
+public import CoarseDeGiorgi.Foundations.FractionalSobolev.SurfaceEmbeddingCharts
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.FractionalSobolev
 open Homogenization MeasureTheory Set

@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.ScaleSummation
-import CoarseDeGiorgi.Foundations.Reconstruction.AuxIncrementLp
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.ScaleSummation
+public import CoarseDeGiorgi.Foundations.Reconstruction.AuxIncrementLp
 
 /-! # Absolute-scale weights and the exact integer indexing -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

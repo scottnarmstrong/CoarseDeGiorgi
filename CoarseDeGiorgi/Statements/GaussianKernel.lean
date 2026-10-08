@@ -1,6 +1,10 @@
-import Homogenization.Ambient.CoefficientField
-import Mathlib.Analysis.SpecialFunctions.Exp
-import Mathlib.Analysis.SpecialFunctions.Pow.Real
+module
+
+public import Homogenization.Ambient.CoefficientField
+public import Mathlib.Analysis.SpecialFunctions.Exp
+public import Mathlib.Analysis.SpecialFunctions.Pow.Real
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal

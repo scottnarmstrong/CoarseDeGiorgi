@@ -1,9 +1,14 @@
-import CoarseDeGiorgi.Localization.SummedInequalities
+module
+
+public import CoarseDeGiorgi.Localization.SummedInequalities
 
 /-! # Summing local bounds over a cover (abstract `ℝ≥0∞` form)
 
 The local bounds `S z ≤ A * (∑' k, c k * T k z ^ (1/(2q))) * E z ^ (1/2)` are summed with
 Minkowski's inequality in `k`, Hölder's inequality in `z` and bounded overlap. -/
+
+@[expose] public section
+
 namespace CoarseDeGiorgi.Localization
 open scoped BigOperators ENNReal
 noncomputable section

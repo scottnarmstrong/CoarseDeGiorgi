@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Endpoint.Potential.Sums
-import CoarseDeGiorgi.Endpoint.Potential.LayerCake
+module
+
+public import CoarseDeGiorgi.Endpoint.Potential.Sums
+public import CoarseDeGiorgi.Endpoint.Potential.LayerCake
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint.Potential
 

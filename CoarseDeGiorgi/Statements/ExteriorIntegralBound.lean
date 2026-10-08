@@ -1,32 +1,37 @@
-import Homogenization.Ambient.CoefficientField
-import Homogenization.Sobolev.WeakDerivatives
-import Homogenization.CoarseGraining.Definitions
-import Homogenization.Geometry.TriadicCube
-import Mathlib.Analysis.CStarAlgebra.Matrix
-import Mathlib.Analysis.SpecialFunctions.Pow.Real
-import Mathlib.MeasureTheory.Function.LpSeminorm.Basic
-import CoarseDeGiorgi.Statements.IsPiecewiseHarmonicExtension
-import CoarseDeGiorgi.Statements.IsTriadicWidth
-import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
-import CoarseDeGiorgi.Statements.MemH1a
-import CoarseDeGiorgi.Statements.AlphaParam
-import CoarseDeGiorgi.Statements.ClosedReferenceCube
-import CoarseDeGiorgi.Statements.CubeSurface
-import CoarseDeGiorgi.Statements.OriginCube
-import CoarseDeGiorgi.Statements.ParamR
-import CoarseDeGiorgi.Statements.ParamTheta
-import CoarseDeGiorgi.Statements.SampledResponseSeries
-import CoarseDeGiorgi.Statements.SelectionInterval
-import CoarseDeGiorgi.Statements.SigmaLower
-import CoarseDeGiorgi.Statements.SigmaUpper
-import CoarseDeGiorgi.Statements.SpatialMomentRange
-import CoarseDeGiorgi.Statements.SurfaceEnergyMaximal
-import CoarseDeGiorgi.Statements.SurfaceFracSeminorm
-import CoarseDeGiorgi.Statements.SurfaceMeasure
+module
 
-import CoarseDeGiorgi.Statements.AffineExtension
-import CoarseDeGiorgi.Statements.HarmonicExtension
-import CoarseDeGiorgi.ExteriorIntegral.MainWide
+public import Homogenization.Ambient.CoefficientField
+public import Homogenization.Sobolev.WeakDerivatives
+public import Homogenization.CoarseGraining.Definitions
+public import Homogenization.Geometry.TriadicCube
+public import Mathlib.Analysis.CStarAlgebra.Matrix
+public import Mathlib.Analysis.SpecialFunctions.Pow.Real
+public import Mathlib.MeasureTheory.Function.LpSeminorm.Basic
+public import CoarseDeGiorgi.Statements.IsPiecewiseHarmonicExtension
+public import CoarseDeGiorgi.Statements.IsTriadicWidth
+public import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
+public import CoarseDeGiorgi.Statements.MemH1a
+public import CoarseDeGiorgi.Statements.AlphaParam
+public import CoarseDeGiorgi.Statements.ClosedReferenceCube
+public import CoarseDeGiorgi.Statements.CubeSurface
+public import CoarseDeGiorgi.Statements.OriginCube
+public import CoarseDeGiorgi.Statements.ParamR
+public import CoarseDeGiorgi.Statements.ParamTheta
+public import CoarseDeGiorgi.Statements.SampledResponseSeries
+public import CoarseDeGiorgi.Statements.SelectionInterval
+public import CoarseDeGiorgi.Statements.SigmaLower
+public import CoarseDeGiorgi.Statements.SigmaUpper
+public import CoarseDeGiorgi.Statements.SpatialMomentRange
+public import CoarseDeGiorgi.Statements.SurfaceEnergyMaximal
+public import CoarseDeGiorgi.Statements.SurfaceFracSeminorm
+public import CoarseDeGiorgi.Statements.SurfaceMeasure
+
+public import CoarseDeGiorgi.Statements.AffineExtension
+public import CoarseDeGiorgi.Statements.HarmonicExtension
+public import CoarseDeGiorgi.ExteriorIntegral.MainWide
+
+@[expose] public section
+
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal NNReal Matrix.Norms.L2Operator
 

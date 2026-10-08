@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.Weighted.Testing
-import CoarseDeGiorgi.Weighted.TestingCompactSupport
-import CoarseDeGiorgi.Weighted.Truncation.PositivePart
-import CoarseDeGiorgi.Statements.IsWeightedSupersolution
+module
+
+public import CoarseDeGiorgi.Weighted.Testing
+public import CoarseDeGiorgi.Weighted.TestingCompactSupport
+public import CoarseDeGiorgi.Weighted.Truncation.PositivePart
+public import CoarseDeGiorgi.Statements.IsWeightedSupersolution
 
 /-! The flux functional `φ ↦ ∫ ∇φ·a∇u` of a supersolution on smooth compactly supported tests. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint
 

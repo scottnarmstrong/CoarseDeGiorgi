@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Endpoint.Source.Order
-import CoarseDeGiorgi.LowerFractional.Restriction
-import CoarseDeGiorgi.Statements.IsWeightedSolution
+module
+
+public import CoarseDeGiorgi.Endpoint.Source.Order
+public import CoarseDeGiorgi.LowerFractional.Restriction
+public import CoarseDeGiorgi.Statements.IsWeightedSolution
 
 /-! Restriction of a pair that annihilates tests supported in a subdomain gives a solution there. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint
 

@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.LowestPrimitive
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.LowestPrimitive
 
 /-! # The lowest-block divergence inverse -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

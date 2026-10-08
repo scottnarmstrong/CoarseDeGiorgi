@@ -1,14 +1,18 @@
-import CoarseDeGiorgi.Statements.PositiveCap
-import CoarseDeGiorgi.Statements.PositiveCapGradient
-import CoarseDeGiorgi.Statements.H1aWeightedNorm
-import CoarseDeGiorgi.Statements.SurfaceFracSeminorm
-import CoarseDeGiorgi.Statements.IsWeightedSubsolution
-import CoarseDeGiorgi.Weighted.TestingNonnegative
-import CoarseDeGiorgi.Assembly.CaccioppoliEnergy
-import CoarseDeGiorgi.Assembly.LocalBoundedness
+module
+
+public import CoarseDeGiorgi.Statements.PositiveCap
+public import CoarseDeGiorgi.Statements.PositiveCapGradient
+public import CoarseDeGiorgi.Statements.H1aWeightedNorm
+public import CoarseDeGiorgi.Statements.SurfaceFracSeminorm
+public import CoarseDeGiorgi.Statements.IsWeightedSubsolution
+public import CoarseDeGiorgi.Weighted.TestingNonnegative
+public import CoarseDeGiorgi.Assembly.CaccioppoliEnergy
+public import CoarseDeGiorgi.Assembly.LocalBoundedness
 
 /-! Elementary facts on the zero-level truncation of a nonnegative weighted subsolution, used to
 apply the energy bound at a good radius with `k = 0`. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.CgCaccioppoli
 

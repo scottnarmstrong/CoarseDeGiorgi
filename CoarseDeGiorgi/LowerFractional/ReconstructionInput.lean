@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.LowerFractional.CubeDomain
-import CoarseDeGiorgi.Weighted.Identification
+module
+
+public import CoarseDeGiorgi.LowerFractional.CubeDomain
+public import CoarseDeGiorgi.Weighted.Identification
 
 /-! This module supplies the W1,1 bridge used by the lower-fractional core.
 The reconstruction theorem `fractional_reconstruction` discharges that interface in Final.lean. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.LowerFractional
 

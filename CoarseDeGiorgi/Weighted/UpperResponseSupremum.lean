@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Weighted.UpperResponseProjection
-import CoarseDeGiorgi.Statements.UpperDirectionalResponseSol
+module
+
+public import CoarseDeGiorgi.Weighted.UpperResponseProjection
+public import CoarseDeGiorgi.Statements.UpperDirectionalResponseSol
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted
 

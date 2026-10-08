@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Foundations.Slicing.SurfaceEstimate
-import CoarseDeGiorgi.Foundations.FracGeometry.SurfaceSum
-import CoarseDeGiorgi.Selection.CoareaPartition
+module
+
+public import CoarseDeGiorgi.Foundations.Slicing.SurfaceEstimate
+public import CoarseDeGiorgi.Foundations.FracGeometry.SurfaceSum
+public import CoarseDeGiorgi.Selection.CoareaPartition
 
 /-! Integrated slicing with a single constant for all fractional exponents. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Slicing
 

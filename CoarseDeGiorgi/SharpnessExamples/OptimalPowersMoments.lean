@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.SharpnessExamples.OptimalPowersUpper
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.OptimalPowersUpper
 
 /-! # The upper bounds `Λ_ε ≤ C ε^{-2θ}` and `λ_ε^{-1} ≤ C` for the polynomial field -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

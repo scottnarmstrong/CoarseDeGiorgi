@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.SharpnessExamples.ScalarLargeSets
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.ScalarLargeSets
 
 /-! # Essential unboundedness near every point of the line segment
 
 Large values of the subsolution sum occupy positive measure in every neighbourhood of every
 interior point of the singular segment; the harmonic replacement dominates the subsolution. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set Filter Topology
 open CoarseDeGiorgi.Sharpness

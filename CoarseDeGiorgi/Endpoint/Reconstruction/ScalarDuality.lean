@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Endpoint.Reconstruction.PartitionLp
+module
+
+public import CoarseDeGiorgi.Endpoint.Reconstruction.PartitionLp
 
 /-! # Scalar finite-exponent duality using an explicit norming test -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint.Reconstruction
 

@@ -1,4 +1,8 @@
-import CoarseDeGiorgi.Assembly.CaccioppoliParameters
+module
+
+public import CoarseDeGiorgi.Assembly.CaccioppoliParameters
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Assembly
 open Aliases

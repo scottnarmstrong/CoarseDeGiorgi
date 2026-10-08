@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.SharpnessExamples.PolynomialPositivePart
-import CoarseDeGiorgi.Sharpness.LineEquation.AxisGeometry
-import CoarseDeGiorgi.Foundations.Euclid.Basic
-import Mathlib.MeasureTheory.Function.LpSeminorm.Indicator
-import Mathlib.MeasureTheory.Measure.Lebesgue.Basic
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.PolynomialPositivePart
+public import CoarseDeGiorgi.Sharpness.LineEquation.AxisGeometry
+public import CoarseDeGiorgi.Foundations.Euclid.Basic
+public import Mathlib.MeasureTheory.Function.LpSeminorm.Indicator
+public import Mathlib.MeasureTheory.Measure.Lebesgue.Basic
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set
 open scoped BigOperators ENNReal

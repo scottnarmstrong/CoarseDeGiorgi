@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Statements.AuxDescendantCube
-import Homogenization.Ambient.CoefficientField
-import Mathlib.MeasureTheory.Integral.Bochner.Set
+module
+
+public import CoarseDeGiorgi.Statements.AuxDescendantCube
+public import Homogenization.Ambient.CoefficientField
+public import Mathlib.MeasureTheory.Integral.Bochner.Set
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal

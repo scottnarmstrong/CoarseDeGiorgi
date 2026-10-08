@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Weighted.PairSeparation
-import CoarseDeGiorgi.Weighted.LowerResponseZero
+module
+
+public import CoarseDeGiorgi.Weighted.PairSeparation
+public import CoarseDeGiorgi.Weighted.LowerResponseZero
 
 /-! Continuous gradient integrals and the Riesz map for the lower response. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted
 

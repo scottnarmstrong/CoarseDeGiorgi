@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.NegSobolev.BesovCellBounds
-import CoarseDeGiorgi.NegSobolev.BesovPartitionLp
+module
+
+public import CoarseDeGiorgi.NegSobolev.BesovCellBounds
+public import CoarseDeGiorgi.NegSobolev.BesovPartitionLp
 
 /-! # The lower Gaussian comparison for a finite partition -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

@@ -1,14 +1,18 @@
-import Homogenization.Sobolev.WeakDerivatives
-import Mathlib.MeasureTheory.Integral.IntervalIntegral.AbsolutelyContinuousFun
-import Mathlib.MeasureTheory.Integral.Prod
-import Mathlib.MeasureTheory.Constructions.Pi
-import Mathlib.Analysis.Calculus.Rademacher
+module
+
+public import Homogenization.Sobolev.WeakDerivatives
+public import Mathlib.MeasureTheory.Integral.IntervalIntegral.AbsolutelyContinuousFun
+public import Mathlib.MeasureTheory.Integral.Prod
+public import Mathlib.MeasureTheory.Constructions.Pi
+public import Mathlib.Analysis.Calculus.Rademacher
 
 /-! # Gauss-Green along coordinate lines
 
 The one-dimensional fundamental theorem of calculus for the product of a Lipschitz function and a
 smooth function along a line, and the Fubini splitting of `Vec (n + 1)` along one coordinate.
 -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set
 open scoped BigOperators ENNReal NNReal

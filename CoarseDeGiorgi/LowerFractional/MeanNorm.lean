@@ -1,10 +1,14 @@
-import CoarseDeGiorgi.LowerFractional.FractionalDifference
-import Mathlib.Analysis.Convex.Integral
-import Mathlib.Analysis.Convex.SpecificFunctions.Basic
-import Mathlib.Analysis.Normed.Module.Convex
-import Mathlib.MeasureTheory.Function.LpSeminorm.CompareExp
+module
+
+public import CoarseDeGiorgi.LowerFractional.FractionalDifference
+public import Mathlib.Analysis.Convex.Integral
+public import Mathlib.Analysis.Convex.SpecificFunctions.Basic
+public import Mathlib.Analysis.Normed.Module.Convex
+public import Mathlib.MeasureTheory.Function.LpSeminorm.CompareExp
 
 /-! Jensen's two-point estimate behind `e.fractional.mean.norm`. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.LowerFractional
 

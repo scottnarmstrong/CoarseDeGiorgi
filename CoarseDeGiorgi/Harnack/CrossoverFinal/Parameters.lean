@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.Harnack.Moments.MomentComparison
-import CoarseDeGiorgi.Statements.ChiParam
-import CoarseDeGiorgi.Statements.RStarParam
-import CoarseDeGiorgi.Statements.AlphaParam
-import CoarseDeGiorgi.Statements.ParamR
-import CoarseDeGiorgi.Statements.ParamTheta
+module
+
+public import CoarseDeGiorgi.Harnack.Moments.MomentComparison
+public import CoarseDeGiorgi.Statements.ChiParam
+public import CoarseDeGiorgi.Statements.RStarParam
+public import CoarseDeGiorgi.Statements.AlphaParam
+public import CoarseDeGiorgi.Statements.ParamR
+public import CoarseDeGiorgi.Statements.ParamTheta
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.CrossoverFinal
 

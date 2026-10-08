@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Harnack.Iterations.EssentialLimit
-import CoarseDeGiorgi.Harnack.Iterations.NormalizedMomentOrder
+module
+
+public import CoarseDeGiorgi.Harnack.Iterations.EssentialLimit
+public import CoarseDeGiorgi.Harnack.Iterations.NormalizedMomentOrder
+
+@[expose] public section
 
 open Homogenization MeasureTheory Filter
 open scoped ENNReal

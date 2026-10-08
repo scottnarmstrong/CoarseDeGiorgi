@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Assembly.HybridFractional
-import CoarseDeGiorgi.Assembly.HybridInner
-import CoarseDeGiorgi.Assembly.HybridQuantity
-import CoarseDeGiorgi.Weighted.Truncation.PositivePart
+module
+
+public import CoarseDeGiorgi.Assembly.HybridFractional
+public import CoarseDeGiorgi.Assembly.HybridInner
+public import CoarseDeGiorgi.Assembly.HybridQuantity
+public import CoarseDeGiorgi.Weighted.Truncation.PositivePart
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Assembly
 open Homogenization MeasureTheory Set Filter

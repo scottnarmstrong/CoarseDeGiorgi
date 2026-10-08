@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.SharpnessExamples.ScalarProfileCalculus
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.ScalarProfileCalculus
 
 /-! # Quantitative axial bounds for the source's hyperbolic cosine profiles -/
+
+@[expose] public section
 
 open Homogenization
 

@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.NegSobolev.LemmaB2Duality
-import CoarseDeGiorgi.NegSobolev.LemmaB2Trace
-import CoarseDeGiorgi.NegSobolev.LemmaB2Fubini
-import CoarseDeGiorgi.NegSobolev.GaussianMatrix
+module
+
+public import CoarseDeGiorgi.NegSobolev.LemmaB2Duality
+public import CoarseDeGiorgi.NegSobolev.LemmaB2Trace
+public import CoarseDeGiorgi.NegSobolev.LemmaB2Fubini
+public import CoarseDeGiorgi.NegSobolev.GaussianMatrix
 
 /-! Integrability and trace domination of Gaussian matrix averages. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

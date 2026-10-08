@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Harnack.Powers.Extensions
-import CoarseDeGiorgi.Weighted.Truncation.Closure
+module
+
+public import CoarseDeGiorgi.Harnack.Powers.Extensions
+public import CoarseDeGiorgi.Weighted.Truncation.Closure
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.Powers
 

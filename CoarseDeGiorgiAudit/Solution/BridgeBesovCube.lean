@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Statements.MomentBoundsBesov
-import CoarseDeGiorgi.Statements.ParamTheta
+module
+
+public import CoarseDeGiorgi.Statements.MomentBoundsBesov
+public import CoarseDeGiorgi.Statements.ParamTheta
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped ENNReal Matrix.Norms.L2Operator

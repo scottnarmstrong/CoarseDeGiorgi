@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.NegSobolev.GaussianBasic
-import Mathlib.Analysis.Convolution
-import Mathlib.MeasureTheory.Function.LpSeminorm.CompareExp
-import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
+module
+
+public import CoarseDeGiorgi.NegSobolev.GaussianBasic
+public import Mathlib.Analysis.Convolution
+public import Mathlib.MeasureTheory.Function.LpSeminorm.CompareExp
+public import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
 
 /-! # Normalized Gaussian averaging and integral power bounds -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped ENNReal

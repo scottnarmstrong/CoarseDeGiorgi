@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Foundations.Triadic.Nesting
-import Mathlib.Algebra.Order.Archimedean.Basic
-import Mathlib.Algebra.Order.Floor.Ring
+module
+
+public import CoarseDeGiorgi.Foundations.Triadic.Nesting
+public import Mathlib.Algebra.Order.Archimedean.Basic
+public import Mathlib.Algebra.Order.Floor.Ring
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Triadic
 

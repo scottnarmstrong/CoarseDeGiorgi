@@ -1,4 +1,6 @@
-import Mathlib
+module
+
+public import Mathlib
 
 /-!
 Weak Harnack inequality under coefficient moments (Theorem D(i) of the manuscript with Theorem C, weak Harnack
@@ -14,6 +16,8 @@ Supersolutions are taken in the weighted space `H¹ₐ` (limits of smooth functi
 plus weighted energy, converging in `L¹` on compact subsets), and `u` is a supersolution when `−u`
 is a subsolution.
 -/
+
+@[expose] public section
 
 open MeasureTheory
 open scoped BigOperators ENNReal Matrix Matrix.Norms.L2Operator

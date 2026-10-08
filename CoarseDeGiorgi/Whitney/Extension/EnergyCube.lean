@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Whitney.Extension.EnergyAvg
+module
+
+public import CoarseDeGiorgi.Whitney.Extension.EnergyAvg
 
 /-!
 # The energy of `L_h f` on the simplices of one selected cube
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.WhitneyExt
 

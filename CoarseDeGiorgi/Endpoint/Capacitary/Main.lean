@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.Endpoint.Capacitary.Moments
-import CoarseDeGiorgi.Endpoint.Capacitary.FunctionalLower
-import CoarseDeGiorgi.Endpoint.Capacitary.Remote
-import CoarseDeGiorgi.Endpoint.Capacitary.Scalar
+module
+
+public import CoarseDeGiorgi.Endpoint.Capacitary.Moments
+public import CoarseDeGiorgi.Endpoint.Capacitary.FunctionalLower
+public import CoarseDeGiorgi.Endpoint.Capacitary.Remote
+public import CoarseDeGiorgi.Endpoint.Capacitary.Scalar
 
 /-! Conditional assembly of `l.source.mass` from the two fixed interior interfaces. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint
 

@@ -1,12 +1,16 @@
-import CoarseDeGiorgi.Assembly.HybridParameters
-import CoarseDeGiorgi.Selection.SurfaceMeasurability
-import CoarseDeGiorgi.Statements.CriticalSurfaceEmbedding
+module
+
+public import CoarseDeGiorgi.Assembly.HybridParameters
+public import CoarseDeGiorgi.Selection.SurfaceMeasurability
+public import CoarseDeGiorgi.Statements.CriticalSurfaceEmbedding
 
 /-! # Surface L² convergence from fractional trace convergence
 
 The critical trace embedding applies to measurable representatives. Surface norms
 respect almost-everywhere equality, so almost-everywhere strong measurability suffices.
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.GoodRadiusEnergy.WideWidth
 

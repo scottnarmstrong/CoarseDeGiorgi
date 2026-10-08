@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Endpoint.Reconstruction.DirichletAlgebra
+module
+
+public import CoarseDeGiorgi.Endpoint.Reconstruction.DirichletAlgebra
 
 /-! # Linearity and finite telescopes of fine averages -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint.Reconstruction
 

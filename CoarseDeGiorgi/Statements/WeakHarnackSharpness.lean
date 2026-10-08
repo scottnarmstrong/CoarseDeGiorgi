@@ -1,12 +1,17 @@
-import CoarseDeGiorgi.Statements.Contrast
-import CoarseDeGiorgi.Statements.ParamTheta
-import CoarseDeGiorgi.Statements.IsWeightedSupersolution
-import CoarseDeGiorgi.Statements.NormalizedLpMoment
-import CoarseDeGiorgi.Statements.NonnegativeEssInf
-import CoarseDeGiorgi.Statements.EuclidNorm
-import CoarseDeGiorgi.Statements.RStarParam
+module
 
-import CoarseDeGiorgi.SharpnessExamples.WeakHarnackSharpnessFinal
+public import CoarseDeGiorgi.Statements.Contrast
+public import CoarseDeGiorgi.Statements.ParamTheta
+public import CoarseDeGiorgi.Statements.IsWeightedSupersolution
+public import CoarseDeGiorgi.Statements.NormalizedLpMoment
+public import CoarseDeGiorgi.Statements.NonnegativeEssInf
+public import CoarseDeGiorgi.Statements.EuclidNorm
+public import CoarseDeGiorgi.Statements.RStarParam
+
+public import CoarseDeGiorgi.SharpnessExamples.WeakHarnackSharpnessFinal
+
+@[expose] public section
+
 open Homogenization MeasureTheory Filter Topology
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator
 

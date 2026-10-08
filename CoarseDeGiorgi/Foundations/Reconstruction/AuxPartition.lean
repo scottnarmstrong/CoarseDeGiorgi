@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.AuxFaceClosure
-import CoarseDeGiorgi.Foundations.Reconstruction.ProjectionL1
-import Mathlib.Algebra.Ring.Parity
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.AuxFaceClosure
+public import CoarseDeGiorgi.Foundations.Reconstruction.ProjectionL1
+public import Mathlib.Algebra.Ring.Parity
 
 /-! # Exact offsets in the translated triadic partition -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

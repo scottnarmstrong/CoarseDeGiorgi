@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Assembly.HybridAbsorption
-import Mathlib.Tactic
+module
+
+public import CoarseDeGiorgi.Assembly.HybridAbsorption
+public import Mathlib.Tactic
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Assembly
 open scoped ENNReal

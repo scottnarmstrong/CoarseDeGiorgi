@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Statements.PowerFactor
-import Mathlib.Order.Filter.ENNReal
+module
+
+public import CoarseDeGiorgi.Statements.PowerFactor
+public import Mathlib.Order.Filter.ENNReal
 
 /-! # Liminf form of the signed-power estimate -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.PowerCaccioppoli
 

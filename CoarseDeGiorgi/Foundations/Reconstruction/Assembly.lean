@@ -1,5 +1,7 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.AssemblyLimit
-import CoarseDeGiorgi.Foundations.Reconstruction.ZeroDimension
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.AssemblyLimit
+public import CoarseDeGiorgi.Foundations.Reconstruction.ZeroDimension
 
 /-! # Exact all-dimensional fractional reconstruction, conditional on the two explicit inputs
 
@@ -7,6 +9,8 @@ The conclusion is the type of `fractional_reconstruction`, with its hypotheses a
 quantifier order. Only the inputs `AssemblyTailBounds` and `AssemblySmoothingConvergence`
 precede it.
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

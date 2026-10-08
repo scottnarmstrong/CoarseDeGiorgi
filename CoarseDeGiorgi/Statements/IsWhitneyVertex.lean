@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Statements.ExteriorCellVertex
-import CoarseDeGiorgi.Statements.ExteriorCellSet
+module
+
+public import CoarseDeGiorgi.Statements.ExteriorCellVertex
+public import CoarseDeGiorgi.Statements.ExteriorCellSet
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

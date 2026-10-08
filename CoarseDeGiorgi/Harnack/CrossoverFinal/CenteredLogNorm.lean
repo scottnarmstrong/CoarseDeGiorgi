@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Harnack.CrossoverFinal.LogCenter
-import CoarseDeGiorgi.Harnack.Crossover.Normalization
-import CoarseDeGiorgi.Harnack.LogLimit.OverlapHolder
-import CoarseDeGiorgi.Harnack.Scalar.BombieriLemmas
+module
+
+public import CoarseDeGiorgi.Harnack.CrossoverFinal.LogCenter
+public import CoarseDeGiorgi.Harnack.Crossover.Normalization
+public import CoarseDeGiorgi.Harnack.LogLimit.OverlapHolder
+public import CoarseDeGiorgi.Harnack.Scalar.BombieriLemmas
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.CrossoverFinal
 

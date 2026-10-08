@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.CancellationIntegrals
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.CancellationIntegrals
 
 /-! # Scalar periodic kernel operators and their translation bounds -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

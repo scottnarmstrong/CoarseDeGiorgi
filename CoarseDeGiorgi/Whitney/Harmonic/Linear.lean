@@ -1,10 +1,14 @@
-import CoarseDeGiorgi.Weighted.PairOperations
-import CoarseDeGiorgi.Weighted.LowerSpecMean
-import CoarseDeGiorgi.Weighted.HarmonicProperties
-import CoarseDeGiorgi.Weighted.Truncation.Closure
-import CoarseDeGiorgi.Statements.IsWeightedSolution
+module
+
+public import CoarseDeGiorgi.Weighted.PairOperations
+public import CoarseDeGiorgi.Weighted.LowerSpecMean
+public import CoarseDeGiorgi.Weighted.HarmonicProperties
+public import CoarseDeGiorgi.Weighted.Truncation.Closure
+public import CoarseDeGiorgi.Statements.IsWeightedSolution
 
 /-! Linear structure of zero-boundary pairs and weighted solutions. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Whitney.Harmonic
 

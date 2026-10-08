@@ -1,11 +1,16 @@
-import CoarseDeGiorgi.Statements.Contrast
-import CoarseDeGiorgi.Statements.ParamTheta
-import CoarseDeGiorgi.Statements.IsWeightedSupersolution
-import CoarseDeGiorgi.Statements.IsWeightedSolution
-import CoarseDeGiorgi.Statements.MemH1a0
-import CoarseDeGiorgi.Statements.NonnegativeEssInf
+module
 
-import CoarseDeGiorgi.Endpoint.Source.SourceMassPotential
+public import CoarseDeGiorgi.Statements.Contrast
+public import CoarseDeGiorgi.Statements.ParamTheta
+public import CoarseDeGiorgi.Statements.IsWeightedSupersolution
+public import CoarseDeGiorgi.Statements.IsWeightedSolution
+public import CoarseDeGiorgi.Statements.MemH1a0
+public import CoarseDeGiorgi.Statements.NonnegativeEssInf
+
+public import CoarseDeGiorgi.Endpoint.Source.SourceMassPotential
+
+@[expose] public section
+
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator
 

@@ -1,11 +1,15 @@
-import CoarseDeGiorgi.Whitney.Extension.Basic
-import CoarseDeGiorgi.Whitney.Interpolation.BoundsCells
-import CoarseDeGiorgi.Statements.WhitneySimplicesNear
-import CoarseDeGiorgi.Statements.WhitneyPatch
+module
+
+public import CoarseDeGiorgi.Whitney.Extension.Basic
+public import CoarseDeGiorgi.Whitney.Interpolation.BoundsCells
+public import CoarseDeGiorgi.Statements.WhitneySimplicesNear
+public import CoarseDeGiorgi.Statements.WhitneyPatch
 
 /-!
 # Geometry of free vertices of near Whitney cubes
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.WhitneyExt
 

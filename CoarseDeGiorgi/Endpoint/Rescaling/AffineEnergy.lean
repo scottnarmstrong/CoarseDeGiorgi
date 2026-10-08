@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.Endpoint.Rescaling.AffineMeasure
-import CoarseDeGiorgi.Statements.IsSmoothCore
-import CoarseDeGiorgi.Weighted.GradientHilbert
-import Mathlib.MeasureTheory.Function.LpSeminorm.Basic
+module
+
+public import CoarseDeGiorgi.Endpoint.Rescaling.AffineMeasure
+public import CoarseDeGiorgi.Statements.IsSmoothCore
+public import CoarseDeGiorgi.Weighted.GradientHilbert
+public import Mathlib.MeasureTheory.Function.LpSeminorm.Basic
 
 /-! Affine transport of gradients, weighted energy, and the smooth core. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped ENNReal Pointwise

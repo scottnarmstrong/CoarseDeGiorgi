@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.LowerFractional.Aliases
-import CoarseDeGiorgi.Statements.FracNorm
+module
+
+public import CoarseDeGiorgi.LowerFractional.Aliases
+public import CoarseDeGiorgi.Statements.FracNorm
 
 /-! Elementary comparisons for the actual weighted and fractional norms. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.LowerFractional
 

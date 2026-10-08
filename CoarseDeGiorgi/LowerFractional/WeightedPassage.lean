@@ -1,10 +1,14 @@
-import CoarseDeGiorgi.LowerFractional.FractionalDifference
-import CoarseDeGiorgi.Weighted.Truncation.Truncate
+module
+
+public import CoarseDeGiorgi.LowerFractional.FractionalDifference
+public import CoarseDeGiorgi.Weighted.Truncation.Truncate
 
 /-! Passage from bounded members to the weighted completion.
 This uses the proved weighted truncation calculus and Fatou; the eventual
 pointwise identity avoids requiring completeness of a separately chosen
 fractional-space carrier. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.LowerFractional
 

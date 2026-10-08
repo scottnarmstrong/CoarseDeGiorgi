@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.FineKernel
-import Mathlib.Analysis.Calculus.ParametricIntegral
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.FineKernel
+public import Mathlib.Analysis.Calculus.ParametricIntegral
 
 /-! # Differentiating the fine vector kernels with sup-norm estimates -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

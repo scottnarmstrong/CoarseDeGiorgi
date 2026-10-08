@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.NegSobolev.GaussianMatrix
-import CoarseDeGiorgi.Weighted.UpperSpecNorm
+module
+
+public import CoarseDeGiorgi.NegSobolev.GaussianMatrix
+public import CoarseDeGiorgi.Weighted.UpperSpecNorm
 
 /-! # Quadratic-form comparisons for positive matrix averages -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

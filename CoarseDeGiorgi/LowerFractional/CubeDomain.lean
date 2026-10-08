@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.LowerFractional.MeanCube
-import CoarseDeGiorgi.LowerFractional.Aliases
+module
+
+public import CoarseDeGiorgi.LowerFractional.MeanCube
+public import CoarseDeGiorgi.LowerFractional.Aliases
 
 /-! Domain bridges for the auxiliary cubes. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.LowerFractional
 

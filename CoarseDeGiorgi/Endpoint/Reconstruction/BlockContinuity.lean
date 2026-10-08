@@ -1,8 +1,13 @@
-import CoarseDeGiorgi.Endpoint.Reconstruction.WeightedBlocks
-import CoarseDeGiorgi.Endpoint.Reconstruction.ProjectionAlgebra
-import CoarseDeGiorgi.Weighted.PairOperations
+module
+
+public import CoarseDeGiorgi.Endpoint.Reconstruction.WeightedBlocks
+public import CoarseDeGiorgi.Endpoint.Reconstruction.ProjectionAlgebra
+public import CoarseDeGiorgi.Weighted.PairOperations
 
 /-! # Continuity of each Dirichlet block in weighted energy -/
+
+@[expose] public section
+
 namespace CoarseDeGiorgi.Endpoint.Reconstruction
 open Homogenization MeasureTheory Filter
 open scoped ENNReal Topology BigOperators

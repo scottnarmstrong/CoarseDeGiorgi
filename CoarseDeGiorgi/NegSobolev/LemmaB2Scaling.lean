@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.Statements.SobolevNorm
-import Mathlib.MeasureTheory.Function.LpSeminorm.SMul
-import Mathlib.MeasureTheory.Integral.Lebesgue.Add
-import Mathlib.Analysis.SpecialFunctions.Pow.NNReal
+module
+
+public import CoarseDeGiorgi.Statements.SobolevNorm
+public import Mathlib.MeasureTheory.Function.LpSeminorm.SMul
+public import Mathlib.MeasureTheory.Integral.Lebesgue.Add
+public import Mathlib.Analysis.SpecialFunctions.Pow.NNReal
 
 /-! Positive scalar normalization of the Sobolev norm. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal

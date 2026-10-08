@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Endpoint.Source.Functional
-import CoarseDeGiorgi.Weighted.Truncation.Chain
-import CoarseDeGiorgi.Weighted.Truncation.Energy
+module
+
+public import CoarseDeGiorgi.Endpoint.Source.Functional
+public import CoarseDeGiorgi.Weighted.Truncation.Chain
+public import CoarseDeGiorgi.Weighted.Truncation.Energy
 
 /-! The continuity bound `∫ |φ| dμ ≤ ℰ(φ)^{1/2} ℰ(∇u)^{1/2}` for a measure representing the flux. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint
 

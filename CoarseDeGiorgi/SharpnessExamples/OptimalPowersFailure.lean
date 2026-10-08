@@ -1,12 +1,16 @@
-import Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics
-import Mathlib.Analysis.SpecialFunctions.Pow.NNReal
-import Mathlib.Topology.Instances.ENNReal.Lemmas
+module
+
+public import Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics
+public import Mathlib.Analysis.SpecialFunctions.Pow.NNReal
+public import Mathlib.Topology.Instances.ENNReal.Lemmas
 
 /-! # Divergence of the ratio from a two-sided polynomial bound on `Θ_ε`
 
 For every real `υ`, `Θ_ε^υ ≍ ε^{-aυ}` (end of the proof of Proposition
 `p.sharpness.polynomial`); with a polynomial bound on the `L^η` norm this forces the ratio
 to diverge exactly when `υ < b/a`. -/
+
+@[expose] public section
 
 open Filter Topology
 open scoped ENNReal

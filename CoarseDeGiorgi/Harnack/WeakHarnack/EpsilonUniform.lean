@@ -1,19 +1,23 @@
-import CoarseDeGiorgi.Statements.Contrast
-import CoarseDeGiorgi.Statements.CrossoverExponent
-import CoarseDeGiorgi.Statements.ChiParam
-import CoarseDeGiorgi.Statements.HarnackEtaParam
-import CoarseDeGiorgi.Statements.IsWeightedSupersolution
-import CoarseDeGiorgi.Statements.LowerMoment
-import CoarseDeGiorgi.Statements.NonnegativeEssInf
-import CoarseDeGiorgi.Statements.NormalizedLpMoment
-import CoarseDeGiorgi.Statements.ParamR
-import CoarseDeGiorgi.Statements.ParamTheta
-import CoarseDeGiorgi.Statements.UpperMoment
-import CoarseDeGiorgi.Harnack.Calculus.EssentialValues
-import CoarseDeGiorgi.Harnack.ContrastBound.RootHypotheses
-import CoarseDeGiorgi.Harnack.Scalar.BombieriLemmas
-import CoarseDeGiorgi.Harnack.WeakHarnack.EpsilonLimit
-import CoarseDeGiorgi.Harnack.Iterations.ExponentRange
+module
+
+public import CoarseDeGiorgi.Statements.Contrast
+public import CoarseDeGiorgi.Statements.CrossoverExponent
+public import CoarseDeGiorgi.Statements.ChiParam
+public import CoarseDeGiorgi.Statements.HarnackEtaParam
+public import CoarseDeGiorgi.Statements.IsWeightedSupersolution
+public import CoarseDeGiorgi.Statements.LowerMoment
+public import CoarseDeGiorgi.Statements.NonnegativeEssInf
+public import CoarseDeGiorgi.Statements.NormalizedLpMoment
+public import CoarseDeGiorgi.Statements.ParamR
+public import CoarseDeGiorgi.Statements.ParamTheta
+public import CoarseDeGiorgi.Statements.UpperMoment
+public import CoarseDeGiorgi.Harnack.Calculus.EssentialValues
+public import CoarseDeGiorgi.Harnack.ContrastBound.RootHypotheses
+public import CoarseDeGiorgi.Harnack.Scalar.BombieriLemmas
+public import CoarseDeGiorgi.Harnack.WeakHarnack.EpsilonLimit
+public import CoarseDeGiorgi.Harnack.Iterations.ExponentRange
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped ENNReal

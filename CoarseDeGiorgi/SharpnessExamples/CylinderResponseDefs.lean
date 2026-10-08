@@ -1,7 +1,9 @@
-import CoarseDeGiorgi.Sharpness.LineEquation.AxisGeometry
-import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
-import CoarseDeGiorgi.Weighted.ResponseBoundsLower
-import Mathlib.MeasureTheory.Integral.Bochner.Set
+module
+
+public import CoarseDeGiorgi.Sharpness.LineEquation.AxisGeometry
+public import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
+public import CoarseDeGiorgi.Weighted.ResponseBoundsLower
+public import Mathlib.MeasureTheory.Integral.Bochner.Set
 
 /-!
 # The anisotropic cylinder coefficient
@@ -11,6 +13,8 @@ diag(A, b, ..., b) where |y| < 2ε, and equals the identity elsewhere. We use
 the same cylindrical extension on all of Euclidean space; its restriction to
 the unit cube has the form of the field `e.sharpness.polynomial.field`.
 -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

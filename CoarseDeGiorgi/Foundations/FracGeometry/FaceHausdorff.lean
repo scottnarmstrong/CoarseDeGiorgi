@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Foundations.FracGeometry.ChartLipschitz
-import Mathlib.MeasureTheory.Measure.Hausdorff
-import Mathlib.MeasureTheory.Constructions.Polish.Basic
-import CoarseDeGiorgi.Foundations.FracGeometry.SurfaceBasics
+module
+
+public import CoarseDeGiorgi.Foundations.FracGeometry.ChartLipschitz
+public import Mathlib.MeasureTheory.Measure.Hausdorff
+public import Mathlib.MeasureTheory.Constructions.Polish.Basic
+public import CoarseDeGiorgi.Foundations.FracGeometry.SurfaceBasics
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.FracGeometry
 

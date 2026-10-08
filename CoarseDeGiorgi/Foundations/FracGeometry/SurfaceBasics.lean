@@ -1,4 +1,8 @@
-import CoarseDeGiorgi.Foundations.FracGeometry.Defs
+module
+
+public import CoarseDeGiorgi.Foundations.FracGeometry.Defs
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.FracGeometry
 

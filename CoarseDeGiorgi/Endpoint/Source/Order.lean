@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Endpoint.Source.Extension
-import CoarseDeGiorgi.Endpoint.Source.PosPart
-import CoarseDeGiorgi.Weighted.PairSeparation
+module
+
+public import CoarseDeGiorgi.Endpoint.Source.Extension
+public import CoarseDeGiorgi.Endpoint.Source.PosPart
+public import CoarseDeGiorgi.Weighted.PairSeparation
 
 /-! Comparison `0 ≤ V ≤ u` for the potential `V` of the restricted source measure. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint
 

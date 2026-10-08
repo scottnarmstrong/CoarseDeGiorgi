@@ -1,7 +1,9 @@
-import CoarseDeGiorgi.PowerCacc.OneSurfaceMain
-import CoarseDeGiorgi.PowerCacc.Window
-import CoarseDeGiorgi.Statements.AlphaParam
-import CoarseDeGiorgi.Statements.GammaLoc
+module
+
+public import CoarseDeGiorgi.PowerCacc.OneSurfaceMain
+public import CoarseDeGiorgi.PowerCacc.Window
+public import CoarseDeGiorgi.Statements.AlphaParam
+public import CoarseDeGiorgi.Statements.GammaLoc
 
 /-! # Proposition `p.power.caccioppoli` from Lemma `l.exterior.integral`, Proposition
 `p.whitney.extension` and the existence of the piecewise harmonic extension
@@ -9,6 +11,8 @@ import CoarseDeGiorgi.Statements.GammaLoc
 `power_caccioppoli_inequality_of_extension` has the statement of
 `CoarseDeGiorgi.power_caccioppoli_inequality`; the three hypotheses give `l.exterior.integral`, `p.whitney.extension` and existence of a piecewise
 harmonic extension, restricted to narrower triadic widths. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

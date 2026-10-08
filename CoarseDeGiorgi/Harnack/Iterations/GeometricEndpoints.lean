@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Harnack.Iterations.ExponentialCost
-import CoarseDeGiorgi.Statements.NormalizedLpMoment
-import CoarseDeGiorgi.Statements.NonnegativeEssInf
-import CoarseDeGiorgi.Harnack.Iterations.NestedMomentLimit
-import CoarseDeGiorgi.Harnack.Iterations.PositiveMomentStop
+module
+
+public import CoarseDeGiorgi.Harnack.Iterations.ExponentialCost
+public import CoarseDeGiorgi.Statements.NormalizedLpMoment
+public import CoarseDeGiorgi.Statements.NonnegativeEssInf
+public import CoarseDeGiorgi.Harnack.Iterations.NestedMomentLimit
+public import CoarseDeGiorgi.Harnack.Iterations.PositiveMomentStop
+
+@[expose] public section
 
 open Homogenization MeasureTheory Filter
 open scoped BigOperators ENNReal

@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Harnack.Calculus.EssentialValues
-import Mathlib.MeasureTheory.Function.LpSeminorm.ChebyshevMarkov
-import Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics
+module
+
+public import CoarseDeGiorgi.Harnack.Calculus.EssentialValues
+public import Mathlib.MeasureTheory.Function.LpSeminorm.ChebyshevMarkov
+public import Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics
+
+@[expose] public section
 
 open Homogenization MeasureTheory Filter
 open scoped ENNReal

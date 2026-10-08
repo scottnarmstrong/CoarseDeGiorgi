@@ -1,10 +1,14 @@
-import CoarseDeGiorgi.Whitney.Extension.EnergyOverlap
-import CoarseDeGiorgi.Statements.WhitneySimplicesNearSize
-import CoarseDeGiorgi.Statements.SmoothGrad
+module
+
+public import CoarseDeGiorgi.Whitney.Extension.EnergyOverlap
+public import CoarseDeGiorgi.Statements.WhitneySimplicesNearSize
+public import CoarseDeGiorgi.Statements.SmoothGrad
 
 /-!
 # Summing the energy over the simplices of size `3^{-j}`
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.WhitneyExt
 

@@ -1,13 +1,17 @@
-import CoarseDeGiorgi.SharpnessExamples.CylinderAveragesDefs
-import Mathlib.Analysis.SpecificLimits.Basic
-import Mathlib.Analysis.SpecialFunctions.Pow.Real
-import Mathlib.Analysis.SpecialFunctions.Sqrt
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.CylinderAveragesDefs
+public import Mathlib.Analysis.SpecificLimits.Basic
+public import Mathlib.Analysis.SpecialFunctions.Pow.Real
+public import Mathlib.Analysis.SpecialFunctions.Sqrt
 
 /-! # Summing the discounted scale profile of a cylinder
 
 The summed bound `e.sharpness.cylinder.discount`: the square roots of the discounted scale profile
 `3^{-2kb} φ_k` of a cylinder of radius `e` add up to at most `C e^{ν/2}`.
 -/
+
+@[expose] public section
 
 open scoped BigOperators
 

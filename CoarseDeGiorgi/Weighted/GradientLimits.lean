@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Weighted.GradientHilbert
-import CoarseDeGiorgi.Weighted.L1Tools
-import CoarseDeGiorgi.Foundations.Euclid.Basic
+module
+
+public import CoarseDeGiorgi.Weighted.GradientHilbert
+public import CoarseDeGiorgi.Weighted.L1Tools
+public import CoarseDeGiorgi.Foundations.Euclid.Basic
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted
 

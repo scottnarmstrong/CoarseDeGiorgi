@@ -1,4 +1,8 @@
-import CoarseDeGiorgi.Weighted.UpperResponseAffine
+module
+
+public import CoarseDeGiorgi.Weighted.UpperResponseAffine
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted
 

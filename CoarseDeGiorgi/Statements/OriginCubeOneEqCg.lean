@@ -1,4 +1,8 @@
-import CoarseDeGiorgi.Statements.OriginCube
+module
+
+public import CoarseDeGiorgi.Statements.OriginCube
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 

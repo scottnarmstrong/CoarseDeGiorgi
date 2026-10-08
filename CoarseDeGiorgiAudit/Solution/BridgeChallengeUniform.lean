@@ -1,8 +1,12 @@
-import Mathlib
-import CoarseDeGiorgiAudit.Defs
-import CoarseDeGiorgiAudit.DefsCells
-import CoarseDeGiorgiAudit.Solution.HarnackUniform
-import CoarseDeGiorgiAudit.Solution.LocalBoundednessUniform
+module
+
+public import Mathlib
+public import CoarseDeGiorgiAudit.Defs
+public import CoarseDeGiorgiAudit.DefsCells
+public import CoarseDeGiorgiAudit.Solution.HarnackUniform
+public import CoarseDeGiorgiAudit.Solution.LocalBoundednessUniform
+
+@[expose] public section
 
 open MeasureTheory
 open scoped BigOperators ENNReal Matrix Matrix.Norms.L2Operator

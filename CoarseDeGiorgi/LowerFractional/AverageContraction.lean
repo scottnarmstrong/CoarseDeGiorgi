@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.LowerFractional.CellHolder
-import Mathlib.Analysis.Convex.Jensen
+module
+
+public import CoarseDeGiorgi.LowerFractional.CellHolder
+public import Mathlib.Analysis.Convex.Jensen
 
 /-! Jensen contraction from a finite simplex tiling to its cube average. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.LowerFractional
 

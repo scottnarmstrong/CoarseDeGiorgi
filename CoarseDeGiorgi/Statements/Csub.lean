@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Statements.IsWeightedSubsolution
-import Homogenization.Ambient.CoefficientField
+module
+
+public import CoarseDeGiorgi.Statements.IsWeightedSubsolution
+public import Homogenization.Ambient.CoefficientField
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal

@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.SharpnessExamples.WeakHarnackSharpnessUpper
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.WeakHarnackSharpnessUpper
 
 /-! # The level estimate for the lower moment of the weak Harnack field -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

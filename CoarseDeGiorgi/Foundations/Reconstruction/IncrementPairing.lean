@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.CellPairing
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.CellPairing
 
 /-! # A bounded smooth kernel pairs with each increment through parent cancellation -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

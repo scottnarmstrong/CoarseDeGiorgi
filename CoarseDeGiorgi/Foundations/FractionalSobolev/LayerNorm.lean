@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Foundations.FractionalSobolev.Kernel
-import Mathlib.Analysis.MeanInequalitiesPow
-import Mathlib.MeasureTheory.Function.LpSeminorm.Basic
+module
+
+public import CoarseDeGiorgi.Foundations.FractionalSobolev.Kernel
+public import Mathlib.Analysis.MeanInequalitiesPow
+public import Mathlib.MeasureTheory.Function.LpSeminorm.Basic
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.FractionalSobolev
 open Homogenization MeasureTheory

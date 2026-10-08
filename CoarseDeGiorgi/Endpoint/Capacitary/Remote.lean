@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Endpoint.Capacitary.Bounds
-import CoarseDeGiorgi.Endpoint.Source.Main
+module
+
+public import CoarseDeGiorgi.Endpoint.Capacitary.Bounds
+public import CoarseDeGiorgi.Endpoint.Source.Main
 
 /-! Combining the remote local bound with the interior weak Harnack estimate. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint
 

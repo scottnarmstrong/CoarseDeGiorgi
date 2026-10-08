@@ -1,4 +1,8 @@
-import CoarseDeGiorgi.Foundations.Triadic.Basic
+module
+
+public import CoarseDeGiorgi.Foundations.Triadic.Basic
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Triadic
 

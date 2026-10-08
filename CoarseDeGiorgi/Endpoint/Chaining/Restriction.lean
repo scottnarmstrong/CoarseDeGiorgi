@@ -1,8 +1,13 @@
-import CoarseDeGiorgi.Endpoint.Chaining.Geometry
-import CoarseDeGiorgi.Endpoint.Source.Geometry
-import CoarseDeGiorgi.LowerFractional.Restriction
+module
+
+public import CoarseDeGiorgi.Endpoint.Chaining.Geometry
+public import CoarseDeGiorgi.Endpoint.Source.Geometry
+public import CoarseDeGiorgi.LowerFractional.Restriction
 
 /-! Restriction of solutions and supersolutions to the grid cubes. -/
+
+@[expose] public section
+
 namespace CoarseDeGiorgi.Endpoint
 open Homogenization MeasureTheory
 

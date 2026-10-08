@@ -1,11 +1,15 @@
-import CoarseDeGiorgi.Weighted.UpperSpecNorm
-import CoarseDeGiorgi.Weighted.ResponseBoundsLower
-import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
+module
+
+public import CoarseDeGiorgi.Weighted.UpperSpecNorm
+public import CoarseDeGiorgi.Weighted.ResponseBoundsLower
+public import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
 
 /-! # Simplex means against cube means for positive coefficient fields
 
 If `U ⊆ Q` and `|Q| = d! |U|`, the entrywise mean of a positive definite field over `U` is at most
 `d!` times its mean over `Q` as a quadratic form, hence in operator norm. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

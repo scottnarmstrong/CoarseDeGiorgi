@@ -1,11 +1,15 @@
-import CoarseDeGiorgi.Statements.Contrast
-import CoarseDeGiorgi.Harnack.Moments.ConstantCoefficient
-import CoarseDeGiorgi.Harnack.Moments.DiscountMeans
-import CoarseDeGiorgi.Harnack.Moments.InverseOrder
-import CoarseDeGiorgi.Weighted.LowerResponseSquare
-import CoarseDeGiorgi.Weighted.LowerSpecNorm
-import CoarseDeGiorgi.Weighted.UpperSpecNorm
-import Mathlib.Analysis.CStarAlgebra.Matrix
+module
+
+public import CoarseDeGiorgi.Statements.Contrast
+public import CoarseDeGiorgi.Harnack.Moments.ConstantCoefficient
+public import CoarseDeGiorgi.Harnack.Moments.DiscountMeans
+public import CoarseDeGiorgi.Harnack.Moments.InverseOrder
+public import CoarseDeGiorgi.Weighted.LowerResponseSquare
+public import CoarseDeGiorgi.Weighted.LowerSpecNorm
+public import CoarseDeGiorgi.Weighted.UpperSpecNorm
+public import Mathlib.Analysis.CStarAlgebra.Matrix
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.Moments
 

@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.SharpnessExamples.HarmonicComparison
-import CoarseDeGiorgi.Weighted.Truncation.Algebra
-import CoarseDeGiorgi.Whitney.ExteriorCells
-import CoarseDeGiorgi.Statements.NonnegativeEssInf
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.HarmonicComparison
+public import CoarseDeGiorgi.Weighted.Truncation.Algebra
+public import CoarseDeGiorgi.Whitney.ExteriorCells
+public import CoarseDeGiorgi.Statements.NonnegativeEssInf
+
+@[expose] public section
 
 open Homogenization MeasureTheory Filter Topology
 open CoarseDeGiorgi.Weighted

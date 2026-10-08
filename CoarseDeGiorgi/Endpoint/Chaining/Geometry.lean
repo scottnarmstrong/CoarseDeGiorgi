@@ -1,8 +1,13 @@
-import CoarseDeGiorgi.Endpoint.CubeInterface
-import Mathlib.MeasureTheory.Measure.Lebesgue.Basic
-import Mathlib.Algebra.Order.Floor.Ring
+module
+
+public import CoarseDeGiorgi.Endpoint.CubeInterface
+public import Mathlib.MeasureTheory.Measure.Lebesgue.Basic
+public import Mathlib.Algebra.Order.Floor.Ring
 
 /-! Fixed grid boxes and overlaps for the interior estimates. -/
+
+@[expose] public section
+
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal
 namespace CoarseDeGiorgi.Endpoint

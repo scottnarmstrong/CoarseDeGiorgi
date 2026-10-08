@@ -1,8 +1,12 @@
-import Mathlib.Analysis.SpecialFunctions.Exp
-import Mathlib.Analysis.SpecialFunctions.Sqrt
-import Mathlib.Tactic
+module
+
+public import Mathlib.Analysis.SpecialFunctions.Exp
+public import Mathlib.Analysis.SpecialFunctions.Sqrt
+public import Mathlib.Tactic
 
 /-! Constant absorption for the completion of Theorem C. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint
 

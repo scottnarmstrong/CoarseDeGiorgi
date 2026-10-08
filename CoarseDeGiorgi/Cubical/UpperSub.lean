@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.Cubical.Glue
-import CoarseDeGiorgi.Cubical.PsdSum
-import CoarseDeGiorgi.Weighted.UpperSpecMinimum
-import CoarseDeGiorgi.Statements.UpperResponse
+module
+
+public import CoarseDeGiorgi.Cubical.Glue
+public import CoarseDeGiorgi.Cubical.PsdSum
+public import CoarseDeGiorgi.Weighted.UpperSpecMinimum
+public import CoarseDeGiorgi.Statements.UpperResponse
 
 /-! # Countable upper subadditivity (quadratic form version) -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Cubical
 open Homogenization MeasureTheory CoarseDeGiorgi.Whitney

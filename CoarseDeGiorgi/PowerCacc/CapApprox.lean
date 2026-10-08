@@ -1,17 +1,21 @@
-import CoarseDeGiorgi.Assembly.LocalBoundedness
-import CoarseDeGiorgi.Harnack.Selection.Cap
-import CoarseDeGiorgi.Weighted.Truncation.Chain
-import CoarseDeGiorgi.Weighted.Truncation.Continuity
-import CoarseDeGiorgi.Weighted.Truncation.Energy
-import CoarseDeGiorgi.Weighted.Identification
-import CoarseDeGiorgi.GoodRadius.TruncationTransfer
-import CoarseDeGiorgi.Statements.PositiveCap
-import CoarseDeGiorgi.Statements.H1aWeightedNorm
+module
+
+public import CoarseDeGiorgi.Assembly.LocalBoundedness
+public import CoarseDeGiorgi.Harnack.Selection.Cap
+public import CoarseDeGiorgi.Weighted.Truncation.Chain
+public import CoarseDeGiorgi.Weighted.Truncation.Continuity
+public import CoarseDeGiorgi.Weighted.Truncation.Energy
+public import CoarseDeGiorgi.Weighted.Identification
+public import CoarseDeGiorgi.GoodRadius.TruncationTransfer
+public import CoarseDeGiorgi.Statements.PositiveCap
+public import CoarseDeGiorgi.Statements.H1aWeightedNorm
 
 /-! # Capped smooth approximants converge to the cap in `H¹_a`
 
 If smooth cores `v_i` converge to `v` in `H¹_a(□₀)` then `v_i ∧ N` converges to `v ∧ N`, in `L¹` and
 in energy of the gradients (Proposition `p.weighted.calculus`, chain rule), for a finite cap `N`. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.PowerCacc
 

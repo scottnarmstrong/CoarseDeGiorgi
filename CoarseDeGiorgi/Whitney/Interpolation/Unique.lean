@@ -1,10 +1,14 @@
-import CoarseDeGiorgi.Whitney.Interpolation.Exists
+module
+
+public import CoarseDeGiorgi.Whitney.Interpolation.Exists
 
 /-! # Uniqueness of the Whitney interpolant
 
 Any interpolant is, on a selected cube, the node interpolant of its own nodal values, and its
 values at Whitney vertices are forced: free values are prescribed, hanging values are the
 interpolation over the larger mesh. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Whitney.Interpolation
 

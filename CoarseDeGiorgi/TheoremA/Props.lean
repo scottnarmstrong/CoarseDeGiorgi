@@ -1,21 +1,25 @@
-import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
-import CoarseDeGiorgi.Statements.IsWeightedSubsolution
-import CoarseDeGiorgi.Statements.LocallyBoundedAbove
-import CoarseDeGiorgi.Statements.Contrast
-import CoarseDeGiorgi.Statements.GammaCacc
-import CoarseDeGiorgi.Statements.GammaSup
-import CoarseDeGiorgi.Statements.OriginCube
-import CoarseDeGiorgi.Statements.ParamTheta
-import CoarseDeGiorgi.Statements.PositivePart
-import CoarseDeGiorgi.Statements.SigmaLower
-import CoarseDeGiorgi.Statements.SigmaUpper
-import CoarseDeGiorgi.Statements.SpatialMomentRange
-import CoarseDeGiorgi.Statements.TwoLevelQuantity
-import CoarseDeGiorgi.Statements.UpperMoment
-import CoarseDeGiorgi.Statements.WeightedEnergy
+module
+
+public import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
+public import CoarseDeGiorgi.Statements.IsWeightedSubsolution
+public import CoarseDeGiorgi.Statements.LocallyBoundedAbove
+public import CoarseDeGiorgi.Statements.Contrast
+public import CoarseDeGiorgi.Statements.GammaCacc
+public import CoarseDeGiorgi.Statements.GammaSup
+public import CoarseDeGiorgi.Statements.OriginCube
+public import CoarseDeGiorgi.Statements.ParamTheta
+public import CoarseDeGiorgi.Statements.PositivePart
+public import CoarseDeGiorgi.Statements.SigmaLower
+public import CoarseDeGiorgi.Statements.SigmaUpper
+public import CoarseDeGiorgi.Statements.SpatialMomentRange
+public import CoarseDeGiorgi.Statements.TwoLevelQuantity
+public import CoarseDeGiorgi.Statements.UpperMoment
+public import CoarseDeGiorgi.Statements.WeightedEnergy
 
 /-! The statements of Propositions `p.cg.caccioppoli` and `p.energy.to.sup` as propositions, copied
 verbatim from `caccioppoli_inequality` and `energy_to_supremum` (which are not imported). -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

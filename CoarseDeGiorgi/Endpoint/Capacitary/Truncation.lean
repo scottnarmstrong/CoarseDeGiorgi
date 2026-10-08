@@ -1,10 +1,14 @@
-import CoarseDeGiorgi.Endpoint.Capacitary.Obstacle
-import CoarseDeGiorgi.Endpoint.Source.PosPart
-import CoarseDeGiorgi.Weighted.HarmonicCore
-import CoarseDeGiorgi.Weighted.TestingCompactSupport
-import CoarseDeGiorgi.Weighted.Truncation.Continuity
+module
+
+public import CoarseDeGiorgi.Endpoint.Capacitary.Obstacle
+public import CoarseDeGiorgi.Endpoint.Source.PosPart
+public import CoarseDeGiorgi.Weighted.HarmonicCore
+public import CoarseDeGiorgi.Weighted.TestingCompactSupport
+public import CoarseDeGiorgi.Weighted.Truncation.Continuity
 
 /-! Zero-boundary truncations for the capacitary obstacle. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint
 

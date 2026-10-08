@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.KernelWeakIdentity
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.KernelWeakIdentity
 
 /-! # Exact smooth-block reconstruction identities -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

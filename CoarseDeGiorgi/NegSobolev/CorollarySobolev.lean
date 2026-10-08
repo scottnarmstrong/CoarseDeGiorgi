@@ -1,9 +1,14 @@
-import CoarseDeGiorgi.Statements.LocalBoundedness
-import CoarseDeGiorgi.Statements.Harnack
-import CoarseDeGiorgi.Statements.NegSobolevNorm
-import CoarseDeGiorgi.Statements.IsOpenOriginCube
+module
+
+public import CoarseDeGiorgi.Statements.LocalBoundedness
+public import CoarseDeGiorgi.Statements.Harnack
+public import CoarseDeGiorgi.Statements.NegSobolevNorm
+public import CoarseDeGiorgi.Statements.IsOpenOriginCube
 
 /-! `c.sobolev.coefficients`, conditional on the Sobolev moment theorem. -/
+
+@[expose] public section
+
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator
 namespace CoarseDeGiorgi.NegSobolev

@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Assembly.HybridParameters
-import CoarseDeGiorgi.Assembly.EnergyToSupQuantity
+module
+
+public import CoarseDeGiorgi.Assembly.HybridParameters
+public import CoarseDeGiorgi.Assembly.EnergyToSupQuantity
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Assembly
 open Homogenization MeasureTheory Filter

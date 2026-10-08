@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Statements.Contrast
-import CoarseDeGiorgi.Statements.SpatialMomentRange
+module
+
+public import CoarseDeGiorgi.Statements.Contrast
+public import CoarseDeGiorgi.Statements.SpatialMomentRange
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.Log
 

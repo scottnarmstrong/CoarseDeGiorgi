@@ -1,8 +1,11 @@
-import CoarseDeGiorgi.GoodRadius.Main
-import CoarseDeGiorgi.Statements.FractionalLocalization
+module
+
+public import CoarseDeGiorgi.GoodRadius.Main
+public import CoarseDeGiorgi.Statements.FractionalLocalization
 
 /-! Existence of good radii for the fractional trace and energy estimates. -/
 
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

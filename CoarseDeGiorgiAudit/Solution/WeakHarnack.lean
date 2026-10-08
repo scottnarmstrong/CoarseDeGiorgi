@@ -1,18 +1,20 @@
-import Mathlib
-import CoarseDeGiorgiAudit.Defs
-import CoarseDeGiorgiAudit.DefsCells
-import CoarseDeGiorgiAudit.DefsResponses
-import CoarseDeGiorgiAudit.Solution.BridgeChallengeLp
-import CoarseDeGiorgiAudit.Solution.WeakHarnackLpLq
-import CoarseDeGiorgiAudit.Solution.BridgeCells
-import CoarseDeGiorgiAudit.Solution.ResponseQuadraticForms
-import CoarseDeGiorgi.Statements.WeakHarnackRange
+module
+
+public import Mathlib
+public import CoarseDeGiorgiAudit.Defs
+public import CoarseDeGiorgiAudit.DefsCells
+public import CoarseDeGiorgiAudit.DefsResponses
+public import CoarseDeGiorgiAudit.Solution.BridgeChallengeLp
+public import CoarseDeGiorgiAudit.Solution.WeakHarnackLpLq
+public import CoarseDeGiorgiAudit.Solution.BridgeCells
+public import CoarseDeGiorgiAudit.Solution.ResponseQuadraticForms
+public import CoarseDeGiorgi.Statements.WeakHarnackRange
+
+@[expose] public section
 
 attribute [-instance] Homogenization.instMeasurableSpaceVec
 attribute [-instance] Homogenization.instMeasurableSpaceMat
 attribute [-instance] Homogenization.instMeasurableSpaceCoeffField
-open private instModuleVecOCS from Homogenization.Sobolev.H1.OriginCubeSymmetry
-attribute [-instance] instModuleVecOCS
 
 /-!
 # Theorem C: weak Harnack inequality (1.10)

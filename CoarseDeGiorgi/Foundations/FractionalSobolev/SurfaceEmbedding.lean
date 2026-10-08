@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Foundations.FractionalSobolev.SurfaceEmbeddingSum
-import CoarseDeGiorgi.Statements.DnpvTheorem6_7UnitCube
+module
+
+public import CoarseDeGiorgi.Foundations.FractionalSobolev.SurfaceEmbeddingSum
+public import CoarseDeGiorgi.Statements.DnpvTheorem6_7UnitCube
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.FractionalSobolev
 open Homogenization MeasureTheory Set

@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Statements.SurfaceFracNorm
-import CoarseDeGiorgi.Statements.SurfaceFracSeminorm
+module
+
+public import CoarseDeGiorgi.Statements.SurfaceFracNorm
+public import CoarseDeGiorgi.Statements.SurfaceFracSeminorm
 
 /-! # Surface Lʳ trace control -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.PowerCaccioppoli
 

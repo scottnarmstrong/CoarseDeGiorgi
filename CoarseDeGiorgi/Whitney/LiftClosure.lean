@@ -1,10 +1,15 @@
-import CoarseDeGiorgi.Whitney.LiftZeroExtension
+module
+
+public import CoarseDeGiorgi.Whitney.LiftZeroExtension
 
 /-! # Energy closure of the weighted zero-boundary completion
 
 This is the countable-correction approximation step. Coercivity controls values
 as well as gradients; the completion supplies literal `MemH1a0` pairs.
 -/
+
+@[expose] public section
+
 namespace CoarseDeGiorgi.Whitney
 open Homogenization MeasureTheory Filter Topology
 open scoped ENNReal

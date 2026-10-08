@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.ScaleWeights
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.ScaleWeights
 
 /-! # Geometric collapse and absolute-scale normalization of reconstruction -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

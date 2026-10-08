@@ -1,4 +1,8 @@
-import CoarseDeGiorgi.Harnack.Iterations.SmallMomentStep
+module
+
+public import CoarseDeGiorgi.Harnack.Iterations.SmallMomentStep
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.Iterations
 

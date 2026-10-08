@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.Weighted.UpperResponseAffine
-import CoarseDeGiorgi.Weighted.LowerResponseZero
-import CoarseDeGiorgi.Statements.UpperDirectionalResponseSol
-import CoarseDeGiorgi.Statements.UpperDirectionalResponseSub
+module
+
+public import CoarseDeGiorgi.Weighted.UpperResponseAffine
+public import CoarseDeGiorgi.Weighted.LowerResponseZero
+public import CoarseDeGiorgi.Statements.UpperDirectionalResponseSol
+public import CoarseDeGiorgi.Statements.UpperDirectionalResponseSub
 
 /-! Coefficient bounds for the literal directional responses. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted
 

@@ -1,4 +1,6 @@
-import Mathlib
+module
+
+public import Mathlib
 
 /-!
 Harnack inequality for coefficients in negative Sobolev spaces (Corollary E of the manuscript,
@@ -19,6 +21,8 @@ supported functions) with the fractional seminorm (1.21) of the highest ones. Th
 hypotheses are the manuscript's `a ∈ W^{−α,p} ∩ L¹`, `a⁻¹ ∈ W^{−β,q} ∩ L¹`; they also follow from
 the standing assumption.
 -/
+
+@[expose] public section
 
 open MeasureTheory
 open scoped BigOperators ENNReal Matrix Matrix.Norms.L2Operator

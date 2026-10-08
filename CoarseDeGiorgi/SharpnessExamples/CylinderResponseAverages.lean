@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.SharpnessExamples.CylinderResponseDefs
-import Homogenization.CoarseGraining.ResponseIdentities.Foundations.Algebra
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.CylinderResponseDefs
+public import Homogenization.CoarseGraining.ResponseIdentities.Foundations.Algebra
 
 /-! # Coefficient averages for the anisotropic cylinder -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

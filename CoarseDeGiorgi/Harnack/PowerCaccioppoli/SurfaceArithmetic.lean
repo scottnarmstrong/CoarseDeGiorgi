@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Assembly.CaccioppoliDefs
-import CoarseDeGiorgi.Assembly.CaccioppoliParameters
+module
+
+public import CoarseDeGiorgi.Assembly.CaccioppoliDefs
+public import CoarseDeGiorgi.Assembly.CaccioppoliParameters
 
 /-! # Collect the selected signed-power surface bounds -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.PowerCaccioppoli
 

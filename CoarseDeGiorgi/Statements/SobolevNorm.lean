@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Statements.IsWeakDerivArray
-import CoarseDeGiorgi.Statements.ArrayFracSeminorm
-import Homogenization.Ambient.CoefficientField
-import Mathlib.Analysis.SpecialFunctions.Pow.Real
-import Mathlib.MeasureTheory.Function.LpSeminorm.Basic
+module
+
+public import CoarseDeGiorgi.Statements.IsWeakDerivArray
+public import CoarseDeGiorgi.Statements.ArrayFracSeminorm
+public import Homogenization.Ambient.CoefficientField
+public import Mathlib.Analysis.SpecialFunctions.Pow.Real
+public import Mathlib.MeasureTheory.Function.LpSeminorm.Basic
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal

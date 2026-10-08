@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Whitney.SeedData
-import CoarseDeGiorgi.Foundations.Euclid.Basic
+module
+
+public import CoarseDeGiorgi.Whitney.SeedData
+public import CoarseDeGiorgi.Foundations.Euclid.Basic
 
 /-! # Geometry and measurability of the nodal surface patches -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Whitney
 

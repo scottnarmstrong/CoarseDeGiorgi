@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.Assembly.EnergyToSupParameters
-import CoarseDeGiorgi.Statements.GammaRec
-import CoarseDeGiorgi.Statements.GammaSup
-import CoarseDeGiorgi.Statements.GammaLoc
-import CoarseDeGiorgi.Statements.SigmaLower
-import CoarseDeGiorgi.Statements.SigmaUpper
+module
+
+public import CoarseDeGiorgi.Assembly.EnergyToSupParameters
+public import CoarseDeGiorgi.Statements.GammaRec
+public import CoarseDeGiorgi.Statements.GammaSup
+public import CoarseDeGiorgi.Statements.GammaLoc
+public import CoarseDeGiorgi.Statements.SigmaLower
+public import CoarseDeGiorgi.Statements.SigmaUpper
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Recurrence
 

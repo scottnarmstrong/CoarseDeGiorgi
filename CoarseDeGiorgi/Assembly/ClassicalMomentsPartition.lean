@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Assembly.ClassicalMomentsDefs
-import CoarseDeGiorgi.Foundations.Simplex.Partition
-import CoarseDeGiorgi.Moments.Cells
+module
+
+public import CoarseDeGiorgi.Assembly.ClassicalMomentsDefs
+public import CoarseDeGiorgi.Foundations.Simplex.Partition
+public import CoarseDeGiorgi.Moments.Cells
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Assembly.ClassicalMomentsImpl
 

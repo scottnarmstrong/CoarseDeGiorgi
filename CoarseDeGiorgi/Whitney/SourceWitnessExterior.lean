@@ -1,17 +1,22 @@
-import CoarseDeGiorgi.Whitney.SourceWitnessCells
-import CoarseDeGiorgi.Whitney.SeedClosedCover
-import CoarseDeGiorgi.Whitney.SeedAverage
-import Mathlib.Analysis.Convex.Integral
-import Mathlib.Analysis.Convex.Mul
-import Mathlib.Analysis.Convex.SpecificFunctions.Basic
-import Mathlib.Data.Fintype.BigOperators
-import CoarseDeGiorgi.Whitney.LiftIdentification
-import CoarseDeGiorgi.Weighted.TestingCompactSupport
-import CoarseDeGiorgi.Weighted.Truncation.Energy
-import Mathlib.Analysis.Convex.Measure
-import CoarseDeGiorgi.Statements.WhitneyCubesProperties
+module
+
+public import CoarseDeGiorgi.Whitney.SourceWitnessCells
+public import CoarseDeGiorgi.Whitney.SeedClosedCover
+public import CoarseDeGiorgi.Whitney.SeedAverage
+public import Mathlib.Analysis.Convex.Integral
+public import Mathlib.Analysis.Convex.Mul
+public import Mathlib.Analysis.Convex.SpecificFunctions.Basic
+public import Mathlib.Data.Fintype.BigOperators
+public import CoarseDeGiorgi.Whitney.LiftIdentification
+public import CoarseDeGiorgi.Weighted.TestingCompactSupport
+public import CoarseDeGiorgi.Weighted.Truncation.Energy
+public import Mathlib.Analysis.Convex.Measure
+public import CoarseDeGiorgi.Statements.WhitneyCubesProperties
 
 /-! # The actual seed vanishes off the active cell interiors -/
+
+@[expose] public section
+
 namespace CoarseDeGiorgi.Whitney
 open Homogenization MeasureTheory Set Filter Topology
 noncomputable section

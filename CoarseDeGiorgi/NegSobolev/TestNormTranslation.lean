@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.NegSobolev.TestNormSmooth
-import CoarseDeGiorgi.Foundations.Euclid.Basic
-import Mathlib.Analysis.Calculus.MeanValue
-import Mathlib.MeasureTheory.Function.LpSeminorm.TriangleInequality
+module
+
+public import CoarseDeGiorgi.NegSobolev.TestNormSmooth
+public import CoarseDeGiorgi.Foundations.Euclid.Basic
+public import Mathlib.Analysis.Calculus.MeanValue
+public import Mathlib.MeasureTheory.Function.LpSeminorm.TriangleInequality
 
 /-! The Gaussian derivative convolution difference estimate, split at square-root time. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Topology

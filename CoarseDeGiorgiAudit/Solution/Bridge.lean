@@ -1,18 +1,22 @@
-import Mathlib
-import CoarseDeGiorgiAudit.Defs
-import CoarseDeGiorgi.Statements.OriginCube
-import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
-import CoarseDeGiorgi.Statements.IsSmoothCore
-import CoarseDeGiorgi.Statements.MemH1a
-import CoarseDeGiorgi.Statements.IsWeightedSubsolution
-import CoarseDeGiorgi.Statements.IsWeightedSupersolution
-import CoarseDeGiorgi.Statements.IsWeightedSolution
-import CoarseDeGiorgi.Statements.LocallyBoundedAbove
-import CoarseDeGiorgi.Statements.PositivePart
-import CoarseDeGiorgi.Statements.NonnegativeEssInf
-import CoarseDeGiorgi.Statements.NormalizedLpMoment
-import CoarseDeGiorgi.Statements.ParamR
-import CoarseDeGiorgi.Statements.HarnackEtaParam
+module
+
+public import Mathlib
+public import CoarseDeGiorgiAudit.Defs
+public import CoarseDeGiorgi.Statements.OriginCube
+public import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
+public import CoarseDeGiorgi.Statements.IsSmoothCore
+public import CoarseDeGiorgi.Statements.MemH1a
+public import CoarseDeGiorgi.Statements.IsWeightedSubsolution
+public import CoarseDeGiorgi.Statements.IsWeightedSupersolution
+public import CoarseDeGiorgi.Statements.IsWeightedSolution
+public import CoarseDeGiorgi.Statements.LocallyBoundedAbove
+public import CoarseDeGiorgi.Statements.PositivePart
+public import CoarseDeGiorgi.Statements.NonnegativeEssInf
+public import CoarseDeGiorgi.Statements.NormalizedLpMoment
+public import CoarseDeGiorgi.Statements.ParamR
+public import CoarseDeGiorgi.Statements.HarnackEtaParam
+
+@[expose] public section
 
 open MeasureTheory
 open scoped BigOperators ENNReal

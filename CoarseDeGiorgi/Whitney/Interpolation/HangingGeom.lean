@@ -1,12 +1,16 @@
-import CoarseDeGiorgi.Whitney.Interpolation.GlueCells
-import CoarseDeGiorgi.Statements.WhitneyCubesProperties
-import CoarseDeGiorgi.Statements.IsFreeVertex
-import CoarseDeGiorgi.Whitney.SeedClosedCover
+module
+
+public import CoarseDeGiorgi.Whitney.Interpolation.GlueCells
+public import CoarseDeGiorgi.Statements.WhitneyCubesProperties
+public import CoarseDeGiorgi.Statements.IsFreeVertex
+public import CoarseDeGiorgi.Whitney.SeedClosedCover
 
 /-! # Geometry of Whitney cubes and cells at the mesh of their children
 
 Neighboring selected cubes differ by at most one scale; nodes of a mesh inside a cube; the
 dictionary between `ExteriorCell` and the Kuhn cells `cellN`; closed cells cover closed cubes. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Whitney.Interpolation
 

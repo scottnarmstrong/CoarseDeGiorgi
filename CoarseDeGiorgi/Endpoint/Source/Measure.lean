@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Endpoint.Source.Functional
-import Mathlib.MeasureTheory.Integral.RieszMarkovKakutani.Real
-import Mathlib.Analysis.Convex.Cone.Extension
+module
+
+public import CoarseDeGiorgi.Endpoint.Source.Functional
+public import Mathlib.MeasureTheory.Integral.RieszMarkovKakutani.Real
+public import Mathlib.Analysis.Convex.Cone.Extension
 
 /-! Riesz representation of the flux functional of a supersolution by a Radon measure. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint
 

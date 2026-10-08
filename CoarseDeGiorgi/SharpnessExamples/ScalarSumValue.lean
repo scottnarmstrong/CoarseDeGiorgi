@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.SharpnessExamples.ScalarSumDensity
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.ScalarSumDensity
 
 /-! # Value integrability and global L¹ convergence of the cylinder sum -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set Filter Topology
 open scoped ENNReal BigOperators

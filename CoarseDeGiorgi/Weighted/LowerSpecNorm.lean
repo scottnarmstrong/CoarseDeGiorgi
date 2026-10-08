@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Weighted.LowerSpecMean
-import CoarseDeGiorgi.Weighted.UpperSpecNorm
+module
+
+public import CoarseDeGiorgi.Weighted.LowerSpecMean
+public import CoarseDeGiorgi.Weighted.UpperSpecNorm
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted.LowerResponseImpl
 

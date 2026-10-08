@@ -1,9 +1,11 @@
-import CoarseDeGiorgi.Whitney.Extension.SurfaceArea
-import CoarseDeGiorgi.Statements.SeedCutoff
-import CoarseDeGiorgi.Statements.SeedProjection
-import CoarseDeGiorgi.Statements.ClosedReferenceCube
-import CoarseDeGiorgi.Statements.PointSupDist
-import CoarseDeGiorgi.Foundations.Triadic.WhitneyCubesProof
+module
+
+public import CoarseDeGiorgi.Whitney.Extension.SurfaceArea
+public import CoarseDeGiorgi.Statements.SeedCutoff
+public import CoarseDeGiorgi.Statements.SeedProjection
+public import CoarseDeGiorgi.Statements.ClosedReferenceCube
+public import CoarseDeGiorgi.Statements.PointSupDist
+public import CoarseDeGiorgi.Foundations.Triadic.WhitneyCubesProof
 
 /-!
 # Basic facts for the piecewise affine extension
@@ -11,6 +13,8 @@ import CoarseDeGiorgi.Foundations.Triadic.WhitneyCubesProof
 The coordinate projection, the cutoff, Euclidean versus maximum distance, and integrability on the
 cube surface.
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.WhitneyExt
 

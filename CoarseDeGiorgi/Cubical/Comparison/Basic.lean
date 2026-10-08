@@ -1,11 +1,15 @@
-import Mathlib.Analysis.SpecialFunctions.Pow.NNReal
-import Mathlib.Analysis.SpecialFunctions.Pow.Real
-import Mathlib.Topology.Algebra.InfiniteSum.ENNReal
-import Mathlib.Analysis.SpecificLimits.Basic
+module
+
+public import Mathlib.Analysis.SpecialFunctions.Pow.NNReal
+public import Mathlib.Analysis.SpecialFunctions.Pow.Real
+public import Mathlib.Topology.Algebra.InfiniteSum.ENNReal
+public import Mathlib.Analysis.SpecificLimits.Basic
 
 /-!
 # ENNReal lemmas for the cubical comparison
 -/
+
+@[expose] public section
 
 open scoped ENNReal
 

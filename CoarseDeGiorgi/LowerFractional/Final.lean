@@ -1,11 +1,15 @@
-import CoarseDeGiorgi.Statements.LowerFractionalBound
-import CoarseDeGiorgi.Statements.OriginCube
-import CoarseDeGiorgi.Statements.SpatialMomentRange
-import CoarseDeGiorgi.Statements.AlphaParam
-import CoarseDeGiorgi.Statements.ParamR
-import CoarseDeGiorgi.Statements.LowerMoment
-import CoarseDeGiorgi.Statements.WeightedEnergy
-import CoarseDeGiorgi.Statements.H1aWeightedNorm
+module
+
+public import CoarseDeGiorgi.Statements.LowerFractionalBound
+public import CoarseDeGiorgi.Statements.OriginCube
+public import CoarseDeGiorgi.Statements.SpatialMomentRange
+public import CoarseDeGiorgi.Statements.AlphaParam
+public import CoarseDeGiorgi.Statements.ParamR
+public import CoarseDeGiorgi.Statements.LowerMoment
+public import CoarseDeGiorgi.Statements.WeightedEnergy
+public import CoarseDeGiorgi.Statements.H1aWeightedNorm
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

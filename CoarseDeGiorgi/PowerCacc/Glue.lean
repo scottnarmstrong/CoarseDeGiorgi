@@ -1,21 +1,25 @@
-import CoarseDeGiorgi.PowerCacc.Geometry
-import CoarseDeGiorgi.Statements.WhitneyInterpolationDef
-import CoarseDeGiorgi.Statements.WhitneyAffineExtensionDef
-import CoarseDeGiorgi.Statements.IsPiecewiseHarmonicExtension
-import CoarseDeGiorgi.Harnack.Powers.SignedPower
-import CoarseDeGiorgi.Harnack.PowerCaccioppoli.DomainSplit
-import CoarseDeGiorgi.Weighted.Identification
-import CoarseDeGiorgi.Weighted.ZeroCore
-import CoarseDeGiorgi.Weighted.SmoothCore
-import CoarseDeGiorgi.Whitney.ExteriorCells
-import CoarseDeGiorgi.Statements.IsWeightedSupersolution
-import CoarseDeGiorgi.Statements.MemH1a0
+module
+
+public import CoarseDeGiorgi.PowerCacc.Geometry
+public import CoarseDeGiorgi.Statements.WhitneyInterpolationDef
+public import CoarseDeGiorgi.Statements.WhitneyAffineExtensionDef
+public import CoarseDeGiorgi.Statements.IsPiecewiseHarmonicExtension
+public import CoarseDeGiorgi.Harnack.Powers.SignedPower
+public import CoarseDeGiorgi.Harnack.PowerCaccioppoli.DomainSplit
+public import CoarseDeGiorgi.Weighted.Identification
+public import CoarseDeGiorgi.Weighted.ZeroCore
+public import CoarseDeGiorgi.Weighted.SmoothCore
+public import CoarseDeGiorgi.Whitney.ExteriorCells
+public import CoarseDeGiorgi.Statements.IsWeightedSupersolution
+public import CoarseDeGiorgi.Statements.MemH1a0
 
 /-! # The signed power test with the glued extension of Proposition `p.whitney.extension`
 
 The test function is `ψ = f` on `τ□̄₀` and `ψ = H_h f` outside (Proposition `p.whitney.extension`,
 gluing clause). Weak-gradient uniqueness identifies the gradient `J` of `ψ` with the gradient of `f`
 inside and with the gradient `GH` of the extension outside. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.PowerCacc
 

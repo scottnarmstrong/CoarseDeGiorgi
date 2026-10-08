@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Statements.ClosedReferenceCube
-import CoarseDeGiorgi.Statements.FivefoldClosedTriadicCube
-import Homogenization.Multiscale.CubeAverage
+module
+
+public import CoarseDeGiorgi.Statements.ClosedReferenceCube
+public import CoarseDeGiorgi.Statements.FivefoldClosedTriadicCube
+public import Homogenization.Multiscale.CubeAverage
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal

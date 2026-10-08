@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.PeriodicKernelSmooth
-import CoarseDeGiorgi.Foundations.Reconstruction.FineDivergence
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.PeriodicKernelSmooth
+public import CoarseDeGiorgi.Foundations.Reconstruction.FineDivergence
 
 /-! # Fine kernel jets and periodic divergence -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

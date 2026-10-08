@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Whitney.Interpolation.Basic
-import CoarseDeGiorgi.Whitney.SeedClosedCover
+module
+
+public import CoarseDeGiorgi.Whitney.Interpolation.Basic
+public import CoarseDeGiorgi.Whitney.SeedClosedCover
 
 /-! # Level-zero Kuhn cells: vertices, closure, barycentric reproduction of affine maps -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Whitney.Interpolation
 

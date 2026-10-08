@@ -1,42 +1,44 @@
-import Homogenization.Ambient.CoefficientField
-import Homogenization.Sobolev.WeakDerivatives
-import Homogenization.CoarseGraining.Definitions
-import Homogenization.Geometry.TriadicCube
-import Mathlib.Data.EReal.Basic
-import Mathlib.Analysis.CStarAlgebra.Matrix
-import Mathlib.Analysis.SpecialFunctions.Pow.Real
-import Mathlib.MeasureTheory.Function.LpSeminorm.Basic
-import CoarseDeGiorgi.Statements.IsSmoothCore
-import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
-import CoarseDeGiorgi.Statements.MemH1a
-import CoarseDeGiorgi.Statements.AlphaParam
-import CoarseDeGiorgi.Statements.CubeSurface
-import CoarseDeGiorgi.Statements.H1aWeightedNorm
-import CoarseDeGiorgi.Statements.LowerMoment
-import CoarseDeGiorgi.Statements.OriginCube
-import CoarseDeGiorgi.Statements.ParamR
-import CoarseDeGiorgi.Statements.ParamTheta
-import CoarseDeGiorgi.Statements.PositiveCap
-import CoarseDeGiorgi.Statements.PositiveCapGradient
-import CoarseDeGiorgi.Statements.SampledResponseSeries
-import CoarseDeGiorgi.Statements.SelectionInterval
-import CoarseDeGiorgi.Statements.SmoothGrad
-import CoarseDeGiorgi.Statements.SpatialMomentRange
-import CoarseDeGiorgi.Statements.SurfaceEnergyMaximal
-import CoarseDeGiorgi.Statements.SurfaceFracNorm
-import CoarseDeGiorgi.Statements.SurfaceMeasure
-import CoarseDeGiorgi.Statements.UpperMoment
-import CoarseDeGiorgi.Statements.WeightedEnergy
+module
 
-import CoarseDeGiorgi.Assembly.ParameterDefs
-import CoarseDeGiorgi.GoodRadius.Hypothesis
-import CoarseDeGiorgi.GoodRadius.TruncationTransfer
-import CoarseDeGiorgi.GoodRadius.TraceData
-import CoarseDeGiorgi.GoodRadius.Selection
-import CoarseDeGiorgi.Harnack.Selection.Cap
-import CoarseDeGiorgi.Harnack.WeakHarnack.SelectionAdapters
-import CoarseDeGiorgi.Assembly.CaccioppoliEnergy
-import CoarseDeGiorgi.Weighted.PairOperations
+public import Homogenization.Ambient.CoefficientField
+public import Homogenization.Sobolev.WeakDerivatives
+public import Homogenization.CoarseGraining.Definitions
+public import Homogenization.Geometry.TriadicCube
+public import Mathlib.Data.EReal.Basic
+public import Mathlib.Analysis.CStarAlgebra.Matrix
+public import Mathlib.Analysis.SpecialFunctions.Pow.Real
+public import Mathlib.MeasureTheory.Function.LpSeminorm.Basic
+public import CoarseDeGiorgi.Statements.IsSmoothCore
+public import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
+public import CoarseDeGiorgi.Statements.MemH1a
+public import CoarseDeGiorgi.Statements.AlphaParam
+public import CoarseDeGiorgi.Statements.CubeSurface
+public import CoarseDeGiorgi.Statements.H1aWeightedNorm
+public import CoarseDeGiorgi.Statements.LowerMoment
+public import CoarseDeGiorgi.Statements.OriginCube
+public import CoarseDeGiorgi.Statements.ParamR
+public import CoarseDeGiorgi.Statements.ParamTheta
+public import CoarseDeGiorgi.Statements.PositiveCap
+public import CoarseDeGiorgi.Statements.PositiveCapGradient
+public import CoarseDeGiorgi.Statements.SampledResponseSeries
+public import CoarseDeGiorgi.Statements.SelectionInterval
+public import CoarseDeGiorgi.Statements.SmoothGrad
+public import CoarseDeGiorgi.Statements.SpatialMomentRange
+public import CoarseDeGiorgi.Statements.SurfaceEnergyMaximal
+public import CoarseDeGiorgi.Statements.SurfaceFracNorm
+public import CoarseDeGiorgi.Statements.SurfaceMeasure
+public import CoarseDeGiorgi.Statements.UpperMoment
+public import CoarseDeGiorgi.Statements.WeightedEnergy
+
+public import CoarseDeGiorgi.Assembly.ParameterDefs
+public import CoarseDeGiorgi.GoodRadius.Hypothesis
+public import CoarseDeGiorgi.GoodRadius.TruncationTransfer
+public import CoarseDeGiorgi.GoodRadius.TraceData
+public import CoarseDeGiorgi.GoodRadius.Selection
+public import CoarseDeGiorgi.Harnack.Selection.Cap
+public import CoarseDeGiorgi.Harnack.WeakHarnack.SelectionAdapters
+public import CoarseDeGiorgi.Assembly.CaccioppoliEnergy
+public import CoarseDeGiorgi.Weighted.PairOperations
 
 /-!
 # Proposition `p.good.radius` from the localization of Proposition `p.fractional.localization`
@@ -45,6 +47,8 @@ A good-radius selection with fractional and L² trace convergence, proved from t
 `FractionalLocalizationHyp` (the verbatim conclusion of Proposition `p.fractional.localization`)
 as an explicit hypothesis, in every dimension `d ≥ 3`.
 -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Filter Topology
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

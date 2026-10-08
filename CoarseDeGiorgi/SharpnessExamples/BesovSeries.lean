@@ -1,5 +1,7 @@
-import CoarseDeGiorgi.SharpnessExamples.ScalarSeries
-import CoarseDeGiorgi.SharpnessExamples.BesovCubeSimplex
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.ScalarSeries
+public import CoarseDeGiorgi.SharpnessExamples.BesovCubeSimplex
 
 /-! # The cube quasi-norm of a positive field dominated by a series of cylinders
 
@@ -7,6 +9,8 @@ Per level, the power mean over triadic cubes is at most the power mean over simp
 is controlled by Minkowski's inequality for the series. Square-root subadditivity and the
 summed bound per cylinder then control the sum over levels.
 -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

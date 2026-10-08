@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Weighted.PairOperations
-import CoarseDeGiorgi.Statements.IsWeightedSolution
+module
+
+public import CoarseDeGiorgi.Weighted.PairOperations
+public import CoarseDeGiorgi.Statements.IsWeightedSolution
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted
 

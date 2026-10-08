@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.SharpnessExamples.ScalarBandGeometry
-import Mathlib.MeasureTheory.Integral.Bochner.Set
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.ScalarBandGeometry
+public import Mathlib.MeasureTheory.Integral.Bochner.Set
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set
 open CoarseDeGiorgi.Sharpness

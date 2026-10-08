@@ -1,13 +1,17 @@
-import CoarseDeGiorgi.Weighted.UpperResponseAffine
-import CoarseDeGiorgi.Whitney.LiftZeroExtension
-import CoarseDeGiorgi.Selection.CommonRadius
-import CoarseDeGiorgi.Selection.SourceResponses
-import CoarseDeGiorgi.Whitney.LiftCell
-import CoarseDeGiorgi.Whitney.SeedCellAffine
-import CoarseDeGiorgi.Whitney.LiftSurfaceLayer
-import Mathlib.Analysis.Normed.Module.RCLike.Real
+module
+
+public import CoarseDeGiorgi.Weighted.UpperResponseAffine
+public import CoarseDeGiorgi.Whitney.LiftZeroExtension
+public import CoarseDeGiorgi.Selection.CommonRadius
+public import CoarseDeGiorgi.Selection.SourceResponses
+public import CoarseDeGiorgi.Whitney.LiftCell
+public import CoarseDeGiorgi.Whitney.SeedCellAffine
+public import CoarseDeGiorgi.Whitney.LiftSurfaceLayer
+public import Mathlib.Analysis.Normed.Module.RCLike.Real
 
 /-! # Source witness pieces for fixed-surface smooth data -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Whitney
 

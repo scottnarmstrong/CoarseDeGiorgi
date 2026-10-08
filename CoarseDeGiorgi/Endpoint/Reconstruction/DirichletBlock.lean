@@ -1,6 +1,8 @@
-import CoarseDeGiorgi.Statements.OriginCube
-import Homogenization.Sobolev.Foundations.CubeCalderonZygmund.H10Adjoint
-import Homogenization.Sobolev.Foundations.CubeCalderonZygmund.DirichletNeumannEndpoint
+module
+
+public import CoarseDeGiorgi.Statements.OriginCube
+public import Homogenization.Sobolev.Foundations.CubeCalderonZygmund.H10Adjoint
+public import Homogenization.Sobolev.Foundations.CubeCalderonZygmund.DirichletNeumannEndpoint
 
 /-! # Dirichlet blocks on the unit cube
 
@@ -9,6 +11,8 @@ forcing has the sign giving
 `∫ ∇w · ∇ψ = ∫ G · ∇ψ`. Constants in the gradient estimate depend only on the
 dimension and the finite exponent.
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint.Reconstruction
 

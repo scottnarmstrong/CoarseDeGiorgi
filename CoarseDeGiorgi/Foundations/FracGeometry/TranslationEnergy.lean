@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Foundations.FracGeometry.CutoffPointwise
-import Mathlib.MeasureTheory.Group.Prod
-import Mathlib.MeasureTheory.Group.LIntegral
+module
+
+public import CoarseDeGiorgi.Foundations.FracGeometry.CutoffPointwise
+public import Mathlib.MeasureTheory.Group.Prod
+public import Mathlib.MeasureTheory.Group.LIntegral
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.FracGeometry
 

@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Cubical.Comparison.Basic
+module
+
+public import CoarseDeGiorgi.Cubical.Comparison.Basic
 
 /-!
 # The geometric-tail summation behind Proposition `p.cubical.simplicial.equivalence`
 -/
+
+@[expose] public section
 
 open scoped ENNReal
 

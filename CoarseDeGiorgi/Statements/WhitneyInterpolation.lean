@@ -1,8 +1,13 @@
-import CoarseDeGiorgi.Statements.IsWhitneyInterpolant
-import CoarseDeGiorgi.Statements.EuclidNorm
+module
 
-import CoarseDeGiorgi.Whitney.Interpolation.UniquenessMain
-import CoarseDeGiorgi.Whitney.Interpolation.BoundsGrad
+public import CoarseDeGiorgi.Statements.IsWhitneyInterpolant
+public import CoarseDeGiorgi.Statements.EuclidNorm
+
+public import CoarseDeGiorgi.Whitney.Interpolation.UniquenessMain
+public import CoarseDeGiorgi.Whitney.Interpolation.BoundsGrad
+
+@[expose] public section
+
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator
 

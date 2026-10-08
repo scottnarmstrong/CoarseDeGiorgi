@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.SmoothingTranslation
-import CoarseDeGiorgi.Foundations.Reconstruction.SmoothingAverage
-import CoarseDeGiorgi.Foundations.Reconstruction.AssemblyInputs
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.SmoothingTranslation
+public import CoarseDeGiorgi.Foundations.Reconstruction.SmoothingAverage
+public import CoarseDeGiorgi.Foundations.Reconstruction.AssemblyInputs
 
 /-! # Probability smoothing converges in periodic `L^r` -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

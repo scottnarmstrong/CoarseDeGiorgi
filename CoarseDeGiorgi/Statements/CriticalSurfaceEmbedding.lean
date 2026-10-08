@@ -1,6 +1,10 @@
-import Homogenization.Ambient.CoefficientField
-import Mathlib.MeasureTheory.Function.LpSeminorm.Basic
-import CoarseDeGiorgi.Foundations.FractionalSobolev.SurfaceEmbedding
+module
+
+public import Homogenization.Ambient.CoefficientField
+public import Mathlib.MeasureTheory.Function.LpSeminorm.Basic
+public import CoarseDeGiorgi.Foundations.FractionalSobolev.SurfaceEmbedding
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal

@@ -1,10 +1,14 @@
-import CoarseDeGiorgi.Assembly.ClassicalMomentsPartition
-import CoarseDeGiorgi.LowerFractional.CompactCover
-import CoarseDeGiorgi.Weighted.UpperSpecMinimum
-import CoarseDeGiorgi.Weighted.UpperSpecHarmonic
-import CoarseDeGiorgi.Whitney.LiftCell
-import CoarseDeGiorgi.Whitney.LiftSums
-import CoarseDeGiorgi.Whitney.LiftZeroExtension
+module
+
+public import CoarseDeGiorgi.Assembly.ClassicalMomentsPartition
+public import CoarseDeGiorgi.LowerFractional.CompactCover
+public import CoarseDeGiorgi.Weighted.UpperSpecMinimum
+public import CoarseDeGiorgi.Weighted.UpperSpecHarmonic
+public import CoarseDeGiorgi.Whitney.LiftCell
+public import CoarseDeGiorgi.Whitney.LiftSums
+public import CoarseDeGiorgi.Whitney.LiftZeroExtension
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.Moments
 

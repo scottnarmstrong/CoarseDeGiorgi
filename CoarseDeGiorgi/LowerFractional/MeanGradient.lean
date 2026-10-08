@@ -1,10 +1,14 @@
-import CoarseDeGiorgi.LowerFractional.Aliases
-import CoarseDeGiorgi.LowerFractional.Restriction
-import CoarseDeGiorgi.Weighted.LowerResponse
-import CoarseDeGiorgi.Weighted.LowerSpecNorm
+module
+
+public import CoarseDeGiorgi.LowerFractional.Aliases
+public import CoarseDeGiorgi.LowerFractional.Restriction
+public import CoarseDeGiorgi.Weighted.LowerResponse
+public import CoarseDeGiorgi.Weighted.LowerSpecNorm
 
 /-! The mean-gradient bounds `e.lower.mean.gradient` for the lower response.
 Proof irrelevance identifies the choice definition's proof inputs. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.LowerFractional
 

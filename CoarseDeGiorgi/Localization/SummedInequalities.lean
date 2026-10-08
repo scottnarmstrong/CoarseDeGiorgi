@@ -1,10 +1,15 @@
-import Mathlib.Analysis.MeanInequalities
-import Mathlib.Analysis.SpecialFunctions.Pow.Continuity
-import Mathlib.Topology.Algebra.InfiniteSum.NatInt
+module
+
+public import Mathlib.Analysis.MeanInequalities
+public import Mathlib.Analysis.SpecialFunctions.Pow.Continuity
+public import Mathlib.Topology.Algebra.InfiniteSum.NatInt
 
 /-! # Minkowski over a series and Hölder over a finite index set
 
 Pure inequalities in `ℝ≥0∞` used when the local bounds are summed over a cover. -/
+
+@[expose] public section
+
 namespace CoarseDeGiorgi.Localization
 open scoped BigOperators ENNReal
 open Filter Topology

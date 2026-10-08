@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.SharpnessExamples.WeakHarnackSharpnessProfileU
-import CoarseDeGiorgi.SharpnessExamples.ScalarFluxLipschitz
-import CoarseDeGiorgi.SharpnessExamples.ScalarTest
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.WeakHarnackSharpnessProfileU
+public import CoarseDeGiorgi.SharpnessExamples.ScalarFluxLipschitz
+public import CoarseDeGiorgi.SharpnessExamples.ScalarTest
 
 /-! # The flux `H(|x|²) x` and the sign of its pairing with test functions -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set Filter Topology
 open scoped BigOperators ENNReal ContDiff

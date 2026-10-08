@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.Assembly
-import CoarseDeGiorgi.Foundations.Reconstruction.TailBounds
-import CoarseDeGiorgi.Foundations.Reconstruction.Smoothing
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.Assembly
+public import CoarseDeGiorgi.Foundations.Reconstruction.TailBounds
+public import CoarseDeGiorgi.Foundations.Reconstruction.Smoothing
 
 /-! # The all-dimensional fractional reconstruction theorem -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal

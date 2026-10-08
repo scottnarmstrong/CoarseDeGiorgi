@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Assembly.TwoSidedUniformSelection
-import CoarseDeGiorgi.Harnack.ContrastBound.CellPositivity
-import CoarseDeGiorgi.Statements.Contrast
-import CoarseDeGiorgi.Harnack.Moments.MomentComparison
+module
+
+public import CoarseDeGiorgi.Assembly.TwoSidedUniformSelection
+public import CoarseDeGiorgi.Harnack.ContrastBound.CellPositivity
+public import CoarseDeGiorgi.Statements.Contrast
+public import CoarseDeGiorgi.Harnack.Moments.MomentComparison
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.ContrastBound
 

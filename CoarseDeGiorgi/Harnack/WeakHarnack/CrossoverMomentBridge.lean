@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Statements.NormalizedLpMoment
-import CoarseDeGiorgi.Harnack.Calculus.Moments
-import CoarseDeGiorgi.Harnack.CrossoverFinal.EnnrealAverage
+module
+
+public import CoarseDeGiorgi.Statements.NormalizedLpMoment
+public import CoarseDeGiorgi.Harnack.Calculus.Moments
+public import CoarseDeGiorgi.Harnack.CrossoverFinal.EnnrealAverage
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped ENNReal

@@ -1,17 +1,21 @@
-import CoarseDeGiorgiAudit.DefsResponses
-import CoarseDeGiorgi.Statements.GridOffset
-import CoarseDeGiorgi.Statements.Triangulation
-import CoarseDeGiorgi.Statements.SimplexIndex
-import CoarseDeGiorgi.Statements.Simplex
-import CoarseDeGiorgi.Statements.SimplexCell
-import CoarseDeGiorgi.Statements.ParamTheta
-import CoarseDeGiorgi.Statements.UpperDirectionalResponseSol
-import CoarseDeGiorgi.Statements.LowerDirectionalResponse
-import CoarseDeGiorgi.Statements.UpperResponseOnCell
-import CoarseDeGiorgi.Statements.LowerResponseInvOnCell
-import CoarseDeGiorgi.Statements.UpperMoment
-import CoarseDeGiorgi.Statements.LowerMoment
-import CoarseDeGiorgi.Statements.Contrast
+module
+
+public import CoarseDeGiorgiAudit.DefsResponses
+public import CoarseDeGiorgi.Statements.GridOffset
+public import CoarseDeGiorgi.Statements.Triangulation
+public import CoarseDeGiorgi.Statements.SimplexIndex
+public import CoarseDeGiorgi.Statements.Simplex
+public import CoarseDeGiorgi.Statements.SimplexCell
+public import CoarseDeGiorgi.Statements.ParamTheta
+public import CoarseDeGiorgi.Statements.UpperDirectionalResponseSol
+public import CoarseDeGiorgi.Statements.LowerDirectionalResponse
+public import CoarseDeGiorgi.Statements.UpperResponseOnCell
+public import CoarseDeGiorgi.Statements.LowerResponseInvOnCell
+public import CoarseDeGiorgi.Statements.UpperMoment
+public import CoarseDeGiorgi.Statements.LowerMoment
+public import CoarseDeGiorgi.Statements.Contrast
+
+@[expose] public section
 
 open MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

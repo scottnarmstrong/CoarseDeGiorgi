@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.LowestKernel
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.LowestKernel
 
 /-! # Exact scaling of the lowest periodic kernel -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

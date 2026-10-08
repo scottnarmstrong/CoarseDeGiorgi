@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Whitney.Interpolation.BoundsAff
+module
+
+public import CoarseDeGiorgi.Whitney.Interpolation.BoundsAff
 
 /-!
 # Range and gradient bounds for the Whitney interpolant (Lemma `l.whitney.interpolation`)
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.WhitneyInterp
 

@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.SharpnessExamples.CylinderAveragesGeometry
-import Mathlib.Analysis.MeanInequalities
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.CylinderAveragesGeometry
+public import Mathlib.Analysis.MeanInequalities
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal

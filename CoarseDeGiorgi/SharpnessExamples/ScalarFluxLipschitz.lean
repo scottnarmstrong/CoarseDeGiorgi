@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.SharpnessExamples.ScalarFluxDefs
-import CoarseDeGiorgi.SharpnessExamples.ScalarTest
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.ScalarFluxDefs
+public import CoarseDeGiorgi.SharpnessExamples.ScalarTest
 
 /-! # Lipschitz transverse coordinates of the cutoff flux -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set
 open CoarseDeGiorgi.Sharpness

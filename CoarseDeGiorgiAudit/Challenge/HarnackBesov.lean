@@ -1,4 +1,6 @@
-import Mathlib
+module
+
+public import Mathlib
 
 /-!
 # Harnack inequality under finite cube quasi-norms (Theorems C, D(ii))
@@ -23,6 +25,8 @@ The weighted space is the smooth-core closure `H¹ₐ`, and solutions satisfy
 the weak flux equation against smooth compactly supported tests. The
 quasi-norm is written out below as `cubeQuasiNorm`.
 -/
+
+@[expose] public section
 
 open MeasureTheory
 open scoped BigOperators ENNReal Matrix Matrix.Norms.L2Operator

@@ -1,19 +1,23 @@
-import CoarseDeGiorgi.Harnack.LEta.LocalEta
-import CoarseDeGiorgi.Harnack.Calculus.Supersolution
-import CoarseDeGiorgi.LowerFractional.CubeDomain
-import CoarseDeGiorgi.Statements.Contrast
-import CoarseDeGiorgi.Statements.ParamR
-import CoarseDeGiorgi.Statements.ParamTheta
-import CoarseDeGiorgi.Statements.IsWeightedSolution
-import CoarseDeGiorgi.Statements.IsWeightedSubsolution
-import CoarseDeGiorgi.Statements.IsWeightedSupersolution
-import CoarseDeGiorgi.Statements.NormalizedLpMoment
-import CoarseDeGiorgi.Statements.NonnegativeEssInf
-import CoarseDeGiorgi.Statements.HarnackEtaParam
-import CoarseDeGiorgi.Statements.PositivePart
-import Mathlib.Analysis.SpecialFunctions.Log.Basic
-import Mathlib.MeasureTheory.Measure.Lebesgue.Basic
-import Mathlib.MeasureTheory.Function.EssSup
+module
+
+public import CoarseDeGiorgi.Harnack.LEta.LocalEta
+public import CoarseDeGiorgi.Harnack.Calculus.Supersolution
+public import CoarseDeGiorgi.LowerFractional.CubeDomain
+public import CoarseDeGiorgi.Statements.Contrast
+public import CoarseDeGiorgi.Statements.ParamR
+public import CoarseDeGiorgi.Statements.ParamTheta
+public import CoarseDeGiorgi.Statements.IsWeightedSolution
+public import CoarseDeGiorgi.Statements.IsWeightedSubsolution
+public import CoarseDeGiorgi.Statements.IsWeightedSupersolution
+public import CoarseDeGiorgi.Statements.NormalizedLpMoment
+public import CoarseDeGiorgi.Statements.NonnegativeEssInf
+public import CoarseDeGiorgi.Statements.HarnackEtaParam
+public import CoarseDeGiorgi.Statements.PositivePart
+public import Mathlib.Analysis.SpecialFunctions.Log.Basic
+public import Mathlib.MeasureTheory.Measure.Lebesgue.Basic
+public import Mathlib.MeasureTheory.Function.EssSup
+
+@[expose] public section
 
 open Homogenization MeasureTheory Filter Topology
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

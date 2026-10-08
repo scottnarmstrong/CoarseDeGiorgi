@@ -1,11 +1,15 @@
-import CoarseDeGiorgi.SharpnessExamples.CylinderFiniteMeans
-import Mathlib.Analysis.SpecialFunctions.Pow.Continuity
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.CylinderFiniteMeans
+public import Mathlib.Analysis.SpecialFunctions.Pow.Continuity
 
 /-! # Finite spatial power means and positive scalar series
 
 Minkowski's inequality is first applied to finite partial sums. Continuity of
 the finite mean then passes the bound to a summable positive series.
 -/
+
+@[expose] public section
 
 open Filter Topology
 open scoped BigOperators

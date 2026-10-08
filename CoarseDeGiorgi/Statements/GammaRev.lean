@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Statements.AlphaParam
-import CoarseDeGiorgi.Statements.GammaLoc
-import CoarseDeGiorgi.Statements.ParamTheta
+module
+
+public import CoarseDeGiorgi.Statements.AlphaParam
+public import CoarseDeGiorgi.Statements.GammaLoc
+public import CoarseDeGiorgi.Statements.ParamTheta
+
+@[expose] public section
 
 namespace CoarseDeGiorgi
 

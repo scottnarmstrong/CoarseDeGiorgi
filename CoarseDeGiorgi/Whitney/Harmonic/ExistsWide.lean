@@ -1,15 +1,19 @@
-import CoarseDeGiorgi.Whitney.Harmonic.Exists
-import CoarseDeGiorgi.Whitney.Harmonic.GeometryWide
-import CoarseDeGiorgi.Whitney.Harmonic.Linear
-import CoarseDeGiorgi.Statements.WhitneyInterpolationSpec
-import CoarseDeGiorgi.Statements.WhitneyAffineExtensionDef
-import CoarseDeGiorgi.Statements.SelectionInterval
-import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
-import CoarseDeGiorgi.Statements.OriginCube
-import CoarseDeGiorgi.Weighted.HarmonicProperties
-import CoarseDeGiorgi.Weighted.Lipschitz
+module
+
+public import CoarseDeGiorgi.Whitney.Harmonic.Exists
+public import CoarseDeGiorgi.Whitney.Harmonic.GeometryWide
+public import CoarseDeGiorgi.Whitney.Harmonic.Linear
+public import CoarseDeGiorgi.Statements.WhitneyInterpolationSpec
+public import CoarseDeGiorgi.Statements.WhitneyAffineExtensionDef
+public import CoarseDeGiorgi.Statements.SelectionInterval
+public import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
+public import CoarseDeGiorgi.Statements.OriginCube
+public import CoarseDeGiorgi.Weighted.HarmonicProperties
+public import CoarseDeGiorgi.Weighted.Lipschitz
 
 /-! Whitney harmonic extension with the wider width bound. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set Filter
 open scoped BigOperators ENNReal NNReal

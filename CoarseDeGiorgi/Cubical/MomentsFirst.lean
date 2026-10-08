@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Cubical.MomentsSecond
+module
+
+public import CoarseDeGiorgi.Cubical.MomentsSecond
 
 /-! # The first inequality of Lemma `l.cubical.simplicial.moments`: cubes are controlled by simplices -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Cubical
 open Homogenization MeasureTheory

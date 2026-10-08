@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.SharpnessExamples.WeakHarnackSharpnessFlux
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.WeakHarnackSharpnessFlux
 
 /-! # The supersolution `u(x) = U(|x|²)`: gradient and flux identity -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set Filter Topology
 open scoped BigOperators ENNReal ContDiff

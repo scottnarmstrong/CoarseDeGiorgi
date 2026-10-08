@@ -1,10 +1,12 @@
-import CoarseDeGiorgi.Statements.Contrast
-import CoarseDeGiorgi.Statements.ParamTheta
-import CoarseDeGiorgi.Statements.IsWeightedSupersolution
-import CoarseDeGiorgi.Statements.IsWeightedSolution
-import CoarseDeGiorgi.Statements.NormalizedLpMoment
-import CoarseDeGiorgi.Statements.NonnegativeEssInf
-import CoarseDeGiorgi.Statements.HarnackEtaParam
+module
+
+public import CoarseDeGiorgi.Statements.Contrast
+public import CoarseDeGiorgi.Statements.ParamTheta
+public import CoarseDeGiorgi.Statements.IsWeightedSupersolution
+public import CoarseDeGiorgi.Statements.IsWeightedSolution
+public import CoarseDeGiorgi.Statements.NormalizedLpMoment
+public import CoarseDeGiorgi.Statements.NonnegativeEssInf
+public import CoarseDeGiorgi.Statements.HarnackEtaParam
 
 /-! Interfaces between the rescaling and the chaining steps of §9.5 "Interior estimates".
 
@@ -12,6 +14,8 @@ import CoarseDeGiorgi.Statements.HarnackEtaParam
 of `y + □₋₄`. `LocalWeakHarnackCubes` and `LocalHarnackCubes` are `e.weak.harnack` at `η = r/4` and `e.harnack` on these
 cubes, obtained from `weak_harnack` and `harnack` by the rescaling `Φ(x) = y + 3⁻³ x`; the
 coefficient field, the standing hypotheses and `Θ` are those of `□₀`. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

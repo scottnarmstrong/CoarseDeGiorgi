@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.PeriodicCancellation
-import CoarseDeGiorgi.Foundations.Reconstruction.SchurLp
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.PeriodicCancellation
+public import CoarseDeGiorgi.Foundations.Reconstruction.SchurLp
 
 /-! # Both cancellation integrals and the Euclidean Lʳ operator estimate -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.SharpnessExamples.CylinderResponseAverages
-import CoarseDeGiorgi.SharpnessExamples.CylinderAveragesGeometry
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.CylinderResponseAverages
+public import CoarseDeGiorgi.SharpnessExamples.CylinderAveragesGeometry
 
 /-! # Comparing the response cylinder with the cylinder-average geometry -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open CoarseDeGiorgi.Foundations.FracGeometry

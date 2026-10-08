@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Assembly.EnergyToSupParameters
-import Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics
+module
+
+public import CoarseDeGiorgi.Assembly.EnergyToSupParameters
+public import Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Assembly
 open Filter

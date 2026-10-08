@@ -1,12 +1,16 @@
-import CoarseDeGiorgi.Moments.Cells
-import CoarseDeGiorgi.Foundations.Simplex.Partition
-import CoarseDeGiorgi.Statements.BesovCubeNorm
+module
+
+public import CoarseDeGiorgi.Moments.Cells
+public import CoarseDeGiorgi.Foundations.Simplex.Partition
+public import CoarseDeGiorgi.Statements.BesovCubeNorm
 
 /-! # Triadic cubes and the simplices they contain
 
 The cube `cubeSet k j = z + □_{-k}`, `z = 3^{-k} gridOffset k j`, of the quasi-norm `besovCubeNorm`
 is the open cube of side `3^{-k}` about `z`; it contains each of its `d!` simplices, which have equal
 volume, and lies in the unit cube. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

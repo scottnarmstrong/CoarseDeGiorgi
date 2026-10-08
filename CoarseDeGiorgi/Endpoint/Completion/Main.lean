@@ -1,15 +1,19 @@
-import CoarseDeGiorgi.Endpoint.Completion.Algebra
-import CoarseDeGiorgi.Endpoint.Completion.Norms
-import CoarseDeGiorgi.Endpoint.Source.Measure
-import CoarseDeGiorgi.Statements.IsWeightedSolution
-import CoarseDeGiorgi.Statements.MemH1a0
-import CoarseDeGiorgi.Harnack.Moments.MomentComparison
-import CoarseDeGiorgi.Statements.ParamTheta
-import CoarseDeGiorgi.Statements.RStarParam
-import CoarseDeGiorgi.Statements.NonnegativeEssInf
+module
+
+public import CoarseDeGiorgi.Endpoint.Completion.Algebra
+public import CoarseDeGiorgi.Endpoint.Completion.Norms
+public import CoarseDeGiorgi.Endpoint.Source.Measure
+public import CoarseDeGiorgi.Statements.IsWeightedSolution
+public import CoarseDeGiorgi.Statements.MemH1a0
+public import CoarseDeGiorgi.Harnack.Moments.MomentComparison
+public import CoarseDeGiorgi.Statements.ParamTheta
+public import CoarseDeGiorgi.Statements.RStarParam
+public import CoarseDeGiorgi.Statements.NonnegativeEssInf
 
 /-! Completion of the proof of Theorem C (`t.harnack`) at the endpoint `η = r*/2` and below, from
 `p.endpoint.potential`, `l.source.mass` and `e.interior.harnack`, taken as hypotheses in their exact form. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

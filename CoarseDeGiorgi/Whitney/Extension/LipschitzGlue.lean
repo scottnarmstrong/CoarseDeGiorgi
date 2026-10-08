@@ -1,7 +1,12 @@
-import Mathlib.Analysis.Calculus.MeanValue
-import CoarseDeGiorgi.Whitney.Extension.Basic
+module
+
+public import Mathlib.Analysis.Calculus.MeanValue
+public import CoarseDeGiorgi.Whitney.Extension.Basic
 
 /-! # Gluing a uniform local bound into a global Lipschitz bound -/
+
+@[expose] public section
+
 namespace CoarseDeGiorgi.WhitneyExt
 open Set Filter
 open scoped Topology

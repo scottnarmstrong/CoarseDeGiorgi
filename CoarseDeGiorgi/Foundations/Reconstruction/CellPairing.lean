@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.ReflectedCenters
-import CoarseDeGiorgi.Foundations.Reconstruction.KernelApproximation
-import CoarseDeGiorgi.Foundations.Reconstruction.CancellationJets
-import CoarseDeGiorgi.Foundations.Reconstruction.SchurLp
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.ReflectedCenters
+public import CoarseDeGiorgi.Foundations.Reconstruction.KernelApproximation
+public import CoarseDeGiorgi.Foundations.Reconstruction.CancellationJets
+public import CoarseDeGiorgi.Foundations.Reconstruction.SchurLp
 
 /-! # Exact removal of parent-center contributions from the gradient increments -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

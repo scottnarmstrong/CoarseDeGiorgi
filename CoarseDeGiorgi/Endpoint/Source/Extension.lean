@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Endpoint.Source.Continuity
-import CoarseDeGiorgi.Endpoint.Source.Potential
-import CoarseDeGiorgi.Weighted.TestingNonnegative
+module
+
+public import CoarseDeGiorgi.Endpoint.Source.Continuity
+public import CoarseDeGiorgi.Endpoint.Source.Potential
+public import CoarseDeGiorgi.Weighted.TestingNonnegative
 
 /-! Extension of the source and potential equations to nonnegative zero-boundary tests. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint
 

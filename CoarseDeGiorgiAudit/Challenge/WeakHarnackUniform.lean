@@ -1,4 +1,6 @@
-import Mathlib
+module
+
+public import Mathlib
 
 /-!
 Weak Harnack inequality for uniformly elliptic coefficients.
@@ -13,6 +15,8 @@ is a subsolution. This follows from Theorems C and D(i) of the manuscript: such 
 `|a| ∈ Lᵖ`, `|a⁻¹| ∈ Lᑫ` for all `p, q`, and the union over the admissible `p, q, s, t` of the
 ranges `0 < η ≤ r*/2` of Theorem C is `0 < η < d/(d−2)`. The endpoint `d/(d−2)` is not included.
 -/
+
+@[expose] public section
 
 open MeasureTheory
 open scoped BigOperators ENNReal Matrix Matrix.Norms.L2Operator

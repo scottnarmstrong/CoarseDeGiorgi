@@ -1,11 +1,15 @@
-import CoarseDeGiorgi.Statements.LocalBoundedness
-import CoarseDeGiorgi.Statements.Csub
+module
+
+public import CoarseDeGiorgi.Statements.LocalBoundedness
+public import CoarseDeGiorgi.Statements.Csub
 
 /-!
 The Theorem A / Corollary B local boundedness bounds in the form used by the Harnack chain
 (`Csub`, `1 + Θ` base, `ℝ≥0∞` constants), derived from `local_boundedness`
 (base `Θ`, `Θ ≤ 1 + Θ`).
 -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped ENNReal

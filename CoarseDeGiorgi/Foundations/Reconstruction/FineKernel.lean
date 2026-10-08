@@ -1,10 +1,14 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.ScaledBump
-import Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.ScaledBump
+public import Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic
 
 /-! # Euclidean-space precursors of the fine vector kernels
 
 All spatial bounds in this file use the sup norm on `Vec d`.
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

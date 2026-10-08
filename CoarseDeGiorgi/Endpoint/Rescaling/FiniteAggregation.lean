@@ -1,11 +1,15 @@
-import CoarseDeGiorgi.Endpoint.Rescaling.CellRefinement
-import CoarseDeGiorgi.Statements.UpperResponseSpec
-import CoarseDeGiorgi.Statements.LowerResponseInvSpec
-import CoarseDeGiorgi.Weighted.UpperSpecNorm
-import CoarseDeGiorgi.LowerFractional.Restriction
-import Mathlib.Analysis.MeanInequalitiesPow
+module
+
+public import CoarseDeGiorgi.Endpoint.Rescaling.CellRefinement
+public import CoarseDeGiorgi.Statements.UpperResponseSpec
+public import CoarseDeGiorgi.Statements.LowerResponseInvSpec
+public import CoarseDeGiorgi.Weighted.UpperSpecNorm
+public import CoarseDeGiorgi.LowerFractional.Restriction
+public import Mathlib.Analysis.MeanInequalitiesPow
 
 /-! Finite refinement estimates shared by the upper and inverse lower responses. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

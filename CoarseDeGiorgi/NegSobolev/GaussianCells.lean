@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.NegSobolev.GaussianBasic
-import CoarseDeGiorgi.Statements.CubeCell
-import CoarseDeGiorgi.Statements.SimplexCell
+module
+
+public import CoarseDeGiorgi.NegSobolev.GaussianBasic
+public import CoarseDeGiorgi.Statements.CubeCell
+public import CoarseDeGiorgi.Statements.SimplexCell
 
 /-! # Gaussian estimates on the two triadic cell families -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators

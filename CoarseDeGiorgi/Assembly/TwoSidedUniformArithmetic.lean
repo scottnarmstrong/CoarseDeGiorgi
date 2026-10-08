@@ -1,8 +1,13 @@
-import CoarseDeGiorgi.Assembly.CaccioppoliParameters
-import CoarseDeGiorgi.Whitney.LiftCell
-import Mathlib.Topology.Algebra.InfiniteSum.Order
+module
+
+public import CoarseDeGiorgi.Assembly.CaccioppoliParameters
+public import CoarseDeGiorgi.Whitney.LiftCell
+public import Mathlib.Topology.Algebra.InfiniteSum.Order
 
 /-! Radius elimination in the two-sided energy estimate on one surface. -/
+
+@[expose] public section
+
 namespace CoarseDeGiorgi.Assembly
 open scoped ENNReal
 noncomputable section

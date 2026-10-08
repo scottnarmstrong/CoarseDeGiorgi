@@ -1,10 +1,14 @@
-import CoarseDeGiorgi.Assembly.ClassicalMomentsLower
-import CoarseDeGiorgi.Statements.Csub
-import CoarseDeGiorgi.Statements.LocallyBoundedAbove
-import CoarseDeGiorgi.Weighted.LowerSpecNorm
+module
+
+public import CoarseDeGiorgi.Assembly.ClassicalMomentsLower
+public import CoarseDeGiorgi.Statements.Csub
+public import CoarseDeGiorgi.Statements.LocallyBoundedAbove
+public import CoarseDeGiorgi.Weighted.LowerSpecNorm
 
 /-! Corollary C with its lower-response input discharged by the proved norm
 bound. The helper below takes the joint Theorem A statement explicitly. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Assembly.ClassicalMomentsImpl
 

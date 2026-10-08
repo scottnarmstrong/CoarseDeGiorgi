@@ -1,13 +1,17 @@
-import CoarseDeGiorgi.Statements.SurfaceFracNorm
-import CoarseDeGiorgi.Statements.SurfaceFracSeminorm
-import CoarseDeGiorgi.Statements.FracKernelWithDimension
-import CoarseDeGiorgi.Statements.EuclidDist
-import CoarseDeGiorgi.Statements.FaceCoordinateMeasures
-import CoarseDeGiorgi.Statements.CubeFaceMeasure
-import CoarseDeGiorgi.Statements.SurfaceMeasure
-import CoarseDeGiorgi.LowerFractional.FractionalDifference
-import Mathlib.Analysis.MeanInequalitiesPow
-import Mathlib.MeasureTheory.Function.LpSeminorm.TriangleInequality
+module
+
+public import CoarseDeGiorgi.Statements.SurfaceFracNorm
+public import CoarseDeGiorgi.Statements.SurfaceFracSeminorm
+public import CoarseDeGiorgi.Statements.FracKernelWithDimension
+public import CoarseDeGiorgi.Statements.EuclidDist
+public import CoarseDeGiorgi.Statements.FaceCoordinateMeasures
+public import CoarseDeGiorgi.Statements.CubeFaceMeasure
+public import CoarseDeGiorgi.Statements.SurfaceMeasure
+public import CoarseDeGiorgi.LowerFractional.FractionalDifference
+public import Mathlib.Analysis.MeanInequalitiesPow
+public import Mathlib.MeasureTheory.Function.LpSeminorm.TriangleInequality
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.PowerCaccioppoli
 

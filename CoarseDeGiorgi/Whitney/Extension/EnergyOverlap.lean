@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.Whitney.Extension.EnergyCube
-import CoarseDeGiorgi.Whitney.Extension.Overlap
+module
+
+public import CoarseDeGiorgi.Whitney.Extension.EnergyCube
+public import CoarseDeGiorgi.Whitney.Extension.Overlap
 
 /-!
 # Bounded overlap of the patches `Σ_D` at one scale
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.WhitneyExt
 

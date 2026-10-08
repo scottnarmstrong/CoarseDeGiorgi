@@ -1,6 +1,8 @@
-import CoarseDeGiorgi.SharpnessExamples.ScalarProfile
-import CoarseDeGiorgi.Whitney.ExteriorCells
-import Mathlib.MeasureTheory.Measure.OpenPos
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.ScalarProfile
+public import CoarseDeGiorgi.Whitney.ExteriorCells
+public import Mathlib.MeasureTheory.Measure.OpenPos
 
 /-! # Large values of the cylinder sum on sets of positive measure
 
@@ -8,6 +10,8 @@ The pointwise sum is finite at every point, since the closed outer cylinders
 are disjoint. Its lower bound on each open core gives the large-set input of
 `sharpness_range_of_scalar_subsolution`.
 -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set
 open CoarseDeGiorgi.Sharpness

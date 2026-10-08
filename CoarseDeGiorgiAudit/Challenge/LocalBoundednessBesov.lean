@@ -1,4 +1,6 @@
-import Mathlib
+module
+
+public import Mathlib
 
 /-!
 # Local boundedness under finite cube quasi-norms (Theorems A, D(ii), Corollary B)
@@ -33,6 +35,8 @@ Here `C = C(d,p,q,s,t)` and `C_η = C_η(d,p,q,s,t,η)` are nonnegative;
 the right-hand norms are finite when `R < 1`. Subsolutions use the smooth-core
 closure `H¹ₐ`. The quasi-norm is written out below as `cubeQuasiNorm`.
 -/
+
+@[expose] public section
 
 open MeasureTheory
 open scoped BigOperators ENNReal Matrix Matrix.Norms.L2Operator

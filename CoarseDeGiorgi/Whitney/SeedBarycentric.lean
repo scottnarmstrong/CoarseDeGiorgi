@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Whitney.SeedPartition
+module
+
+public import CoarseDeGiorgi.Whitney.SeedPartition
 
 /-! # Ordered vertices and barycentric coordinates of the Kuhn hats -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Whitney
 

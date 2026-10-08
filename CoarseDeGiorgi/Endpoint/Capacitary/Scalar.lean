@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Endpoint.Capacitary.Bounds
+module
+
+public import CoarseDeGiorgi.Endpoint.Capacitary.Bounds
 
 /-! Scalar cancellation for the source-mass estimate. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint
 

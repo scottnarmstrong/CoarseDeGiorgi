@@ -1,4 +1,8 @@
-import CoarseDeGiorgi.Weighted.ZeroSpace
+module
+
+public import CoarseDeGiorgi.Weighted.ZeroSpace
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted
 

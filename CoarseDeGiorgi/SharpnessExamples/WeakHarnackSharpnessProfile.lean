@@ -1,15 +1,19 @@
-import CoarseDeGiorgi.SharpnessExamples.WeakHarnackSharpnessMoments
-import Mathlib.Analysis.SpecialFunctions.SmoothTransition
-import Mathlib.Analysis.SpecialFunctions.Sqrt
-import Mathlib.Analysis.SpecialFunctions.Pow.Deriv
-import Mathlib.Analysis.Calculus.ContDiff.Deriv
-import Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.WeakHarnackSharpnessMoments
+public import Mathlib.Analysis.SpecialFunctions.SmoothTransition
+public import Mathlib.Analysis.SpecialFunctions.Sqrt
+public import Mathlib.Analysis.SpecialFunctions.Pow.Deriv
+public import Mathlib.Analysis.Calculus.ContDiff.Deriv
+public import Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus
 
 /-! # The smooth radial profile of the weak Harnack supersolutions
 
 In the variable `σ = |x|²`, the flux is `H(σ) x` with `H = P Q`, `P` a smooth cutoff and
 `Q(σ) = σ^{-d/2}`. The profile is `U(s) = ∫_s^{d/2} k`, with `k = P Q / (2 a)`.
 -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set Filter Topology
 open scoped BigOperators ENNReal ContDiff

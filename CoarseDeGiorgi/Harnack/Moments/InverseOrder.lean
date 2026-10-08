@@ -1,12 +1,16 @@
-import CoarseDeGiorgi.Weighted.LowerSpecMean
-import CoarseDeGiorgi.Weighted.UpperSpecHarmonic
-import CoarseDeGiorgi.Weighted.ResponseBoundsLower
-import CoarseDeGiorgi.LowerFractional.CompactCover
-import CoarseDeGiorgi.Statements.OriginCube
-import CoarseDeGiorgi.Statements.UpperResponse
-import CoarseDeGiorgi.Statements.LowerResponseInv
-import CoarseDeGiorgi.Assembly.ClassicalMomentsPartition
-import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
+module
+
+public import CoarseDeGiorgi.Weighted.LowerSpecMean
+public import CoarseDeGiorgi.Weighted.UpperSpecHarmonic
+public import CoarseDeGiorgi.Weighted.ResponseBoundsLower
+public import CoarseDeGiorgi.LowerFractional.CompactCover
+public import CoarseDeGiorgi.Statements.OriginCube
+public import CoarseDeGiorgi.Statements.UpperResponse
+public import CoarseDeGiorgi.Statements.LowerResponseInv
+public import CoarseDeGiorgi.Assembly.ClassicalMomentsPartition
+public import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.Moments
 

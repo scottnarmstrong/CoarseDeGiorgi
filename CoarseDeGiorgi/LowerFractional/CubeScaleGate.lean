@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.LowerFractional.GateSeminorm
-import CoarseDeGiorgi.LowerFractional.LocalFractional
+module
+
+public import CoarseDeGiorgi.LowerFractional.GateSeminorm
+public import CoarseDeGiorgi.LowerFractional.LocalFractional
 
 /-! Lower fractional estimates on cubes contained in the unit cube. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.LowerFractional
 open Homogenization MeasureTheory Aliases

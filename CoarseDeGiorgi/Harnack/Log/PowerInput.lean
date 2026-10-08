@@ -1,13 +1,17 @@
-import CoarseDeGiorgi.Statements.IsWeightedSupersolution
-import CoarseDeGiorgi.Statements.SpatialMomentRange
-import CoarseDeGiorgi.Statements.Contrast
-import CoarseDeGiorgi.Statements.ParamR
-import CoarseDeGiorgi.Statements.ParamTheta
-import CoarseDeGiorgi.Statements.WeightedEnergy
-import CoarseDeGiorgi.Statements.PowerFactor
-import CoarseDeGiorgi.Assembly.ParameterDefs
-import CoarseDeGiorgi.Statements.AlphaParam
-import CoarseDeGiorgi.Statements.UpperMoment
+module
+
+public import CoarseDeGiorgi.Statements.IsWeightedSupersolution
+public import CoarseDeGiorgi.Statements.SpatialMomentRange
+public import CoarseDeGiorgi.Statements.Contrast
+public import CoarseDeGiorgi.Statements.ParamR
+public import CoarseDeGiorgi.Statements.ParamTheta
+public import CoarseDeGiorgi.Statements.WeightedEnergy
+public import CoarseDeGiorgi.Statements.PowerFactor
+public import CoarseDeGiorgi.Assembly.ParameterDefs
+public import CoarseDeGiorgi.Statements.AlphaParam
+public import CoarseDeGiorgi.Statements.UpperMoment
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.Log
 

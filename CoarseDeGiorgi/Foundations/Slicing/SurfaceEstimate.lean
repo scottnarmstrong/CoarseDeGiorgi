@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Foundations.Slicing.Tonelli
-import CoarseDeGiorgi.Foundations.Slicing.SurfaceGrowth
+module
+
+public import CoarseDeGiorgi.Foundations.Slicing.Tonelli
+public import CoarseDeGiorgi.Foundations.Slicing.SurfaceGrowth
 
 /-! Uniform surface-to-bulk estimates before cubical coarea. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Slicing
 

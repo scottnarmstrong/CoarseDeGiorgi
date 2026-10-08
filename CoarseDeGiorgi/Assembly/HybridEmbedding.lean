@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Statements.CriticalSurfaceEmbedding
-import CoarseDeGiorgi.Statements.DnpvTheorem6_5
-import CoarseDeGiorgi.Statements.FracSeminorm
+module
+
+public import CoarseDeGiorgi.Statements.CriticalSurfaceEmbedding
+public import CoarseDeGiorgi.Statements.DnpvTheorem6_5
+public import CoarseDeGiorgi.Statements.FracSeminorm
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Assembly
 

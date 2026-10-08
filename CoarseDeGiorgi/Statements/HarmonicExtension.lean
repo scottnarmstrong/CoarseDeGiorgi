@@ -1,19 +1,24 @@
-import CoarseDeGiorgi.Statements.IsPiecewiseHarmonicExtension
-import CoarseDeGiorgi.Statements.WhitneySimplicesNearSize
-import CoarseDeGiorgi.Statements.IsTriadicWidth
-import CoarseDeGiorgi.Statements.SelectionInterval
-import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
-import CoarseDeGiorgi.Statements.OriginCube
-import CoarseDeGiorgi.Statements.SurfaceFracSeminorm
-import CoarseDeGiorgi.Statements.CubeFaceMeasure
-import CoarseDeGiorgi.Statements.SampledUpperResponse
-import CoarseDeGiorgi.Statements.UpperResponseOnCell
-import CoarseDeGiorgi.Statements.SimplexCell
-import CoarseDeGiorgi.Statements.SimplexIndex
-import CoarseDeGiorgi.Statements.WeightedEnergy
+module
 
-import CoarseDeGiorgi.Statements.AffineExtension
-import CoarseDeGiorgi.Whitney.Harmonic.Prop62Wide
+public import CoarseDeGiorgi.Statements.IsPiecewiseHarmonicExtension
+public import CoarseDeGiorgi.Statements.WhitneySimplicesNearSize
+public import CoarseDeGiorgi.Statements.IsTriadicWidth
+public import CoarseDeGiorgi.Statements.SelectionInterval
+public import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
+public import CoarseDeGiorgi.Statements.OriginCube
+public import CoarseDeGiorgi.Statements.SurfaceFracSeminorm
+public import CoarseDeGiorgi.Statements.CubeFaceMeasure
+public import CoarseDeGiorgi.Statements.SampledUpperResponse
+public import CoarseDeGiorgi.Statements.UpperResponseOnCell
+public import CoarseDeGiorgi.Statements.SimplexCell
+public import CoarseDeGiorgi.Statements.SimplexIndex
+public import CoarseDeGiorgi.Statements.WeightedEnergy
+
+public import CoarseDeGiorgi.Statements.AffineExtension
+public import CoarseDeGiorgi.Whitney.Harmonic.Prop62Wide
+
+@[expose] public section
+
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator NNReal
 

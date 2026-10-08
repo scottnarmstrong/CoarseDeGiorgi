@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Foundations.FracGeometry.TranslationEnergy
-import Mathlib.MeasureTheory.Measure.Lebesgue.Basic
+module
+
+public import CoarseDeGiorgi.Foundations.FracGeometry.TranslationEnergy
+public import Mathlib.MeasureTheory.Measure.Lebesgue.Basic
 
 /-! Midpoint averaging with constants depending only on dimension. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Slicing
 

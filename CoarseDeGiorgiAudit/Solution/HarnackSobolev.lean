@@ -1,9 +1,13 @@
-import Mathlib
-import CoarseDeGiorgi.Statements.HarnackSobolev
-import CoarseDeGiorgiAudit.Defs
-import CoarseDeGiorgiAudit.Solution.Bridge
-import CoarseDeGiorgiAudit.Solution.BridgeBesov
-import CoarseDeGiorgiAudit.Solution.BridgeSobolev
+module
+
+public import Mathlib
+public import CoarseDeGiorgi.Statements.HarnackSobolev
+public import CoarseDeGiorgiAudit.Defs
+public import CoarseDeGiorgiAudit.Solution.Bridge
+public import CoarseDeGiorgiAudit.Solution.BridgeBesov
+public import CoarseDeGiorgiAudit.Solution.BridgeSobolev
+
+@[expose] public section
 
 open MeasureTheory
 open scoped BigOperators ENNReal Matrix Matrix.Norms.L2Operator

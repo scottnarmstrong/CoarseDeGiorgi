@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.LowerFractional.AuxTiling
+module
+
+public import CoarseDeGiorgi.LowerFractional.AuxTiling
 
 /-! Exact integration of the descendant step field. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.LowerFractional
 

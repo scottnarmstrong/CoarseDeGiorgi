@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Endpoint.Capacitary.Bounds
-import CoarseDeGiorgi.Endpoint.Source.Extension
-import Mathlib.MeasureTheory.Measure.Regular
+module
+
+public import CoarseDeGiorgi.Endpoint.Capacitary.Bounds
+public import CoarseDeGiorgi.Endpoint.Source.Extension
+public import Mathlib.MeasureTheory.Measure.Regular
 
 /-! A lower bound for the potential functional on the capacitary test. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint
 

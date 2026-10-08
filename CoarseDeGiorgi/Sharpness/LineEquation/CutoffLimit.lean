@@ -1,9 +1,13 @@
-import Mathlib.Analysis.SpecialFunctions.SmoothTransition
-import CoarseDeGiorgi.Sharpness.LineEquation.AxisGeometry
-import Mathlib.Analysis.Calculus.LocalExtr.Basic
-import CoarseDeGiorgi.Statements.SmoothGrad
-import Mathlib.MeasureTheory.Integral.DominatedConvergence
-import Mathlib.Analysis.Normed.Group.Bounded
+module
+
+public import Mathlib.Analysis.SpecialFunctions.SmoothTransition
+public import CoarseDeGiorgi.Sharpness.LineEquation.AxisGeometry
+public import Mathlib.Analysis.Calculus.LocalExtr.Basic
+public import CoarseDeGiorgi.Statements.SmoothGrad
+public import Mathlib.MeasureTheory.Integral.DominatedConvergence
+public import Mathlib.Analysis.Normed.Group.Bounded
+
+@[expose] public section
 
 open Homogenization MeasureTheory Filter Set
 open scoped Topology BigOperators

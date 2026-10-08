@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Statements.NonnegativeEssInf
-import Mathlib.MeasureTheory.Function.EssSup
-import Mathlib.Topology.Instances.ENNReal.Lemmas
+module
+
+public import CoarseDeGiorgi.Statements.NonnegativeEssInf
+public import Mathlib.MeasureTheory.Function.EssSup
+public import Mathlib.Topology.Instances.ENNReal.Lemmas
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.Calculus
 

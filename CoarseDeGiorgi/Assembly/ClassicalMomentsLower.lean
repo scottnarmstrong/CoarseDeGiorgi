@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Assembly.ClassicalMomentsSeries
-import CoarseDeGiorgi.Weighted.ResponseBoundsLower
+module
+
+public import CoarseDeGiorgi.Assembly.ClassicalMomentsSeries
+public import CoarseDeGiorgi.Weighted.ResponseBoundsLower
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Assembly.ClassicalMomentsImpl
 

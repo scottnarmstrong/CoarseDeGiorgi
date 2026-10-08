@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Weighted.ZeroSpace
-import CoarseDeGiorgi.Weighted.Truncation.PositivePart
+module
+
+public import CoarseDeGiorgi.Weighted.ZeroSpace
+public import CoarseDeGiorgi.Weighted.Truncation.PositivePart
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted
 

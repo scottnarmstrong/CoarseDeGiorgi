@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Statements.FracSeminorm
-import Homogenization.Ambient.CoefficientField
-import Mathlib.MeasureTheory.Function.LpSeminorm.Basic
+module
+
+public import CoarseDeGiorgi.Statements.FracSeminorm
+public import Homogenization.Ambient.CoefficientField
+public import Mathlib.MeasureTheory.Function.LpSeminorm.Basic
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal

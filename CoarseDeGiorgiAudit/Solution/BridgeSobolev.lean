@@ -1,6 +1,8 @@
-import Mathlib
-import CoarseDeGiorgiAudit.Defs
-import CoarseDeGiorgi.Statements.NegSobolevNorm
+module
+
+public import Mathlib
+public import CoarseDeGiorgiAudit.Defs
+public import CoarseDeGiorgi.Statements.NegSobolevNorm
 
 /-!
 Bridge for the Sobolev-norm challenges (`LocalBoundednessSobolev`, `HarnackSobolev`): Mathlib-only
@@ -9,6 +11,8 @@ Sobolev norm (the same text as in the challenges), and their equality with the l
 definitions `CoarseDeGiorgi.IsWeakDerivArray`, `CoarseDeGiorgi.arrayFracSeminorm`,
 `CoarseDeGiorgi.sobolevNorm` and `CoarseDeGiorgi.negSobolevNorm`.
 -/
+
+@[expose] public section
 
 open MeasureTheory
 open scoped BigOperators ENNReal Matrix Matrix.Norms.L2Operator

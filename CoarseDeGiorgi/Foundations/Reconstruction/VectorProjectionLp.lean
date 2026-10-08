@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.ProjectionNesting
-import CoarseDeGiorgi.Foundations.Reconstruction.AuxProjection
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.ProjectionNesting
+public import CoarseDeGiorgi.Foundations.Reconstruction.AuxProjection
 
 /-! # Euclidean vector contraction for triadic averages -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

@@ -1,12 +1,16 @@
-import CoarseDeGiorgi.Statements.UpperCellAverage
-import CoarseDeGiorgi.Statements.LowerCellAverage
-import CoarseDeGiorgi.Statements.SimplexCellIsOpenBoundedConvexDomain
-import CoarseDeGiorgi.Statements.SimplexCellNonempty
-import CoarseDeGiorgi.Statements.WeightedCoeffOnSimplexCell
-import CoarseDeGiorgi.Weighted.UpperSpecNorm
-import CoarseDeGiorgi.Weighted.LowerSpecNorm
+module
+
+public import CoarseDeGiorgi.Statements.UpperCellAverage
+public import CoarseDeGiorgi.Statements.LowerCellAverage
+public import CoarseDeGiorgi.Statements.SimplexCellIsOpenBoundedConvexDomain
+public import CoarseDeGiorgi.Statements.SimplexCellNonempty
+public import CoarseDeGiorgi.Statements.WeightedCoeffOnSimplexCell
+public import CoarseDeGiorgi.Weighted.UpperSpecNorm
+public import CoarseDeGiorgi.Weighted.LowerSpecNorm
 
 /-! # Cell estimates for the negative-regularity norm -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator
@@ -15,7 +19,7 @@ namespace CoarseDeGiorgi.Besov
 
 /-- The level-`k` moment of coefficient cell averages used by
 the negative-regularity norm. -/
-private noncomputable def matrixCellPowerAverage {d : ℕ}
+noncomputable def matrixCellPowerAverage {d : ℕ}
     (b : Vec d → Mat d) (k : ℕ) (r : ℝ) : ℝ :=
   ((triangulation (d := d) k).attach.sum fun η =>
     Real.rpow ‖volumeAverageMat (simplexCell k η) b‖ r) /

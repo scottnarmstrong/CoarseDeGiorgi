@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Statements.WhitneyAffineExtensionDef
-import CoarseDeGiorgi.Statements.WhitneySimplicesNear
-import CoarseDeGiorgi.Statements.IsWeightedSolution
-import CoarseDeGiorgi.Statements.MemH1a0
+module
+
+public import CoarseDeGiorgi.Statements.WhitneyAffineExtensionDef
+public import CoarseDeGiorgi.Statements.WhitneySimplicesNear
+public import CoarseDeGiorgi.Statements.IsWeightedSolution
+public import CoarseDeGiorgi.Statements.MemH1a0
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

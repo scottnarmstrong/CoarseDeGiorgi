@@ -1,6 +1,8 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.FoldedWeakIdentity
-import Homogenization.Sobolev.Foundations.CubeNeumannW22CZ.WeakInteriorDQ.FaceVanishCollar
-import Mathlib.MeasureTheory.Integral.DominatedConvergence
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.FoldedWeakIdentity
+public import Homogenization.Sobolev.Foundations.CubeNeumannW22CZ.WeakInteriorDQ.FaceVanishCollar
+public import Mathlib.MeasureTheory.Integral.DominatedConvergence
 
 /-! # L¹ closure of the weak identity for tests vanishing on two cube faces
 
@@ -8,6 +10,8 @@ The derivative of the cutoff times the face-zero test is uniformly bounded.
 Dominated convergence therefore uses only the integrability of the scalar and
 its weak derivative, with no square-integrability assumption on either field.
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

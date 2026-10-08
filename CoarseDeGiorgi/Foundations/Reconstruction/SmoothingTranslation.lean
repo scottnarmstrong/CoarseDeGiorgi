@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.PeriodicMeasure
-import CoarseDeGiorgi.Foundations.Reconstruction.AssemblyBlocks
-import Mathlib.MeasureTheory.Function.ContinuousMapDense
-import Mathlib.MeasureTheory.Integral.Lebesgue.DominatedConvergence
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.PeriodicMeasure
+public import CoarseDeGiorgi.Foundations.Reconstruction.AssemblyBlocks
+public import Mathlib.MeasureTheory.Function.ContinuousMapDense
+public import Mathlib.MeasureTheory.Integral.Lebesgue.DominatedConvergence
 
 /-! # Translation continuity in the ordinary periodic `L^r` space -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

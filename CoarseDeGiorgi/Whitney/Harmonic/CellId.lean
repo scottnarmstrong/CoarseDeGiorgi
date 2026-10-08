@@ -1,10 +1,14 @@
-import CoarseDeGiorgi.Whitney.Harmonic.Range
-import CoarseDeGiorgi.Whitney.Harmonic.Geometry
-import CoarseDeGiorgi.Whitney.SourceWitnessCorrection
-import CoarseDeGiorgi.Adapters.LiftTestingCells
-import CoarseDeGiorgi.Whitney.Interpolation.Exists
+module
+
+public import CoarseDeGiorgi.Whitney.Harmonic.Range
+public import CoarseDeGiorgi.Whitney.Harmonic.Geometry
+public import CoarseDeGiorgi.Whitney.SourceWitnessCorrection
+public import CoarseDeGiorgi.Adapters.LiftTestingCells
+public import CoarseDeGiorgi.Whitney.Interpolation.Exists
 
 /-! Identification of the harmonic replacement on a cell with the library's affine cell pair. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Whitney.Harmonic
 

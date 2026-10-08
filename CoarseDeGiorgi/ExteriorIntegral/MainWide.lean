@@ -1,45 +1,49 @@
-import CoarseDeGiorgi.ExteriorIntegral.CoreWide
-import CoarseDeGiorgi.Statements.IsPiecewiseHarmonicExtension
-import CoarseDeGiorgi.Statements.IsTriadicWidth
-import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
-import CoarseDeGiorgi.Statements.MemH1a
-import CoarseDeGiorgi.Statements.SimplexIndex
-import CoarseDeGiorgi.Statements.AlphaParam
-import CoarseDeGiorgi.Statements.ClosedReferenceCube
-import CoarseDeGiorgi.Statements.CubeFaceMeasure
-import CoarseDeGiorgi.Statements.CubeSurface
-import CoarseDeGiorgi.Statements.EuclidLipConst
-import CoarseDeGiorgi.Statements.OriginCube
-import CoarseDeGiorgi.Statements.ParamR
-import CoarseDeGiorgi.Statements.ParamTheta
-import CoarseDeGiorgi.Statements.SampledResponseSeries
-import CoarseDeGiorgi.Statements.SampledUpperResponse
-import CoarseDeGiorgi.Statements.SelectionInterval
-import CoarseDeGiorgi.Statements.SigmaLower
-import CoarseDeGiorgi.Statements.SigmaUpper
-import CoarseDeGiorgi.Statements.SimplexCell
-import CoarseDeGiorgi.Statements.SpatialMomentRange
-import CoarseDeGiorgi.Statements.SurfaceEnergyMaximal
-import CoarseDeGiorgi.Statements.SurfaceFracSeminorm
-import CoarseDeGiorgi.Statements.SurfaceMeasure
-import CoarseDeGiorgi.Statements.UpperResponseOnCell
-import CoarseDeGiorgi.Statements.WeightedEnergy
-import CoarseDeGiorgi.Statements.WhitneyAffineExtensionDef
-import CoarseDeGiorgi.Statements.WhitneySimplicesNearSize
-import CoarseDeGiorgi.Weighted.Energy
-import Homogenization.Ambient.CoefficientField
-import Homogenization.CoarseGraining.Definitions
-import Homogenization.Geometry.TriadicCube
-import Homogenization.Sobolev.WeakDerivatives
-import Mathlib.Analysis.CStarAlgebra.Matrix
-import Mathlib.Analysis.SpecialFunctions.Pow.Real
-import Mathlib.MeasureTheory.Function.LpSeminorm.Basic
+module
+
+public import CoarseDeGiorgi.ExteriorIntegral.CoreWide
+public import CoarseDeGiorgi.Statements.IsPiecewiseHarmonicExtension
+public import CoarseDeGiorgi.Statements.IsTriadicWidth
+public import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
+public import CoarseDeGiorgi.Statements.MemH1a
+public import CoarseDeGiorgi.Statements.SimplexIndex
+public import CoarseDeGiorgi.Statements.AlphaParam
+public import CoarseDeGiorgi.Statements.ClosedReferenceCube
+public import CoarseDeGiorgi.Statements.CubeFaceMeasure
+public import CoarseDeGiorgi.Statements.CubeSurface
+public import CoarseDeGiorgi.Statements.EuclidLipConst
+public import CoarseDeGiorgi.Statements.OriginCube
+public import CoarseDeGiorgi.Statements.ParamR
+public import CoarseDeGiorgi.Statements.ParamTheta
+public import CoarseDeGiorgi.Statements.SampledResponseSeries
+public import CoarseDeGiorgi.Statements.SampledUpperResponse
+public import CoarseDeGiorgi.Statements.SelectionInterval
+public import CoarseDeGiorgi.Statements.SigmaLower
+public import CoarseDeGiorgi.Statements.SigmaUpper
+public import CoarseDeGiorgi.Statements.SimplexCell
+public import CoarseDeGiorgi.Statements.SpatialMomentRange
+public import CoarseDeGiorgi.Statements.SurfaceEnergyMaximal
+public import CoarseDeGiorgi.Statements.SurfaceFracSeminorm
+public import CoarseDeGiorgi.Statements.SurfaceMeasure
+public import CoarseDeGiorgi.Statements.UpperResponseOnCell
+public import CoarseDeGiorgi.Statements.WeightedEnergy
+public import CoarseDeGiorgi.Statements.WhitneyAffineExtensionDef
+public import CoarseDeGiorgi.Statements.WhitneySimplicesNearSize
+public import CoarseDeGiorgi.Weighted.Energy
+public import Homogenization.Ambient.CoefficientField
+public import Homogenization.CoarseGraining.Definitions
+public import Homogenization.Geometry.TriadicCube
+public import Homogenization.Sobolev.WeakDerivatives
+public import Mathlib.Analysis.CStarAlgebra.Matrix
+public import Mathlib.Analysis.SpecialFunctions.Pow.Real
+public import Mathlib.MeasureTheory.Function.LpSeminorm.Basic
 
 /-! # The exterior integral from the two extension propositions
 
 `exterior_integral_bound_of_extension` proves Lemma `l.exterior.integral` from the statements of
 Propositions `p.affine.extension` and `p.whitney.extension`, which are taken verbatim as
 hypotheses. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal NNReal Matrix.Norms.L2Operator

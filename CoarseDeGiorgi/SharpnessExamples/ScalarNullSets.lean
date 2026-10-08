@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.SharpnessExamples.ScalarBandGeometry
-import Mathlib.MeasureTheory.Measure.Haar.InnerProductSpace
-import Mathlib.MeasureTheory.Measure.Lebesgue.EqHaar
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.ScalarBandGeometry
+public import Mathlib.MeasureTheory.Measure.Haar.InnerProductSpace
+public import Mathlib.MeasureTheory.Measure.Lebesgue.EqHaar
 
 /-! # Null interfaces for translated cylinders -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set
 open CoarseDeGiorgi.Sharpness CoarseDeGiorgi.Foundations.FracGeometry

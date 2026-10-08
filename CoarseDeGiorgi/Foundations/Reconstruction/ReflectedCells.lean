@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.AuxIncrementLp
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.AuxIncrementLp
 
 /-! # Reflected cells and parent-cell cancellation -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

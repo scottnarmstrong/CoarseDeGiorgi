@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.Endpoint.Rescaling.LocalCubes
-import CoarseDeGiorgi.Endpoint.Rescaling.ExponentialAbsorption
-import CoarseDeGiorgi.Statements.LocalBoundedness
-import CoarseDeGiorgi.Harnack.ContrastBound.RootHypotheses
+module
+
+public import CoarseDeGiorgi.Endpoint.Rescaling.LocalCubes
+public import CoarseDeGiorgi.Endpoint.Rescaling.ExponentialAbsorption
+public import CoarseDeGiorgi.Statements.LocalBoundedness
+public import CoarseDeGiorgi.Harnack.ContrastBound.RootHypotheses
 
 /-! Rescaled Corollary B on the fixed remote cube of the endpoint argument. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped ENNReal

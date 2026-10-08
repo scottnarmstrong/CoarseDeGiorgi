@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Whitney.Harmonic.GeometryWide
-import CoarseDeGiorgi.Whitney.Harmonic.Cellwise
-import CoarseDeGiorgi.Statements.WhitneyInterpolationSpec
+module
+
+public import CoarseDeGiorgi.Whitney.Harmonic.GeometryWide
+public import CoarseDeGiorgi.Whitney.Harmonic.Cellwise
+public import CoarseDeGiorgi.Statements.WhitneyInterpolationSpec
 
 /-! Range bounds for the piecewise harmonic extension. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Whitney.Harmonic.Wide
 

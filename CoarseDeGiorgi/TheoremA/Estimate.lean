@@ -1,11 +1,15 @@
-import CoarseDeGiorgi.TheoremA.Quantity
-import CoarseDeGiorgi.TheoremA.Props
-import CoarseDeGiorgi.Harnack.Moments.MomentComparison
-import CoarseDeGiorgi.Statements.LowerMoment
-import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
+module
+
+public import CoarseDeGiorgi.TheoremA.Quantity
+public import CoarseDeGiorgi.TheoremA.Props
+public import CoarseDeGiorgi.Harnack.Moments.MomentComparison
+public import CoarseDeGiorgi.Statements.LowerMoment
+public import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
 
 /-! Theorem A from Propositions `p.cg.caccioppoli` and `p.energy.to.sup`: the `L^∞`-`L²` estimate
 with the power `Θ ^ ((d-1)/(4θ))`. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Filter Topology
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

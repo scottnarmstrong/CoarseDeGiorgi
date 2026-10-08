@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Weighted.Defs
-import Mathlib.LinearAlgebra.Matrix.BilinearForm
-import Mathlib.LinearAlgebra.Matrix.PosDef
+module
+
+public import CoarseDeGiorgi.Weighted.Defs
+public import Mathlib.LinearAlgebra.Matrix.BilinearForm
+public import Mathlib.LinearAlgebra.Matrix.PosDef
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted
 

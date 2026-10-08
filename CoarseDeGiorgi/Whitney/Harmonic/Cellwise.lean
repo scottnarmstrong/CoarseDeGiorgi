@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Whitney.Harmonic.Admissible
-import CoarseDeGiorgi.Whitney.Harmonic.Range
-import CoarseDeGiorgi.Statements.EuclidLipConst
+module
+
+public import CoarseDeGiorgi.Whitney.Harmonic.Admissible
+public import CoarseDeGiorgi.Whitney.Harmonic.Range
+public import CoarseDeGiorgi.Statements.EuclidLipConst
 
 /-! Cellwise consequences of `IsPiecewiseHarmonicExtension`: vanishing and range bounds. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Whitney.Harmonic
 

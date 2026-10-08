@@ -1,16 +1,20 @@
-import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
-import CoarseDeGiorgi.Statements.IsWeightedSupersolution
-import CoarseDeGiorgi.Statements.ChiParam
-import CoarseDeGiorgi.Statements.CrossoverExponent
-import CoarseDeGiorgi.Statements.ParamR
-import CoarseDeGiorgi.Statements.ParamTheta
-import CoarseDeGiorgi.Statements.SpatialMomentRange
-import CoarseDeGiorgi.Harnack.Final.CrossoverRestriction
-import CoarseDeGiorgi.Harnack.CrossoverFinal.Parameters
-import CoarseDeGiorgi.Harnack.WeakHarnack.EpsilonLimit
-import CoarseDeGiorgi.Harnack.CrossoverFinal.EnnrealAverage
-import CoarseDeGiorgi.Harnack.CrossoverFinal.PowerIntegrability
-import CoarseDeGiorgi.Harnack.Scalar.BombieriLemmas
+module
+
+public import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
+public import CoarseDeGiorgi.Statements.IsWeightedSupersolution
+public import CoarseDeGiorgi.Statements.ChiParam
+public import CoarseDeGiorgi.Statements.CrossoverExponent
+public import CoarseDeGiorgi.Statements.ParamR
+public import CoarseDeGiorgi.Statements.ParamTheta
+public import CoarseDeGiorgi.Statements.SpatialMomentRange
+public import CoarseDeGiorgi.Harnack.Final.CrossoverRestriction
+public import CoarseDeGiorgi.Harnack.CrossoverFinal.Parameters
+public import CoarseDeGiorgi.Harnack.WeakHarnack.EpsilonLimit
+public import CoarseDeGiorgi.Harnack.CrossoverFinal.EnnrealAverage
+public import CoarseDeGiorgi.Harnack.CrossoverFinal.PowerIntegrability
+public import CoarseDeGiorgi.Harnack.Scalar.BombieriLemmas
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped ENNReal

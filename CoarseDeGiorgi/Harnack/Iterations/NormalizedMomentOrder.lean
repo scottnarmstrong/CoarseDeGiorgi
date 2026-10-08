@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Statements.NormalizedLpMoment
-import Mathlib.MeasureTheory.Function.LpSeminorm.CompareExp
+module
+
+public import CoarseDeGiorgi.Statements.NormalizedLpMoment
+public import Mathlib.MeasureTheory.Function.LpSeminorm.CompareExp
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped ENNReal

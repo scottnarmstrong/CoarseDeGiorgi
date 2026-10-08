@@ -1,7 +1,11 @@
-import Mathlib.MeasureTheory.Integral.Lebesgue.Markov
-import Mathlib.MeasureTheory.Measure.Lebesgue.Basic
-import Mathlib.Analysis.SpecialFunctions.Pow.Real
-import Mathlib.MeasureTheory.Function.SpecialFunctions.Basic
+module
+
+public import Mathlib.MeasureTheory.Integral.Lebesgue.Markov
+public import Mathlib.MeasureTheory.Measure.Lebesgue.Basic
+public import Mathlib.Analysis.SpecialFunctions.Pow.Real
+public import Mathlib.MeasureTheory.Function.SpecialFunctions.Basic
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Selection
 
@@ -79,13 +83,13 @@ theorem normalized_bad_set_bound {μ : Measure ℝ} {f : ℝ → ℝ≥0∞}
   rw [mul_comm K (B ^ r)]
   simpa only [mul_one, one_div] using ENNReal.mul_div_mul_left (1 : ℝ≥0∞) K hpow0 hpowtop
 
-/-- Localized form: all bad-set budgets are measured only inside `J`. -/
+/-- Localized form: the bounds on the bad sets are measured only inside `J`. -/
 theorem exists_common_radius_of_local_bad_set_bounds {ι : Type*} [Fintype ι]
     {J : Set ℝ} {Good : ℝ → Prop} {f : ι → ℝ → ℝ≥0∞} {threshold : ι → ℝ≥0∞}
-    {budget : ι → ℝ≥0∞}
+    {bound : ι → ℝ≥0∞}
     (hgood : ∀ᵐ τ ∂volume.restrict J, Good τ)
-    (hbad : ∀ i, (volume.restrict J) {τ | threshold i < f i τ} ≤ budget i)
-    (hsmall : ∑ i, budget i < volume J) :
+    (hbad : ∀ i, (volume.restrict J) {τ | threshold i < f i τ} ≤ bound i)
+    (hsmall : ∑ i, bound i < volume J) :
     ∃ τ ∈ J, Good τ ∧ ∀ i, f i τ ≤ threshold i := by
   classical
   by_contra! hnone
@@ -96,7 +100,7 @@ theorem exists_common_radius_of_local_bad_set_bounds {ι : Type*} [Fintype ι]
     · obtain ⟨i, hi⟩ := hnone τ hτ hg
       exact Or.inl (mem_iUnion.mpr ⟨i, hi⟩)
     · exact Or.inr hg
-  have hle : volume J ≤ ∑ i, budget i := by
+  have hle : volume J ≤ ∑ i, bound i := by
     calc
       volume J = (volume.restrict J) J := (Measure.restrict_apply_self _ _).symm
       _ ≤ (volume.restrict J) ((⋃ i, {τ | threshold i < f i τ}) ∪ {τ | ¬Good τ}) := measure_mono hsub
@@ -105,7 +109,7 @@ theorem exists_common_radius_of_local_bad_set_bounds {ι : Type*} [Fintype ι]
         rw [hnull]
         simpa only [add_zero] using measure_iUnion_fintype_le (volume.restrict J)
           (fun i => {τ | threshold i < f i τ})
-      _ ≤ ∑ i, budget i := by simp only [add_zero]; exact Finset.sum_le_sum (fun i _ => hbad i)
+      _ ≤ ∑ i, bound i := by simp only [add_zero]; exact Finset.sum_le_sum (fun i _ => hbad i)
   exact (not_lt_of_ge hle) hsmall
 
 

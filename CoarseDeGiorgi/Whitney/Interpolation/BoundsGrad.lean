@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.Whitney.Interpolation.BoundsMain
-import CoarseDeGiorgi.Statements.EuclidNorm
+module
+
+public import CoarseDeGiorgi.Whitney.Interpolation.BoundsMain
+public import CoarseDeGiorgi.Statements.EuclidNorm
 
 /-!
 # Gradient bound for the Whitney interpolant (Lemma `l.whitney.interpolation`)
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.WhitneyInterp
 

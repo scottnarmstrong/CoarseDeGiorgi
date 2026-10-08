@@ -1,4 +1,8 @@
-import CoarseDeGiorgi.Foundations.FractionalSobolev.Sequence
+module
+
+public import CoarseDeGiorgi.Foundations.FractionalSobolev.Sequence
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.FractionalSobolev
 open MeasureTheory

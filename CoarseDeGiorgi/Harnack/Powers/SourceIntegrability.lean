@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Harnack.Powers.Chain
-import CoarseDeGiorgi.Weighted.Identification
-import CoarseDeGiorgi.Weighted.Energy
+module
+
+public import CoarseDeGiorgi.Harnack.Powers.Chain
+public import CoarseDeGiorgi.Weighted.Identification
+public import CoarseDeGiorgi.Weighted.Energy
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.Powers
 

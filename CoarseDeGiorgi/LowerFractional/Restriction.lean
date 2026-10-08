@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Weighted.Truncation.Closure
+module
+
+public import CoarseDeGiorgi.Weighted.Truncation.Closure
 
 /-! Restriction of weighted pairs to smaller bounded convex domains. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.LowerFractional
 

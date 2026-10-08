@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Whitney.Harmonic.StructWide
+module
+
+public import CoarseDeGiorgi.Whitney.Harmonic.StructWide
 
 /-! The gluing assertion and the `W^{1,1}` assertions of Proposition `p.whitney.extension`. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Whitney.Harmonic.Wide
 

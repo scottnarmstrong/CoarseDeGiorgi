@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Weighted.SmoothCore
-import Mathlib.MeasureTheory.Function.LpSpace.Complete
-import Mathlib.MeasureTheory.Function.ConvergenceInMeasure
-import Mathlib.Topology.Compactness.LocallyCompact
-import Mathlib.Topology.Compactness.SigmaCompact
+module
+
+public import CoarseDeGiorgi.Weighted.SmoothCore
+public import Mathlib.MeasureTheory.Function.LpSpace.Complete
+public import Mathlib.MeasureTheory.Function.ConvergenceInMeasure
+public import Mathlib.Topology.Compactness.LocallyCompact
+public import Mathlib.Topology.Compactness.SigmaCompact
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted
 

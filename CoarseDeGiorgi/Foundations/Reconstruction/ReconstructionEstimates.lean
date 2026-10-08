@@ -1,6 +1,11 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.ReconstructionOperators
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.ReconstructionOperators
 
 /-! # The kernel and parent-subtracted kernel have the same translation modulus -/
+
+@[expose] public section
+
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 open Homogenization MeasureTheory
 open scoped ENNReal

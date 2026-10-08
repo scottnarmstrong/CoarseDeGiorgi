@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.Assembly.HybridDensity
-import CoarseDeGiorgi.Assembly.HybridRadius
-import CoarseDeGiorgi.Assembly.HybridLocalNorm
-import CoarseDeGiorgi.Assembly.HybridParameters
-import CoarseDeGiorgi.Assembly.CaccioppoliEnergy
-import CoarseDeGiorgi.LowerFractional.Restriction
+module
+
+public import CoarseDeGiorgi.Assembly.HybridDensity
+public import CoarseDeGiorgi.Assembly.HybridRadius
+public import CoarseDeGiorgi.Assembly.HybridLocalNorm
+public import CoarseDeGiorgi.Assembly.HybridParameters
+public import CoarseDeGiorgi.Assembly.CaccioppoliEnergy
+public import CoarseDeGiorgi.LowerFractional.Restriction
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Assembly
 open Homogenization MeasureTheory Set CoarseDeGiorgi.Localization

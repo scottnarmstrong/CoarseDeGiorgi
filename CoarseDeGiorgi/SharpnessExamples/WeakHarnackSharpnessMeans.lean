@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.SharpnessExamples.WeakHarnackSharpnessCore
-import CoarseDeGiorgi.Statements.NormalizedLpMoment
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.WeakHarnackSharpnessCore
+public import CoarseDeGiorgi.Statements.NormalizedLpMoment
 
 /-! # The `L^η` mean of the supersolution over `(5/8)□₀` -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set Filter Topology
 open scoped BigOperators ENNReal ContDiff

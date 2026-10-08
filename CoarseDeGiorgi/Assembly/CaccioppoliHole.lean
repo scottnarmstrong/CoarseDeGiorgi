@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Assembly.CaccioppoliAbsorption
-import CoarseDeGiorgi.Foundations.Iteration.HoleFilling
+module
+
+public import CoarseDeGiorgi.Assembly.CaccioppoliAbsorption
+public import CoarseDeGiorgi.Foundations.Iteration.HoleFilling
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Assembly
 

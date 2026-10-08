@@ -1,15 +1,19 @@
-import CoarseDeGiorgi.Endpoint.Potential.Core
-import CoarseDeGiorgi.Whitney.Harmonic.Linear
-import CoarseDeGiorgi.Statements.ParamTheta
-import CoarseDeGiorgi.Statements.MemH1a0
-import CoarseDeGiorgi.Statements.LowerMoment
-import CoarseDeGiorgi.Statements.LowerCellAverage
-import CoarseDeGiorgi.Statements.UpperMoment
-import CoarseDeGiorgi.Statements.RStarParam
-import CoarseDeGiorgi.Statements.WeightedEnergy
-import CoarseDeGiorgi.Statements.SmoothGrad
-import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
-import CoarseDeGiorgi.Statements.OriginCube
+module
+
+public import CoarseDeGiorgi.Endpoint.Potential.Core
+public import CoarseDeGiorgi.Whitney.Harmonic.Linear
+public import CoarseDeGiorgi.Statements.ParamTheta
+public import CoarseDeGiorgi.Statements.MemH1a0
+public import CoarseDeGiorgi.Statements.LowerMoment
+public import CoarseDeGiorgi.Statements.LowerCellAverage
+public import CoarseDeGiorgi.Statements.UpperMoment
+public import CoarseDeGiorgi.Statements.RStarParam
+public import CoarseDeGiorgi.Statements.WeightedEnergy
+public import CoarseDeGiorgi.Statements.SmoothGrad
+public import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
+public import CoarseDeGiorgi.Statements.OriginCube
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Harnack.ReverseMoments.MomentConversion
-import CoarseDeGiorgi.Harnack.Scalar.BombieriLemmas
+module
+
+public import CoarseDeGiorgi.Harnack.ReverseMoments.MomentConversion
+public import CoarseDeGiorgi.Harnack.Scalar.BombieriLemmas
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped ENNReal

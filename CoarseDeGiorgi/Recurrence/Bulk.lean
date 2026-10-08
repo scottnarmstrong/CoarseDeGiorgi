@@ -1,15 +1,19 @@
-import CoarseDeGiorgi.Recurrence.Params
-import CoarseDeGiorgi.Assembly.HybridInner
-import CoarseDeGiorgi.Assembly.HybridParameters
-import CoarseDeGiorgi.Assembly.HybridQuantity
-import CoarseDeGiorgi.Assembly.EnergyToSupQuantity
-import CoarseDeGiorgi.Assembly.HybridEmbedding
-import CoarseDeGiorgi.Assembly.HybridBulkQuantity
-import CoarseDeGiorgi.Selection.SourceTraces
-import CoarseDeGiorgi.Statements.FractionalLocalization
-import CoarseDeGiorgi.Statements.DnpvTheorem6_5
-import CoarseDeGiorgi.Statements.Contrast
-import CoarseDeGiorgi.Statements.TwoLevelQuantity
+module
+
+public import CoarseDeGiorgi.Recurrence.Params
+public import CoarseDeGiorgi.Assembly.HybridInner
+public import CoarseDeGiorgi.Assembly.HybridParameters
+public import CoarseDeGiorgi.Assembly.HybridQuantity
+public import CoarseDeGiorgi.Assembly.EnergyToSupQuantity
+public import CoarseDeGiorgi.Assembly.HybridEmbedding
+public import CoarseDeGiorgi.Assembly.HybridBulkQuantity
+public import CoarseDeGiorgi.Selection.SourceTraces
+public import CoarseDeGiorgi.Statements.FractionalLocalization
+public import CoarseDeGiorgi.Statements.DnpvTheorem6_5
+public import CoarseDeGiorgi.Statements.Contrast
+public import CoarseDeGiorgi.Statements.TwoLevelQuantity
+
+@[expose] public section
 
 open Homogenization MeasureTheory Filter Topology
 open scoped BigOperators ENNReal NNReal Matrix.Norms.L2Operator

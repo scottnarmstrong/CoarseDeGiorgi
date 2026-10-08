@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Assembly.CaccioppoliParameters
-import Mathlib.Algebra.Order.Archimedean.Basic
+module
+
+public import CoarseDeGiorgi.Assembly.CaccioppoliParameters
+public import Mathlib.Algebra.Order.Archimedean.Basic
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Assembly
 

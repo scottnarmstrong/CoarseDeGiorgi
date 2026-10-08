@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Whitney.Harmonic.Admissible
-import CoarseDeGiorgi.Whitney.Harmonic.Glue
-import CoarseDeGiorgi.Whitney.Harmonic.Surface
+module
+
+public import CoarseDeGiorgi.Whitney.Harmonic.Admissible
+public import CoarseDeGiorgi.Whitney.Harmonic.Glue
+public import CoarseDeGiorgi.Whitney.Harmonic.Surface
 
 /-! The globally Lipschitz glued extension `Φ_w`, and its correction. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Whitney.Harmonic
 

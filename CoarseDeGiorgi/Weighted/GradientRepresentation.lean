@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Weighted.GradientLimits
-import Mathlib.Topology.Sequences
+module
+
+public import CoarseDeGiorgi.Weighted.GradientLimits
+public import Mathlib.Topology.Sequences
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted
 

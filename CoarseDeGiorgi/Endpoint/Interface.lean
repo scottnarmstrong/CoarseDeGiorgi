@@ -1,13 +1,17 @@
-import CoarseDeGiorgi.Statements.Contrast
-import CoarseDeGiorgi.Statements.ParamTheta
-import CoarseDeGiorgi.Statements.IsWeightedSolution
-import CoarseDeGiorgi.Statements.HarnackEtaParam
+module
+
+public import CoarseDeGiorgi.Statements.Contrast
+public import CoarseDeGiorgi.Statements.ParamTheta
+public import CoarseDeGiorgi.Statements.IsWeightedSolution
+public import CoarseDeGiorgi.Statements.HarnackEtaParam
 
 /-! Interfaces for the interior estimates in the endpoint argument.
 
 `remoteCube ρ` is `y₀ + ρ □₋₃` with `y₀ = (34/81) e₁`, the cube `Q₁` (`ρ = 1`) and its half `Q₀`
 (`ρ = 1/2`) of Step 3 of the proof of `l.source.mass`. `RemoteLocalBoundedness` is Corollary B on `Q₁`
 with `η = r/4`, `ρ₁ = 1/2`, `ρ₂ = 1`, rescaled as in the paragraph "Interior estimates" of §9.5. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

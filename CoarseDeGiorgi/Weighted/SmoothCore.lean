@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Weighted.Energy
-import Homogenization.Sobolev.W1p.BasicLemmas
+module
+
+public import CoarseDeGiorgi.Weighted.Energy
+public import Homogenization.Sobolev.W1p.BasicLemmas
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted
 

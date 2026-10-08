@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Weighted.TestingProducts
-import Mathlib.Analysis.Calculus.Deriv.Slope
+module
+
+public import CoarseDeGiorgi.Weighted.TestingProducts
+public import Mathlib.Analysis.Calculus.Deriv.Slope
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted
 

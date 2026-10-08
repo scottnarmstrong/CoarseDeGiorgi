@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Harnack.PowerCaccioppoli.TraceControl
-import CoarseDeGiorgi.Harnack.PowerCaccioppoli.TraceLr
+module
+
+public import CoarseDeGiorgi.Harnack.PowerCaccioppoli.TraceControl
+public import CoarseDeGiorgi.Harnack.PowerCaccioppoli.TraceLr
 
 /-! # Joint surface-trace limit bounds -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.PowerCaccioppoli
 

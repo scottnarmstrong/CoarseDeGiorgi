@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Statements.BombieriIntegralBound
-import CoarseDeGiorgi.Harnack.Scalar.BombieriLemmas
-import CoarseDeGiorgi.Harnack.Scalar.BombieriCore
-import CoarseDeGiorgi.Statements.OriginCube
+module
+
+public import CoarseDeGiorgi.Statements.BombieriIntegralBound
+public import CoarseDeGiorgi.Harnack.Scalar.BombieriLemmas
+public import CoarseDeGiorgi.Harnack.Scalar.BombieriCore
+public import CoarseDeGiorgi.Statements.OriginCube
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.CrossoverFinal
 

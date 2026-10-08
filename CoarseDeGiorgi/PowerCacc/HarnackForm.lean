@@ -1,20 +1,24 @@
-import CoarseDeGiorgi.Statements.IsWeightedSupersolution
-import CoarseDeGiorgi.Statements.SpatialMomentRange
-import CoarseDeGiorgi.Statements.Contrast
-import CoarseDeGiorgi.Statements.ParamR
-import CoarseDeGiorgi.Statements.WeightedEnergy
-import CoarseDeGiorgi.Statements.PowerFactor
-import CoarseDeGiorgi.Assembly.ParameterDefs
+module
 
-import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
-import CoarseDeGiorgi.Statements.OriginCube
-import CoarseDeGiorgi.Statements.ParamTheta
-import CoarseDeGiorgi.Statements.AlphaParam
-import CoarseDeGiorgi.Statements.GammaLoc
-import CoarseDeGiorgi.Statements.SigmaUpper
-import CoarseDeGiorgi.Statements.SigmaLower
-import CoarseDeGiorgi.Statements.UpperMoment
-import CoarseDeGiorgi.Statements.PowerCaccioppoliInequality
+public import CoarseDeGiorgi.Statements.IsWeightedSupersolution
+public import CoarseDeGiorgi.Statements.SpatialMomentRange
+public import CoarseDeGiorgi.Statements.Contrast
+public import CoarseDeGiorgi.Statements.ParamR
+public import CoarseDeGiorgi.Statements.WeightedEnergy
+public import CoarseDeGiorgi.Statements.PowerFactor
+public import CoarseDeGiorgi.Assembly.ParameterDefs
+
+public import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
+public import CoarseDeGiorgi.Statements.OriginCube
+public import CoarseDeGiorgi.Statements.ParamTheta
+public import CoarseDeGiorgi.Statements.AlphaParam
+public import CoarseDeGiorgi.Statements.GammaLoc
+public import CoarseDeGiorgi.Statements.SigmaUpper
+public import CoarseDeGiorgi.Statements.SigmaLower
+public import CoarseDeGiorgi.Statements.UpperMoment
+public import CoarseDeGiorgi.Statements.PowerCaccioppoliInequality
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped ENNReal

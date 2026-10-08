@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Whitney.Interpolation.GlueCells0
+module
+
+public import CoarseDeGiorgi.Whitney.Interpolation.GlueCells0
 
 /-! # Kuhn cells of mesh `3^n`
 
 Transport of the level-zero cell facts along the dilation `dil n`. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Whitney.Interpolation
 

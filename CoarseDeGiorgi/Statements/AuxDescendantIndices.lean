@@ -1,6 +1,9 @@
-import Mathlib.Data.Finset.Pi
-import Mathlib.Data.Int.Interval
+module
 
+public import Mathlib.Data.Finset.Pi
+public import Mathlib.Data.Int.Interval
+
+@[expose] public section
 
 namespace CoarseDeGiorgi
 

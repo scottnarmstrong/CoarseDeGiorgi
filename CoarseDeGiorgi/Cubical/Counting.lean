@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Cubical.SimplexBound
-import CoarseDeGiorgi.Assembly.ClassicalMomentsPartition
-import CoarseDeGiorgi.Statements.TriangulationCard
+module
+
+public import CoarseDeGiorgi.Cubical.SimplexBound
+public import CoarseDeGiorgi.Assembly.ClassicalMomentsPartition
+public import CoarseDeGiorgi.Statements.TriangulationCard
 
 /-! # Counting and volumes for the Whitney layers of the simplices of `𝒯_k` -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Cubical
 open Homogenization MeasureTheory

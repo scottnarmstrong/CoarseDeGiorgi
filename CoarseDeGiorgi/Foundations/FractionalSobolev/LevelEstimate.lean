@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Foundations.FractionalSobolev.Kernel
-import CoarseDeGiorgi.Foundations.FractionalSobolev.BandSums
+module
+
+public import CoarseDeGiorgi.Foundations.FractionalSobolev.Kernel
+public import CoarseDeGiorgi.Foundations.FractionalSobolev.BandSums
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.FractionalSobolev
 open Homogenization MeasureTheory

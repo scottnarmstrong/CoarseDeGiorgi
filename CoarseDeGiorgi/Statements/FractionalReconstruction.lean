@@ -1,8 +1,12 @@
-import Homogenization.Ambient.CoefficientField
-import Homogenization.Sobolev.WeakDerivatives
-import Mathlib.MeasureTheory.Function.LpSeminorm.Basic
-import Mathlib.MeasureTheory.Integral.Bochner.Set
-import CoarseDeGiorgi.Foundations.Reconstruction.Final
+module
+
+public import Homogenization.Ambient.CoefficientField
+public import Homogenization.Sobolev.WeakDerivatives
+public import Mathlib.MeasureTheory.Function.LpSeminorm.Basic
+public import Mathlib.MeasureTheory.Integral.Bochner.Set
+public import CoarseDeGiorgi.Foundations.Reconstruction.Final
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal

@@ -1,16 +1,20 @@
-import CoarseDeGiorgi.Endpoint.Source.Measure
-import CoarseDeGiorgi.Endpoint.Source.Solution
-import CoarseDeGiorgi.Endpoint.Source.Geometry
-import CoarseDeGiorgi.Statements.WeightedEnergy
-import CoarseDeGiorgi.Statements.MemH1a0
-import CoarseDeGiorgi.Statements.IsWeightedSolution
-import CoarseDeGiorgi.Statements.IsWeightedSupersolution
-import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
-import CoarseDeGiorgi.Statements.SmoothGrad
-import CoarseDeGiorgi.Statements.OriginCube
+module
+
+public import CoarseDeGiorgi.Endpoint.Source.Measure
+public import CoarseDeGiorgi.Endpoint.Source.Solution
+public import CoarseDeGiorgi.Endpoint.Source.Geometry
+public import CoarseDeGiorgi.Statements.WeightedEnergy
+public import CoarseDeGiorgi.Statements.MemH1a0
+public import CoarseDeGiorgi.Statements.IsWeightedSolution
+public import CoarseDeGiorgi.Statements.IsWeightedSupersolution
+public import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
+public import CoarseDeGiorgi.Statements.SmoothGrad
+public import CoarseDeGiorgi.Statements.OriginCube
 
 /-! `l.source.mass`, Steps 1-2: the source measure of a supersolution and the potential of its
 restriction to `(3/4)□₀`. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

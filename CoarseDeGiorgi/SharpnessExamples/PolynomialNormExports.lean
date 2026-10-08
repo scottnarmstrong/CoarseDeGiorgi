@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.SharpnessExamples.PolynomialNorms
-import CoarseDeGiorgi.Statements.IsWeightedSolution
-import CoarseDeGiorgi.Statements.IsWeightedSubsolution
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.PolynomialNorms
+public import CoarseDeGiorgi.Statements.IsWeightedSolution
+public import CoarseDeGiorgi.Statements.IsWeightedSubsolution
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped ENNReal

@@ -1,5 +1,7 @@
-import Homogenization.Sobolev.Foundations.PoincareLp
-import Mathlib.Analysis.SpecialFunctions.Pow.Integral
+module
+
+public import Homogenization.Sobolev.Foundations.PoincareLp
+public import Mathlib.Analysis.SpecialFunctions.Pow.Integral
 
 /-! # Integrability of the Morrey kernel
 
@@ -7,6 +9,8 @@ The Riesz kernel lies in the Hölder dual space when the gradient exponent
 exceeds the dimension. The criterion is expressed directly in terms of the
 kernel exponent, so it can also be reused with other finite Hölder pairs.
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint.Morrey
 

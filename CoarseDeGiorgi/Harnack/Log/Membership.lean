@@ -1,10 +1,14 @@
-import CoarseDeGiorgi.Weighted.Truncation.Chain
-import CoarseDeGiorgi.Weighted.Truncation.PositivePart
-import CoarseDeGiorgi.Weighted.PairOperations
-import CoarseDeGiorgi.Statements.IsWeightedSubsolution
-import CoarseDeGiorgi.Statements.IsWeightedSupersolution
-import CoarseDeGiorgi.LowerFractional.CubeDomain
-import Mathlib.Analysis.SpecialFunctions.Log.Deriv
+module
+
+public import CoarseDeGiorgi.Weighted.Truncation.Chain
+public import CoarseDeGiorgi.Weighted.Truncation.PositivePart
+public import CoarseDeGiorgi.Weighted.PairOperations
+public import CoarseDeGiorgi.Statements.IsWeightedSubsolution
+public import CoarseDeGiorgi.Statements.IsWeightedSupersolution
+public import CoarseDeGiorgi.LowerFractional.CubeDomain
+public import Mathlib.Analysis.SpecialFunctions.Log.Deriv
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.Log
 

@@ -1,4 +1,8 @@
-import CoarseDeGiorgi.Assembly.EnergyToSupStep
+module
+
+public import CoarseDeGiorgi.Assembly.EnergyToSupStep
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Assembly
 open scoped ENNReal

@@ -1,7 +1,11 @@
-import Mathlib.Topology.Algebra.InfiniteSum.ENNReal
-import Mathlib.Analysis.SpecialFunctions.Pow.NNReal
+module
+
+public import Mathlib.Topology.Algebra.InfiniteSum.ENNReal
+public import Mathlib.Analysis.SpecialFunctions.Pow.NNReal
 
 /-! Shifted nonnegative series bounds, including the exceptional scale-zero term. -/
+
+@[expose] public section
 
 open scoped ENNReal
 

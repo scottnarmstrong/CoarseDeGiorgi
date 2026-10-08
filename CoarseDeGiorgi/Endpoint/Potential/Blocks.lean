@@ -1,4 +1,8 @@
-import CoarseDeGiorgi.Endpoint.Potential.Sums
+module
+
+public import CoarseDeGiorgi.Endpoint.Potential.Sums
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint.Potential
 

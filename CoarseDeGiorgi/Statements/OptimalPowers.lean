@@ -1,10 +1,15 @@
-import CoarseDeGiorgi.Statements.Contrast
-import CoarseDeGiorgi.Statements.ParamTheta
-import CoarseDeGiorgi.Statements.PositivePart
-import CoarseDeGiorgi.Statements.IsWeightedSubsolution
-import CoarseDeGiorgi.Statements.IsWeightedSolution
+module
 
-import CoarseDeGiorgi.SharpnessExamples.OptimalPowersFinal
+public import CoarseDeGiorgi.Statements.Contrast
+public import CoarseDeGiorgi.Statements.ParamTheta
+public import CoarseDeGiorgi.Statements.PositivePart
+public import CoarseDeGiorgi.Statements.IsWeightedSubsolution
+public import CoarseDeGiorgi.Statements.IsWeightedSolution
+
+public import CoarseDeGiorgi.SharpnessExamples.OptimalPowersFinal
+
+@[expose] public section
+
 open Homogenization MeasureTheory Filter Topology
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator
 

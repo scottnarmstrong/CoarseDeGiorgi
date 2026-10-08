@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Endpoint.Reconstruction.ProjectionAlgebra
-import Mathlib.MeasureTheory.Integral.DominatedConvergence
-import Homogenization.Sobolev.FiniteLpCoordinate
+module
+
+public import CoarseDeGiorgi.Endpoint.Reconstruction.ProjectionAlgebra
+public import Mathlib.MeasureTheory.Integral.DominatedConvergence
+public import Homogenization.Sobolev.FiniteLpCoordinate
 
 /-! # L2 convergence of triadic projections for bounded input -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint.Reconstruction
 

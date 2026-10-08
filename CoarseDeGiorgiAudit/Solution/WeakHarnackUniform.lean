@@ -1,10 +1,12 @@
-import Mathlib
-import CoarseDeGiorgiAudit.Solution.WeakHarnackLpLq
-import CoarseDeGiorgiAudit.Solution.Uniform.Bounds
+module
+
+public import Mathlib
+public import CoarseDeGiorgiAudit.Solution.WeakHarnackLpLq
+public import CoarseDeGiorgiAudit.Solution.Uniform.Bounds
+
+@[expose] public section
 
 attribute [-instance] Homogenization.instMeasurableSpaceVec
-open private instModuleVecOCS from Homogenization.Sobolev.H1.OriginCubeSymmetry
-attribute [-instance] instModuleVecOCS
 
 /-!
 Weak Harnack inequality for uniformly elliptic coefficients.

@@ -1,12 +1,17 @@
-import CoarseDeGiorgi.Statements.WhitneyAffineExtensionDef
-import CoarseDeGiorgi.Statements.WhitneySimplicesNearSize
-import CoarseDeGiorgi.Statements.EuclidLipConst
-import CoarseDeGiorgi.Statements.IsTriadicWidth
-import CoarseDeGiorgi.Statements.SelectionInterval
-import CoarseDeGiorgi.Statements.SurfaceFracSeminorm
-import CoarseDeGiorgi.Statements.OriginCube
+module
 
-import CoarseDeGiorgi.Whitney.Extension.WideAffine
+public import CoarseDeGiorgi.Statements.WhitneyAffineExtensionDef
+public import CoarseDeGiorgi.Statements.WhitneySimplicesNearSize
+public import CoarseDeGiorgi.Statements.EuclidLipConst
+public import CoarseDeGiorgi.Statements.IsTriadicWidth
+public import CoarseDeGiorgi.Statements.SelectionInterval
+public import CoarseDeGiorgi.Statements.SurfaceFracSeminorm
+public import CoarseDeGiorgi.Statements.OriginCube
+
+public import CoarseDeGiorgi.Whitney.Extension.WideAffine
+
+@[expose] public section
+
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator NNReal
 

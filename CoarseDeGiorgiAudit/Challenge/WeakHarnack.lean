@@ -1,4 +1,6 @@
-import Mathlib
+module
+
+public import Mathlib
 
 /-!
 # Theorem C: weak Harnack inequality (1.10)
@@ -15,6 +17,8 @@ where `Θ = Λ_{s,1,p}/λ_{t,1,q}`.
 Here `a(△)` is the upper response and `a_*⁻¹(△)` the inverse lower response of
 each cell `△`, both defined below by polarization.
 -/
+
+@[expose] public section
 
 open MeasureTheory
 open scoped BigOperators ENNReal Matrix Matrix.Norms.L2Operator

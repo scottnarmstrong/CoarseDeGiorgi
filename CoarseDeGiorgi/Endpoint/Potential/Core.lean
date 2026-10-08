@@ -1,12 +1,16 @@
-import CoarseDeGiorgi.Endpoint.Potential.Equation
-import CoarseDeGiorgi.Endpoint.Potential.Distribution
-import CoarseDeGiorgi.Endpoint.Potential.Blocks
-import CoarseDeGiorgi.Endpoint.Potential.Assembly
-import CoarseDeGiorgi.Endpoint.Potential.Params
-import CoarseDeGiorgi.Statements.MemH1a0
-import CoarseDeGiorgi.Statements.RStarParam
-import CoarseDeGiorgi.Statements.ParamR
-import CoarseDeGiorgi.Statements.OriginCube
+module
+
+public import CoarseDeGiorgi.Endpoint.Potential.Equation
+public import CoarseDeGiorgi.Endpoint.Potential.Distribution
+public import CoarseDeGiorgi.Endpoint.Potential.Blocks
+public import CoarseDeGiorgi.Endpoint.Potential.Assembly
+public import CoarseDeGiorgi.Endpoint.Potential.Params
+public import CoarseDeGiorgi.Statements.MemH1a0
+public import CoarseDeGiorgi.Statements.RStarParam
+public import CoarseDeGiorgi.Statements.ParamR
+public import CoarseDeGiorgi.Statements.OriginCube
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint.Potential
 

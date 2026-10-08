@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Localization.Geometry
-import CoarseDeGiorgi.Statements.OriginCube
-import Mathlib.Algebra.Order.Floor.Ring
+module
+
+public import CoarseDeGiorgi.Localization.Geometry
+public import CoarseDeGiorgi.Statements.OriginCube
+public import Mathlib.Algebra.Order.Floor.Ring
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.Log
 

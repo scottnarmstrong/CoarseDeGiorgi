@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.Harnack.PowerLimits.SignedInterior
-import CoarseDeGiorgi.Harnack.Selection.Cap
-import CoarseDeGiorgi.Weighted.Energy
-import Homogenization.Ambient.CoefficientField
+module
+
+public import CoarseDeGiorgi.Harnack.PowerLimits.SignedInterior
+public import CoarseDeGiorgi.Harnack.Selection.Cap
+public import CoarseDeGiorgi.Weighted.Energy
+public import Homogenization.Ambient.CoefficientField
 
 /-! # Fatou passage for the signed interior term -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.PowerCaccioppoli
 

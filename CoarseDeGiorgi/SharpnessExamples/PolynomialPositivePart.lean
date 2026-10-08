@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.SharpnessExamples.PolynomialField
-import CoarseDeGiorgi.Statements.PositivePart
-import CoarseDeGiorgi.Statements.OriginCube
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.PolynomialField
+public import CoarseDeGiorgi.Statements.PositivePart
+public import CoarseDeGiorgi.Statements.OriginCube
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set
 open scoped BigOperators ENNReal

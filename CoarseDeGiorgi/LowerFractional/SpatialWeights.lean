@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.LowerFractional.MomentSeries
-import CoarseDeGiorgi.Foundations.Simplex.Partition
+module
+
+public import CoarseDeGiorgi.LowerFractional.MomentSeries
+public import CoarseDeGiorgi.Foundations.Simplex.Partition
 
 /-! Actual spatial weights of the triangulation (`l.lower.averages`).
 This identifies volume-weighted simplex response powers with the cell average
 used in lowerMoment, rather than introducing an unrelated sequence of weights. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.LowerFractional
 

@@ -1,14 +1,18 @@
-import CoarseDeGiorgi.TheoremA.Estimate
-import CoarseDeGiorgi.TheoremA.Eta
-import CoarseDeGiorgi.Statements.Contrast
-import CoarseDeGiorgi.Statements.ParamTheta
-import CoarseDeGiorgi.Statements.PositivePart
-import CoarseDeGiorgi.Statements.IsWeightedSubsolution
-import CoarseDeGiorgi.Statements.LocallyBoundedAbove
+module
+
+public import CoarseDeGiorgi.TheoremA.Estimate
+public import CoarseDeGiorgi.TheoremA.Eta
+public import CoarseDeGiorgi.Statements.Contrast
+public import CoarseDeGiorgi.Statements.ParamTheta
+public import CoarseDeGiorgi.Statements.PositivePart
+public import CoarseDeGiorgi.Statements.IsWeightedSubsolution
+public import CoarseDeGiorgi.Statements.LocallyBoundedAbove
 
 /-! Theorem A and Corollary B (the statement of `CoarseDeGiorgi.local_boundedness`) from
 Proposition `p.cg.caccioppoli` (`caccioppoli_inequality`) and Proposition `p.energy.to.sup`
 (`energy_to_supremum`), taken as hypotheses with their statements copied verbatim. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

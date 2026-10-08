@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.Endpoint.Interface
-import CoarseDeGiorgi.Endpoint.Source.Geometry
-import CoarseDeGiorgi.Endpoint.Source.Functional
-import CoarseDeGiorgi.Endpoint.Capacitary.Test
+module
+
+public import CoarseDeGiorgi.Endpoint.Interface
+public import CoarseDeGiorgi.Endpoint.Source.Geometry
+public import CoarseDeGiorgi.Endpoint.Source.Functional
+public import CoarseDeGiorgi.Endpoint.Capacitary.Test
 
 /-! The remote obstacle cube and its capacitary function. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint
 

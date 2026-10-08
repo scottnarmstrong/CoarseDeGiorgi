@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Endpoint.Capacitary.Coercivity
-import Mathlib.Analysis.InnerProductSpace.Projection.Minimal
+module
+
+public import CoarseDeGiorgi.Endpoint.Capacitary.Coercivity
+public import Mathlib.Analysis.InnerProductSpace.Projection.Minimal
 
 /-! The closed convex obstacle set for a capacitary function. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint
 

@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.KernelBlocks
-import CoarseDeGiorgi.Foundations.Reconstruction.AuxIncrementLp
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.KernelBlocks
+public import CoarseDeGiorgi.Foundations.Reconstruction.AuxIncrementLp
 
 /-! # Fixed-kernel limits use only strong L¹ convergence of gradient averages -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Weighted.HarmonicProperties
-import CoarseDeGiorgi.Weighted.Testing
-import CoarseDeGiorgi.Weighted.TestingApproximation
-import CoarseDeGiorgi.Weighted.TestingNonnegative
+module
+
+public import CoarseDeGiorgi.Weighted.HarmonicProperties
+public import CoarseDeGiorgi.Weighted.Testing
+public import CoarseDeGiorgi.Weighted.TestingApproximation
+public import CoarseDeGiorgi.Weighted.TestingNonnegative
+
+@[expose] public section
 
 open Homogenization MeasureTheory Filter Topology
 open CoarseDeGiorgi.Weighted

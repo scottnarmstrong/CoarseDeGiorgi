@@ -1,19 +1,23 @@
-import CoarseDeGiorgi.Harnack.Iterations.MomentPower
-import CoarseDeGiorgi.Harnack.ReverseMoments.NormalizedReverse
-import CoarseDeGiorgi.Assembly.HybridParameters
-import Mathlib.Tactic
+module
+
+public import CoarseDeGiorgi.Harnack.Iterations.MomentPower
+public import CoarseDeGiorgi.Harnack.ReverseMoments.NormalizedReverse
+public import CoarseDeGiorgi.Assembly.HybridParameters
+public import Mathlib.Tactic
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped ENNReal
 
 namespace CoarseDeGiorgi.Harnack.Iterations
 
-private theorem iteration_paramR_pos {d : ℕ} (hd : 3 ≤ d)
+theorem iteration_paramR_pos {d : ℕ} (hd : 3 ≤ d)
     {p q s t : ℝ} (hp : 1 < p) (hq : 1 < q) (hs : 0 < s) (ht : 0 < t)
     (hθ : 0 < paramTheta d p q s t) : 0 < paramR q :=
   ReverseMoments.paramR_pos_of_harnack_facts hd hp hq hs ht hθ
 
-private theorem iteration_rStar_pos {d : ℕ} (hd : 3 ≤ d)
+theorem iteration_rStar_pos {d : ℕ} (hd : 3 ≤ d)
     {p q s t : ℝ} (hp : 1 < p) (hq : 1 < q) (hs : 0 < s) (ht : 0 < t)
     (hθ : 0 < paramTheta d p q s t) : 0 < rStarParam (d := d) q t :=
   ReverseMoments.rStarParam_pos_of_harnack_facts hd hp hq hs ht hθ

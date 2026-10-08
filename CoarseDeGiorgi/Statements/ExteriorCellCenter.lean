@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Statements.ExteriorCell
-import CoarseDeGiorgi.Statements.TriadicCenter
+module
+
+public import CoarseDeGiorgi.Statements.ExteriorCell
+public import CoarseDeGiorgi.Statements.TriadicCenter
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

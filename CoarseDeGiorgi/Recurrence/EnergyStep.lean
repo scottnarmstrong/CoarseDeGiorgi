@@ -1,27 +1,31 @@
-import CoarseDeGiorgi.Recurrence.Approx
-import CoarseDeGiorgi.Recurrence.Params
-import CoarseDeGiorgi.Assembly.HybridSurfaceBounds
-import CoarseDeGiorgi.Assembly.HybridSurfaceArithmetic
-import CoarseDeGiorgi.Assembly.HybridBulkQuantity
-import CoarseDeGiorgi.Assembly.HybridQuantity
-import CoarseDeGiorgi.Assembly.EnergyToSupQuantity
-import CoarseDeGiorgi.Selection.SourceTraces
-import CoarseDeGiorgi.Weighted.TestingTruncation
-import CoarseDeGiorgi.Statements.GoodRadiusExists
-import CoarseDeGiorgi.Statements.Contrast
-import CoarseDeGiorgi.Statements.TwoLevelQuantity
-import CoarseDeGiorgi.Statements.PositiveCap
-import CoarseDeGiorgi.Statements.PositiveCapGradient
-import CoarseDeGiorgi.Statements.SampledResponseSeries
-import CoarseDeGiorgi.Statements.SurfaceEnergyMaximal
-import CoarseDeGiorgi.Statements.SurfaceFracNorm
-import CoarseDeGiorgi.Statements.SurfaceFracSeminorm
-import CoarseDeGiorgi.Statements.SurfaceMeasure
-import CoarseDeGiorgi.Statements.SelectionInterval
-import CoarseDeGiorgi.Statements.IsTriadicWidth
-import CoarseDeGiorgi.Statements.AlphaParam
-import CoarseDeGiorgi.Statements.SigmaUpper
-import CoarseDeGiorgi.Statements.GammaLoc
+module
+
+public import CoarseDeGiorgi.Recurrence.Approx
+public import CoarseDeGiorgi.Recurrence.Params
+public import CoarseDeGiorgi.Assembly.HybridSurfaceBounds
+public import CoarseDeGiorgi.Assembly.HybridSurfaceArithmetic
+public import CoarseDeGiorgi.Assembly.HybridBulkQuantity
+public import CoarseDeGiorgi.Assembly.HybridQuantity
+public import CoarseDeGiorgi.Assembly.EnergyToSupQuantity
+public import CoarseDeGiorgi.Selection.SourceTraces
+public import CoarseDeGiorgi.Weighted.TestingTruncation
+public import CoarseDeGiorgi.Statements.GoodRadiusExists
+public import CoarseDeGiorgi.Statements.Contrast
+public import CoarseDeGiorgi.Statements.TwoLevelQuantity
+public import CoarseDeGiorgi.Statements.PositiveCap
+public import CoarseDeGiorgi.Statements.PositiveCapGradient
+public import CoarseDeGiorgi.Statements.SampledResponseSeries
+public import CoarseDeGiorgi.Statements.SurfaceEnergyMaximal
+public import CoarseDeGiorgi.Statements.SurfaceFracNorm
+public import CoarseDeGiorgi.Statements.SurfaceFracSeminorm
+public import CoarseDeGiorgi.Statements.SurfaceMeasure
+public import CoarseDeGiorgi.Statements.SelectionInterval
+public import CoarseDeGiorgi.Statements.IsTriadicWidth
+public import CoarseDeGiorgi.Statements.AlphaParam
+public import CoarseDeGiorgi.Statements.SigmaUpper
+public import CoarseDeGiorgi.Statements.GammaLoc
+
+@[expose] public section
 
 open Homogenization MeasureTheory Filter Topology
 open scoped BigOperators ENNReal NNReal Matrix.Norms.L2Operator

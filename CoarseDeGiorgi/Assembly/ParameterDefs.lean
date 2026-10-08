@@ -1,21 +1,25 @@
-import Homogenization.Ambient.CoefficientField
-import Homogenization.Sobolev.WeakDerivatives
-import Homogenization.CoarseGraining.Definitions
-import Homogenization.Geometry.TriadicCube
-import Mathlib.Data.EReal.Basic
-import Mathlib.Analysis.CStarAlgebra.Matrix
-import Mathlib.Analysis.SpecialFunctions.Pow.Real
-import Mathlib.MeasureTheory.Function.LpSeminorm.Basic
-import CoarseDeGiorgi.Statements.AlphaParam
-import CoarseDeGiorgi.Statements.ParamR
-import CoarseDeGiorgi.Statements.ParamTheta
-import CoarseDeGiorgi.Statements.RBoundaryParam
-import CoarseDeGiorgi.Statements.RStarParam
+module
+
+public import Homogenization.Ambient.CoefficientField
+public import Homogenization.Sobolev.WeakDerivatives
+public import Homogenization.CoarseGraining.Definitions
+public import Homogenization.Geometry.TriadicCube
+public import Mathlib.Data.EReal.Basic
+public import Mathlib.Analysis.CStarAlgebra.Matrix
+public import Mathlib.Analysis.SpecialFunctions.Pow.Real
+public import Mathlib.MeasureTheory.Function.LpSeminorm.Basic
+public import CoarseDeGiorgi.Statements.AlphaParam
+public import CoarseDeGiorgi.Statements.ParamR
+public import CoarseDeGiorgi.Statements.ParamTheta
+public import CoarseDeGiorgi.Statements.RBoundaryParam
+public import CoarseDeGiorgi.Statements.RStarParam
 
 /-!
 Auxiliary exponents used by implementation lemmas; they are not named in the paper.
 `sigmaParam` is `σ + σ_* - t` in the notation of `e.intro.parameters`.
 -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

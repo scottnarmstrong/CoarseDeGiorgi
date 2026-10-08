@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.Defs
-import Mathlib.MeasureTheory.Function.ConvergenceInMeasure
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.Defs
+public import Mathlib.MeasureTheory.Function.ConvergenceInMeasure
 
 /-! # Minkowski and Fatou for the exact Euclidean reconstruction seminorm -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

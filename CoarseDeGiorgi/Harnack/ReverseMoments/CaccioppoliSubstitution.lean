@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Harnack.ReverseMoments.InnerLocalization
-import CoarseDeGiorgi.Statements.PowerFactor
-import CoarseDeGiorgi.Assembly.ParameterDefs
+module
+
+public import CoarseDeGiorgi.Harnack.ReverseMoments.InnerLocalization
+public import CoarseDeGiorgi.Statements.PowerFactor
+public import CoarseDeGiorgi.Assembly.ParameterDefs
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.ReverseMoments
 

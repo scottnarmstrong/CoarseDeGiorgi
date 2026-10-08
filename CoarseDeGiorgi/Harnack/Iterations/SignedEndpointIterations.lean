@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Harnack.Iterations.SmallSignedIterations
-import CoarseDeGiorgi.Harnack.Iterations.EndpointIterations
-import CoarseDeGiorgi.Harnack.Iterations.GeometricPowerFactor
-import CoarseDeGiorgi.Harnack.Iterations.GeometricReverseCost
+module
+
+public import CoarseDeGiorgi.Harnack.Iterations.SmallSignedIterations
+public import CoarseDeGiorgi.Harnack.Iterations.EndpointIterations
+public import CoarseDeGiorgi.Harnack.Iterations.GeometricPowerFactor
+public import CoarseDeGiorgi.Harnack.Iterations.GeometricReverseCost
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped ENNReal

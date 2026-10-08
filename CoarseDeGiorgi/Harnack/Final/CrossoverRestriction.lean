@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Harnack.Iterations.NormalizedMomentOrder
-import Mathlib.Tactic
+module
+
+public import CoarseDeGiorgi.Harnack.Iterations.NormalizedMomentOrder
+public import Mathlib.Tactic
 
 /-! Hölder restriction of a crossover bound to smaller positive exponents. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped ENNReal

@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Foundations.Triadic.Distance
-import Mathlib.Data.Nat.Find
+module
+
+public import CoarseDeGiorgi.Foundations.Triadic.Distance
+public import Mathlib.Data.Nat.Find
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Triadic
 

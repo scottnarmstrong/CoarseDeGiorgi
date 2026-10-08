@@ -1,13 +1,17 @@
-import CoarseDeGiorgi.Recurrence.Params
-import CoarseDeGiorgi.Assembly.EnergyToSupAdaptive
-import CoarseDeGiorgi.Assembly.EnergyToSupReal
-import CoarseDeGiorgi.Assembly.EnergyToSupLocal
-import CoarseDeGiorgi.Harnack.Moments.MomentComparison
-import CoarseDeGiorgi.Statements.LowerFractionalMemLr
-import CoarseDeGiorgi.Statements.LocallyBoundedAbove
-import CoarseDeGiorgi.Statements.PositivePart
-import CoarseDeGiorgi.Statements.Contrast
-import CoarseDeGiorgi.Statements.TwoLevelQuantity
+module
+
+public import CoarseDeGiorgi.Recurrence.Params
+public import CoarseDeGiorgi.Assembly.EnergyToSupAdaptive
+public import CoarseDeGiorgi.Assembly.EnergyToSupReal
+public import CoarseDeGiorgi.Assembly.EnergyToSupLocal
+public import CoarseDeGiorgi.Harnack.Moments.MomentComparison
+public import CoarseDeGiorgi.Statements.LowerFractionalMemLr
+public import CoarseDeGiorgi.Statements.LocallyBoundedAbove
+public import CoarseDeGiorgi.Statements.PositivePart
+public import CoarseDeGiorgi.Statements.Contrast
+public import CoarseDeGiorgi.Statements.TwoLevelQuantity
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

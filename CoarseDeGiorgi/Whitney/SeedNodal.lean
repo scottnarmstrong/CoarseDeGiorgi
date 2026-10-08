@@ -1,7 +1,9 @@
-import CoarseDeGiorgi.Foundations.Simplex.Nested
-import Mathlib.Data.Fintype.Pi
-import Mathlib.Data.Int.Interval
-import Mathlib.Topology.Algebra.InfiniteSum.Basic
+module
+
+public import CoarseDeGiorgi.Foundations.Simplex.Nested
+public import Mathlib.Data.Fintype.Pi
+public import Mathlib.Data.Int.Interval
+public import Mathlib.Topology.Algebra.InfiniteSum.Basic
 
 /-!
 # Nodal hats for the Whitney seed
@@ -10,6 +12,8 @@ The vertex grid of a centered cube of side `s` is the half-shifted grid
 `s * (ℤ + 1/2)^d`. The formula below is the continuous Kuhn nodal hat:
 one minus the span of the normalized coordinates and zero, truncated at zero.
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Whitney
 

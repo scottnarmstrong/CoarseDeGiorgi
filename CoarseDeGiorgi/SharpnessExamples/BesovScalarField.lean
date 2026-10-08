@@ -1,12 +1,16 @@
-import CoarseDeGiorgi.SharpnessExamples.BesovNorms
-import CoarseDeGiorgi.SharpnessExamples.BesovCylinderSum
-import CoarseDeGiorgi.SharpnessExamples.ScalarNormBounds
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.BesovNorms
+public import CoarseDeGiorgi.SharpnessExamples.BesovCylinderSum
+public import CoarseDeGiorgi.SharpnessExamples.ScalarNormBounds
 
 /-! # Finite cube quasi-norms for the scalar cylinder field and its inverse
 
 Step 3 of the source: the summed cylinder bound, applied to the majorants of the field and of
 its inverse, with Minkowski, square-root subadditivity and monotone convergence.
 -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open CoarseDeGiorgi.Sharpness CoarseDeGiorgi.Foundations.FracGeometry

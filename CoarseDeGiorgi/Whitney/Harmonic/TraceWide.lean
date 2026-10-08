@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Whitney.Harmonic.Conseq2Wide
+module
+
+public import CoarseDeGiorgi.Whitney.Harmonic.Conseq2Wide
 
 /-! The trace identity of Proposition `p.whitney.extension`. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Whitney.Harmonic.Wide
 

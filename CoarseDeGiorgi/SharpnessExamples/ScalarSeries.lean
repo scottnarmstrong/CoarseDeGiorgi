@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.SharpnessExamples.ScalarMeans
-import CoarseDeGiorgi.SharpnessExamples.CylinderAveragesDiscounted
-import Mathlib.MeasureTheory.Integral.DominatedConvergence
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.ScalarMeans
+public import CoarseDeGiorgi.SharpnessExamples.CylinderAveragesDiscounted
+public import Mathlib.MeasureTheory.Integral.DominatedConvergence
 
 /-! # Integration and cell averages of absolutely summable scalar series -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

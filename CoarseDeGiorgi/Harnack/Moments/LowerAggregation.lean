@@ -1,14 +1,18 @@
-import CoarseDeGiorgi.Assembly.ClassicalMomentsPartition
-import CoarseDeGiorgi.Statements.LowerResponseInvOnCell
-import CoarseDeGiorgi.Statements.OriginCube
-import CoarseDeGiorgi.Statements.SimplexCellIsOpenBoundedConvexDomain
-import CoarseDeGiorgi.Statements.SimplexCellNonempty
-import CoarseDeGiorgi.Statements.SimplexCellSubsetOriginCube
-import CoarseDeGiorgi.Statements.Triangulation
-import CoarseDeGiorgi.Statements.WeightedCoeffOnSimplexCell
-import CoarseDeGiorgi.LowerFractional.CompactCover
-import CoarseDeGiorgi.LowerFractional.Restriction
-import CoarseDeGiorgi.Weighted.LowerSpecNorm
+module
+
+public import CoarseDeGiorgi.Assembly.ClassicalMomentsPartition
+public import CoarseDeGiorgi.Statements.LowerResponseInvOnCell
+public import CoarseDeGiorgi.Statements.OriginCube
+public import CoarseDeGiorgi.Statements.SimplexCellIsOpenBoundedConvexDomain
+public import CoarseDeGiorgi.Statements.SimplexCellNonempty
+public import CoarseDeGiorgi.Statements.SimplexCellSubsetOriginCube
+public import CoarseDeGiorgi.Statements.Triangulation
+public import CoarseDeGiorgi.Statements.WeightedCoeffOnSimplexCell
+public import CoarseDeGiorgi.LowerFractional.CompactCover
+public import CoarseDeGiorgi.LowerFractional.Restriction
+public import CoarseDeGiorgi.Weighted.LowerSpecNorm
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.Moments
 

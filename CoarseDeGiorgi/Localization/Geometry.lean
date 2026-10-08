@@ -1,15 +1,20 @@
-import CoarseDeGiorgi.Statements.AuxCube
-import Mathlib.Algebra.Order.Floor.Ring
-import Mathlib.Data.Finset.Pi
-import Mathlib.Data.Int.Interval
-import Mathlib.Tactic
-import Mathlib.Algebra.Order.Archimedean.Basic
+module
+
+public import CoarseDeGiorgi.Statements.AuxCube
+public import Mathlib.Algebra.Order.Floor.Ring
+public import Mathlib.Data.Finset.Pi
+public import Mathlib.Data.Int.Interval
+public import Mathlib.Tactic
+public import Mathlib.Algebra.Order.Archimedean.Basic
 
 /-! # The fixed lattice cover used for compact localization
 
 The auxiliary cubes are the cubes `auxCube`, of side `3 * 3^(-m)`.
 The central thirds are closed, so lattice boundaries are covered.
 -/
+
+@[expose] public section
+
 namespace CoarseDeGiorgi.Localization
 open Homogenization Set
 open scoped BigOperators

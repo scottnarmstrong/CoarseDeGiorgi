@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.ExteriorIntegral.Core
-import CoarseDeGiorgi.ExteriorIntegral.LayerEnergyWide
+module
+
+public import CoarseDeGiorgi.ExteriorIntegral.Core
+public import CoarseDeGiorgi.ExteriorIntegral.LayerEnergyWide
 
 /-! # Exterior pairing with the wider width bound -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.ExteriorIntegral.WideWidth
 

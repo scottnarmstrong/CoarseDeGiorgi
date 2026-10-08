@@ -1,12 +1,16 @@
-import CoarseDeGiorgi.Assembly.ClassicalMomentsPartition
-import CoarseDeGiorgi.Statements.BesovCubeNorm
-import CoarseDeGiorgi.SharpnessExamples.CylinderFiniteMeans
+module
+
+public import CoarseDeGiorgi.Assembly.ClassicalMomentsPartition
+public import CoarseDeGiorgi.Statements.BesovCubeNorm
+public import CoarseDeGiorgi.SharpnessExamples.CylinderFiniteMeans
 
 /-! # Triadic cubes as unions of Kuhn simplices
 
 The cube `z + □_{-k}` of the cube quasi-norm is the union, up to a null set, of the `d!` simplices
 of the triangulation with the same offset, so its average is the mean of their averages.
 -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal

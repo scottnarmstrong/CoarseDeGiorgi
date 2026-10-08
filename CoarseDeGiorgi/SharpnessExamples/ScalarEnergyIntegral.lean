@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.SharpnessExamples.ScalarEnergyPointwise
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.ScalarEnergyPointwise
 
 /-! # Summable weighted value and energy of the cylinder profiles -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set
 open CoarseDeGiorgi.Sharpness

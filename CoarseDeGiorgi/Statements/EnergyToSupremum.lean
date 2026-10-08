@@ -1,25 +1,30 @@
-import Homogenization.Ambient.CoefficientField
-import Homogenization.Sobolev.WeakDerivatives
-import Homogenization.CoarseGraining.Definitions
-import Homogenization.Geometry.TriadicCube
-import Mathlib.Data.EReal.Basic
-import Mathlib.Analysis.CStarAlgebra.Matrix
-import Mathlib.Analysis.SpecialFunctions.Pow.Real
-import Mathlib.MeasureTheory.Function.LpSeminorm.Basic
-import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
-import CoarseDeGiorgi.Statements.IsWeightedSubsolution
-import CoarseDeGiorgi.Statements.LocallyBoundedAbove
-import CoarseDeGiorgi.Statements.Contrast
-import CoarseDeGiorgi.Statements.GammaSup
-import CoarseDeGiorgi.Statements.OriginCube
-import CoarseDeGiorgi.Statements.ParamTheta
-import CoarseDeGiorgi.Statements.PositivePart
-import CoarseDeGiorgi.Statements.SigmaLower
-import CoarseDeGiorgi.Statements.SpatialMomentRange
-import CoarseDeGiorgi.Statements.TwoLevelQuantity
+module
 
-import CoarseDeGiorgi.Statements.TwoLevelRecurrence
-import CoarseDeGiorgi.Recurrence.EnergyToSupremum
+public import Homogenization.Ambient.CoefficientField
+public import Homogenization.Sobolev.WeakDerivatives
+public import Homogenization.CoarseGraining.Definitions
+public import Homogenization.Geometry.TriadicCube
+public import Mathlib.Data.EReal.Basic
+public import Mathlib.Analysis.CStarAlgebra.Matrix
+public import Mathlib.Analysis.SpecialFunctions.Pow.Real
+public import Mathlib.MeasureTheory.Function.LpSeminorm.Basic
+public import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
+public import CoarseDeGiorgi.Statements.IsWeightedSubsolution
+public import CoarseDeGiorgi.Statements.LocallyBoundedAbove
+public import CoarseDeGiorgi.Statements.Contrast
+public import CoarseDeGiorgi.Statements.GammaSup
+public import CoarseDeGiorgi.Statements.OriginCube
+public import CoarseDeGiorgi.Statements.ParamTheta
+public import CoarseDeGiorgi.Statements.PositivePart
+public import CoarseDeGiorgi.Statements.SigmaLower
+public import CoarseDeGiorgi.Statements.SpatialMomentRange
+public import CoarseDeGiorgi.Statements.TwoLevelQuantity
+
+public import CoarseDeGiorgi.Statements.TwoLevelRecurrence
+public import CoarseDeGiorgi.Recurrence.EnergyToSupremum
+
+@[expose] public section
+
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator
 

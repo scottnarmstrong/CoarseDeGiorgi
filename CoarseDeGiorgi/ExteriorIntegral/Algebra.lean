@@ -1,7 +1,11 @@
-import Mathlib.Analysis.SpecialFunctions.Pow.NNReal
-import Mathlib.Analysis.SpecialFunctions.Pow.Real
+module
+
+public import Mathlib.Analysis.SpecialFunctions.Pow.NNReal
+public import Mathlib.Analysis.SpecialFunctions.Pow.Real
 
 /-! # Algebra of one layer of the exterior integral -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.ExteriorIntegral
 

@@ -1,7 +1,12 @@
-import CoarseDeGiorgi.Endpoint.Reconstruction.BlockContinuity
-import CoarseDeGiorgi.Weighted.ZeroSpace
+module
+
+public import CoarseDeGiorgi.Endpoint.Reconstruction.BlockContinuity
+public import CoarseDeGiorgi.Weighted.ZeroSpace
 
 /-! # Smooth approximation with convergent literal energies -/
+
+@[expose] public section
+
 namespace CoarseDeGiorgi.Endpoint.Reconstruction
 open Homogenization MeasureTheory Filter
 open scoped ENNReal Topology BigOperators

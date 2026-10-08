@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.SmoothParameterIntegral
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.SmoothParameterIntegral
 
 /-! # Infinite spatial smoothness of the fine kernels -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

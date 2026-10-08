@@ -1,18 +1,22 @@
-import CoarseDeGiorgi.ExteriorIntegral.Geometry
-import CoarseDeGiorgi.ExteriorIntegral.Algebra
-import CoarseDeGiorgi.ExteriorIntegral.Holder
-import CoarseDeGiorgi.Harnack.Pairing.ArbitraryLayer
-import CoarseDeGiorgi.Harnack.WeakHarnack.SelectionAdapters
-import CoarseDeGiorgi.Selection.SourceRepresentatives
-import CoarseDeGiorgi.Weighted.GradientHilbert
-import CoarseDeGiorgi.Statements.SurfaceEnergyMaximal
-import CoarseDeGiorgi.Statements.SelectionInterval
-import CoarseDeGiorgi.Statements.MemH1a
-import CoarseDeGiorgi.Whitney.LiftZeroExtension
-import CoarseDeGiorgi.Statements.SampledUpperResponse
-import CoarseDeGiorgi.Statements.IsPiecewiseHarmonicExtension
+module
+
+public import CoarseDeGiorgi.ExteriorIntegral.Geometry
+public import CoarseDeGiorgi.ExteriorIntegral.Algebra
+public import CoarseDeGiorgi.ExteriorIntegral.Holder
+public import CoarseDeGiorgi.Harnack.Pairing.ArbitraryLayer
+public import CoarseDeGiorgi.Harnack.WeakHarnack.SelectionAdapters
+public import CoarseDeGiorgi.Selection.SourceRepresentatives
+public import CoarseDeGiorgi.Weighted.GradientHilbert
+public import CoarseDeGiorgi.Statements.SurfaceEnergyMaximal
+public import CoarseDeGiorgi.Statements.SelectionInterval
+public import CoarseDeGiorgi.Statements.MemH1a
+public import CoarseDeGiorgi.Whitney.LiftZeroExtension
+public import CoarseDeGiorgi.Statements.SampledUpperResponse
+public import CoarseDeGiorgi.Statements.IsPiecewiseHarmonicExtension
 
 /-! # The layer-by-layer bound for the exterior integral -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.ExteriorIntegral
 

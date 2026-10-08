@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.SharpnessExamples.ScalarSumValue
-import CoarseDeGiorgi.Weighted.PairOperations
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.ScalarSumValue
+public import CoarseDeGiorgi.Weighted.PairOperations
 
 /-! # Convergence of the cylinder series in the weighted completion -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set Filter Topology
 open scoped ENNReal BigOperators

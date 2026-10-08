@@ -1,7 +1,11 @@
-import Homogenization.Ambient.CoefficientField
-import Homogenization.Sobolev.WeakDerivatives
-import Mathlib.Data.EReal.Basic
-import CoarseDeGiorgi.Weighted.UpperResponse
+module
+
+public import Homogenization.Ambient.CoefficientField
+public import Homogenization.Sobolev.WeakDerivatives
+public import Mathlib.Data.EReal.Basic
+public import CoarseDeGiorgi.Weighted.UpperResponse
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal

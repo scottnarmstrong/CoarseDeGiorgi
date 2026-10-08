@@ -1,12 +1,16 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.ReflectedIBP
-import Mathlib.Algebra.Order.ToIntervalMod
-import Mathlib.MeasureTheory.Function.Floor
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.ReflectedIBP
+public import Mathlib.Algebra.Order.ToIntervalMod
+public import Mathlib.MeasureTheory.Function.Floor
 
 /-! # Measurable periodic continuation of the even reflection
 
 Coordinates are reduced to the half-open fundamental interval using toIcoMod.
 On the open reflected box this reduction is exactly the identity.
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

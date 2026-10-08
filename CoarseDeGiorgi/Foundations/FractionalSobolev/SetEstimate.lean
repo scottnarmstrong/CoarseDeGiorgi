@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Foundations.FractionalSobolev.Basic
-import Mathlib.Analysis.SpecialFunctions.Pow.Continuity
-import Mathlib.Analysis.SpecificLimits.Basic
-import Mathlib.MeasureTheory.Integral.Lebesgue.Basic
+module
+
+public import CoarseDeGiorgi.Foundations.FractionalSobolev.Basic
+public import Mathlib.Analysis.SpecialFunctions.Pow.Continuity
+public import Mathlib.Analysis.SpecificLimits.Basic
+public import Mathlib.MeasureTheory.Integral.Lebesgue.Basic
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.FractionalSobolev
 

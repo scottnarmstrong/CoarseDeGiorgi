@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Weighted.LowerResponseSquare
-import CoarseDeGiorgi.Weighted.LowerResponseMatrix
-import CoarseDeGiorgi.Weighted.UpperResponseAffine
+module
+
+public import CoarseDeGiorgi.Weighted.LowerResponseSquare
+public import CoarseDeGiorgi.Weighted.LowerResponseMatrix
+public import CoarseDeGiorgi.Weighted.UpperResponseAffine
 
 /-! Existence and uniqueness of the lower-response matrix. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted
 

@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.FineKernelBounds
-import Mathlib.Analysis.Calculus.ContDiff.Deriv
-import Mathlib.MeasureTheory.Integral.IntervalIntegral.Periodic
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.FineKernelBounds
+public import Mathlib.Analysis.Calculus.ContDiff.Deriv
+public import Mathlib.MeasureTheory.Integral.IntervalIntegral.Periodic
 
 /-! # Normalized periodic density and its mean-zero primitive -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

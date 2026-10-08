@@ -1,4 +1,8 @@
-import CoarseDeGiorgi.Weighted.Completion
+module
+
+public import CoarseDeGiorgi.Weighted.Completion
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted
 

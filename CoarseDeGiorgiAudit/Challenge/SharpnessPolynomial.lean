@@ -1,4 +1,6 @@
-import Mathlib
+module
+
+public import Mathlib
 
 /-!
 # Proposition 11.2 (Sharpness of the polynomial bound)
@@ -18,6 +20,8 @@ tends to `⊤` as `ε → 0⁺`. Weighted solutions and subsolutions use the
 smooth-core closure `H¹ₐ` and their weak flux equations against smooth compactly
 supported tests.
 -/
+
+@[expose] public section
 
 open MeasureTheory Filter Topology
 open scoped BigOperators ENNReal Matrix Matrix.Norms.L2Operator

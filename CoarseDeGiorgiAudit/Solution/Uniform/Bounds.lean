@@ -1,8 +1,12 @@
-import Mathlib
-import CoarseDeGiorgiAudit.Defs
-import CoarseDeGiorgiAudit.Solution.BridgeBesov
-import CoarseDeGiorgi.Assembly.ClassicalMomentsPartition
-import CoarseDeGiorgi.Weighted.UpperSpecNorm
+module
+
+public import Mathlib
+public import CoarseDeGiorgiAudit.Defs
+public import CoarseDeGiorgiAudit.Solution.BridgeBesov
+public import CoarseDeGiorgi.Assembly.ClassicalMomentsPartition
+public import CoarseDeGiorgi.Weighted.UpperSpecNorm
+
+@[expose] public section
 
 attribute [-instance] Homogenization.instMeasurableSpaceVec
 

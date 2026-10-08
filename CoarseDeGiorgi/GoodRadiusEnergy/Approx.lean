@@ -1,10 +1,12 @@
-import CoarseDeGiorgi.PowerCacc.CapApprox
-import CoarseDeGiorgi.PowerCacc.Geometry
-import CoarseDeGiorgi.Harnack.WeakHarnack.ApproximationBridge
-import CoarseDeGiorgi.Weighted.Truncation.Continuity
-import CoarseDeGiorgi.Statements.PositiveCap
-import CoarseDeGiorgi.Statements.PositiveCapGradient
-import CoarseDeGiorgi.Statements.H1aWeightedNorm
+module
+
+public import CoarseDeGiorgi.PowerCacc.CapApprox
+public import CoarseDeGiorgi.PowerCacc.Geometry
+public import CoarseDeGiorgi.Harnack.WeakHarnack.ApproximationBridge
+public import CoarseDeGiorgi.Weighted.Truncation.Continuity
+public import CoarseDeGiorgi.Statements.PositiveCap
+public import CoarseDeGiorgi.Statements.PositiveCapGradient
+public import CoarseDeGiorgi.Statements.H1aWeightedNorm
 
 /-! # The truncations `(vᵢ - k)₊` of the smooth approximants
 
@@ -12,6 +14,8 @@ For smooth cores `vᵢ → v` in `H¹_a(□₀)` and a level `k`, the Lipschitz 
 weighted Sobolev pairs converging to `(v - k)₊` in `L¹` and in energy of the gradients; they are
 Lipschitz on every closed cube `τ□̄₀`, `τ < 1`. Used in the proof of Proposition
 `p.good.radius.energy`. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.GoodRadiusEnergy
 

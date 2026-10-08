@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.SharpnessExamples.WeakHarnackSharpnessCoefficient
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.WeakHarnackSharpnessCoefficient
 
 /-! # The weak Harnack radial field is a weighted coefficient -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set
 open scoped BigOperators ENNReal

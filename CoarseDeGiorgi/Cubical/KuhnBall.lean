@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Moments.Cells
-import CoarseDeGiorgi.Foundations.Simplex.Partition
+module
+
+public import CoarseDeGiorgi.Moments.Cells
+public import CoarseDeGiorgi.Foundations.Simplex.Partition
 
 /-! # A sup-norm ball inside every Kuhn simplex -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Cubical
 open Homogenization MeasureTheory

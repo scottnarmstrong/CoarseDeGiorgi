@@ -1,11 +1,16 @@
-import CoarseDeGiorgi.Selection.SourceRepresentatives
-import CoarseDeGiorgi.Assembly.HybridFractional
-import CoarseDeGiorgi.Selection.TraceBounds
-import CoarseDeGiorgi.Selection.SamplingMoment
-import CoarseDeGiorgi.Weighted.UpperSpecNorm
-import CoarseDeGiorgi.Assembly.LocalBoundedness
+module
+
+public import CoarseDeGiorgi.Selection.SourceRepresentatives
+public import CoarseDeGiorgi.Assembly.HybridFractional
+public import CoarseDeGiorgi.Selection.TraceBounds
+public import CoarseDeGiorgi.Selection.SamplingMoment
+public import CoarseDeGiorgi.Weighted.UpperSpecNorm
+public import CoarseDeGiorgi.Assembly.LocalBoundedness
 
 /-! The uniform selection theorem applied to the actual source shell. -/
+
+@[expose] public section
+
 namespace CoarseDeGiorgi.Assembly
 open Homogenization MeasureTheory Set CoarseDeGiorgi.Localization
 open scoped ENNReal BigOperators Matrix.Norms.L2Operator

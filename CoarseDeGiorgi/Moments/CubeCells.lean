@@ -1,16 +1,20 @@
-import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
-import CoarseDeGiorgi.Statements.CubeCell
-import CoarseDeGiorgi.Statements.GridOffset
-import CoarseDeGiorgi.Statements.OriginCube
-import CoarseDeGiorgi.Whitney.LiftZeroExtension
-import Homogenization.Geometry.ConvexDomain
-import Mathlib.Algebra.Ring.Parity
+module
+
+public import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
+public import CoarseDeGiorgi.Statements.CubeCell
+public import CoarseDeGiorgi.Statements.GridOffset
+public import CoarseDeGiorgi.Statements.OriginCube
+public import CoarseDeGiorgi.Whitney.LiftZeroExtension
+public import Homogenization.Geometry.ConvexDomain
+public import Mathlib.Algebra.Ring.Parity
 
 /-! # Triadic cube cells for response moments
 
 Open, bounded, convex and nonempty, contained in `originCube 1`, and weighted-coefficient
 restriction for the cubes `cubeCell k j`.
 -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

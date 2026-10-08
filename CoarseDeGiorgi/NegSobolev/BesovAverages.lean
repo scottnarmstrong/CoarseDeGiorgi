@@ -1,19 +1,23 @@
-import Homogenization.Ambient.CoefficientField
-import Homogenization.CoarseGraining.Definitions
-import Mathlib.Analysis.CStarAlgebra.Matrix
-import Mathlib.Analysis.SpecialFunctions.Pow.Real
-import Mathlib.MeasureTheory.Function.LpSeminorm.Basic
-import Mathlib.MeasureTheory.Integral.Bochner.Set
-import CoarseDeGiorgi.Statements.OriginCube
-import CoarseDeGiorgi.Statements.CubeCell
-import CoarseDeGiorgi.Statements.SimplexCell
-import CoarseDeGiorgi.Statements.Triangulation
-import CoarseDeGiorgi.Statements.GaussianKernel
+module
 
-import CoarseDeGiorgi.Statements.IsOpenOriginCube
-import CoarseDeGiorgi.NegSobolev.BesovGeometry
-import CoarseDeGiorgi.NegSobolev.BesovLevel
-import CoarseDeGiorgi.NegSobolev.BesovSeries
+public import Homogenization.Ambient.CoefficientField
+public import Homogenization.CoarseGraining.Definitions
+public import Mathlib.Analysis.CStarAlgebra.Matrix
+public import Mathlib.Analysis.SpecialFunctions.Pow.Real
+public import Mathlib.MeasureTheory.Function.LpSeminorm.Basic
+public import Mathlib.MeasureTheory.Integral.Bochner.Set
+public import CoarseDeGiorgi.Statements.OriginCube
+public import CoarseDeGiorgi.Statements.CubeCell
+public import CoarseDeGiorgi.Statements.SimplexCell
+public import CoarseDeGiorgi.Statements.Triangulation
+public import CoarseDeGiorgi.Statements.GaussianKernel
+
+public import CoarseDeGiorgi.Statements.IsOpenOriginCube
+public import CoarseDeGiorgi.NegSobolev.BesovGeometry
+public import CoarseDeGiorgi.NegSobolev.BesovLevel
+public import CoarseDeGiorgi.NegSobolev.BesovSeries
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

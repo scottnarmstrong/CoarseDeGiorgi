@@ -1,10 +1,14 @@
-import CoarseDeGiorgi.SharpnessExamples.ScalarFluxTesting
-import CoarseDeGiorgi.SharpnessExamples.ScalarFluxIdentity
-import CoarseDeGiorgi.SharpnessExamples.ScalarSumMembership
-import CoarseDeGiorgi.Weighted.ZeroCore
-import CoarseDeGiorgi.Statements.IsWeightedSubsolution
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.ScalarFluxTesting
+public import CoarseDeGiorgi.SharpnessExamples.ScalarFluxIdentity
+public import CoarseDeGiorgi.SharpnessExamples.ScalarSumMembership
+public import CoarseDeGiorgi.Weighted.ZeroCore
+public import CoarseDeGiorgi.Statements.IsWeightedSubsolution
 
 /-! # Each source cylinder profile is a weighted subsolution -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set Filter Topology
 open CoarseDeGiorgi.Sharpness

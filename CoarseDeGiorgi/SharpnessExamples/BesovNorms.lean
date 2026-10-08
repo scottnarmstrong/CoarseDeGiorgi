@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.SharpnessExamples.BesovSeries
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.BesovSeries
 
 /-! # Finite cube quasi-norms from summed cylinder bounds -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

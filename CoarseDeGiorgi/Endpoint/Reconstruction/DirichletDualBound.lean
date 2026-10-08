@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Endpoint.Reconstruction.Cancellation
-import CoarseDeGiorgi.Endpoint.Reconstruction.ScalarDuality
+module
+
+public import CoarseDeGiorgi.Endpoint.Reconstruction.Cancellation
+public import CoarseDeGiorgi.Endpoint.Reconstruction.ScalarDuality
 
 /-! # Dirichlet scale cancellation by Poisson Hessian duality -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint.Reconstruction
 

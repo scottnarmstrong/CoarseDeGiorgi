@@ -1,4 +1,8 @@
-import CoarseDeGiorgi.Weighted.UpperResponsePositive
+module
+
+public import CoarseDeGiorgi.Weighted.UpperResponsePositive
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted
 

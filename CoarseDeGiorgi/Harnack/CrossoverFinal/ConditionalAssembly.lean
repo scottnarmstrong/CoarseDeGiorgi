@@ -1,17 +1,21 @@
-import CoarseDeGiorgi.Harnack.CrossoverFinal.BombieriBridge
-import CoarseDeGiorgi.Harnack.CrossoverFinal.CenteredLogNorm
-import CoarseDeGiorgi.Harnack.CrossoverFinal.EnnrealAverage
-import CoarseDeGiorgi.Harnack.CrossoverFinal.LogCenter
-import CoarseDeGiorgi.Harnack.CrossoverFinal.Parameters
-import CoarseDeGiorgi.Harnack.CrossoverFinal.PowerIntegrability
-import CoarseDeGiorgi.Harnack.Crossover.FinalScalarCancellation
-import CoarseDeGiorgi.Harnack.Crossover.ScalarPremises
-import CoarseDeGiorgi.Statements.IsWeightedSupersolution
-import CoarseDeGiorgi.Statements.SpatialMomentRange
-import CoarseDeGiorgi.Statements.CrossoverExponent
-import CoarseDeGiorgi.Statements.ChiParam
-import CoarseDeGiorgi.Statements.ParamR
-import CoarseDeGiorgi.Statements.ParamTheta
+module
+
+public import CoarseDeGiorgi.Harnack.CrossoverFinal.BombieriBridge
+public import CoarseDeGiorgi.Harnack.CrossoverFinal.CenteredLogNorm
+public import CoarseDeGiorgi.Harnack.CrossoverFinal.EnnrealAverage
+public import CoarseDeGiorgi.Harnack.CrossoverFinal.LogCenter
+public import CoarseDeGiorgi.Harnack.CrossoverFinal.Parameters
+public import CoarseDeGiorgi.Harnack.CrossoverFinal.PowerIntegrability
+public import CoarseDeGiorgi.Harnack.Crossover.FinalScalarCancellation
+public import CoarseDeGiorgi.Harnack.Crossover.ScalarPremises
+public import CoarseDeGiorgi.Statements.IsWeightedSupersolution
+public import CoarseDeGiorgi.Statements.SpatialMomentRange
+public import CoarseDeGiorgi.Statements.CrossoverExponent
+public import CoarseDeGiorgi.Statements.ChiParam
+public import CoarseDeGiorgi.Statements.ParamR
+public import CoarseDeGiorgi.Statements.ParamTheta
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.CrossoverFinal
 

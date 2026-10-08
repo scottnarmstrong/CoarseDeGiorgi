@@ -1,4 +1,8 @@
-import CoarseDeGiorgi.Whitney.LiftCountable
+module
+
+public import CoarseDeGiorgi.Whitney.LiftCountable
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Whitney
 open Homogenization MeasureTheory Set Filter Topology

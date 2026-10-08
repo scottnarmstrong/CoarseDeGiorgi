@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.LowestBounds
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.LowestBounds
 
 /-! # Cancellation and translated cancellation for smooth vector kernels -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

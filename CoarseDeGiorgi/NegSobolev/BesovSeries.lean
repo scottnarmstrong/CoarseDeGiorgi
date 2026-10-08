@@ -1,12 +1,16 @@
-import CoarseDeGiorgi.Statements.GaussianKernel
-import Mathlib.Analysis.SpecialFunctions.Pow.Real
-import Mathlib.Topology.Algebra.InfiniteSum.ENNReal
+module
+
+public import CoarseDeGiorgi.Statements.GaussianKernel
+public import Mathlib.Analysis.SpecialFunctions.Pow.Real
+public import Mathlib.Topology.Algebra.InfiniteSum.ENNReal
 
 /-! # Passing from level estimates to the half-power Besov series
 
 All sums take values in `ℝ≥0∞`, so the comparison does not require a separate
 summability hypothesis and applies also to divergent series.
 -/
+
+@[expose] public section
 
 open scoped ENNReal
 

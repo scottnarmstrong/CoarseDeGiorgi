@@ -1,4 +1,6 @@
-import CoarseDeGiorgi.Whitney.Extension.LipConj
+module
+
+public import CoarseDeGiorgi.Whitney.Extension.LipConj
 
 /-! # Finiteness of the Lipschitz constant of the affine extension
 
@@ -6,6 +8,8 @@ The construction needs only `0 < h ≤ 1`, so it also applies at the wider width
 of `p.affine.extension`. Compactness bounds the boundary data, and the existing
 Euclidean difference estimate gives a finite exterior Lipschitz constant.
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.WhitneyExt
 

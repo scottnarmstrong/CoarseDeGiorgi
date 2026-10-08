@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Statements.ExteriorCell
-import CoarseDeGiorgi.Statements.ClosedTriadicCube
-import CoarseDeGiorgi.Statements.ClosedReferenceCube
-import CoarseDeGiorgi.Statements.InfSupDist
+module
+
+public import CoarseDeGiorgi.Statements.ExteriorCell
+public import CoarseDeGiorgi.Statements.ClosedTriadicCube
+public import CoarseDeGiorgi.Statements.ClosedReferenceCube
+public import CoarseDeGiorgi.Statements.InfSupDist
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator NNReal

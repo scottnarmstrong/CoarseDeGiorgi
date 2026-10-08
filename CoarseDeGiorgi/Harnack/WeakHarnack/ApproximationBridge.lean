@@ -1,10 +1,14 @@
-import CoarseDeGiorgi.Statements.H1aWeightedNorm
-import CoarseDeGiorgi.Statements.MemH1a
-import CoarseDeGiorgi.LowerFractional.NormBounds
-import CoarseDeGiorgi.LowerFractional.CompactCover
-import CoarseDeGiorgi.Weighted.Identification
-import CoarseDeGiorgi.Weighted.PairOperations
-import CoarseDeGiorgi.Foundations.PoincareW11Mean
+module
+
+public import CoarseDeGiorgi.Statements.H1aWeightedNorm
+public import CoarseDeGiorgi.Statements.MemH1a
+public import CoarseDeGiorgi.LowerFractional.NormBounds
+public import CoarseDeGiorgi.LowerFractional.CompactCover
+public import CoarseDeGiorgi.Weighted.Identification
+public import CoarseDeGiorgi.Weighted.PairOperations
+public import CoarseDeGiorgi.Foundations.PoincareW11Mean
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.WeakHarnack
 

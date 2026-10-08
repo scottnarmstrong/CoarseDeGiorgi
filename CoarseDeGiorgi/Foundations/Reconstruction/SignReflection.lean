@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.AuxFaceClosure
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.AuxFaceClosure
 
 /-! # Measure-preserving coordinate sign changes for the reflected box -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

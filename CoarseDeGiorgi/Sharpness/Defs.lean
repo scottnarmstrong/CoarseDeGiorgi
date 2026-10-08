@@ -1,4 +1,6 @@
-import Homogenization.Ambient.Euclidean
+module
+
+public import Homogenization.Ambient.Euclidean
 
 /-!
 # Geometry near a coordinate line
@@ -6,6 +8,8 @@ import Homogenization.Ambient.Euclidean
 The transverse distance to the first coordinate axis is the Euclidean magnitude
 of the vector obtained by setting the first coordinate to zero.
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Sharpness
 

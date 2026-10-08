@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Foundations.FracGeometry.SurfaceSum
-import CoarseDeGiorgi.Foundations.FracGeometry.Defs
-import CoarseDeGiorgi.Statements.FracNorm
-import CoarseDeGiorgi.Statements.SurfaceFracNorm
+module
+
+public import CoarseDeGiorgi.Foundations.FracGeometry.SurfaceSum
+public import CoarseDeGiorgi.Foundations.FracGeometry.Defs
+public import CoarseDeGiorgi.Statements.FracNorm
+public import CoarseDeGiorgi.Statements.SurfaceFracNorm
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.FracGeometry
 open Homogenization MeasureTheory Set

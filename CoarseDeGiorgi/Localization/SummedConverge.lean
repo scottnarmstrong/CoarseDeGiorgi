@@ -1,6 +1,11 @@
-import CoarseDeGiorgi.Localization.SummedTendsto
+module
+
+public import CoarseDeGiorgi.Localization.SummedTendsto
 
 /-! # Convergence of localized functions in the fractional norm -/
+
+@[expose] public section
+
 namespace CoarseDeGiorgi.Localization
 open Homogenization MeasureTheory Set Filter Topology
 open CoarseDeGiorgi.Foundations

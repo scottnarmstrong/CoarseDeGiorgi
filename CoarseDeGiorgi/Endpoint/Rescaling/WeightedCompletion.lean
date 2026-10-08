@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Endpoint.Rescaling.AffineEnergy
-import CoarseDeGiorgi.Weighted.TestingApproximation
+module
+
+public import CoarseDeGiorgi.Endpoint.Rescaling.AffineEnergy
+public import CoarseDeGiorgi.Weighted.TestingApproximation
 
 /-! Transport of the weighted completions by interior affine maps. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Filter Topology
 open scoped ENNReal Pointwise

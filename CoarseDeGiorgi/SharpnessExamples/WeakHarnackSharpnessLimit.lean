@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.SharpnessExamples.WeakHarnackSharpnessMeans
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.WeakHarnackSharpnessMeans
 
 /-! # The blow-up of the `L^η` means: explicit power bounds -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set Filter Topology
 open scoped BigOperators ENNReal ContDiff

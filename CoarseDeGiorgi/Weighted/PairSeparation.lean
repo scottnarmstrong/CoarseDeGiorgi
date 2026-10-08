@@ -1,4 +1,8 @@
-import CoarseDeGiorgi.Weighted.PairOperations
+module
+
+public import CoarseDeGiorgi.Weighted.PairOperations
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted
 

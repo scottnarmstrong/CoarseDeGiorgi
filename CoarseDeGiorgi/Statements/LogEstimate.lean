@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.Statements.IsWeightedSupersolution
-import CoarseDeGiorgi.Statements.SpatialMomentRange
-import CoarseDeGiorgi.Statements.Contrast
-import CoarseDeGiorgi.Statements.ParamR
-import CoarseDeGiorgi.Statements.WeightedEnergy
-import CoarseDeGiorgi.Harnack.Final.LogEstimateProof
+module
+
+public import CoarseDeGiorgi.Statements.IsWeightedSupersolution
+public import CoarseDeGiorgi.Statements.SpatialMomentRange
+public import CoarseDeGiorgi.Statements.Contrast
+public import CoarseDeGiorgi.Statements.ParamR
+public import CoarseDeGiorgi.Statements.WeightedEnergy
+public import CoarseDeGiorgi.Harnack.Final.LogEstimateProof
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped ENNReal

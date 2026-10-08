@@ -1,6 +1,11 @@
-import CoarseDeGiorgi.Localization.SummedCore
+module
+
+public import CoarseDeGiorgi.Localization.SummedCore
 
 /-! # The summed localization bound for a measurable representative -/
+
+@[expose] public section
+
 namespace CoarseDeGiorgi.Localization
 open Homogenization MeasureTheory Set
 open CoarseDeGiorgi.Foundations

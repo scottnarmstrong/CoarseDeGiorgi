@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Selection.SourceResponses
-import CoarseDeGiorgi.Localization.SourceCover
+module
+
+public import CoarseDeGiorgi.Selection.SourceResponses
+public import CoarseDeGiorgi.Localization.SourceCover
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Selection
 open Homogenization MeasureTheory Set

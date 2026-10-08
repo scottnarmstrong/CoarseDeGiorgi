@@ -1,6 +1,8 @@
-import CoarseDeGiorgi.Endpoint.Reconstruction.DirichletBlock
-import Homogenization.Sobolev.Foundations.CubeCalderonZygmund.ScalarPoissonHessian
-import Homogenization.Sobolev.W1p.CubeVector
+module
+
+public import CoarseDeGiorgi.Endpoint.Reconstruction.DirichletBlock
+public import Homogenization.Sobolev.Foundations.CubeCalderonZygmund.ScalarPoissonHessian
+public import Homogenization.Sobolev.W1p.CubeVector
 
 /-! # Scalar Dirichlet Poisson existence for duality
 
@@ -8,6 +10,8 @@ The closed zero-trace gradient range is a Hilbert space. The inverse gradient
 map is continuous by Poincaré, so scalar `L²` forcing defines a continuous
 functional there. Riesz and the closed graph realization give the solution.
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint.Reconstruction
 

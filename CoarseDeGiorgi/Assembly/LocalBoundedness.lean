@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.Assembly.CaccioppoliEnergy
-import CoarseDeGiorgi.Assembly.CaccioppoliParameters
-import CoarseDeGiorgi.Weighted.TestingTruncation
-import CoarseDeGiorgi.Weighted.TestingNorms
-import CoarseDeGiorgi.Foundations.Iteration.HoleFilling
-import Mathlib.MeasureTheory.Function.LpSeminorm.CompareExp
+module
+
+public import CoarseDeGiorgi.Assembly.CaccioppoliEnergy
+public import CoarseDeGiorgi.Assembly.CaccioppoliParameters
+public import CoarseDeGiorgi.Weighted.TestingTruncation
+public import CoarseDeGiorgi.Weighted.TestingNorms
+public import CoarseDeGiorgi.Foundations.Iteration.HoleFilling
+public import Mathlib.MeasureTheory.Function.LpSeminorm.CompareExp
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Assembly
 

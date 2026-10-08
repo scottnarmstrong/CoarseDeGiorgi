@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.Endpoint.Morrey.Approximation
-import Homogenization.Sobolev.Foundations.PoincareW1p.Dilation
-import Homogenization.Sobolev.Foundations.PoincareW1p.Translation
-import Homogenization.Geometry.TriadicCubeTranslation
+module
+
+public import CoarseDeGiorgi.Endpoint.Morrey.Approximation
+public import Homogenization.Sobolev.Foundations.PoincareW1p.Dilation
+public import Homogenization.Sobolev.Foundations.PoincareW1p.Translation
+public import Homogenization.Geometry.TriadicCubeTranslation
 
 /-! # Translation and dilation of the weak Morrey estimate -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint.Morrey
 

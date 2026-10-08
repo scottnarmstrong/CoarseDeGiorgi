@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.LowerFractional.MeanNorm
-import CoarseDeGiorgi.Foundations.Reconstruction.Geometry
+module
+
+public import CoarseDeGiorgi.LowerFractional.MeanNorm
+public import CoarseDeGiorgi.Foundations.Reconstruction.Geometry
 
 /-! The cube-scaled mean inequality (e.fractional.mean.norm). -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.LowerFractional
 

@@ -1,10 +1,14 @@
-import Mathlib.Analysis.SpecialFunctions.Pow.NNReal
-import Mathlib.Topology.Algebra.InfiniteSum.Real
+module
+
+public import Mathlib.Analysis.SpecialFunctions.Pow.NNReal
+public import Mathlib.Topology.Algebra.InfiniteSum.Real
 
 /-! # Combining the upper bounds with a lower bound on the contrast
 
 `Θ = Λ / λ`, `Λ ≤ C z`, `C⁻¹ ≤ λ` and `c z ≤ Θ` give two-sided bounds for `Λ`, `λ` and `Θ`
 (Proposition `p.sharpness.polynomial`, end of Step 3). -/
+
+@[expose] public section
 
 open scoped ENNReal
 

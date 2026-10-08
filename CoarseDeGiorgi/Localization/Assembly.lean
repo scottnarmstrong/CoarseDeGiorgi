@@ -1,11 +1,16 @@
-import CoarseDeGiorgi.Localization.Lipschitz
-import CoarseDeGiorgi.Localization.SparseSum
+module
+
+public import CoarseDeGiorgi.Localization.Lipschitz
+public import CoarseDeGiorgi.Localization.SparseSum
 
 /-! # Compact-localization sum estimate using the fractional norms `fracNorm`
 
 No lower-fractional theorem is imported. The local membership and eventual
 energy estimate enter explicitly in the conditional consumer.
 -/
+
+@[expose] public section
+
 namespace CoarseDeGiorgi.Localization
 open Homogenization MeasureTheory Set
 open CoarseDeGiorgi.Foundations

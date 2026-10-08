@@ -1,4 +1,8 @@
-import CoarseDeGiorgi.Weighted.TestingApproximation
+module
+
+public import CoarseDeGiorgi.Weighted.TestingApproximation
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted
 

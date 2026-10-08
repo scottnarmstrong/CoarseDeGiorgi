@@ -1,10 +1,14 @@
-import CoarseDeGiorgi.Whitney.SeedInterpolation
+module
+
+public import CoarseDeGiorgi.Whitney.SeedInterpolation
 
 /-! # Kuhn hats at every integer scale
 
 For `n : ℤ` the mesh `3^n` Kuhn hats are the level-zero hats composed with the dilation
 `x ↦ 3^(-n) x`.  Everything about them (interpolation at nodes, refinement, support) is
 transported from the level-zero development of the Whitney seed. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Whitney.Interpolation
 

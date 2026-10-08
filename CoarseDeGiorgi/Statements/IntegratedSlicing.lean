@@ -1,8 +1,13 @@
-import Homogenization.Ambient.CoefficientField
-import CoarseDeGiorgi.Statements.SurfaceFracNorm
-import CoarseDeGiorgi.Statements.FracNorm
+module
 
-import CoarseDeGiorgi.Foundations.Slicing.Integrated
+public import Homogenization.Ambient.CoefficientField
+public import CoarseDeGiorgi.Statements.SurfaceFracNorm
+public import CoarseDeGiorgi.Statements.FracNorm
+
+public import CoarseDeGiorgi.Foundations.Slicing.Integrated
+
+@[expose] public section
+
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal
 

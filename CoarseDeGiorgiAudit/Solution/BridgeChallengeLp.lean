@@ -1,1 +1,5 @@
-import CoarseDeGiorgiAudit.Solution.HarnackLpLq
+module
+
+public import CoarseDeGiorgiAudit.Solution.HarnackLpLq
+
+@[expose] public section

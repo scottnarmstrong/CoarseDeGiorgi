@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Harnack.ReverseMoments.ReverseNorm
-import CoarseDeGiorgi.Harnack.ReverseMoments.MomentConversion
-import CoarseDeGiorgi.Harnack.Powers.SignedPower
-import CoarseDeGiorgi.Assembly.CaccioppoliEnergy
-import CoarseDeGiorgi.Assembly.HybridParameters
+module
+
+public import CoarseDeGiorgi.Harnack.ReverseMoments.ReverseNorm
+public import CoarseDeGiorgi.Harnack.ReverseMoments.MomentConversion
+public import CoarseDeGiorgi.Harnack.Powers.SignedPower
+public import CoarseDeGiorgi.Assembly.CaccioppoliEnergy
+public import CoarseDeGiorgi.Assembly.HybridParameters
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.ReverseMoments
 

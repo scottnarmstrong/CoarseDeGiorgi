@@ -1,12 +1,16 @@
-import CoarseDeGiorgi.SharpnessExamples.CylinderResponseDefs
-import CoarseDeGiorgi.Weighted.UpperSpecHarmonic
-import Mathlib.Analysis.Calculus.LineDeriv.IntegrationByParts
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.CylinderResponseDefs
+public import CoarseDeGiorgi.Weighted.UpperSpecHarmonic
+public import Mathlib.Analysis.Calculus.LineDeriv.IntegrationByParts
 
 /-! # Axial harmonicity of a cylindrical coefficient
 
 The discontinuity across the cylinder causes no axial divergence: the axial
 conductivity is constant along every line parallel to the first coordinate.
 -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Classical

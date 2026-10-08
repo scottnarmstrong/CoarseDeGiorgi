@@ -1,20 +1,24 @@
-import CoarseDeGiorgi.Assembly.ClassicalMomentsSeries
-import CoarseDeGiorgi.Statements.LowerCellAverage
-import CoarseDeGiorgi.Statements.LowerMoment
-import CoarseDeGiorgi.Statements.LowerResponseInvOnCell
-import CoarseDeGiorgi.Statements.OriginCube
-import CoarseDeGiorgi.Statements.SimplexCellSubsetOriginCube
-import CoarseDeGiorgi.Statements.TriangulationCard
-import CoarseDeGiorgi.Statements.UpperCellAverage
-import CoarseDeGiorgi.Statements.UpperMoment
-import CoarseDeGiorgi.Statements.UpperResponseOnCell
-import CoarseDeGiorgi.LowerFractional.CompactCover
-import CoarseDeGiorgi.Weighted.LowerSpecNorm
-import CoarseDeGiorgi.Weighted.ResponseBoundsLower
-import CoarseDeGiorgi.Weighted.UpperSpecHarmonic
-import CoarseDeGiorgi.Weighted.UpperSpecNorm
-import CoarseDeGiorgi.Weighted.ZeroBoundary
-import Mathlib.Analysis.CStarAlgebra.Matrix
+module
+
+public import CoarseDeGiorgi.Assembly.ClassicalMomentsSeries
+public import CoarseDeGiorgi.Statements.LowerCellAverage
+public import CoarseDeGiorgi.Statements.LowerMoment
+public import CoarseDeGiorgi.Statements.LowerResponseInvOnCell
+public import CoarseDeGiorgi.Statements.OriginCube
+public import CoarseDeGiorgi.Statements.SimplexCellSubsetOriginCube
+public import CoarseDeGiorgi.Statements.TriangulationCard
+public import CoarseDeGiorgi.Statements.UpperCellAverage
+public import CoarseDeGiorgi.Statements.UpperMoment
+public import CoarseDeGiorgi.Statements.UpperResponseOnCell
+public import CoarseDeGiorgi.LowerFractional.CompactCover
+public import CoarseDeGiorgi.Weighted.LowerSpecNorm
+public import CoarseDeGiorgi.Weighted.ResponseBoundsLower
+public import CoarseDeGiorgi.Weighted.UpperSpecHarmonic
+public import CoarseDeGiorgi.Weighted.UpperSpecNorm
+public import CoarseDeGiorgi.Weighted.ZeroBoundary
+public import Mathlib.Analysis.CStarAlgebra.Matrix
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.Moments
 

@@ -1,6 +1,11 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.TailActions
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.TailActions
 
 /-! # The unconditional tail-bound input for the committed fractional assembly -/
+
+@[expose] public section
+
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 open Homogenization MeasureTheory Filter
 open scoped ENNReal BigOperators Topology

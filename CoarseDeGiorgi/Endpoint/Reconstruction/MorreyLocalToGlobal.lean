@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Endpoint.Reconstruction.StepInverse
-import CoarseDeGiorgi.Endpoint.Morrey.Cube
+module
+
+public import CoarseDeGiorgi.Endpoint.Reconstruction.StepInverse
+public import CoarseDeGiorgi.Endpoint.Morrey.Cube
 
 /-! # Cellwise Morrey with an Lr estimate for the mean -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint.Reconstruction
 

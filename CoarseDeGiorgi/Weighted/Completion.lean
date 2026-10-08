@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Weighted.EnergyLimits
-import CoarseDeGiorgi.Foundations.PoincareW11Mean
+module
+
+public import CoarseDeGiorgi.Weighted.EnergyLimits
+public import CoarseDeGiorgi.Foundations.PoincareW11Mean
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted
 

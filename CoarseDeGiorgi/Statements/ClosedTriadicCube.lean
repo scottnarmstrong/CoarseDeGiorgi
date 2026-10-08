@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Statements.TriadicCenter
-import Homogenization.Ambient.CoefficientField
-import Homogenization.Multiscale.CubeAverage
+module
+
+public import CoarseDeGiorgi.Statements.TriadicCenter
+public import Homogenization.Ambient.CoefficientField
+public import Homogenization.Multiscale.CubeAverage
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal

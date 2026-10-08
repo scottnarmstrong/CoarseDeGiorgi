@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Whitney.SeedBarycentric
-import Mathlib.Analysis.Calculus.FDeriv.Basic
+module
+
+public import CoarseDeGiorgi.Whitney.SeedBarycentric
+public import Mathlib.Analysis.Calculus.FDeriv.Basic
 
 /-! # Explicit affine interpolation on a Kuhn cell -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Whitney
 

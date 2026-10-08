@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Statements.Contrast
-import CoarseDeGiorgi.Statements.LowerMoment
-import CoarseDeGiorgi.Harnack.Moments.LevelMeans
-import CoarseDeGiorgi.Weighted.LowerSpecNorm
+module
+
+public import CoarseDeGiorgi.Statements.Contrast
+public import CoarseDeGiorgi.Statements.LowerMoment
+public import CoarseDeGiorgi.Harnack.Moments.LevelMeans
+public import CoarseDeGiorgi.Weighted.LowerSpecNorm
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.ContrastBound
 

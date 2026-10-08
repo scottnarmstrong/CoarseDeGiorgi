@@ -1,4 +1,8 @@
-import CoarseDeGiorgi.Weighted.UpperSpecHarmonic
+module
+
+public import CoarseDeGiorgi.Weighted.UpperSpecHarmonic
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted.UpperResponseImpl
 

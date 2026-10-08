@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Foundations.Triadic.Selection
-import Mathlib.Topology.Order.Compact
-import Mathlib.Data.Fintype.Pi
-import Mathlib.Data.Int.Interval
+module
+
+public import CoarseDeGiorgi.Foundations.Triadic.Selection
+public import Mathlib.Topology.Order.Compact
+public import Mathlib.Data.Fintype.Pi
+public import Mathlib.Data.Int.Interval
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Triadic
 

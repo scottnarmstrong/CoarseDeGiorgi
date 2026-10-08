@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Whitney.Interpolation.BoundsBasic
+module
+
+public import CoarseDeGiorgi.Whitney.Interpolation.BoundsBasic
 
 /-!
 # Barycentric coordinates on a closed Kuhn simplex
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.WhitneyInterp
 

@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.Weighted.Energy
-import CoarseDeGiorgi.Statements.WeightedEnergy
-import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
-import Mathlib.MeasureTheory.Integral.MeanInequalities
+module
+
+public import CoarseDeGiorgi.Weighted.Energy
+public import CoarseDeGiorgi.Statements.WeightedEnergy
+public import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
+public import Mathlib.MeasureTheory.Integral.MeanInequalities
 
 /-! # Cauchy-Schwarz for weighted pairings in `[0, ∞]` -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.ExteriorIntegral
 

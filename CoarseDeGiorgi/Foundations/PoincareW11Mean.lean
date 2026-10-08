@@ -1,7 +1,11 @@
-import Homogenization.CoarseGraining.Definitions
-import Homogenization.Sobolev.Foundations.PoincareLp
-import Homogenization.Sobolev.Foundations.PoincareW1p
-import Homogenization.Sobolev.W1p.ConvexApproxSmoothing
+module
+
+public import Homogenization.CoarseGraining.Definitions
+public import Homogenization.Sobolev.Foundations.PoincareLp
+public import Homogenization.Sobolev.Foundations.PoincareW1p
+public import Homogenization.Sobolev.W1p.ConvexApproxSmoothing
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations
 

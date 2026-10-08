@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Harnack.Log.FiniteCover
-import CoarseDeGiorgi.Foundations.Reconstruction.Geometry
-import Mathlib.MeasureTheory.Function.LpSeminorm.Indicator
-import Mathlib.MeasureTheory.Function.LpSeminorm.TriangleInequality
+module
+
+public import CoarseDeGiorgi.Harnack.Log.FiniteCover
+public import CoarseDeGiorgi.Foundations.Reconstruction.Geometry
+public import Mathlib.MeasureTheory.Function.LpSeminorm.Indicator
+public import Mathlib.MeasureTheory.Function.LpSeminorm.TriangleInequality
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.Log
 

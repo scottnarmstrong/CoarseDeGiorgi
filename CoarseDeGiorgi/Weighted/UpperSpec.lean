@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Weighted.UpperSpecMinimum
-import CoarseDeGiorgi.Weighted.UpperSpecNorm
+module
+
+public import CoarseDeGiorgi.Weighted.UpperSpecMinimum
+public import CoarseDeGiorgi.Weighted.UpperSpecNorm
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted.UpperResponseImpl
 

@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.Selection.Sampling
-import CoarseDeGiorgi.Statements.CubeSurface
-import CoarseDeGiorgi.Foundations.Triadic.Basic
-import CoarseDeGiorgi.Foundations.Euclid.Basic
-import CoarseDeGiorgi.Foundations.Simplex.Basic
-import Mathlib.Topology.Maps.Proper.Basic
+module
+
+public import CoarseDeGiorgi.Selection.Sampling
+public import CoarseDeGiorgi.Statements.CubeSurface
+public import CoarseDeGiorgi.Foundations.Triadic.Basic
+public import CoarseDeGiorgi.Foundations.Euclid.Basic
+public import CoarseDeGiorgi.Foundations.Simplex.Basic
+public import Mathlib.Topology.Maps.Proper.Basic
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Selection
 

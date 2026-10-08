@@ -1,7 +1,12 @@
-import CoarseDeGiorgi.Endpoint.Reconstruction.SmoothReconstruction
-import CoarseDeGiorgi.Weighted.HarmonicCore
+module
+
+public import CoarseDeGiorgi.Endpoint.Reconstruction.SmoothReconstruction
+public import CoarseDeGiorgi.Weighted.HarmonicCore
 
 /-! # Supported smooth inputs as ordinary and weighted zero-trace functions -/
+
+@[expose] public section
+
 namespace CoarseDeGiorgi.Endpoint.Reconstruction
 open Homogenization MeasureTheory
 open scoped ENNReal Topology

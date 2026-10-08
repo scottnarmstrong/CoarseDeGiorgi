@@ -1,8 +1,13 @@
-import CoarseDeGiorgi.Statements.OriginCube
-import CoarseDeGiorgi.Statements.SobolevNorm
-import Mathlib.Analysis.Distribution.AEEqOfIntegralContDiff
+module
+
+public import CoarseDeGiorgi.Statements.OriginCube
+public import CoarseDeGiorgi.Statements.SobolevNorm
+public import Mathlib.Analysis.Distribution.AEEqOfIntegralContDiff
 
 /-! Uniqueness and characterization of the weak derivative arrays. -/
+
+@[expose] public section
+
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal
 namespace CoarseDeGiorgi.NegSobolev

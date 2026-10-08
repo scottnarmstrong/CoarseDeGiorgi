@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.SharpnessExamples.CylinderAveragesDefs
-import CoarseDeGiorgi.Foundations.Euclid.Basic
-import CoarseDeGiorgi.Statements.SimplexCell
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.CylinderAveragesDefs
+public import CoarseDeGiorgi.Foundations.Euclid.Basic
+public import CoarseDeGiorgi.Statements.SimplexCell
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set
 open CoarseDeGiorgi.Foundations.FracGeometry
@@ -8,11 +12,11 @@ open scoped BigOperators ENNReal
 
 namespace CoarseDeGiorgi.SharpnessExamples
 
-private def cylinderRectLower {n : ℕ} (axisCenter axisRadius : ℝ)
+def cylinderRectLower {n : ℕ} (axisCenter axisRadius : ℝ)
     (center : Vec n) (tailRadius : ℝ) : Fin (n + 1) → ℝ :=
   Fin.cases (axisCenter - axisRadius) (fun i => center i - tailRadius)
 
-private def cylinderRectUpper {n : ℕ} (axisCenter axisRadius : ℝ)
+def cylinderRectUpper {n : ℕ} (axisCenter axisRadius : ℝ)
     (center : Vec n) (tailRadius : ℝ) : Fin (n + 1) → ℝ :=
   Fin.cases (axisCenter + axisRadius) (fun i => center i + tailRadius)
 

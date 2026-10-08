@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Foundations.Iteration.Dyadic
-import Mathlib.Analysis.SpecificLimits.Basic
+module
+
+public import CoarseDeGiorgi.Foundations.Iteration.Dyadic
+public import Mathlib.Analysis.SpecificLimits.Basic
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Iteration
 

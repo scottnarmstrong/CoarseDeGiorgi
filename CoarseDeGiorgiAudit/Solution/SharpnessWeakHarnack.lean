@@ -1,6 +1,8 @@
-import Mathlib
-import CoarseDeGiorgi.Statements.WeakHarnackSharpness
-import CoarseDeGiorgiAudit.Solution.ResponseQuadraticForms
+module
+
+public import Mathlib
+public import CoarseDeGiorgi.Statements.WeakHarnackSharpness
+public import CoarseDeGiorgiAudit.Solution.ResponseQuadraticForms
 
 /-!
 # Proposition 11.3 (Sharpness of the weak Harnack exponent)
@@ -24,6 +26,8 @@ The paper's proof takes `a(ϱ) = ϱ^β log³(e√d/ϱ)` with `β = 2t + d/q`; th
 statement, like the paper's, asserts that a radial field with these properties
 exists.
 -/
+
+@[expose] public section
 
 open MeasureTheory Filter Topology
 open scoped BigOperators ENNReal Matrix Matrix.Norms.L2Operator

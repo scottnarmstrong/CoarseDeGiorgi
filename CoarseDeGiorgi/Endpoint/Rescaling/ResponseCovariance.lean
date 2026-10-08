@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Endpoint.Rescaling.AffineInverse
-import CoarseDeGiorgi.Statements.UpperResponseSpec
-import CoarseDeGiorgi.Statements.LowerResponseInvSpec
+module
+
+public import CoarseDeGiorgi.Endpoint.Rescaling.AffineInverse
+public import CoarseDeGiorgi.Statements.UpperResponseSpec
+public import CoarseDeGiorgi.Statements.LowerResponseInvSpec
 
 /-! Affine covariance of the weighted response matrices. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped ENNReal Matrix.Norms.L2Operator

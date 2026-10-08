@@ -1,9 +1,14 @@
-import CoarseDeGiorgi.Endpoint.Reconstruction.FiniteContinuity
-import CoarseDeGiorgi.Endpoint.Reconstruction.WeightedApproximation
-import CoarseDeGiorgi.Endpoint.Reconstruction.SmoothInput
-import CoarseDeGiorgi.Endpoint.Reconstruction.SmoothTail
+module
+
+public import CoarseDeGiorgi.Endpoint.Reconstruction.FiniteContinuity
+public import CoarseDeGiorgi.Endpoint.Reconstruction.WeightedApproximation
+public import CoarseDeGiorgi.Endpoint.Reconstruction.SmoothInput
+public import CoarseDeGiorgi.Endpoint.Reconstruction.SmoothTail
 
 /-! # Reconstruction of weighted zero-trace representatives by density -/
+
+@[expose] public section
+
 namespace CoarseDeGiorgi.Endpoint.Reconstruction
 open Homogenization MeasureTheory Filter
 open scoped ENNReal Topology BigOperators

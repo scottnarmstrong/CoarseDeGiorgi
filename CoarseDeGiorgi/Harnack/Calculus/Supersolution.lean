@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Weighted.Truncation.Algebra
-import CoarseDeGiorgi.Weighted.PairOperations
-import CoarseDeGiorgi.Statements.IsWeightedSolution
-import CoarseDeGiorgi.Statements.IsWeightedSupersolution
+module
+
+public import CoarseDeGiorgi.Weighted.Truncation.Algebra
+public import CoarseDeGiorgi.Weighted.PairOperations
+public import CoarseDeGiorgi.Statements.IsWeightedSolution
+public import CoarseDeGiorgi.Statements.IsWeightedSupersolution
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.Calculus
 

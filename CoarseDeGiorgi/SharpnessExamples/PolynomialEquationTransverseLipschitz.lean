@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.SharpnessExamples.PolynomialEquationTransverseRegularity
-import CoarseDeGiorgi.SharpnessExamples.ScalarFluxLipschitz
-import CoarseDeGiorgi.Sharpness.LineEquation.LineBasics
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.PolynomialEquationTransverseRegularity
+public import CoarseDeGiorgi.SharpnessExamples.ScalarFluxLipschitz
+public import CoarseDeGiorgi.Sharpness.LineEquation.LineBasics
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set
 open CoarseDeGiorgi.Sharpness

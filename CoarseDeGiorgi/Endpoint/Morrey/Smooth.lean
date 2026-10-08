@@ -1,4 +1,6 @@
-import CoarseDeGiorgi.Endpoint.Morrey.Kernel
+module
+
+public import CoarseDeGiorgi.Endpoint.Morrey.Kernel
 
 /-! # Smooth Morrey estimate on bounded convex domains
 
@@ -6,6 +8,8 @@ The pointwise Riesz representation and Hölder give a uniform oscillation bound.
 This module keeps the domain and diameter explicit; scaling to cubes and passage
 to weak representatives are separate steps.
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint.Morrey
 

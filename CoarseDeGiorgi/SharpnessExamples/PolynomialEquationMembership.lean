@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.SharpnessExamples.PolynomialEquationRegularity
-import CoarseDeGiorgi.Sharpness.LineEquation.LineBasics
-import CoarseDeGiorgi.SharpnessExamples.PolynomialField
-import CoarseDeGiorgi.Sharpness.LineEquation.AxisGeometry
-import CoarseDeGiorgi.Foundations.Euclid.Basic
-import CoarseDeGiorgi.Weighted.Lipschitz
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.PolynomialEquationRegularity
+public import CoarseDeGiorgi.Sharpness.LineEquation.LineBasics
+public import CoarseDeGiorgi.SharpnessExamples.PolynomialField
+public import CoarseDeGiorgi.Sharpness.LineEquation.AxisGeometry
+public import CoarseDeGiorgi.Foundations.Euclid.Basic
+public import CoarseDeGiorgi.Weighted.Lipschitz
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set
 open scoped BigOperators ENNReal NNReal

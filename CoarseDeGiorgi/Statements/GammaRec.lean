@@ -1,10 +1,14 @@
-import CoarseDeGiorgi.Statements.AlphaParam
-import CoarseDeGiorgi.Statements.GammaLoc
-import CoarseDeGiorgi.Statements.ParamR
-import CoarseDeGiorgi.Statements.ParamTheta
-import CoarseDeGiorgi.Statements.RBoundaryParam
-import CoarseDeGiorgi.Statements.RStarParam
-import CoarseDeGiorgi.Statements.SigmaUpper
+module
+
+public import CoarseDeGiorgi.Statements.AlphaParam
+public import CoarseDeGiorgi.Statements.GammaLoc
+public import CoarseDeGiorgi.Statements.ParamR
+public import CoarseDeGiorgi.Statements.ParamTheta
+public import CoarseDeGiorgi.Statements.RBoundaryParam
+public import CoarseDeGiorgi.Statements.RStarParam
+public import CoarseDeGiorgi.Statements.SigmaUpper
+
+@[expose] public section
 
 namespace CoarseDeGiorgi
 

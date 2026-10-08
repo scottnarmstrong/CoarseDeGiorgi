@@ -1,11 +1,15 @@
-import CoarseDeGiorgi.Statements.LocalBoundedness
-import CoarseDeGiorgi.Statements.PositivePart
+module
+
+public import CoarseDeGiorgi.Statements.LocalBoundedness
+public import CoarseDeGiorgi.Statements.PositivePart
 
 /-! # Lower bound on the contrast from Theorem A
 
 End of Step 3 of the proof of Proposition `p.sharpness.polynomial`: Theorem A with
 `ρ₁ = 1/2`, `ρ₂ = 3/4` and `η = 2` applied to the positive part of the solution, whose height is
 at least one, against its `L²` norm. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

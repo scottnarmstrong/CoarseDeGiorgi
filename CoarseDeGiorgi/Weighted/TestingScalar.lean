@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Weighted.TestingProducts
-import Mathlib.Analysis.Calculus.BumpFunction.Basic
-import Mathlib.Analysis.Calculus.Deriv.Support
+module
+
+public import CoarseDeGiorgi.Weighted.TestingProducts
+public import Mathlib.Analysis.Calculus.BumpFunction.Basic
+public import Mathlib.Analysis.Calculus.Deriv.Support
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted
 

@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Assembly.ClassicalMomentsCellBounds
-import Mathlib.Analysis.SpecificLimits.Basic
+module
+
+public import CoarseDeGiorgi.Assembly.ClassicalMomentsCellBounds
+public import Mathlib.Analysis.SpecificLimits.Basic
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Assembly.ClassicalMomentsImpl
 

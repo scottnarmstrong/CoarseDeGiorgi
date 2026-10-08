@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Harnack.ReverseMoments.CaccioppoliSubstitution
-import CoarseDeGiorgi.Assembly.CaccioppoliEnergy
-import CoarseDeGiorgi.Statements.ChiParam
+module
+
+public import CoarseDeGiorgi.Harnack.ReverseMoments.CaccioppoliSubstitution
+public import CoarseDeGiorgi.Assembly.CaccioppoliEnergy
+public import CoarseDeGiorgi.Statements.ChiParam
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.ReverseMoments
 

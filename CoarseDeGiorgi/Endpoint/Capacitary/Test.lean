@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Endpoint.Capacitary.Variation
+module
+
+public import CoarseDeGiorgi.Endpoint.Capacitary.Variation
 
 /-! The capacitary test inequality `e.capacitary.test`. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint
 

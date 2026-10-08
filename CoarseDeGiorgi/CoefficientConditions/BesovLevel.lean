@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.CoefficientConditions.BesovMatrix
-import CoarseDeGiorgi.CoefficientConditions.BesovGeom
-import CoarseDeGiorgi.Besov.CellBounds
+module
+
+public import CoarseDeGiorgi.CoefficientConditions.BesovMatrix
+public import CoarseDeGiorgi.CoefficientConditions.BesovGeom
+public import CoarseDeGiorgi.Besov.CellBounds
 
 /-! # One level: the mean over simplices against the mean over cubes -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

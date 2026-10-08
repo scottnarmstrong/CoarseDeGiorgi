@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.PeriodicKernelSmooth
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.PeriodicKernelSmooth
 
 /-! # Coordinate-periodic fields and their derivatives -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

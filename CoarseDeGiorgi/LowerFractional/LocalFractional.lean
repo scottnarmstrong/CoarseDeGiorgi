@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.LowerFractional.GateSeminorm
-import CoarseDeGiorgi.LowerFractional.LocalAuxNorm
+module
+
+public import CoarseDeGiorgi.LowerFractional.GateSeminorm
+public import CoarseDeGiorgi.LowerFractional.LocalAuxNorm
 
 /-! Local fractional estimate `e.lower.fractional.local` (Proposition `p.lower.fractional`). -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.LowerFractional
 

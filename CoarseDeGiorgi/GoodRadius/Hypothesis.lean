@@ -1,17 +1,19 @@
-import CoarseDeGiorgi.Statements.IsFractionalCover
-import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
-import CoarseDeGiorgi.Statements.MemH1a
-import CoarseDeGiorgi.Statements.AlphaParam
-import CoarseDeGiorgi.Statements.CubeSurface
-import CoarseDeGiorgi.Statements.FracNorm
-import CoarseDeGiorgi.Statements.H1aWeightedNorm
-import CoarseDeGiorgi.Statements.LowerMoment
-import CoarseDeGiorgi.Statements.OriginCube
-import CoarseDeGiorgi.Statements.ParamR
-import CoarseDeGiorgi.Statements.ParamTheta
-import CoarseDeGiorgi.Statements.SelectionInterval
-import CoarseDeGiorgi.Statements.SpatialMomentRange
-import CoarseDeGiorgi.Statements.WeightedEnergy
+module
+
+public import CoarseDeGiorgi.Statements.IsFractionalCover
+public import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
+public import CoarseDeGiorgi.Statements.MemH1a
+public import CoarseDeGiorgi.Statements.AlphaParam
+public import CoarseDeGiorgi.Statements.CubeSurface
+public import CoarseDeGiorgi.Statements.FracNorm
+public import CoarseDeGiorgi.Statements.H1aWeightedNorm
+public import CoarseDeGiorgi.Statements.LowerMoment
+public import CoarseDeGiorgi.Statements.OriginCube
+public import CoarseDeGiorgi.Statements.ParamR
+public import CoarseDeGiorgi.Statements.ParamTheta
+public import CoarseDeGiorgi.Statements.SelectionInterval
+public import CoarseDeGiorgi.Statements.SpatialMomentRange
+public import CoarseDeGiorgi.Statements.WeightedEnergy
 
 /-!
 # The localization hypothesis of Proposition `p.good.radius`
@@ -21,6 +23,8 @@ import CoarseDeGiorgi.Statements.WeightedEnergy
 is proved from it as an explicit hypothesis, so that this development does not import
 `fractional_localization`.
 -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

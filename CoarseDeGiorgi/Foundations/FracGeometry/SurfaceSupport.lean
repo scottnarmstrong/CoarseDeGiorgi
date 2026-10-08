@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Foundations.FracGeometry.FaceHausdorff
-import CoarseDeGiorgi.Foundations.FracGeometry.Cutoff
+module
+
+public import CoarseDeGiorgi.Foundations.FracGeometry.FaceHausdorff
+public import CoarseDeGiorgi.Foundations.FracGeometry.Cutoff
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.FracGeometry
 

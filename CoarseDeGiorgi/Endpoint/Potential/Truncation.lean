@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Weighted.Truncation.Continuity
-import CoarseDeGiorgi.Weighted.TestingCompactSupport
-import CoarseDeGiorgi.Weighted.HarmonicCore
-import CoarseDeGiorgi.Weighted.TestingApproximation
+module
+
+public import CoarseDeGiorgi.Weighted.Truncation.Continuity
+public import CoarseDeGiorgi.Weighted.TestingCompactSupport
+public import CoarseDeGiorgi.Weighted.HarmonicCore
+public import CoarseDeGiorgi.Weighted.TestingApproximation
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted
 

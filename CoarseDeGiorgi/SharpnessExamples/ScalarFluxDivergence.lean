@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.SharpnessExamples.ScalarFluxCalculus
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.ScalarFluxCalculus
 
 /-! # Divergence of the matched flux, including the outer cutoff term -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set Filter Topology
 open CoarseDeGiorgi.Sharpness

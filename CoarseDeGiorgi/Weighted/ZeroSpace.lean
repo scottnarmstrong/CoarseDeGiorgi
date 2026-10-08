@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Weighted.GraphRepresentation
-import CoarseDeGiorgi.Weighted.ZeroBoundary
-import Mathlib.Analysis.Normed.Operator.Banach
+module
+
+public import CoarseDeGiorgi.Weighted.GraphRepresentation
+public import CoarseDeGiorgi.Weighted.ZeroBoundary
+public import Mathlib.Analysis.Normed.Operator.Banach
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted
 

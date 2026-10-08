@@ -1,10 +1,14 @@
-import CoarseDeGiorgi.Endpoint.Rescaling.MomentTransport
-import CoarseDeGiorgi.Endpoint.Rescaling.GridGeometry
-import CoarseDeGiorgi.Endpoint.Rescaling.AffineNorms
-import CoarseDeGiorgi.Statements.WeakHarnack
-import CoarseDeGiorgi.Statements.Harnack
+module
+
+public import CoarseDeGiorgi.Endpoint.Rescaling.MomentTransport
+public import CoarseDeGiorgi.Endpoint.Rescaling.GridGeometry
+public import CoarseDeGiorgi.Endpoint.Rescaling.AffineNorms
+public import CoarseDeGiorgi.Statements.WeakHarnack
+public import CoarseDeGiorgi.Statements.Harnack
 
 /-! The two rescaled Harnack estimates, with constants uniform over the interior grid. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped ENNReal

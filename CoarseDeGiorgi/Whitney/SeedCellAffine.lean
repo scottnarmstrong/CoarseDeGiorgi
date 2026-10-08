@@ -1,10 +1,14 @@
-import CoarseDeGiorgi.Whitney.SeedCollar
-import CoarseDeGiorgi.Whitney.SeedInterpolation
-import Mathlib.Analysis.Calculus.FDeriv.Add
-import Mathlib.Analysis.Calculus.FDeriv.Comp
-import Mathlib.Analysis.Calculus.FDeriv.Linear
+module
+
+public import CoarseDeGiorgi.Whitney.SeedCollar
+public import CoarseDeGiorgi.Whitney.SeedInterpolation
+public import Mathlib.Analysis.Calculus.FDeriv.Add
+public import Mathlib.Analysis.Calculus.FDeriv.Comp
+public import Mathlib.Analysis.Calculus.FDeriv.Linear
 
 /-! # Affine formulas for the actual seed on the exterior cells -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Whitney
 

@@ -1,12 +1,16 @@
-import CoarseDeGiorgi.Whitney.Harmonic.GlueData
-import CoarseDeGiorgi.Whitney.Harmonic.Cellwise
-import CoarseDeGiorgi.Statements.WhitneyInterpolationSpec
-import CoarseDeGiorgi.Whitney.Harmonic.GaussGreen
-import CoarseDeGiorgi.Weighted.Identification
-import CoarseDeGiorgi.Foundations.Reconstruction.Representatives
-import CoarseDeGiorgi.Statements.CubeFaceMeasure
+module
+
+public import CoarseDeGiorgi.Whitney.Harmonic.GlueData
+public import CoarseDeGiorgi.Whitney.Harmonic.Cellwise
+public import CoarseDeGiorgi.Statements.WhitneyInterpolationSpec
+public import CoarseDeGiorgi.Whitney.Harmonic.GaussGreen
+public import CoarseDeGiorgi.Weighted.Identification
+public import CoarseDeGiorgi.Foundations.Reconstruction.Representatives
+public import CoarseDeGiorgi.Statements.CubeFaceMeasure
 
 /-! The `W^{1,1}` and trace assertions of Proposition `p.whitney.extension`. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Whitney.Harmonic
 

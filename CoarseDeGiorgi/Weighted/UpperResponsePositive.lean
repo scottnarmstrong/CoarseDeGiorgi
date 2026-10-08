@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Weighted.UpperResponseSupremum
-import CoarseDeGiorgi.Weighted.UpperResponseMatrix
+module
+
+public import CoarseDeGiorgi.Weighted.UpperResponseSupremum
+public import CoarseDeGiorgi.Weighted.UpperResponseMatrix
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted
 

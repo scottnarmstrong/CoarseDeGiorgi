@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Assembly.ClassicalMomentsFinal
+module
+
+public import CoarseDeGiorgi.Assembly.ClassicalMomentsFinal
 
 /-! Theorem D(i): Lebesgue moment bounds for all `s, t > 0` (no range or `θ` condition),
 assembled from the series and lower-norm lemmas of the Corollary C development. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped ENNReal Matrix.Norms.L2Operator

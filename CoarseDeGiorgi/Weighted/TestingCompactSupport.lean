@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Weighted.TestingScalar
-import Mathlib.Geometry.Manifold.PartitionOfUnity
+module
+
+public import CoarseDeGiorgi.Weighted.TestingScalar
+public import Mathlib.Geometry.Manifold.PartitionOfUnity
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted
 

@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.LowerFractional.AuxNorm
-import CoarseDeGiorgi.LowerFractional.ReconstructionInput
-import CoarseDeGiorgi.LowerFractional.WeightedPassage
+module
+
+public import CoarseDeGiorgi.LowerFractional.AuxNorm
+public import CoarseDeGiorgi.LowerFractional.ReconstructionInput
+public import CoarseDeGiorgi.LowerFractional.WeightedPassage
 
 /-! Fractional core and weighted completion. The final wrappers discharge the
 reconstruction interface with the theorem `fractional_reconstruction`. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.LowerFractional
 

@@ -1,8 +1,10 @@
-import CoarseDeGiorgi.Foundations.ChainRule.Basic
-import CoarseDeGiorgi.Weighted.Truncation.Closure
-import CoarseDeGiorgi.Weighted.ZeroCore
-import CoarseDeGiorgi.Foundations.Euclid.Basic
-import Mathlib.Analysis.Calculus.Rademacher
+module
+
+public import CoarseDeGiorgi.Foundations.ChainRule.Basic
+public import CoarseDeGiorgi.Weighted.Truncation.Closure
+public import CoarseDeGiorgi.Weighted.ZeroCore
+public import CoarseDeGiorgi.Foundations.Euclid.Basic
+public import Mathlib.Analysis.Calculus.Rademacher
 
 /-! # Lipschitz data in the weighted completion
 
@@ -11,6 +13,8 @@ bounded gradients.  Its unweighted gradient convergence supplies an almost
 everywhere convergent subsequence; the integrable coefficient trace then
 dominates the weighted quadratic energies.
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted
 

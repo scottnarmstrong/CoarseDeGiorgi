@@ -1,10 +1,14 @@
-import CoarseDeGiorgi.Harnack.PowerCaccioppoli.ExteriorTraceBound
-import CoarseDeGiorgi.Harnack.PowerCaccioppoli.TraceLr
+module
+
+public import CoarseDeGiorgi.Harnack.PowerCaccioppoli.ExteriorTraceBound
+public import CoarseDeGiorgi.Harnack.PowerCaccioppoli.TraceLr
 
 /-! # Passing the pairing bounds to the limit
 
 Only numbers pass to the limit: pairings `P i ≤ |B i|`, with `ofReal |B i| ≤ K₀ (c₁ Fᵢ + c₂ Lᵢ)` and
 `Fᵢ, Lᵢ` asymptotically bounded by `F + ε`, `L + ε`. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.GoodRadiusEnergy
 

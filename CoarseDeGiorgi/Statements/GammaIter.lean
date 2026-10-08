@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Statements.ChiParam
-import CoarseDeGiorgi.Statements.GammaRev
-import CoarseDeGiorgi.Statements.ParamR
+module
+
+public import CoarseDeGiorgi.Statements.ChiParam
+public import CoarseDeGiorgi.Statements.GammaRev
+public import CoarseDeGiorgi.Statements.ParamR
+
+@[expose] public section
 
 namespace CoarseDeGiorgi
 

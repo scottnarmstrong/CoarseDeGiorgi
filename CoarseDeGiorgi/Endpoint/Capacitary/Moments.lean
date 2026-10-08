@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.Endpoint.Capacitary.Replacement
-import CoarseDeGiorgi.Assembly.ClassicalMomentsSeries
-import CoarseDeGiorgi.Weighted.LowerSpecNorm
-import Mathlib.Analysis.MeanInequalitiesPow
+module
+
+public import CoarseDeGiorgi.Endpoint.Capacitary.Replacement
+public import CoarseDeGiorgi.Assembly.ClassicalMomentsSeries
+public import CoarseDeGiorgi.Weighted.LowerSpecNorm
+public import Mathlib.Analysis.MeanInequalitiesPow
 
 /-! Uniform energy control of the remote capacity by the upper moment. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint
 

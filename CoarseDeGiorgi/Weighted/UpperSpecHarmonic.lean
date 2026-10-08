@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Weighted.UpperSpecDefs
-import CoarseDeGiorgi.Weighted.UpperResponseSupremum
+module
+
+public import CoarseDeGiorgi.Weighted.UpperSpecDefs
+public import CoarseDeGiorgi.Weighted.UpperResponseSupremum
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted.UpperResponseImpl
 

@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Endpoint.Reconstruction.FineProjection
+module
+
+public import CoarseDeGiorgi.Endpoint.Reconstruction.FineProjection
 
 /-! # Gluing finite-exponent estimates across a finite partition -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint.Reconstruction
 

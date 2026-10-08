@@ -1,13 +1,17 @@
-import CoarseDeGiorgi.Whitney.Harmonic.Geometry
-import CoarseDeGiorgi.Whitney.SourceWitnessResponse
-import CoarseDeGiorgi.Statements.SimplexIndex
-import CoarseDeGiorgi.Statements.SimplexCell
-import CoarseDeGiorgi.Statements.WhitneySimplicesNearSize
-import CoarseDeGiorgi.Statements.EuclideanSetDistance
-import CoarseDeGiorgi.Statements.CubeSurface
-import CoarseDeGiorgi.Statements.SampledUpperResponse
+module
+
+public import CoarseDeGiorgi.Whitney.Harmonic.Geometry
+public import CoarseDeGiorgi.Whitney.SourceWitnessResponse
+public import CoarseDeGiorgi.Statements.SimplexIndex
+public import CoarseDeGiorgi.Statements.SimplexCell
+public import CoarseDeGiorgi.Statements.WhitneySimplicesNearSize
+public import CoarseDeGiorgi.Statements.EuclideanSetDistance
+public import CoarseDeGiorgi.Statements.CubeSurface
+public import CoarseDeGiorgi.Statements.SampledUpperResponse
 
 /-! Near cells are sampled by the response maximum. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Whitney.Harmonic
 

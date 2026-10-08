@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Statements.LowerDirectionalResponse
-import Mathlib.LinearAlgebra.Matrix.PosDef
+module
+
+public import CoarseDeGiorgi.Statements.LowerDirectionalResponse
+public import Mathlib.LinearAlgebra.Matrix.PosDef
 
 /-! The lower response in dimension zero, and a zero solution in every dimension. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted
 

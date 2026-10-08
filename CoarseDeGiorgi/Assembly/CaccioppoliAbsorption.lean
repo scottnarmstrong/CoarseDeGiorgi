@@ -1,4 +1,8 @@
-import CoarseDeGiorgi.Assembly.CaccioppoliCollar
+module
+
+public import CoarseDeGiorgi.Assembly.CaccioppoliCollar
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Assembly
 

@@ -1,8 +1,13 @@
-import CoarseDeGiorgi.Whitney.LiftCountable
-import CoarseDeGiorgi.Whitney.LiftIdentification
-import Mathlib.Logic.Encodable.Basic
+module
+
+public import CoarseDeGiorgi.Whitney.LiftCountable
+public import CoarseDeGiorgi.Whitney.LiftIdentification
+public import Mathlib.Logic.Encodable.Basic
 
 /-! # Countable corrections with finite and empty families included -/
+
+@[expose] public section
+
 namespace CoarseDeGiorgi.Whitney
 open Homogenization MeasureTheory Set Filter Topology
 open scoped ENNReal BigOperators

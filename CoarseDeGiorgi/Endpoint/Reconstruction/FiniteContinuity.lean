@@ -1,6 +1,11 @@
-import CoarseDeGiorgi.Endpoint.Reconstruction.BlockContinuity
+module
+
+public import CoarseDeGiorgi.Endpoint.Reconstruction.BlockContinuity
 
 /-! # Continuity of fixed finite block sums -/
+
+@[expose] public section
+
 namespace CoarseDeGiorgi.Endpoint.Reconstruction
 open Homogenization MeasureTheory Filter
 open scoped ENNReal Topology BigOperators

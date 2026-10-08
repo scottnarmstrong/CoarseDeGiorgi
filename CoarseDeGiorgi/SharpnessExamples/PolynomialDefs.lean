@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.SharpnessExamples.CylinderResponseDefs
-import CoarseDeGiorgi.Statements.ParamTheta
-import CoarseDeGiorgi.Statements.OriginCube
-import CoarseDeGiorgi.Statements.SmoothGrad
-import CoarseDeGiorgi.Sharpness.Defs
-import Mathlib.Analysis.SpecialFunctions.Pow.Real
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.CylinderResponseDefs
+public import CoarseDeGiorgi.Statements.ParamTheta
+public import CoarseDeGiorgi.Statements.OriginCube
+public import CoarseDeGiorgi.Statements.SmoothGrad
+public import CoarseDeGiorgi.Sharpness.Defs
+public import Mathlib.Analysis.SpecialFunctions.Pow.Real
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 

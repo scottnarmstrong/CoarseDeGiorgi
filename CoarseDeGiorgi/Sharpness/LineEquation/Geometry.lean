@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Sharpness.Defs
-import Homogenization.Sobolev.WeakDerivatives
-import Mathlib.Analysis.SpecialFunctions.Sqrt
+module
+
+public import CoarseDeGiorgi.Sharpness.Defs
+public import Homogenization.Sobolev.WeakDerivatives
+public import Mathlib.Analysis.SpecialFunctions.Sqrt
+
+@[expose] public section
 
 open Homogenization
 

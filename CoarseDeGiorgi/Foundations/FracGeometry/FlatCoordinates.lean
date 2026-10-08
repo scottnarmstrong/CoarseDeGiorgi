@@ -1,4 +1,8 @@
-import CoarseDeGiorgi.Foundations.FracGeometry.TranslationEnergy
+module
+
+public import CoarseDeGiorgi.Foundations.FracGeometry.TranslationEnergy
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.FracGeometry
 

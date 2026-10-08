@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Statements.ExteriorCellCenter
-import CoarseDeGiorgi.Statements.Simplex
+module
+
+public import CoarseDeGiorgi.Statements.ExteriorCellCenter
+public import CoarseDeGiorgi.Statements.Simplex
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

@@ -1,15 +1,19 @@
-import CoarseDeGiorgi.Whitney.Extension.Patch
-import CoarseDeGiorgi.Whitney.Extension.Averages
-import CoarseDeGiorgi.Statements.WhitneyAffineExtensionDef
-import CoarseDeGiorgi.Statements.WhitneyInterpolationSpec
-import CoarseDeGiorgi.Statements.WhitneyInterpolation
-import CoarseDeGiorgi.Statements.EuclidNorm
+module
+
+public import CoarseDeGiorgi.Whitney.Extension.Patch
+public import CoarseDeGiorgi.Whitney.Extension.Averages
+public import CoarseDeGiorgi.Statements.WhitneyAffineExtensionDef
+public import CoarseDeGiorgi.Statements.WhitneyInterpolationSpec
+public import CoarseDeGiorgi.Statements.WhitneyInterpolation
+public import CoarseDeGiorgi.Statements.EuclidNorm
 
 /-!
 # Differences of the free-vertex values
 
 The value `L_h f(z) = ω(...) ⨍_{Σ_z} f` at the free vertices of a near Whitney cube.
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.WhitneyExt
 

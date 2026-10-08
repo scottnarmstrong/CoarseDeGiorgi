@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.Statements.PowerFactor
-import CoarseDeGiorgi.Harnack.Selection.Cap
-import CoarseDeGiorgi.Harnack.PowerLimits.SignedInterior
-import CoarseDeGiorgi.Harnack.PowerLimits.CapRemoval
+module
+
+public import CoarseDeGiorgi.Statements.PowerFactor
+public import CoarseDeGiorgi.Harnack.Selection.Cap
+public import CoarseDeGiorgi.Harnack.PowerLimits.SignedInterior
+public import CoarseDeGiorgi.Harnack.PowerLimits.CapRemoval
 
 /-! # Signed-power one-surface estimate -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.PowerCaccioppoli
 

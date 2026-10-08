@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Harnack.PowerCaccioppoli.SurfaceArithmetic
-import CoarseDeGiorgi.Statements.IsTriadicWidth
+module
+
+public import CoarseDeGiorgi.Harnack.PowerCaccioppoli.SurfaceArithmetic
+public import CoarseDeGiorgi.Statements.IsTriadicWidth
 
 /-! # Parameters and width spelling for the power surface estimate -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.PowerCaccioppoli
 

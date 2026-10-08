@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Statements.WhitneyFreeValue
-import CoarseDeGiorgi.Statements.WhitneyInterpolationDef
+module
+
+public import CoarseDeGiorgi.Statements.WhitneyFreeValue
+public import CoarseDeGiorgi.Statements.WhitneyInterpolationDef
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator NNReal

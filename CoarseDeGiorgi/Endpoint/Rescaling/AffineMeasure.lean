@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
-import Homogenization.Geometry.Translation
-import Homogenization.CoarseGraining.Definitions
-import Homogenization.Sobolev.Foundations.CoerciveH1Dilation
+module
+
+public import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
+public import Homogenization.Geometry.Translation
+public import Homogenization.CoarseGraining.Definitions
+public import Homogenization.Sobolev.Foundations.CoerciveH1Dilation
 
 /-! Measure transport for the affine maps used in the interior estimates. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped ENNReal Pointwise

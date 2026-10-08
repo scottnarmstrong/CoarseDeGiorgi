@@ -1,10 +1,15 @@
-import CoarseDeGiorgi.Statements.OriginCube
-import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
-import CoarseDeGiorgi.Statements.Csol
-import CoarseDeGiorgi.Statements.NonnegativeEssInf
-import CoarseDeGiorgi.Statements.BesovCubeNorm
+module
 
-import CoarseDeGiorgi.SharpnessExamples.BesovSharpness
+public import CoarseDeGiorgi.Statements.OriginCube
+public import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
+public import CoarseDeGiorgi.Statements.Csol
+public import CoarseDeGiorgi.Statements.NonnegativeEssInf
+public import CoarseDeGiorgi.Statements.BesovCubeNorm
+
+public import CoarseDeGiorgi.SharpnessExamples.BesovSharpness
+
+@[expose] public section
+
 open Homogenization MeasureTheory Topology
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator
 

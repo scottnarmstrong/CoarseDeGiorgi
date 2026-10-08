@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Statements.FracKernel
-import CoarseDeGiorgi.Statements.DnpvCriticalExponent
-import Homogenization.Multiscale.CubeAverage
-import Mathlib.Analysis.SpecialFunctions.Pow.Real
-import Mathlib.MeasureTheory.Measure.Lebesgue.Basic
+module
+
+public import CoarseDeGiorgi.Statements.FracKernel
+public import CoarseDeGiorgi.Statements.DnpvCriticalExponent
+public import Homogenization.Multiscale.CubeAverage
+public import Mathlib.Analysis.SpecialFunctions.Pow.Real
+public import Mathlib.MeasureTheory.Measure.Lebesgue.Basic
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.FractionalSobolev
 

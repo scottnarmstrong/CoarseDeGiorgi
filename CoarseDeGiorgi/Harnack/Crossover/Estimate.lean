@@ -1,8 +1,11 @@
-import CoarseDeGiorgi.Harnack.Final.CrossoverProof
-import CoarseDeGiorgi.Harnack.CrossoverFinal.Parameters
+module
+
+public import CoarseDeGiorgi.Harnack.Final.CrossoverProof
+public import CoarseDeGiorgi.Harnack.CrossoverFinal.Parameters
 
 /-! The crossover estimate for positive and negative moments. -/
 
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

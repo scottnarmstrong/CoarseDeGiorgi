@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Selection.CoareaPartition
-import CoarseDeGiorgi.Selection.Maximal
+module
+
+public import CoarseDeGiorgi.Selection.CoareaPartition
+public import CoarseDeGiorgi.Selection.Maximal
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Selection
 

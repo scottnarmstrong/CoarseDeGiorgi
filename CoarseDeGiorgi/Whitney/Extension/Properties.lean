@@ -1,11 +1,15 @@
-import CoarseDeGiorgi.Whitney.Extension.Values
-import CoarseDeGiorgi.Statements.OriginCube
-import CoarseDeGiorgi.Statements.SelectionInterval
-import CoarseDeGiorgi.Whitney.Interpolation.BoundsAff
+module
+
+public import CoarseDeGiorgi.Whitney.Extension.Values
+public import CoarseDeGiorgi.Statements.OriginCube
+public import CoarseDeGiorgi.Statements.SelectionInterval
+public import CoarseDeGiorgi.Whitney.Interpolation.BoundsAff
 
 /-!
 # Linearity, range, vanishing and support of the piecewise affine extension
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.WhitneyExt
 

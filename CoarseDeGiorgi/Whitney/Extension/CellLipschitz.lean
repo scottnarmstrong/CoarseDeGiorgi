@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Whitney.Extension.Linear
+module
+
+public import CoarseDeGiorgi.Whitney.Extension.Linear
 
 /-!
 # Gradient and Lipschitz bounds of `L_h f` on the Whitney cells
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.WhitneyExt
 

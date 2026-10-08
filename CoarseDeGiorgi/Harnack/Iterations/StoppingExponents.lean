@@ -1,5 +1,9 @@
-import Mathlib.Basic.Real.Basic
-import Mathlib.Tactic
+module
+
+public import Mathlib.Basic.Real.Basic
+public import Mathlib.Tactic
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.Iterations
 

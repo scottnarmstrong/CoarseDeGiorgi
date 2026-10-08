@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Foundations.FractionalSobolev.Basic
-import Mathlib.MeasureTheory.Function.LpSeminorm.Basic
-import Mathlib.MeasureTheory.Integral.Lebesgue.Add
-import Mathlib.Topology.MetricSpace.Lipschitz
+module
+
+public import CoarseDeGiorgi.Foundations.FractionalSobolev.Basic
+public import Mathlib.MeasureTheory.Function.LpSeminorm.Basic
+public import Mathlib.MeasureTheory.Integral.Lebesgue.Add
+public import Mathlib.Topology.MetricSpace.Lipschitz
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.FractionalSobolev
 open Homogenization MeasureTheory Filter

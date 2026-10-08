@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Harnack.Scalar.BombieriLemmas
-import CoarseDeGiorgi.Harnack.Scalar.BombieriIteration
+module
+
+public import CoarseDeGiorgi.Harnack.Scalar.BombieriLemmas
+public import CoarseDeGiorgi.Harnack.Scalar.BombieriIteration
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.Scalar
 

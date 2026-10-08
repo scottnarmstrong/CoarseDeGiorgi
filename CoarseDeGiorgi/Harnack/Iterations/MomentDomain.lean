@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Harnack.Iterations.NormalizedMomentOrder
-import Mathlib.MeasureTheory.Function.LpSeminorm.CompareExp
+module
+
+public import CoarseDeGiorgi.Harnack.Iterations.NormalizedMomentOrder
+public import Mathlib.MeasureTheory.Function.LpSeminorm.CompareExp
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped ENNReal

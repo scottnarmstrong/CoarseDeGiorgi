@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Statements.MemH1a
-import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
-import CoarseDeGiorgi.Weighted.GraphRepresentation
-import CoarseDeGiorgi.Foundations.ChainRule.LevelSets
-import Mathlib.MeasureTheory.Integral.Lebesgue.DominatedConvergence
+module
+
+public import CoarseDeGiorgi.Statements.MemH1a
+public import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
+public import CoarseDeGiorgi.Weighted.GraphRepresentation
+public import CoarseDeGiorgi.Foundations.ChainRule.LevelSets
+public import Mathlib.MeasureTheory.Integral.Lebesgue.DominatedConvergence
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted
 

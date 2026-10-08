@@ -1,5 +1,7 @@
-import CoarseDeGiorgi.SharpnessExamples.BesovScalarField
-import Mathlib.MeasureTheory.Function.LpSpace.Complete
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.BesovScalarField
+public import Mathlib.MeasureTheory.Function.LpSpace.Complete
 
 /-! # The Lebesgue norm of the scalar cylinder field
 
@@ -7,6 +9,8 @@ The case of order zero in Theorem F: the field and its inverse lie in `L^ξ` and
 cube. Minkowski's inequality for the series of cylinder majorants is obtained from the finite
 inequality and Fatou's lemma for the Lebesgue seminorm.
 -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Filter Topology
 open CoarseDeGiorgi.Sharpness CoarseDeGiorgi.Foundations.FracGeometry

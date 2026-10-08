@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.AssemblySeminorm
-import CoarseDeGiorgi.Foundations.Reconstruction.KernelBlocks
-import CoarseDeGiorgi.Foundations.Reconstruction.Representatives
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.AssemblySeminorm
+public import CoarseDeGiorgi.Foundations.Reconstruction.KernelBlocks
+public import CoarseDeGiorgi.Foundations.Reconstruction.Representatives
 
 /-! # The concrete smooth telescope and its translation to the auxiliary cube -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

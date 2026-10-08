@@ -1,9 +1,12 @@
-import CoarseDeGiorgi.Statements.IsWeakDerivArray
-import Mathlib.Analysis.Calculus.ContDiff.Comp
-import Mathlib.Analysis.Calculus.LineDeriv.IntegrationByParts
+module
+
+public import CoarseDeGiorgi.Statements.IsWeakDerivArray
+public import Mathlib.Analysis.Calculus.ContDiff.Comp
+public import Mathlib.Analysis.Calculus.LineDeriv.IntegrationByParts
 
 /-! Integration by parts for smooth functions and ordered derivative arrays. -/
 
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators

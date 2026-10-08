@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Statements.LowerResponseExistsUnique
-import CoarseDeGiorgi.Weighted.LowerResponse
-import CoarseDeGiorgi.Weighted.ResponseBoundsLower
-import Mathlib.Analysis.CStarAlgebra.Matrix
+module
+
+public import CoarseDeGiorgi.Statements.LowerResponseExistsUnique
+public import CoarseDeGiorgi.Weighted.LowerResponse
+public import CoarseDeGiorgi.Weighted.ResponseBoundsLower
+public import Mathlib.Analysis.CStarAlgebra.Matrix
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted.LowerResponseImpl
 

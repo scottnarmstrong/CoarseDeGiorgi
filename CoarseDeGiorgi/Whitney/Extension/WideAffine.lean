@@ -1,7 +1,9 @@
-import CoarseDeGiorgi.Whitney.Extension.WideLipschitz
-import CoarseDeGiorgi.Whitney.Extension.EnergyFinal
-import CoarseDeGiorgi.Statements.IsTriadicWidth
-import CoarseDeGiorgi.Statements.SelectionInterval
+module
+
+public import CoarseDeGiorgi.Whitney.Extension.WideLipschitz
+public import CoarseDeGiorgi.Whitney.Extension.EnergyFinal
+public import CoarseDeGiorgi.Statements.IsTriadicWidth
+public import CoarseDeGiorgi.Statements.SelectionInterval
 
 /-! # The affine extension at widths bounded by `(ρ₂ - τ)/(100 d)`
 
@@ -9,6 +11,8 @@ All interpolation, patch, overlap and gradient estimates are supplied by the
 width-independent implementation. The wider cap enters only in the strict
 containment of the support cube. The Lipschitz clause uses a finite real bound.
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.WhitneyExt
 

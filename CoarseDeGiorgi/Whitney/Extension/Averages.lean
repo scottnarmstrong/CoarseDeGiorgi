@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Whitney.Extension.Basic
-import Mathlib.Analysis.Convex.SpecificFunctions.Basic
-import Mathlib.MeasureTheory.Integral.Prod
+module
+
+public import CoarseDeGiorgi.Whitney.Extension.Basic
+public import Mathlib.Analysis.Convex.SpecificFunctions.Basic
+public import Mathlib.MeasureTheory.Integral.Prod
 
 /-! # Averages over measurable subsets of the cube surface -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.WhitneyExt
 

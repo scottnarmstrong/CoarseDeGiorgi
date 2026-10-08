@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Whitney.Interpolation.BoundsCells
+module
+
+public import CoarseDeGiorgi.Whitney.Interpolation.BoundsCells
 
 /-!
 # Barycentric representation on Whitney cells; vertices in cubes
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.WhitneyInterp
 

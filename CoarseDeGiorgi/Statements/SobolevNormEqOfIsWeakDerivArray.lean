@@ -1,6 +1,11 @@
-import CoarseDeGiorgi.Statements.SobolevNorm
+module
 
-import CoarseDeGiorgi.NegSobolev.SobolevNormFacts
+public import CoarseDeGiorgi.Statements.SobolevNorm
+
+public import CoarseDeGiorgi.NegSobolev.SobolevNormFacts
+
+@[expose] public section
+
 open Homogenization MeasureTheory
 open scoped ENNReal
 

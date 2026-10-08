@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Assembly.HybridParameters
-import CoarseDeGiorgi.Assembly.HybridQuantity
+module
+
+public import CoarseDeGiorgi.Assembly.HybridParameters
+public import CoarseDeGiorgi.Assembly.HybridQuantity
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Assembly
 open scoped ENNReal

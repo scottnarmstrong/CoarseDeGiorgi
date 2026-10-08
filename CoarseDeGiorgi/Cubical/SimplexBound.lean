@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Cubical.Interface
-import CoarseDeGiorgi.Cubical.WhitneyLayer
-import CoarseDeGiorgi.Statements.SimplexCellSubsetOriginCube
+module
+
+public import CoarseDeGiorgi.Cubical.Interface
+public import CoarseDeGiorgi.Cubical.WhitneyLayer
+public import CoarseDeGiorgi.Statements.SimplexCellSubsetOriginCube
 
 /-! # Whitney bound for the response of one simplex -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Cubical
 open Homogenization MeasureTheory

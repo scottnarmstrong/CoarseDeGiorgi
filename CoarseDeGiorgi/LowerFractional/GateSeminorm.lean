@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.LowerFractional.Core
+module
+
+public import CoarseDeGiorgi.LowerFractional.Core
 
 /-! Exact seminorm clause used in the lower-fractional proof. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.LowerFractional
 

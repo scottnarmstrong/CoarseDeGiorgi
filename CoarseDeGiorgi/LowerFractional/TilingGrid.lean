@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.LowerFractional.TilingLocal
-import CoarseDeGiorgi.Statements.AuxDescendantCube
+module
+
+public import CoarseDeGiorgi.LowerFractional.TilingLocal
+public import CoarseDeGiorgi.Statements.AuxDescendantCube
 
 /-! Embedding the concrete local tiling into the audited global triangulation. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.LowerFractional
 

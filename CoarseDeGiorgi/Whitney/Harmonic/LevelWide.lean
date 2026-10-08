@@ -1,10 +1,14 @@
-import CoarseDeGiorgi.Whitney.Harmonic.GeometryWide
-import CoarseDeGiorgi.Whitney.SourceWitnessResponse
-import CoarseDeGiorgi.Statements.SimplexIndex
-import CoarseDeGiorgi.Statements.SimplexCell
-import CoarseDeGiorgi.Statements.WhitneySimplicesNearSize
+module
+
+public import CoarseDeGiorgi.Whitney.Harmonic.GeometryWide
+public import CoarseDeGiorgi.Whitney.SourceWitnessResponse
+public import CoarseDeGiorgi.Statements.SimplexIndex
+public import CoarseDeGiorgi.Statements.SimplexCell
+public import CoarseDeGiorgi.Statements.WhitneySimplicesNearSize
 
 /-! A near cell of size `3^{-j}` is a simplex of the level-`j` triangulation. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Whitney.Harmonic.Wide
 

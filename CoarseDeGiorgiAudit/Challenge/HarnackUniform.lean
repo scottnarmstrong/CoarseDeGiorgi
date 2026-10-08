@@ -1,4 +1,6 @@
-import Mathlib
+module
+
+public import Mathlib
 
 /-!
 Harnack inequality for uniformly elliptic coefficients.
@@ -11,6 +13,8 @@ Solutions are taken in the weighted space `H¹ₐ` (limits of smooth functions i
 weighted energy, converging in `L¹` on compact subsets). This follows from Theorem D(i) of the
 manuscript with `p = q = d`.
 -/
+
+@[expose] public section
 
 open MeasureTheory
 open scoped BigOperators ENNReal Matrix Matrix.Norms.L2Operator

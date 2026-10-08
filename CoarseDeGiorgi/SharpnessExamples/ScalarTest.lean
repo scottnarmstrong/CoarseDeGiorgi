@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.SharpnessExamples.ScalarMembership
-import Mathlib.Analysis.Calculus.Rademacher
-import Mathlib.Analysis.Normed.Group.Bounded
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.ScalarMembership
+public import Mathlib.Analysis.Calculus.Rademacher
+public import Mathlib.Analysis.Normed.Group.Bounded
 
 /-! # Integration by parts for Lipschitz flux coordinates on the test domain -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set Filter Topology
 open scoped NNReal

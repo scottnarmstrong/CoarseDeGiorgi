@@ -1,9 +1,13 @@
-import Mathlib.MeasureTheory.Integral.DominatedConvergence
-import Mathlib.Analysis.SpecialFunctions.Pow.Continuity
-import CoarseDeGiorgi.Weighted.Energy
-import CoarseDeGiorgi.Statements.WeightedEnergy
-import CoarseDeGiorgi.Statements.PowerFactor
-import Homogenization.Ambient.CoefficientField
+module
+
+public import Mathlib.MeasureTheory.Integral.DominatedConvergence
+public import Mathlib.Analysis.SpecialFunctions.Pow.Continuity
+public import CoarseDeGiorgi.Weighted.Energy
+public import CoarseDeGiorgi.Statements.WeightedEnergy
+public import CoarseDeGiorgi.Statements.PowerFactor
+public import Homogenization.Ambient.CoefficientField
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.LogLimit
 

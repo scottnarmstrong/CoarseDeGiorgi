@@ -1,4 +1,6 @@
-import CoarseDeGiorgi.Foundations.Simplex.Partition
+module
+
+public import CoarseDeGiorgi.Foundations.Simplex.Partition
 
 /-! # Nested Kuhn cells under triadic subdivision
 
@@ -6,6 +8,8 @@ The bins `a i ∈ Fin 3` describe the three fine intervals in each coarse
 coordinate. Sorting `(bin, fine rank)` implements the nesting argument
 stated after `e.simplex.family`.
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Simplex
 

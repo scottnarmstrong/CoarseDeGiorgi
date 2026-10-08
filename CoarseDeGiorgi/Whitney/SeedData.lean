@@ -1,10 +1,12 @@
-import CoarseDeGiorgi.Whitney.SeedRefinement
-import Mathlib.Topology.Algebra.Support
-import CoarseDeGiorgi.Foundations.Triadic.WhitneyCubesProof
-import CoarseDeGiorgi.Statements.CubeSurface
-import CoarseDeGiorgi.Statements.SurfaceMeasure
-import CoarseDeGiorgi.Statements.EuclidDist
-import Mathlib.MeasureTheory.Integral.Bochner.Set
+module
+
+public import CoarseDeGiorgi.Whitney.SeedRefinement
+public import Mathlib.Topology.Algebra.Support
+public import CoarseDeGiorgi.Foundations.Triadic.WhitneyCubesProof
+public import CoarseDeGiorgi.Statements.CubeSurface
+public import CoarseDeGiorgi.Statements.SurfaceMeasure
+public import CoarseDeGiorgi.Statements.EuclidDist
+public import Mathlib.MeasureTheory.Integral.Bochner.Set
 
 /-!
 # Exterior cells of the selected Whitney cubes
@@ -12,6 +14,8 @@ import Mathlib.MeasureTheory.Integral.Bochner.Set
 The coordinate projection onto the closed reference cube, and the exterior cells (the child Kuhn
 simplices of the selected Whitney cubes) with their centers, side lengths and levels.
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Whitney
 

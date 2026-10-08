@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.SharpnessExamples.ScalarFluxDefs
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.ScalarFluxDefs
 
 /-! # Coordinate derivatives of the cutoff flux -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set Filter Topology
 open CoarseDeGiorgi.Sharpness

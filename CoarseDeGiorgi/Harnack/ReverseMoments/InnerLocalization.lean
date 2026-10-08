@@ -1,11 +1,15 @@
-import CoarseDeGiorgi.Assembly.HybridFractional
-import CoarseDeGiorgi.Assembly.HybridInner
-import CoarseDeGiorgi.Assembly.HybridParameters
-import CoarseDeGiorgi.Assembly.CaccioppoliEnergy
-import CoarseDeGiorgi.Statements.IsWeightedSupersolution
-import CoarseDeGiorgi.LowerFractional.Final
-import CoarseDeGiorgi.Harnack.Powers.SignedPower
-import CoarseDeGiorgi.Harnack.Iterations.NormalizedMomentOrder
+module
+
+public import CoarseDeGiorgi.Assembly.HybridFractional
+public import CoarseDeGiorgi.Assembly.HybridInner
+public import CoarseDeGiorgi.Assembly.HybridParameters
+public import CoarseDeGiorgi.Assembly.CaccioppoliEnergy
+public import CoarseDeGiorgi.Statements.IsWeightedSupersolution
+public import CoarseDeGiorgi.LowerFractional.Final
+public import CoarseDeGiorgi.Harnack.Powers.SignedPower
+public import CoarseDeGiorgi.Harnack.Iterations.NormalizedMomentOrder
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.ReverseMoments
 

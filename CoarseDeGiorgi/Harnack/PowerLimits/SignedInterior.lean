@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Weighted.GradientRepresentation
-import CoarseDeGiorgi.Weighted.Energy
-import CoarseDeGiorgi.Harnack.Selection.Cap
-import Mathlib.MeasureTheory.Integral.DominatedConvergence
+module
+
+public import CoarseDeGiorgi.Weighted.GradientRepresentation
+public import CoarseDeGiorgi.Weighted.Energy
+public import CoarseDeGiorgi.Harnack.Selection.Cap
+public import Mathlib.MeasureTheory.Integral.DominatedConvergence
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.PowerLimits
 

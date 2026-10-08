@@ -1,22 +1,26 @@
-import CoarseDeGiorgi.Statements.UpperSubadditivityCountable
-import CoarseDeGiorgi.Statements.LowerAggregationCountable
-import CoarseDeGiorgi.Statements.SimplexCellIsOpenBoundedConvexDomain
-import CoarseDeGiorgi.Statements.SimplexCellNonempty
-import CoarseDeGiorgi.Statements.WeightedCoeffOnSimplexCell
-import CoarseDeGiorgi.Statements.CubeCellIsOpenBoundedConvexDomain
-import CoarseDeGiorgi.Statements.CubeCellNonempty
-import CoarseDeGiorgi.Statements.WeightedCoeffOnCubeCell
-import CoarseDeGiorgi.Statements.UpperResponseOnCube
-import CoarseDeGiorgi.Statements.LowerResponseInvOnCube
-import CoarseDeGiorgi.Statements.UpperResponseOnCell
-import CoarseDeGiorgi.Statements.LowerResponseInvOnCell
-import CoarseDeGiorgi.Weighted.UpperSpecNorm
+module
+
+public import CoarseDeGiorgi.Statements.UpperSubadditivityCountable
+public import CoarseDeGiorgi.Statements.LowerAggregationCountable
+public import CoarseDeGiorgi.Statements.SimplexCellIsOpenBoundedConvexDomain
+public import CoarseDeGiorgi.Statements.SimplexCellNonempty
+public import CoarseDeGiorgi.Statements.WeightedCoeffOnSimplexCell
+public import CoarseDeGiorgi.Statements.CubeCellIsOpenBoundedConvexDomain
+public import CoarseDeGiorgi.Statements.CubeCellNonempty
+public import CoarseDeGiorgi.Statements.WeightedCoeffOnCubeCell
+public import CoarseDeGiorgi.Statements.UpperResponseOnCube
+public import CoarseDeGiorgi.Statements.LowerResponseInvOnCube
+public import CoarseDeGiorgi.Statements.UpperResponseOnCell
+public import CoarseDeGiorgi.Statements.LowerResponseInvOnCell
+public import CoarseDeGiorgi.Weighted.UpperSpecNorm
 
 /-! # An abstract interface for the two response matrices
 
 Both `upperResponse` and `lowerResponseInv` are positive semidefinite and satisfy the countable
 subadditivity `R(U) ≤ ∑ |V_i|/|U| R(V_i)`; this is all the cubical comparison uses.
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Cubical
 open Homogenization MeasureTheory

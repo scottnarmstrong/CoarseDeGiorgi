@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.SharpnessExamples.ScalarMajorants
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.ScalarMajorants
 
 /-! # Finite negative regularity norms of the scalar sharpness field -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open CoarseDeGiorgi.Sharpness CoarseDeGiorgi.Foundations.FracGeometry

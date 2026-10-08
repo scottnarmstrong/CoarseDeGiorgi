@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Endpoint.Morrey.Transport
-import Homogenization.Sobolev.W1p.CubeVector
+module
+
+public import CoarseDeGiorgi.Endpoint.Morrey.Transport
+public import Homogenization.Sobolev.W1p.CubeVector
 
 /-! # Uniform finite-exponent Poincaré on cubes -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint.Reconstruction
 

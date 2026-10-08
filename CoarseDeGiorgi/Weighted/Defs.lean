@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.Statements.SmoothGrad
-import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
-import CoarseDeGiorgi.Statements.WeightedEnergy
-import CoarseDeGiorgi.Statements.IsSmoothCore
-import CoarseDeGiorgi.Statements.MemH1a
-import CoarseDeGiorgi.Statements.MemH1a0
+module
+
+public import CoarseDeGiorgi.Statements.SmoothGrad
+public import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
+public import CoarseDeGiorgi.Statements.WeightedEnergy
+public import CoarseDeGiorgi.Statements.IsSmoothCore
+public import CoarseDeGiorgi.Statements.MemH1a
+public import CoarseDeGiorgi.Statements.MemH1a0
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted
 

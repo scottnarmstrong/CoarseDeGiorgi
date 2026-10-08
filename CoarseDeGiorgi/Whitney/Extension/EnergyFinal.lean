@@ -1,10 +1,14 @@
-import CoarseDeGiorgi.Whitney.Extension.EnergySum
-import CoarseDeGiorgi.Whitney.Extension.EnergyScale
-import CoarseDeGiorgi.Statements.SurfaceFracSeminorm
+module
+
+public import CoarseDeGiorgi.Whitney.Extension.EnergySum
+public import CoarseDeGiorgi.Whitney.Extension.EnergyScale
+public import CoarseDeGiorgi.Statements.SurfaceFracSeminorm
 
 /-!
 # The scale estimate `e.extension.scale`
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.WhitneyExt
 

@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Assembly.CaccioppoliEnergy
-import Mathlib.Tactic
+module
+
+public import CoarseDeGiorgi.Assembly.CaccioppoliEnergy
+public import Mathlib.Tactic
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Assembly
 open Homogenization MeasureTheory Aliases

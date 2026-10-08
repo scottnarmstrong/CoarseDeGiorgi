@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Endpoint.Rescaling.WeightedEquation
-import CoarseDeGiorgi.Weighted.LowerSpecMean
+module
+
+public import CoarseDeGiorgi.Endpoint.Rescaling.WeightedEquation
+public import CoarseDeGiorgi.Weighted.LowerSpecMean
 
 /-! Inverse changes of variables and gradient-preserving solution transport. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped ENNReal Pointwise

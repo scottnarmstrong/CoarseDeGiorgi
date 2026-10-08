@@ -1,10 +1,15 @@
-import CoarseDeGiorgi.Localization.Geometry
-import CoarseDeGiorgi.Foundations.Euclid.Basic
-import Mathlib.Analysis.Calculus.BumpFunction.FiniteDimension
-import Mathlib.Analysis.Calculus.ContDiff.RCLike
-import Mathlib.Analysis.SpecialFunctions.SmoothTransition
+module
+
+public import CoarseDeGiorgi.Localization.Geometry
+public import CoarseDeGiorgi.Foundations.Euclid.Basic
+public import Mathlib.Analysis.Calculus.BumpFunction.FiniteDimension
+public import Mathlib.Analysis.Calculus.ContDiff.RCLike
+public import Mathlib.Analysis.SpecialFunctions.SmoothTransition
 
 /-! # Fixed smooth bumps and the literal quotient partition -/
+
+@[expose] public section
+
 namespace CoarseDeGiorgi.Localization
 open Homogenization Set Metric
 open CoarseDeGiorgi.Foundations

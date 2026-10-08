@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.SharpnessExamples.ScalarCoefficient
-import CoarseDeGiorgi.SharpnessExamples.CylinderAveragesGeometry
-import CoarseDeGiorgi.Foundations.FracGeometry.FlatCoordinates
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.ScalarCoefficient
+public import CoarseDeGiorgi.SharpnessExamples.CylinderAveragesGeometry
+public import CoarseDeGiorgi.Foundations.FracGeometry.FlatCoordinates
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open CoarseDeGiorgi.Sharpness

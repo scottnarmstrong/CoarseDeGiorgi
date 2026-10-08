@@ -1,16 +1,20 @@
-import CoarseDeGiorgi.Selection.CellIncidence
-import CoarseDeGiorgi.Selection.TraceBounds
-import CoarseDeGiorgi.Selection.SamplingMoment
-import CoarseDeGiorgi.Statements.CriticalSurfaceEmbedding
-import CoarseDeGiorgi.Statements.UpperMoment
-import CoarseDeGiorgi.Statements.LowerMoment
-import CoarseDeGiorgi.Statements.Contrast
-import CoarseDeGiorgi.Statements.TwoLevelQuantity
-import CoarseDeGiorgi.Statements.SpatialMomentRange
-import CoarseDeGiorgi.Assembly.ParameterDefs
-import CoarseDeGiorgi.Statements.RBoundaryParam
-import CoarseDeGiorgi.Statements.RStarParam
-import CoarseDeGiorgi.Statements.TriangulationCard
+module
+
+public import CoarseDeGiorgi.Selection.CellIncidence
+public import CoarseDeGiorgi.Selection.TraceBounds
+public import CoarseDeGiorgi.Selection.SamplingMoment
+public import CoarseDeGiorgi.Statements.CriticalSurfaceEmbedding
+public import CoarseDeGiorgi.Statements.UpperMoment
+public import CoarseDeGiorgi.Statements.LowerMoment
+public import CoarseDeGiorgi.Statements.Contrast
+public import CoarseDeGiorgi.Statements.TwoLevelQuantity
+public import CoarseDeGiorgi.Statements.SpatialMomentRange
+public import CoarseDeGiorgi.Assembly.ParameterDefs
+public import CoarseDeGiorgi.Statements.RBoundaryParam
+public import CoarseDeGiorgi.Statements.RStarParam
+public import CoarseDeGiorgi.Statements.TriangulationCard
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Selection
 open Homogenization MeasureTheory Set

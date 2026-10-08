@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Endpoint.Capacitary.Geometry
-import CoarseDeGiorgi.Whitney.SeedInterpolation
+module
+
+public import CoarseDeGiorgi.Endpoint.Capacitary.Geometry
+public import CoarseDeGiorgi.Whitney.SeedInterpolation
 
 /-! A fixed level-four nodal cutoff for the remote obstacle. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint
 

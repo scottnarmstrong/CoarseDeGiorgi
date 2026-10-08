@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Harnack.Crossover.Normalization
-import Mathlib.MeasureTheory.Function.L1Space.Integrable
+module
+
+public import CoarseDeGiorgi.Harnack.Crossover.Normalization
+public import Mathlib.MeasureTheory.Function.L1Space.Integrable
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.Crossover
 

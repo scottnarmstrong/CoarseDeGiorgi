@@ -1,12 +1,17 @@
-import CoarseDeGiorgi.Statements.Contrast
-import CoarseDeGiorgi.Statements.ParamTheta
-import CoarseDeGiorgi.Statements.PositivePart
-import CoarseDeGiorgi.Statements.IsWeightedSubsolution
-import CoarseDeGiorgi.Statements.LocallyBoundedAbove
+module
 
-import CoarseDeGiorgi.Statements.CaccioppoliInequality
-import CoarseDeGiorgi.Statements.EnergyToSupremum
-import CoarseDeGiorgi.TheoremA.LocalBoundedness
+public import CoarseDeGiorgi.Statements.Contrast
+public import CoarseDeGiorgi.Statements.ParamTheta
+public import CoarseDeGiorgi.Statements.PositivePart
+public import CoarseDeGiorgi.Statements.IsWeightedSubsolution
+public import CoarseDeGiorgi.Statements.LocallyBoundedAbove
+
+public import CoarseDeGiorgi.Statements.CaccioppoliInequality
+public import CoarseDeGiorgi.Statements.EnergyToSupremum
+public import CoarseDeGiorgi.TheoremA.LocalBoundedness
+
+@[expose] public section
+
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator
 

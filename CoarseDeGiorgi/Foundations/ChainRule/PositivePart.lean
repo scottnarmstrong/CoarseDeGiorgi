@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Foundations.ChainRule.Basic
-import Homogenization.Sobolev.Truncation.Approx
+module
+
+public import CoarseDeGiorgi.Foundations.ChainRule.Basic
+public import Homogenization.Sobolev.Truncation.Approx
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations
 

@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Endpoint.Reconstruction.WeightedBlocks
+module
+
+public import CoarseDeGiorgi.Endpoint.Reconstruction.WeightedBlocks
 
 /-! # Finite sums and differences of Dirichlet blocks -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint.Reconstruction
 

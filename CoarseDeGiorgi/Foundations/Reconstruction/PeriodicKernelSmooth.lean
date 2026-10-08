@@ -1,11 +1,15 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.FineKernelScaling
-import CoarseDeGiorgi.Foundations.Reconstruction.PeriodicReflection
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.FineKernelScaling
+public import CoarseDeGiorgi.Foundations.Reconstruction.PeriodicReflection
 
 /-! # Smooth periodic continuation by coordinate wrapping
 
 The seam neighborhoods are zero because the support lies strictly inside
 its fundamental box. No infinite periodization sum is used.
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

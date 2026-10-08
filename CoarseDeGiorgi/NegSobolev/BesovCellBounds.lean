@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.NegSobolev.BesovPointwise
-import CoarseDeGiorgi.NegSobolev.GaussianCells
+module
+
+public import CoarseDeGiorgi.NegSobolev.BesovPointwise
+public import CoarseDeGiorgi.NegSobolev.GaussianCells
 
 /-! # Gaussian bounds for a single positive matrix cell average -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

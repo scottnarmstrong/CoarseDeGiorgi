@@ -1,15 +1,19 @@
-import CoarseDeGiorgi.Statements.EuclideanSetDistance
-import CoarseDeGiorgi.Statements.EuclidDist
-import CoarseDeGiorgi.Statements.CubeSurface
-import CoarseDeGiorgi.Statements.PositiveCap
-import CoarseDeGiorgi.Statements.PositiveCapGradient
-import CoarseDeGiorgi.Statements.SampledUpperResponse
-import CoarseDeGiorgi.Statements.SampledResponseSeries
-import CoarseDeGiorgi.Statements.SurfaceEnergyMaximal
-import CoarseDeGiorgi.Harnack.Selection.Cap
-import CoarseDeGiorgi.Selection.SourceResponses
-import CoarseDeGiorgi.Selection.SurfaceEnergy
-import CoarseDeGiorgi.Foundations.Euclid.Basic
+module
+
+public import CoarseDeGiorgi.Statements.EuclideanSetDistance
+public import CoarseDeGiorgi.Statements.EuclidDist
+public import CoarseDeGiorgi.Statements.CubeSurface
+public import CoarseDeGiorgi.Statements.PositiveCap
+public import CoarseDeGiorgi.Statements.PositiveCapGradient
+public import CoarseDeGiorgi.Statements.SampledUpperResponse
+public import CoarseDeGiorgi.Statements.SampledResponseSeries
+public import CoarseDeGiorgi.Statements.SurfaceEnergyMaximal
+public import CoarseDeGiorgi.Harnack.Selection.Cap
+public import CoarseDeGiorgi.Selection.SourceResponses
+public import CoarseDeGiorgi.Selection.SurfaceEnergy
+public import CoarseDeGiorgi.Foundations.Euclid.Basic
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.WeakHarnack
 

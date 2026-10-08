@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.Whitney.Extension.Lipschitz
-import CoarseDeGiorgi.Statements.EuclidLipConst
+module
+
+public import CoarseDeGiorgi.Whitney.Extension.Lipschitz
+public import CoarseDeGiorgi.Statements.EuclidLipConst
 
 /-!
 # The Lipschitz conjunct of Proposition `p.affine.extension`
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.WhitneyExt
 

@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.SharpnessExamples.ScalarProfile
-import Mathlib.Topology.Piecewise
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.ScalarProfile
+public import Mathlib.Topology.Piecewise
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set Filter Topology
 open scoped ENNReal

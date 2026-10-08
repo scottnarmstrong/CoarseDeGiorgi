@@ -1,20 +1,25 @@
-import Homogenization.Ambient.CoefficientField
-import Homogenization.Sobolev.WeakDerivatives
-import Homogenization.CoarseGraining.Definitions
-import Homogenization.Geometry.TriadicCube
-import Mathlib.Data.EReal.Basic
-import Mathlib.Analysis.CStarAlgebra.Matrix
-import Mathlib.Analysis.SpecialFunctions.Pow.Real
-import Mathlib.MeasureTheory.Function.LpSeminorm.Basic
-import CoarseDeGiorgi.Statements.UpperMoment
-import CoarseDeGiorgi.Statements.LowerMoment
-import CoarseDeGiorgi.Statements.CubeUpperMoment
-import CoarseDeGiorgi.Statements.CubeLowerMoment
-import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
-import CoarseDeGiorgi.Statements.OriginCube
+module
 
-import CoarseDeGiorgi.Cubical.Comparison.Equivalence
-import CoarseDeGiorgi.Statements.CubicalSimplicialMoments
+public import Homogenization.Ambient.CoefficientField
+public import Homogenization.Sobolev.WeakDerivatives
+public import Homogenization.CoarseGraining.Definitions
+public import Homogenization.Geometry.TriadicCube
+public import Mathlib.Data.EReal.Basic
+public import Mathlib.Analysis.CStarAlgebra.Matrix
+public import Mathlib.Analysis.SpecialFunctions.Pow.Real
+public import Mathlib.MeasureTheory.Function.LpSeminorm.Basic
+public import CoarseDeGiorgi.Statements.UpperMoment
+public import CoarseDeGiorgi.Statements.LowerMoment
+public import CoarseDeGiorgi.Statements.CubeUpperMoment
+public import CoarseDeGiorgi.Statements.CubeLowerMoment
+public import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
+public import CoarseDeGiorgi.Statements.OriginCube
+
+public import CoarseDeGiorgi.Cubical.Comparison.Equivalence
+public import CoarseDeGiorgi.Statements.CubicalSimplicialMoments
+
+@[expose] public section
+
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator
 

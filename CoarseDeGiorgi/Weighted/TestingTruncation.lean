@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Weighted.Testing
-import CoarseDeGiorgi.Weighted.TestingStep
+module
+
+public import CoarseDeGiorgi.Weighted.Testing
+public import CoarseDeGiorgi.Weighted.TestingStep
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted
 

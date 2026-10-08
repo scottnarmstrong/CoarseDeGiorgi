@@ -1,13 +1,17 @@
-import CoarseDeGiorgi.Assembly.LocalBoundedness
-import CoarseDeGiorgi.Whitney.Interpolation.BoundsAff
-import CoarseDeGiorgi.Harnack.PowerCaccioppoli.DomainSplit
-import CoarseDeGiorgi.Statements.CubeSurface
-import CoarseDeGiorgi.Statements.ClosedReferenceCube
-import CoarseDeGiorgi.Statements.IsSmoothCore
-import Mathlib.Topology.Algebra.MetricSpace.Lipschitz
-import Mathlib.Topology.MetricSpace.Lipschitz
+module
+
+public import CoarseDeGiorgi.Assembly.LocalBoundedness
+public import CoarseDeGiorgi.Whitney.Interpolation.BoundsAff
+public import CoarseDeGiorgi.Harnack.PowerCaccioppoli.DomainSplit
+public import CoarseDeGiorgi.Statements.CubeSurface
+public import CoarseDeGiorgi.Statements.ClosedReferenceCube
+public import CoarseDeGiorgi.Statements.IsSmoothCore
+public import Mathlib.Topology.Algebra.MetricSpace.Lipschitz
+public import Mathlib.Topology.MetricSpace.Lipschitz
 
 /-! # Cube geometry and Lipschitz regularity of smooth cores on `τ□̄₀` -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.PowerCacc
 

@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Selection.SourceRepresentatives
-import CoarseDeGiorgi.Assembly.HybridFractional
-import CoarseDeGiorgi.Weighted.Truncation.PositivePart
-import Mathlib.Analysis.Calculus.ContDiff.RCLike
+module
+
+public import CoarseDeGiorgi.Selection.SourceRepresentatives
+public import CoarseDeGiorgi.Assembly.HybridFractional
+public import CoarseDeGiorgi.Weighted.Truncation.PositivePart
+public import Mathlib.Analysis.Calculus.ContDiff.RCLike
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Selection
 open Homogenization MeasureTheory Set

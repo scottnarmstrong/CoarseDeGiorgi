@@ -1,6 +1,11 @@
-import CoarseDeGiorgi.Statements.OriginCube
+module
 
-import CoarseDeGiorgi.NegSobolev.SobolevNormFacts
+public import CoarseDeGiorgi.Statements.OriginCube
+
+public import CoarseDeGiorgi.NegSobolev.SobolevNormFacts
+
+@[expose] public section
+
 open Homogenization MeasureTheory
 
 namespace CoarseDeGiorgi

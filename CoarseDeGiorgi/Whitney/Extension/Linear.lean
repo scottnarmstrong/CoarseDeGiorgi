@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Whitney.Extension.Properties
+module
+
+public import CoarseDeGiorgi.Whitney.Extension.Properties
 
 /-!
 # Linearity of `f ↦ L_h f`
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.WhitneyExt
 

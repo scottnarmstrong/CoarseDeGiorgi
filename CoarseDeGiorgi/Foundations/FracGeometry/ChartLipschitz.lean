@@ -1,4 +1,8 @@
-import CoarseDeGiorgi.Foundations.FracGeometry.TranslationComparison
+module
+
+public import CoarseDeGiorgi.Foundations.FracGeometry.TranslationComparison
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.FracGeometry
 

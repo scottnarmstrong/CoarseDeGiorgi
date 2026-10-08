@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Weighted.Truncation.Chain
-import CoarseDeGiorgi.Weighted.PairOperations
-import CoarseDeGiorgi.Weighted.TestingCompactSupport
-import Mathlib.Analysis.Calculus.BumpFunction.Basic
-import Mathlib.Analysis.Calculus.Deriv.Support
+module
+
+public import CoarseDeGiorgi.Weighted.Truncation.Chain
+public import CoarseDeGiorgi.Weighted.PairOperations
+public import CoarseDeGiorgi.Weighted.TestingCompactSupport
+public import Mathlib.Analysis.Calculus.BumpFunction.Basic
+public import Mathlib.Analysis.Calculus.Deriv.Support
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.Calculus
 

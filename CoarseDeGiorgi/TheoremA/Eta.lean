@@ -1,17 +1,21 @@
-import CoarseDeGiorgi.TheoremA.Endpoint
-import CoarseDeGiorgi.Harnack.Moments.MomentComparison
-import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
-import CoarseDeGiorgi.Statements.IsWeightedSubsolution
-import CoarseDeGiorgi.Statements.LocallyBoundedAbove
-import CoarseDeGiorgi.Statements.Contrast
-import CoarseDeGiorgi.Statements.LowerMoment
-import CoarseDeGiorgi.Statements.OriginCube
-import CoarseDeGiorgi.Statements.ParamTheta
-import CoarseDeGiorgi.Statements.PositivePart
-import CoarseDeGiorgi.Statements.UpperMoment
+module
+
+public import CoarseDeGiorgi.TheoremA.Endpoint
+public import CoarseDeGiorgi.Harnack.Moments.MomentComparison
+public import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
+public import CoarseDeGiorgi.Statements.IsWeightedSubsolution
+public import CoarseDeGiorgi.Statements.LocallyBoundedAbove
+public import CoarseDeGiorgi.Statements.Contrast
+public import CoarseDeGiorgi.Statements.LowerMoment
+public import CoarseDeGiorgi.Statements.OriginCube
+public import CoarseDeGiorgi.Statements.ParamTheta
+public import CoarseDeGiorgi.Statements.PositivePart
+public import CoarseDeGiorgi.Statements.UpperMoment
 
 /-! Corollary B (with the power `Θ ^ ((d-1)/(2ηθ))`) from the Theorem A estimate: interpolation
 and the radius iteration (hole filling) in `Weighted.testing_lr_bound_of_l2`. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Filter Topology
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

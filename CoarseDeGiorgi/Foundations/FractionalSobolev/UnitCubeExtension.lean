@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Foundations.FractionalSobolev.UnitCubeReflection
-import CoarseDeGiorgi.Statements.MemDnpvSobolev
-import CoarseDeGiorgi.Statements.FracNorm
-import CoarseDeGiorgi.Foundations.FracGeometry.Cutoff
+module
+
+public import CoarseDeGiorgi.Foundations.FractionalSobolev.UnitCubeReflection
+public import CoarseDeGiorgi.Statements.MemDnpvSobolev
+public import CoarseDeGiorgi.Statements.FracNorm
+public import CoarseDeGiorgi.Foundations.FracGeometry.Cutoff
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.FractionalSobolev
 open Homogenization MeasureTheory Filter

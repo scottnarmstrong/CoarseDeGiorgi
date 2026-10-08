@@ -1,7 +1,9 @@
-import CoarseDeGiorgi.Selection.SurfaceMeasurability
-import CoarseDeGiorgi.Statements.PositiveCap
-import CoarseDeGiorgi.Statements.SurfaceFracNorm
-import CoarseDeGiorgi.Statements.SurfaceMeasure
+module
+
+public import CoarseDeGiorgi.Selection.SurfaceMeasurability
+public import CoarseDeGiorgi.Statements.PositiveCap
+public import CoarseDeGiorgi.Statements.SurfaceFracNorm
+public import CoarseDeGiorgi.Statements.SurfaceMeasure
 
 /-!
 # Truncation transfer at a fixed radius (Proposition `p.good.radius`, Step 3)
@@ -11,6 +13,8 @@ surface fractional norm (and `f` has finite surface fractional norm), composing 
 one-Lipschitz map `T` keeps the surface fractional norm of the errors tending to zero,
 by dominated convergence with the dominating function of the paper.
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.GoodRadius
 

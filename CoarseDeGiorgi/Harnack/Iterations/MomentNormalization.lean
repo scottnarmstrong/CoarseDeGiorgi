@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Harnack.Iterations.NormalizedMomentOrder
-import Mathlib.Analysis.SpecialFunctions.Pow.NNReal
-import Mathlib.Tactic
+module
+
+public import CoarseDeGiorgi.Harnack.Iterations.NormalizedMomentOrder
+public import Mathlib.Analysis.SpecialFunctions.Pow.NNReal
+public import Mathlib.Tactic
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped ENNReal

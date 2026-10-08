@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Weighted.HarmonicProperties
-import Mathlib.Analysis.InnerProductSpace.Projection.Basic
+module
+
+public import CoarseDeGiorgi.Weighted.HarmonicProperties
+public import Mathlib.Analysis.InnerProductSpace.Projection.Basic
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted
 

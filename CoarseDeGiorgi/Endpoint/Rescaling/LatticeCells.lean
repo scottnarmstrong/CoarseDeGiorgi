@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Endpoint.Rescaling.AffineMeasure
-import CoarseDeGiorgi.Moments.Cells
+module
+
+public import CoarseDeGiorgi.Endpoint.Rescaling.AffineMeasure
+public import CoarseDeGiorgi.Moments.Cells
 
 /-! The fixed interior lattice maps send every positive-level simplex to a global cell. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set
 open scoped ENNReal Pointwise
@@ -33,7 +37,7 @@ private theorem half_shift (l : ℕ) :
   have he' : 3 ^ (l + 1) = 3 * 3 ^ l := by rw [pow_add]; ring
   omega
 
-private theorem latticeIndex_mem {d : ℕ} (z : Fin d → ℤ)
+theorem latticeIndex_mem {d : ℕ} (z : Fin d → ℤ)
     (hz : ∀ i, -39 ≤ z i ∧ z i ≤ 39) (l : ℕ) (η : SimplexIndex d (l + 1)) :
     (fun i => (3 ^ l : ℤ) * z i + η.1.1 i, η.1.2) ∈ triangulation (l + 4) := by
   classical

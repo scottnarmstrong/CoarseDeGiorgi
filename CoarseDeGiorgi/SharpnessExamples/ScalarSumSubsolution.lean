@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.SharpnessExamples.ScalarCylinderSubsolution
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.ScalarCylinderSubsolution
 
 /-! # The cylinder series is a weighted subsolution -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set Filter Topology
 open scoped BigOperators ENNReal

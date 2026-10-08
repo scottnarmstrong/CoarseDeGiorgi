@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Statements.SimplexIndex
-import CoarseDeGiorgi.Statements.SimplexCell
-import CoarseDeGiorgi.Statements.Triangulation
+module
+
+public import CoarseDeGiorgi.Statements.SimplexIndex
+public import CoarseDeGiorgi.Statements.SimplexCell
+public import CoarseDeGiorgi.Statements.Triangulation
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 

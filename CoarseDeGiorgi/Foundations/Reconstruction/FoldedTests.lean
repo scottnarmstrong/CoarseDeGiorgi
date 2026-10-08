@@ -1,11 +1,15 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.Geometry
-import Mathlib.Analysis.Calculus.FDeriv.Mul
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.Geometry
+public import Mathlib.Analysis.Calculus.FDeriv.Mul
 
 /-! # Signed tests for the even-reflection construction
 
 The finite sign sum uses the carrier's sup norm throughout. This file proves
 smoothness, the coordinate chain rule, and cancellation on the lower face.
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

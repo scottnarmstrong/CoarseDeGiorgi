@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.Statements.OriginCube
-import CoarseDeGiorgi.Foundations.Euclid.Basic
-import CoarseDeGiorgi.LowerFractional.CubeDomain
-import CoarseDeGiorgi.Sharpness.Defs
-import Homogenization.Sobolev.WeakDerivatives
-import Mathlib.Analysis.SpecialFunctions.Sqrt
+module
+
+public import CoarseDeGiorgi.Statements.OriginCube
+public import CoarseDeGiorgi.Foundations.Euclid.Basic
+public import CoarseDeGiorgi.LowerFractional.CubeDomain
+public import CoarseDeGiorgi.Sharpness.Defs
+public import Homogenization.Sobolev.WeakDerivatives
+public import Mathlib.Analysis.SpecialFunctions.Sqrt
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped Matrix.Norms.L2Operator

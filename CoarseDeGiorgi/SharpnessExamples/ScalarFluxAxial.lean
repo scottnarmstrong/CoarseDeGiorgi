@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.SharpnessExamples.ScalarFluxLipschitz
-import Mathlib.Analysis.Calculus.LineDeriv.IntegrationByParts
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.ScalarFluxLipschitz
+public import Mathlib.Analysis.Calculus.LineDeriv.IntegrationByParts
 
 /-! # Axial integration by parts without transverse regularity -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set Filter Topology
 open CoarseDeGiorgi.Sharpness

@@ -1,18 +1,22 @@
-import CoarseDeGiorgi.Assembly.LocalBoundedness
-import CoarseDeGiorgi.Statements.SigmaUpper
-import CoarseDeGiorgi.Statements.SigmaLower
-import CoarseDeGiorgi.Statements.GammaCacc
-import CoarseDeGiorgi.Statements.GammaSup
-import CoarseDeGiorgi.Statements.PositivePart
-import CoarseDeGiorgi.Statements.WeightedEnergy
-import CoarseDeGiorgi.Statements.TwoLevelQuantity
-import CoarseDeGiorgi.Statements.SpatialMomentRange
-import CoarseDeGiorgi.Statements.Contrast
-import CoarseDeGiorgi.Statements.ParamTheta
+module
+
+public import CoarseDeGiorgi.Assembly.LocalBoundedness
+public import CoarseDeGiorgi.Statements.SigmaUpper
+public import CoarseDeGiorgi.Statements.SigmaLower
+public import CoarseDeGiorgi.Statements.GammaCacc
+public import CoarseDeGiorgi.Statements.GammaSup
+public import CoarseDeGiorgi.Statements.PositivePart
+public import CoarseDeGiorgi.Statements.WeightedEnergy
+public import CoarseDeGiorgi.Statements.TwoLevelQuantity
+public import CoarseDeGiorgi.Statements.SpatialMomentRange
+public import CoarseDeGiorgi.Statements.Contrast
+public import CoarseDeGiorgi.Statements.ParamTheta
 
 /-! The initial estimate of the two-level quantity from the Caccioppoli inequality (Proposition
 `p.cg.caccioppoli`): the power of the contrast is `Θ ^ ((1 - σ_*) / (2θ))`, obtained from
 `Θ · Θ ^ (σ / θ) = Θ ^ ((1 - σ_*) / θ)`, which holds because `θ = 1 - σ - σ_*`. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

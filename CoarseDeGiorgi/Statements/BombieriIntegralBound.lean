@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Statements.OriginCube
-import Mathlib.MeasureTheory.Function.LpSeminorm.Basic
-import Mathlib.MeasureTheory.Integral.Bochner.Set
-import Mathlib.Analysis.SpecialFunctions.Pow.Real
-import CoarseDeGiorgi.Harnack.Scalar.Bombieri
+module
+
+public import CoarseDeGiorgi.Statements.OriginCube
+public import Mathlib.MeasureTheory.Function.LpSeminorm.Basic
+public import Mathlib.MeasureTheory.Integral.Bochner.Set
+public import Mathlib.Analysis.SpecialFunctions.Pow.Real
+public import CoarseDeGiorgi.Harnack.Scalar.Bombieri
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped ENNReal

@@ -1,11 +1,15 @@
-import CoarseDeGiorgi.Statements.CubeCell
-import CoarseDeGiorgi.Statements.GridOffset
-import CoarseDeGiorgi.Statements.OriginCube
-import CoarseDeGiorgi.Moments.CubeCells
-import Mathlib.MeasureTheory.Constructions.Pi
-import Mathlib.MeasureTheory.Measure.Lebesgue.Basic
+module
+
+public import CoarseDeGiorgi.Statements.CubeCell
+public import CoarseDeGiorgi.Statements.GridOffset
+public import CoarseDeGiorgi.Statements.OriginCube
+public import CoarseDeGiorgi.Moments.CubeCells
+public import Mathlib.MeasureTheory.Constructions.Pi
+public import Mathlib.MeasureTheory.Measure.Lebesgue.Basic
 
 /-! # Triadic cells as explicit boxes -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Cubical
 open Homogenization MeasureTheory

@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.SharpnessExamples.ScalarFluxDivergence
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.ScalarFluxDivergence
 
 /-! # The nonnegative divergence of each cutoff cylinder flux -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set Filter Topology
 open CoarseDeGiorgi.Sharpness

@@ -1,4 +1,9 @@
-import CoarseDeGiorgi.Statements.WhitneyCubes
+module
+
+public import CoarseDeGiorgi.Statements.WhitneyCubes
+public import Mathlib.Analysis.CStarAlgebra.Matrix
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

@@ -1,10 +1,14 @@
-import CoarseDeGiorgi.PowerCacc.Hypotheses
-import CoarseDeGiorgi.Statements.ExteriorIntegralBound
-import CoarseDeGiorgi.Statements.HarmonicExtension
-import CoarseDeGiorgi.Statements.ExistsPiecewiseHarmonicExtension
-import CoarseDeGiorgi.Statements.GoodRadiusEnergyBound
+module
+
+public import CoarseDeGiorgi.PowerCacc.Hypotheses
+public import CoarseDeGiorgi.Statements.ExteriorIntegralBound
+public import CoarseDeGiorgi.Statements.HarmonicExtension
+public import CoarseDeGiorgi.Statements.ExistsPiecewiseHarmonicExtension
+public import CoarseDeGiorgi.Statements.GoodRadiusEnergyBound
 
 /-! Compatibility with the existing narrow-width implementation APIs, using the paper’s extension and energy estimates. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator NNReal

@@ -1,14 +1,18 @@
-import CoarseDeGiorgi.Whitney.Harmonic.Sampling
-import CoarseDeGiorgi.Whitney.Harmonic.Cellwise
-import CoarseDeGiorgi.Statements.WhitneyInterpolationSpec
-import CoarseDeGiorgi.Statements.UpperResponseOnCell
-import CoarseDeGiorgi.Statements.UpperResponseSpec
-import CoarseDeGiorgi.Weighted.LowerSpecNorm
-import CoarseDeGiorgi.Statements.SimplexCellIsOpenBoundedConvexDomain
-import CoarseDeGiorgi.Statements.SimplexCellNonempty
-import CoarseDeGiorgi.Statements.WeightedCoeffOnSimplexCell
+module
+
+public import CoarseDeGiorgi.Whitney.Harmonic.Sampling
+public import CoarseDeGiorgi.Whitney.Harmonic.Cellwise
+public import CoarseDeGiorgi.Statements.WhitneyInterpolationSpec
+public import CoarseDeGiorgi.Statements.UpperResponseOnCell
+public import CoarseDeGiorgi.Statements.UpperResponseSpec
+public import CoarseDeGiorgi.Weighted.LowerSpecNorm
+public import CoarseDeGiorgi.Statements.SimplexCellIsOpenBoundedConvexDomain
+public import CoarseDeGiorgi.Statements.SimplexCellNonempty
+public import CoarseDeGiorgi.Statements.WeightedCoeffOnSimplexCell
 
 /-! The energy identity `e.harmonic.energy` on a Whitney simplex. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Whitney.Harmonic
 

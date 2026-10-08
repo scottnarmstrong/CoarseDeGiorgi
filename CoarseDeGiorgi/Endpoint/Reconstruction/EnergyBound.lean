@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Endpoint.Reconstruction.DirichletAlgebra
+module
+
+public import CoarseDeGiorgi.Endpoint.Reconstruction.DirichletAlgebra
 
 /-! # The elementary Dirichlet L2 stability estimate -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint.Reconstruction
 

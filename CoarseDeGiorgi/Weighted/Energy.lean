@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Weighted.Defs
-import CoarseDeGiorgi.Foundations.QuadraticForm
-import Homogenization.CoarseGraining.QuadraticStability.Integral
+module
+
+public import CoarseDeGiorgi.Weighted.Defs
+public import CoarseDeGiorgi.Foundations.QuadraticForm
+public import Homogenization.CoarseGraining.QuadraticStability.Integral
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted
 

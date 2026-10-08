@@ -1,7 +1,12 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.ReconstructionEstimates
-import Mathlib.MeasureTheory.Function.LpSpace.Complete
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.ReconstructionEstimates
+public import Mathlib.MeasureTheory.Function.LpSpace.Complete
 
 /-! # A common linear action for the block norm and its translation difference -/
+
+@[expose] public section
+
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 open Homogenization MeasureTheory Filter
 open scoped ENNReal BigOperators Topology

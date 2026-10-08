@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Recurrence.EnergyStep
-import CoarseDeGiorgi.Recurrence.Bulk
-import CoarseDeGiorgi.Assembly.HybridEnergyENN
-import CoarseDeGiorgi.Harnack.Moments.MomentComparison
+module
+
+public import CoarseDeGiorgi.Recurrence.EnergyStep
+public import CoarseDeGiorgi.Recurrence.Bulk
+public import CoarseDeGiorgi.Assembly.HybridEnergyENN
+public import CoarseDeGiorgi.Harnack.Moments.MomentComparison
+
+@[expose] public section
 
 open Homogenization MeasureTheory Filter Topology
 open scoped BigOperators ENNReal NNReal Matrix.Norms.L2Operator

@@ -1,4 +1,6 @@
-import Mathlib
+module
+
+public import Mathlib
 
 /-!
 # Weak Harnack inequality under finite cube quasi-norms (Theorems C, D(ii))
@@ -23,6 +25,8 @@ $$
 Supersolutions mean that the negative is a subsolution in the smooth-core
 closure `H¹ₐ`. The quasi-norm is written out below as `cubeQuasiNorm`.
 -/
+
+@[expose] public section
 
 open MeasureTheory
 open scoped BigOperators ENNReal Matrix Matrix.Norms.L2Operator

@@ -1,5 +1,7 @@
-import CoarseDeGiorgi.PowerCacc.Glue
-import CoarseDeGiorgi.Weighted.Testing
+module
+
+public import CoarseDeGiorgi.PowerCacc.Glue
+public import CoarseDeGiorgi.Weighted.Testing
 
 /-! # Testing a subsolution with the glued extension of Proposition `p.whitney.extension`
 
@@ -7,6 +9,8 @@ For a weighted subsolution `(u, G)` on `□₀` and the function `ψ` equal to `
 exterior extension `Hx` outside, the testing inequality reads
 `∫_{τ□₀} ∇f · a G ≤ |∫_{□₀ ∖ τ□̄₀} ∇Hx · a G|`.  The gradient of `ψ` is identified with `Fg` inside and
 with `GHx` outside by uniqueness of weak gradients. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.GoodRadiusEnergy
 

@@ -1,10 +1,14 @@
-import CoarseDeGiorgi.Cubical.MomentsFirst
-import CoarseDeGiorgi.Statements.UpperCellAverage
-import CoarseDeGiorgi.Statements.LowerCellAverage
-import CoarseDeGiorgi.Statements.CubeUpperCellAverage
-import CoarseDeGiorgi.Statements.CubeLowerCellAverage
+module
+
+public import CoarseDeGiorgi.Cubical.MomentsFirst
+public import CoarseDeGiorgi.Statements.UpperCellAverage
+public import CoarseDeGiorgi.Statements.LowerCellAverage
+public import CoarseDeGiorgi.Statements.CubeUpperCellAverage
+public import CoarseDeGiorgi.Statements.CubeLowerCellAverage
 
 /-! # Lemma `l.cubical.simplicial.moments`: cubical and simplicial moments -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Cubical
 open Homogenization MeasureTheory

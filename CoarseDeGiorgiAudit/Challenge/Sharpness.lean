@@ -1,4 +1,6 @@
-import Mathlib
+module
+
+public import Mathlib
 
 /-!
 # Theorem F (Sharpness of the range)
@@ -20,6 +22,8 @@ The cube quasi-norm is defined in this file as
 Weak solutions are defined by the smooth-core closure `H¹ₐ` and the flux
 equation against smooth compactly supported tests.
 -/
+
+@[expose] public section
 
 open MeasureTheory Topology
 open scoped BigOperators ENNReal Matrix Matrix.Norms.L2Operator
@@ -181,7 +185,8 @@ theorem sharpness
         0 < nonnegativeEssInf (originCube (1 / 2)) u ∧
         nonnegativeEssInf (originCube (1 / 2)) u < ⊤ ∧
         -- essentially unbounded near every point `(x₁, 0)` of the axis, `|x₁| < 1/2`
-        ∀ x : Vec d, |x ⟨0, by omega⟩| < 1 / 2 → (∀ i : Fin d, (i : ℕ) ≠ 0 → x i = 0) →
+        ∀ x : Vec d, |x ⟨0, Nat.lt_of_lt_of_le (Nat.zero_lt_succ 2) _hd⟩| < 1 / 2 →
+          (∀ i : Fin d, (i : ℕ) ≠ 0 → x i = 0) →
           ∀ N ∈ 𝓝 x, eLpNorm u ⊤ (volume.restrict (N ∩ originCube 1)) = ⊤ := by
   sorry
 

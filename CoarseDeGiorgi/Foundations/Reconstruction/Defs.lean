@@ -1,10 +1,14 @@
-import CoarseDeGiorgi.Foundations.FracGeometry.Defs
-import CoarseDeGiorgi.Statements.EuclidNorm
-import CoarseDeGiorgi.Statements.AuxAverage
-import CoarseDeGiorgi.Statements.AuxCube
-import CoarseDeGiorgi.Statements.FracSeminorm
+module
+
+public import CoarseDeGiorgi.Foundations.FracGeometry.Defs
+public import CoarseDeGiorgi.Statements.EuclidNorm
+public import CoarseDeGiorgi.Statements.AuxAverage
+public import CoarseDeGiorgi.Statements.AuxCube
+public import CoarseDeGiorgi.Statements.FracSeminorm
 
 /-! # Exact auxiliary-grid definitions for fractional reconstruction -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

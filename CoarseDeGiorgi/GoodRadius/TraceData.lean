@@ -1,10 +1,12 @@
-import CoarseDeGiorgi.GoodRadius.Hypothesis
-import CoarseDeGiorgi.GoodRadius.OpenCover
-import CoarseDeGiorgi.GoodRadius.SummableSlicing
-import CoarseDeGiorgi.Assembly.HybridFractional
-import CoarseDeGiorgi.Selection.SurfaceMeasurability
-import CoarseDeGiorgi.Statements.SmoothGrad
-import CoarseDeGiorgi.Statements.IsSmoothCore
+module
+
+public import CoarseDeGiorgi.GoodRadius.Hypothesis
+public import CoarseDeGiorgi.GoodRadius.OpenCover
+public import CoarseDeGiorgi.GoodRadius.SummableSlicing
+public import CoarseDeGiorgi.Assembly.HybridFractional
+public import CoarseDeGiorgi.Selection.SurfaceMeasurability
+public import CoarseDeGiorgi.Statements.SmoothGrad
+public import CoarseDeGiorgi.Statements.IsSmoothCore
 
 /-!
 # Step 1 of Proposition `p.good.radius`: traces for almost every radius
@@ -13,6 +15,8 @@ From the localization clauses (cover, fractional bound, convergence for sequence
 measurable representatives, and one subsequence along which, for almost every radius `τ`, the
 series of `r`-th powers of the surface fractional norms of `vᵢ - v` converges.
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.GoodRadius
 

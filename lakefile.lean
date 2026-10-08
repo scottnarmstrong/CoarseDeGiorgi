@@ -5,7 +5,7 @@ package «CoarseDeGiorgi» where
 
 -- The public CoarseGraining library, pinned to a fixed commit.
 require CoarseGraining from git
-  "https://github.com/scottnarmstrong/CoarseGraining.git" @ "c7ddd76c08ade64fed1b8d2ca51be14dfee8deb4"
+  "https://github.com/scottnarmstrong/CoarseGraining.git" @ "310d1a6bab3ba2d398cdaffec32f3c9d4b5a24be"
 
 @[default_target]
 lean_lib «CoarseDeGiorgi» where

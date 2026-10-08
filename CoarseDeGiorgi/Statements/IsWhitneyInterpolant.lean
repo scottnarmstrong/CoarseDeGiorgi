@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Statements.IsFreeVertex
-import CoarseDeGiorgi.Statements.ClosedReferenceCube
-import CoarseDeGiorgi.Statements.SmoothGrad
+module
+
+public import CoarseDeGiorgi.Statements.IsFreeVertex
+public import CoarseDeGiorgi.Statements.ClosedReferenceCube
+public import CoarseDeGiorgi.Statements.SmoothGrad
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.SharpnessExamples.ScalarMembership
-import CoarseDeGiorgi.SharpnessExamples.ScalarNullSets
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.ScalarMembership
+public import CoarseDeGiorgi.SharpnessExamples.ScalarNullSets
 
 /-! # Classical gradients of the cylinder profiles off their null interfaces -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set Filter Topology
 open CoarseDeGiorgi.Sharpness

@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.SharpnessExamples.WeakHarnackSharpnessGradient
-import CoarseDeGiorgi.Statements.IsWeightedSupersolution
-import CoarseDeGiorgi.Statements.IsSmoothCore
-import CoarseDeGiorgi.Statements.MemH1a
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.WeakHarnackSharpnessGradient
+public import CoarseDeGiorgi.Statements.IsWeightedSupersolution
+public import CoarseDeGiorgi.Statements.IsSmoothCore
+public import CoarseDeGiorgi.Statements.MemH1a
 
 /-! # The weak Harnack supersolutions lie in `H¹_a` and are weighted supersolutions -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set Filter Topology
 open scoped BigOperators ENNReal ContDiff

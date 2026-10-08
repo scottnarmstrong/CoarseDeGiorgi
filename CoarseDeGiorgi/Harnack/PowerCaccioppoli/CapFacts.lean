@@ -1,10 +1,14 @@
-import CoarseDeGiorgi.Harnack.Selection.Cap
-import CoarseDeGiorgi.Weighted.Energy
-import CoarseDeGiorgi.Statements.SurfaceFracSeminorm
-import CoarseDeGiorgi.Foundations.FractionalSobolev.Basic
-import Mathlib.Topology.MetricSpace.Lipschitz
+module
+
+public import CoarseDeGiorgi.Harnack.Selection.Cap
+public import CoarseDeGiorgi.Weighted.Energy
+public import CoarseDeGiorgi.Statements.SurfaceFracSeminorm
+public import CoarseDeGiorgi.Foundations.FractionalSobolev.Basic
+public import Mathlib.Topology.MetricSpace.Lipschitz
 
 /-! # Positive-cap identities used in the signed test limit -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.PowerCaccioppoli
 

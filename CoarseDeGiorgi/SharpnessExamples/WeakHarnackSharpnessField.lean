@@ -1,12 +1,16 @@
-import CoarseDeGiorgi.Statements.EuclidNorm
-import CoarseDeGiorgi.Statements.OriginCube
-import Mathlib.Analysis.SpecialFunctions.Pow.Real
-import Mathlib.Analysis.SpecialFunctions.Log.Basic
+module
+
+public import CoarseDeGiorgi.Statements.EuclidNorm
+public import CoarseDeGiorgi.Statements.OriginCube
+public import Mathlib.Analysis.SpecialFunctions.Pow.Real
+public import Mathlib.Analysis.SpecialFunctions.Log.Basic
 
 /-! # The radial field of the weak Harnack sharpness example
 
 The field is `a(ρ) = ρ^β log³(eR/ρ)` with `R = √d` and `β = 2t + d/q`.
 -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal

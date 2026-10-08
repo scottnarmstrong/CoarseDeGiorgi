@@ -1,15 +1,17 @@
-import Mathlib
-import CoarseDeGiorgiAudit.Defs
-import CoarseDeGiorgiAudit.DefsCells
-import CoarseDeGiorgiAudit.Solution.Bridge
-import CoarseDeGiorgiAudit.Solution.BridgeBesov
-import CoarseDeGiorgiAudit.Solution.BridgeChallengeLp
-import CoarseDeGiorgiAudit.Solution.WeakHarnackLpLq
-import CoarseDeGiorgi.Statements.WeakHarnackRange
-import CoarseDeGiorgiAudit.Solution.BridgeBesovCube
+module
 
-open private instModuleVecOCS from Homogenization.Sobolev.H1.OriginCubeSymmetry
-attribute [-instance] instModuleVecOCS
+public import Mathlib
+public import CoarseDeGiorgiAudit.Defs
+public import CoarseDeGiorgiAudit.DefsCells
+public import CoarseDeGiorgiAudit.Solution.Bridge
+public import CoarseDeGiorgiAudit.Solution.BridgeBesov
+public import CoarseDeGiorgiAudit.Solution.BridgeChallengeLp
+public import CoarseDeGiorgiAudit.Solution.WeakHarnackLpLq
+public import CoarseDeGiorgi.Statements.WeakHarnackRange
+public import CoarseDeGiorgiAudit.Solution.BridgeBesovCube
+
+@[expose] public section
+
 
 /-!
 # Weak Harnack inequality under finite cube quasi-norms (Theorems C, D(ii))

@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.SharpnessExamples.ScalarGradient
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.ScalarGradient
 
 /-! # A continuous matched radial flux and an outer monotone cutoff -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set Filter Topology
 open CoarseDeGiorgi.Sharpness

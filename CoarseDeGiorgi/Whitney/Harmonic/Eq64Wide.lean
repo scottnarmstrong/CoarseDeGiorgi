@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Whitney.Harmonic.Eq66Wide
+module
+
+public import CoarseDeGiorgi.Whitney.Harmonic.Eq66Wide
 
 /-! The energy estimate `e.extension.scale` with the extra factor `A_j(τ)`. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Whitney.Harmonic.Wide
 

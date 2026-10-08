@@ -1,4 +1,6 @@
-import Mathlib
+module
+
+public import Mathlib
 
 /-!
 Local boundedness for uniformly elliptic coefficients.
@@ -13,6 +15,8 @@ Derivation: Theorem D(i) of the manuscript, in the setting of the discussion aft
 `θ = (d−1)/(4κ) ∈ (0,1)`, `s = t = (1−θ)/4`, `p = q = 2(d−1)/(1−θ)`,
 using `‖|a|‖_{Lᵖ} ‖|a⁻¹|‖_{Lᑫ} ≤ Λ/λ` on the unit cube.
 -/
+
+@[expose] public section
 
 open MeasureTheory
 open scoped BigOperators ENNReal Matrix Matrix.Norms.L2Operator

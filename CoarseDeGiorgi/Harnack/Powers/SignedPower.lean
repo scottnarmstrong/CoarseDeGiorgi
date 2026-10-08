@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Harnack.Powers.AdmissibleProduct
-import CoarseDeGiorgi.Harnack.Powers.SignedTesting
+module
+
+public import CoarseDeGiorgi.Harnack.Powers.AdmissibleProduct
+public import CoarseDeGiorgi.Harnack.Powers.SignedTesting
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.Powers
 

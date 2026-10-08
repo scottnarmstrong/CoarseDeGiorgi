@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.SharpnessExamples.PolynomialEquationRadial
-import CoarseDeGiorgi.SharpnessExamples.PolynomialEquationMembership
-import Mathlib.Analysis.Calculus.MeanValue
-import Mathlib.Analysis.SpecialFunctions.Pow.Deriv
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.PolynomialEquationRadial
+public import CoarseDeGiorgi.SharpnessExamples.PolynomialEquationMembership
+public import Mathlib.Analysis.Calculus.MeanValue
+public import Mathlib.Analysis.SpecialFunctions.Pow.Deriv
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set
 open Topology

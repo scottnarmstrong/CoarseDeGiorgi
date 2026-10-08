@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.SharpnessExamples.ScalarIntegrability
-import CoarseDeGiorgi.SharpnessExamples.ScalarSeries
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.ScalarIntegrability
+public import CoarseDeGiorgi.SharpnessExamples.ScalarSeries
 
 /-! # Positive majorants for the scalar cylinder field and its inverse -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open CoarseDeGiorgi.Sharpness CoarseDeGiorgi.Foundations.FracGeometry

@@ -1,4 +1,6 @@
-import CoarseDeGiorgi.Selection.SourceRepresentatives
+module
+
+public import CoarseDeGiorgi.Selection.SourceRepresentatives
 
 /-!
 # Equality near every surface gives equality on almost every surface
@@ -7,6 +9,8 @@ If for every radius in a set `J` there is an open neighborhood of the surface on
 functions agree almost everywhere, then they agree `surfaceMeasure τ`-a.e. for almost every
 `τ ∈ J` (Lindelöf plus the cubical coarea formula).
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.GoodRadius
 

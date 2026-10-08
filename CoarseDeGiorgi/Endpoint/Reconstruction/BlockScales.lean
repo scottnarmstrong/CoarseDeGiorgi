@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Endpoint.Reconstruction.StepInverse
+module
+
+public import CoarseDeGiorgi.Endpoint.Reconstruction.StepInverse
 
 /-! # Exact triadic powers in the block estimates -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint.Reconstruction
 

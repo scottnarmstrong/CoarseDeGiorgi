@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Sharpness.LineEquation.Geometry
-import CoarseDeGiorgi.Foundations.Euclid.Basic
-import CoarseDeGiorgi.Statements.OriginCube
-import Mathlib.MeasureTheory.Measure.Lebesgue.Basic
-import Mathlib.MeasureTheory.Constructions.Pi
+module
+
+public import CoarseDeGiorgi.Sharpness.LineEquation.Geometry
+public import CoarseDeGiorgi.Foundations.Euclid.Basic
+public import CoarseDeGiorgi.Statements.OriginCube
+public import Mathlib.MeasureTheory.Measure.Lebesgue.Basic
+public import Mathlib.MeasureTheory.Constructions.Pi
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set
 open scoped BigOperators

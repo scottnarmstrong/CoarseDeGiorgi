@@ -1,12 +1,16 @@
-import CoarseDeGiorgi.Harnack.Crossover.Normalization
-import CoarseDeGiorgi.Harnack.Log.Centering
-import CoarseDeGiorgi.Harnack.LogLimit.OverlapHolder
-import CoarseDeGiorgi.Statements.IsWeightedSupersolution
-import CoarseDeGiorgi.Statements.SpatialMomentRange
-import CoarseDeGiorgi.Statements.Contrast
-import CoarseDeGiorgi.Statements.ParamR
-import CoarseDeGiorgi.Statements.ParamTheta
-import CoarseDeGiorgi.Statements.WeightedEnergy
+module
+
+public import CoarseDeGiorgi.Harnack.Crossover.Normalization
+public import CoarseDeGiorgi.Harnack.Log.Centering
+public import CoarseDeGiorgi.Harnack.LogLimit.OverlapHolder
+public import CoarseDeGiorgi.Statements.IsWeightedSupersolution
+public import CoarseDeGiorgi.Statements.SpatialMomentRange
+public import CoarseDeGiorgi.Statements.Contrast
+public import CoarseDeGiorgi.Statements.ParamR
+public import CoarseDeGiorgi.Statements.ParamTheta
+public import CoarseDeGiorgi.Statements.WeightedEnergy
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.CrossoverFinal
 

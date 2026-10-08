@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Statements.WeakHarnack
-import CoarseDeGiorgi.Harnack.Final.Harnack
+module
+
+public import CoarseDeGiorgi.Statements.WeakHarnack
+public import CoarseDeGiorgi.Harnack.Final.Harnack
+
+@[expose] public section
 
 namespace CoarseDeGiorgi
 

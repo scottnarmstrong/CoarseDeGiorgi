@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Selection.TraceBounds
-import CoarseDeGiorgi.Selection.CoareaPartition
-import CoarseDeGiorgi.Statements.OriginCube
+module
+
+public import CoarseDeGiorgi.Selection.TraceBounds
+public import CoarseDeGiorgi.Selection.CoareaPartition
+public import CoarseDeGiorgi.Statements.OriginCube
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.Selection
 

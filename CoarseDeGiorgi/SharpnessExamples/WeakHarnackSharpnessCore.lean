@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.SharpnessExamples.WeakHarnackSharpnessInfimum
-import CoarseDeGiorgi.SharpnessExamples.WeakHarnackSharpnessAnalysis
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.WeakHarnackSharpnessInfimum
+public import CoarseDeGiorgi.SharpnessExamples.WeakHarnackSharpnessAnalysis
 
 /-! # A lower bound for the value of the supersolution at the pole -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set Filter Topology
 open scoped BigOperators ENNReal ContDiff

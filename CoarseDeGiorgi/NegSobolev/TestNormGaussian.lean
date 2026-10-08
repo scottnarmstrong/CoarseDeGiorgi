@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.NegSobolev.TestNormBounds
-import CoarseDeGiorgi.NegSobolev.TestNormSum
-import CoarseDeGiorgi.Statements.IsOpenOriginCube
+module
+
+public import CoarseDeGiorgi.NegSobolev.TestNormBounds
+public import CoarseDeGiorgi.NegSobolev.TestNormSum
+public import CoarseDeGiorgi.Statements.IsOpenOriginCube
 
 /-! The Gaussian test-function estimate used in Appendix B, `l.negative.sobolev`. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal

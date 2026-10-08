@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Whitney.SeedArea
+module
+
+public import CoarseDeGiorgi.Whitney.SeedArea
 
 /-! # Algebra and order of the surface patch means -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Whitney
 

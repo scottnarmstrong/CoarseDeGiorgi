@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Assembly.CaccioppoliHole
-import CoarseDeGiorgi.Assembly.CaccioppoliReal
+module
+
+public import CoarseDeGiorgi.Assembly.CaccioppoliHole
+public import CoarseDeGiorgi.Assembly.CaccioppoliReal
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Assembly
 

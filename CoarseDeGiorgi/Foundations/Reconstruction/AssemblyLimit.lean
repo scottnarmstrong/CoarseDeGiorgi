@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.AssemblyInputs
-import CoarseDeGiorgi.Foundations.Reconstruction.AssemblyTranslation
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.AssemblyInputs
+public import CoarseDeGiorgi.Foundations.Reconstruction.AssemblyTranslation
 
 /-! # Finite Minkowski, subsequences, and Fatou close the reconstruction telescope -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Weighted.Energy
-import Mathlib.Analysis.InnerProductSpace.Completion
-import Mathlib.Analysis.InnerProductSpace.LaxMilgram
+module
+
+public import CoarseDeGiorgi.Weighted.Energy
+public import Mathlib.Analysis.InnerProductSpace.Completion
+public import Mathlib.Analysis.InnerProductSpace.LaxMilgram
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted
 

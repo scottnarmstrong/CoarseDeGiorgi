@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Statements.IsWeightedSolution
-import Homogenization.Ambient.CoefficientField
-import Homogenization.CoarseGraining.Definitions
-import Mathlib.Data.EReal.Basic
+module
+
+public import CoarseDeGiorgi.Statements.IsWeightedSolution
+public import Homogenization.Ambient.CoefficientField
+public import Homogenization.CoarseGraining.Definitions
+public import Mathlib.Data.EReal.Basic
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal

@@ -1,12 +1,16 @@
-import Homogenization.CoarseGraining.Definitions
-import Mathlib.Analysis.CStarAlgebra.Matrix
-import Mathlib.Analysis.Convex.Integral
-import Mathlib.Analysis.Convex.SpecificFunctions.Basic
-import Mathlib.Analysis.Normed.Module.Convex
-import Mathlib.Tactic
+module
+
+public import Homogenization.CoarseGraining.Definitions
+public import Mathlib.Analysis.CStarAlgebra.Matrix
+public import Mathlib.Analysis.Convex.Integral
+public import Mathlib.Analysis.Convex.SpecificFunctions.Basic
+public import Mathlib.Analysis.Normed.Module.Convex
+public import Mathlib.Tactic
 
 /-! Corollary D (`c.classical.moments`): parameter arithmetic and Jensen in the Euclidean
 operator norm. The contrast `paramTheta` is written explicitly rather than imported. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted
 

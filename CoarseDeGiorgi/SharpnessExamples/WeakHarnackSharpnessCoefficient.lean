@@ -1,11 +1,15 @@
-import CoarseDeGiorgi.SharpnessExamples.WeakHarnackSharpnessLevels
-import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
-import CoarseDeGiorgi.Statements.LowerMoment
-import CoarseDeGiorgi.Statements.UpperMoment
-import CoarseDeGiorgi.Besov.CellBounds
-import CoarseDeGiorgi.SharpnessExamples.ScalarSeries
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.WeakHarnackSharpnessLevels
+public import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
+public import CoarseDeGiorgi.Statements.LowerMoment
+public import CoarseDeGiorgi.Statements.UpperMoment
+public import CoarseDeGiorgi.Besov.CellBounds
+public import CoarseDeGiorgi.SharpnessExamples.ScalarSeries
 
 /-! # The scalar radial coefficient: geometry and weighted-coefficient membership -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set
 open scoped BigOperators ENNReal

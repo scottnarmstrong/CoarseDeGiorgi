@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Assembly.LocalBoundedness
-import CoarseDeGiorgi.Weighted.TestingNorms
-import Mathlib.MeasureTheory.Integral.Lebesgue.DominatedConvergence
+module
+
+public import CoarseDeGiorgi.Assembly.LocalBoundedness
+public import CoarseDeGiorgi.Weighted.TestingNorms
+public import Mathlib.MeasureTheory.Integral.Lebesgue.DominatedConvergence
+
+@[expose] public section
 
 open Homogenization MeasureTheory Filter Topology
 open scoped ENNReal

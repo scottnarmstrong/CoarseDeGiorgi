@@ -1,13 +1,18 @@
-import CoarseDeGiorgi.Localization.SummedConverge
-import CoarseDeGiorgi.Localization.SummedBound
-import CoarseDeGiorgi.Localization.SummedCongr
-import CoarseDeGiorgi.Statements.IsFractionalCover
-import CoarseDeGiorgi.Statements.CubeSurface
-import CoarseDeGiorgi.Statements.SelectionInterval
+module
+
+public import CoarseDeGiorgi.Localization.SummedConverge
+public import CoarseDeGiorgi.Localization.SummedBound
+public import CoarseDeGiorgi.Localization.SummedCongr
+public import CoarseDeGiorgi.Statements.IsFractionalCover
+public import CoarseDeGiorgi.Statements.CubeSurface
+public import CoarseDeGiorgi.Statements.SelectionInterval
 
 /-! # The covers and partitions of the localization, chosen from the radii alone
 
 Used in the proof of Proposition `p.fractional.localization`. -/
+
+@[expose] public section
+
 namespace CoarseDeGiorgi.Localization
 open Homogenization MeasureTheory Set
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

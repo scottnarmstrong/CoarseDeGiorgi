@@ -1,13 +1,17 @@
-import CoarseDeGiorgi.SharpnessExamples.WeakHarnackSharpnessPolar
-import CoarseDeGiorgi.Assembly.ClassicalMomentsPartition
-import Mathlib.Analysis.MeanInequalitiesPow
-import Mathlib.Analysis.Convex.SpecificFunctions.Basic
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.WeakHarnackSharpnessPolar
+public import CoarseDeGiorgi.Assembly.ClassicalMomentsPartition
+public import Mathlib.Analysis.MeanInequalitiesPow
+public import Mathlib.Analysis.Convex.SpecificFunctions.Basic
 
 /-! # Power means of simplex averages from a splitting of the majorant
 
 A nonnegative field `W₁ + W₂`, with `W₁` integrable and `W₂` bounded, has simplex power means
 controlled by `(card)^{q-1} (∫ W₁)^q + ∫ W₂^q`.
 -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set
 open scoped BigOperators ENNReal

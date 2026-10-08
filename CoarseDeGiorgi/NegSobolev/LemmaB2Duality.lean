@@ -1,8 +1,12 @@
-import Mathlib.MeasureTheory.Function.LpSpace.Basic
-import Mathlib.MeasureTheory.Integral.Bochner.Basic
-import Mathlib.Analysis.SpecialFunctions.Pow.NNReal
+module
+
+public import Mathlib.MeasureTheory.Function.LpSpace.Basic
+public import Mathlib.MeasureTheory.Integral.Bochner.Basic
+public import Mathlib.Analysis.SpecialFunctions.Pow.NNReal
 
 /-! Scalar duality with bounded tests for nonnegative bounded functions. -/
+
+@[expose] public section
 
 open MeasureTheory
 open scoped ENNReal

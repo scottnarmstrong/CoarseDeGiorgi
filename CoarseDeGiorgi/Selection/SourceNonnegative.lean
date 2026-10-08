@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Selection.SourceTraces
-import CoarseDeGiorgi.Weighted.TestingNonnegative
+module
+
+public import CoarseDeGiorgi.Selection.SourceTraces
+public import CoarseDeGiorgi.Weighted.TestingNonnegative
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Selection
 open Homogenization MeasureTheory Filter Topology CoarseDeGiorgi.Weighted

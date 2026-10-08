@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Statements.WhitneyPatch
-import CoarseDeGiorgi.Statements.IsFreeVertex
-import CoarseDeGiorgi.Statements.SeedCutoff
-import CoarseDeGiorgi.Statements.SurfaceMeasure
+module
+
+public import CoarseDeGiorgi.Statements.WhitneyPatch
+public import CoarseDeGiorgi.Statements.IsFreeVertex
+public import CoarseDeGiorgi.Statements.SeedCutoff
+public import CoarseDeGiorgi.Statements.SurfaceMeasure
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator NNReal

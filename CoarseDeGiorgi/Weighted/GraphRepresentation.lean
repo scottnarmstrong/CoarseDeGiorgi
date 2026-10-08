@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Weighted.SmoothSpace
-import CoarseDeGiorgi.Weighted.Identification
+module
+
+public import CoarseDeGiorgi.Weighted.SmoothSpace
+public import CoarseDeGiorgi.Weighted.Identification
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted
 

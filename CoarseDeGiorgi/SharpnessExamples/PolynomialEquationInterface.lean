@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.SharpnessExamples.PolynomialEquationMembership
-import Mathlib.MeasureTheory.Constructions.Pi
-import Mathlib.MeasureTheory.Measure.Prod
-import Mathlib.MeasureTheory.Measure.Typeclasses.NullSingletonClass
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.PolynomialEquationMembership
+public import Mathlib.MeasureTheory.Constructions.Pi
+public import Mathlib.MeasureTheory.Measure.Prod
+public import Mathlib.MeasureTheory.Measure.Typeclasses.NullSingletonClass
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set
 open scoped BigOperators ENNReal

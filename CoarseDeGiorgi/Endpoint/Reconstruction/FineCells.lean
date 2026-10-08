@@ -1,6 +1,8 @@
-import CoarseDeGiorgi.LowerFractional.AverageContraction
-import CoarseDeGiorgi.LowerFractional.CompactCover
-import CoarseDeGiorgi.LowerFractional.DescendantHolder
+module
+
+public import CoarseDeGiorgi.LowerFractional.AverageContraction
+public import CoarseDeGiorgi.LowerFractional.CompactCover
+public import CoarseDeGiorgi.LowerFractional.DescendantHolder
 
 /-! # Same-index fine cubes and simplex averages
 
@@ -8,6 +10,8 @@ The auxiliary projection uses cubes of side `3^(1-k)`. Here the permutation
 cells at index `k` tile the finer cube of side `3^(-k)`, retaining the
 coefficient index used in `l.lower.averages` and the endpoint reconstruction.
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint.Reconstruction
 

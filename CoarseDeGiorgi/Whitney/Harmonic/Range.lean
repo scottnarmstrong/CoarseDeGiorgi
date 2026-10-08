@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Whitney.Harmonic.Linear
-import CoarseDeGiorgi.Whitney.LiftRange
-import CoarseDeGiorgi.Harnack.Calculus.Supersolution
+module
+
+public import CoarseDeGiorgi.Whitney.Harmonic.Linear
+public import CoarseDeGiorgi.Whitney.LiftRange
+public import CoarseDeGiorgi.Harnack.Calculus.Supersolution
 
 /-! Range preservation of the cellwise harmonic replacement of an affine datum. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Whitney.Harmonic
 

@@ -1,7 +1,9 @@
-import CoarseDeGiorgi.Statements.Simplex
-import Mathlib.Data.Fin.Tuple.Sort
-import Mathlib.Tactic.Linarith
-import Mathlib.Tactic.Positivity
+module
+
+public import CoarseDeGiorgi.Statements.Simplex
+public import Mathlib.Data.Fin.Tuple.Sort
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Tactic.Positivity
 
 /-!
 # Kuhn simplices of side `t`: closure, vertices, barycentric coordinates
@@ -11,6 +13,8 @@ has the vertices `kv t π z j`, `j = 0, …, d`.  Every point of it is a convex 
 the vertices, with explicit weights given by consecutive differences of the sorted
 normalized coordinates.
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.WhitneyInterp
 

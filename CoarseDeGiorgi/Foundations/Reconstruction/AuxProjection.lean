@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.AuxPartition
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.AuxPartition
 
 /-! # Identifying the auxiliary averages and proving their L¹ convergence -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

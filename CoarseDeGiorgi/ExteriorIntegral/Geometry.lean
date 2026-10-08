@@ -1,17 +1,21 @@
-import CoarseDeGiorgi.Whitney.ExteriorCells
-import CoarseDeGiorgi.Whitney.SeedCellAffine
-import CoarseDeGiorgi.Whitney.LiftSurfaceLayer
-import CoarseDeGiorgi.Selection.CommonRadius
-import Mathlib.Analysis.Normed.Module.RCLike.Real
-import CoarseDeGiorgi.Whitney.SourceWitnessCells
-import CoarseDeGiorgi.Whitney.SourceWitnessExterior
-import CoarseDeGiorgi.Statements.ExteriorCell
-import CoarseDeGiorgi.Statements.ExteriorCellSet
-import CoarseDeGiorgi.Statements.WhitneySimplicesNear
-import CoarseDeGiorgi.Statements.WhitneySimplicesNearSize
-import CoarseDeGiorgi.Statements.WhitneyCubesProperties
+module
+
+public import CoarseDeGiorgi.Whitney.ExteriorCells
+public import CoarseDeGiorgi.Whitney.SeedCellAffine
+public import CoarseDeGiorgi.Whitney.LiftSurfaceLayer
+public import CoarseDeGiorgi.Selection.CommonRadius
+public import Mathlib.Analysis.Normed.Module.RCLike.Real
+public import CoarseDeGiorgi.Whitney.SourceWitnessCells
+public import CoarseDeGiorgi.Whitney.SourceWitnessExterior
+public import CoarseDeGiorgi.Statements.ExteriorCell
+public import CoarseDeGiorgi.Statements.ExteriorCellSet
+public import CoarseDeGiorgi.Statements.WhitneySimplicesNear
+public import CoarseDeGiorgi.Statements.WhitneySimplicesNearSize
+public import CoarseDeGiorgi.Statements.WhitneyCubesProperties
 
 /-! # Geometry of the exterior Whitney simplices for the exterior integral -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.ExteriorIntegral
 

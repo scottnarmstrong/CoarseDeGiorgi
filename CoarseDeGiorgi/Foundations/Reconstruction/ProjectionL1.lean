@@ -1,11 +1,15 @@
-import Homogenization.Besov.Duality.ProjectionLimit
-import Mathlib.MeasureTheory.Integral.DominatedConvergence
+module
+
+public import Homogenization.Besov.Duality.ProjectionLimit
+public import Mathlib.MeasureTheory.Integral.DominatedConvergence
 
 /-! # Strong L¹ convergence of the triadic averaging operators
 
 A.e. convergence and the L¹ contraction suffice: the reverse-triangle
 defect is dominated by twice the norm of the limiting function.
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

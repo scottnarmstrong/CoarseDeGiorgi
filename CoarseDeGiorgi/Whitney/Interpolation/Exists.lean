@@ -1,10 +1,14 @@
-import CoarseDeGiorgi.Whitney.Interpolation.HangingValues
-import CoarseDeGiorgi.Statements.IsWhitneyInterpolant
+module
+
+public import CoarseDeGiorgi.Whitney.Interpolation.HangingValues
+public import CoarseDeGiorgi.Statements.IsWhitneyInterpolant
 
 /-! # Existence of the Whitney interpolant
 
 The interpolant is `0` on the reference cube and, off it, the interpolant of any selected cube
 whose closure contains the point; by `cubeInterp_agree` the choice does not matter. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Whitney.Interpolation
 

@@ -1,20 +1,25 @@
-import CoarseDeGiorgi.Localization.SummedLocalSum
-import CoarseDeGiorgi.Localization.SummedCells
-import CoarseDeGiorgi.Localization.SummedEnergy
-import CoarseDeGiorgi.Localization.SourceCover
-import CoarseDeGiorgi.Localization.LowerFractional
-import CoarseDeGiorgi.Assembly.HybridParameters
-import CoarseDeGiorgi.LowerFractional.Restriction
-import CoarseDeGiorgi.LowerFractional.CubeDomain
-import CoarseDeGiorgi.Weighted.Identification
-import CoarseDeGiorgi.Statements.LowerFractionalScaleBound
-import CoarseDeGiorgi.Statements.LowerFractionalEmbedding
+module
+
+public import CoarseDeGiorgi.Localization.SummedLocalSum
+public import CoarseDeGiorgi.Localization.SummedCells
+public import CoarseDeGiorgi.Localization.SummedEnergy
+public import CoarseDeGiorgi.Localization.SourceCover
+public import CoarseDeGiorgi.Localization.LowerFractional
+public import CoarseDeGiorgi.Assembly.HybridParameters
+public import CoarseDeGiorgi.LowerFractional.Restriction
+public import CoarseDeGiorgi.LowerFractional.CubeDomain
+public import CoarseDeGiorgi.Weighted.Identification
+public import CoarseDeGiorgi.Statements.LowerFractionalScaleBound
+public import CoarseDeGiorgi.Statements.LowerFractionalEmbedding
 
 /-! # The localization bound with the local estimate summed over the cover
 
 Proposition `p.fractional.localization`: the localized function is estimated by summing the local
 bound over the cubes of the cover (Minkowski in the scale, Hölder over the cubes with
 `1/r = 1/(2q) + 1/2`, bounded overlap), so there is no loss from the number of cubes. -/
+
+@[expose] public section
+
 namespace CoarseDeGiorgi.Localization
 open Homogenization MeasureTheory Set
 open scoped BigOperators ENNReal

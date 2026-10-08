@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Endpoint.Morrey.Transport
+module
+
+public import CoarseDeGiorgi.Endpoint.Morrey.Transport
 
 /-! # Uniform scaled Morrey inequality for weak functions on cubes -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint.Morrey
 

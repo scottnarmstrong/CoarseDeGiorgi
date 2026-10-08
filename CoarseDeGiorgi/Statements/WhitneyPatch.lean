@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Statements.CubeSurface
-import CoarseDeGiorgi.Statements.EuclidDist
-import CoarseDeGiorgi.Statements.SeedProjection
+module
+
+public import CoarseDeGiorgi.Statements.CubeSurface
+public import CoarseDeGiorgi.Statements.EuclidDist
+public import CoarseDeGiorgi.Statements.SeedProjection
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator NNReal

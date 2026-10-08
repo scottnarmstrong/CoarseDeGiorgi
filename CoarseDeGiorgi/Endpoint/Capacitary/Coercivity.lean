@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Weighted.TestingApproximation
-import CoarseDeGiorgi.Weighted.PairSeparation
-import CoarseDeGiorgi.Foundations.PoincareW11Zero
+module
+
+public import CoarseDeGiorgi.Weighted.TestingApproximation
+public import CoarseDeGiorgi.Weighted.PairSeparation
+public import CoarseDeGiorgi.Foundations.PoincareW11Zero
 
 /-! The value L¹ bound needed to close the capacitary obstacle in the energy carrier. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint
 

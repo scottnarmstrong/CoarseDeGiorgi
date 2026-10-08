@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Harnack.Log.Estimate
-import CoarseDeGiorgi.PowerCacc.HarnackForm
+module
+
+public import CoarseDeGiorgi.Harnack.Log.Estimate
+public import CoarseDeGiorgi.PowerCacc.HarnackForm
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped ENNReal

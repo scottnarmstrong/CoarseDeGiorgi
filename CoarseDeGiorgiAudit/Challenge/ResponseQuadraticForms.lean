@@ -1,4 +1,6 @@
-import Mathlib
+module
+
+public import Mathlib
 
 /-!
 # Response quadratic forms
@@ -7,6 +9,8 @@ The matrices `a(△)` and `a_*⁻¹(△)` are defined by polarizing the upper an
 directional responses. This theorem certifies that both matrices are positive definite
 and that their quadratic forms equal the corresponding directional responses.
 -/
+
+@[expose] public section
 
 open MeasureTheory
 open scoped BigOperators ENNReal Matrix Matrix.Norms.L2Operator

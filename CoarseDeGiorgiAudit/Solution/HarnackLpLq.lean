@@ -1,8 +1,12 @@
-import Mathlib
-import CoarseDeGiorgi.Statements.Harnack
-import CoarseDeGiorgi.Statements.MomentBoundsLebesgue
-import CoarseDeGiorgiAudit.Defs
-import CoarseDeGiorgiAudit.Solution.Bridge
+module
+
+public import Mathlib
+public import CoarseDeGiorgi.Statements.Harnack
+public import CoarseDeGiorgi.Statements.MomentBoundsLebesgue
+public import CoarseDeGiorgiAudit.Defs
+public import CoarseDeGiorgiAudit.Solution.Bridge
+
+@[expose] public section
 
 open MeasureTheory
 open scoped BigOperators ENNReal Matrix Matrix.Norms.L2Operator

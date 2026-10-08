@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Endpoint.Reconstruction.FineAverages
-import CoarseDeGiorgi.Endpoint.Reconstruction.DirichletBlock
-import CoarseDeGiorgi.Foundations.Reconstruction.AuxIncrementLp
+module
+
+public import CoarseDeGiorgi.Endpoint.Reconstruction.FineAverages
+public import CoarseDeGiorgi.Endpoint.Reconstruction.DirichletBlock
+public import CoarseDeGiorgi.Foundations.Reconstruction.AuxIncrementLp
 
 /-! # Nesting and cancellation for the fine projection -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint.Reconstruction
 

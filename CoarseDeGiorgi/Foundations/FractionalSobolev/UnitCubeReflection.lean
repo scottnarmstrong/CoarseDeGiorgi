@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Foundations.FractionalSobolev.Sobolev
-import CoarseDeGiorgi.Statements.DnpvUnitCube
-import Mathlib.MeasureTheory.Group.LIntegral
-import Mathlib.MeasureTheory.Measure.Haar.NormedSpace
-import Mathlib.Topology.MetricSpace.Lipschitz
+module
+
+public import CoarseDeGiorgi.Foundations.FractionalSobolev.Sobolev
+public import CoarseDeGiorgi.Statements.DnpvUnitCube
+public import Mathlib.MeasureTheory.Group.LIntegral
+public import Mathlib.MeasureTheory.Measure.Haar.NormedSpace
+public import Mathlib.Topology.MetricSpace.Lipschitz
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.FractionalSobolev
 open Homogenization MeasureTheory

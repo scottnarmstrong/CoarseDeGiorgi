@@ -1,9 +1,13 @@
-import Mathlib.Analysis.MeanInequalities
-import Mathlib.Analysis.MeanInequalitiesPow
-import Mathlib.Analysis.SpecialFunctions.Pow.Continuity
-import Mathlib.Topology.Algebra.InfiniteSum.ENNReal
+module
+
+public import Mathlib.Analysis.MeanInequalities
+public import Mathlib.Analysis.MeanInequalitiesPow
+public import Mathlib.Analysis.SpecialFunctions.Pow.Continuity
+public import Mathlib.Topology.Algebra.InfiniteSum.ENNReal
 
 /-! # Hölder and Minkowski for series of extended nonnegative numbers -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Cubical
 open scoped BigOperators ENNReal

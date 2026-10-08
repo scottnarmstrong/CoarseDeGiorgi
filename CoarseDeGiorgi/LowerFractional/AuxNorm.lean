@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.LowerFractional.DescendantHolder
-import CoarseDeGiorgi.LowerFractional.AuxPower
-import CoarseDeGiorgi.LowerFractional.CubeScale
+module
+
+public import CoarseDeGiorgi.LowerFractional.DescendantHolder
+public import CoarseDeGiorgi.LowerFractional.AuxPower
+public import CoarseDeGiorgi.LowerFractional.CubeScale
 
 /-! The actual Lr spatial estimate for the auxiliary averages. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.LowerFractional
 

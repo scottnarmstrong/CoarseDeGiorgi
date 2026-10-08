@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.SharpnessExamples.WeakHarnackSharpnessProfile
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.WeakHarnackSharpnessProfile
 
 /-! # Smoothness and monotonicity of the supersolution profile `U` -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set Filter Topology
 open scoped BigOperators ENNReal ContDiff

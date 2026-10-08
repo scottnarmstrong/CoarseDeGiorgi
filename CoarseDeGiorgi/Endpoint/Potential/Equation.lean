@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Endpoint.Potential.Cutoff
-import CoarseDeGiorgi.Endpoint.Potential.Truncation
-import CoarseDeGiorgi.Weighted.TestingApproximation
-import CoarseDeGiorgi.Weighted.HarmonicCore
-import CoarseDeGiorgi.Weighted.TestingNonnegative
+module
+
+public import CoarseDeGiorgi.Endpoint.Potential.Cutoff
+public import CoarseDeGiorgi.Endpoint.Potential.Truncation
+public import CoarseDeGiorgi.Weighted.TestingApproximation
+public import CoarseDeGiorgi.Weighted.HarmonicCore
+public import CoarseDeGiorgi.Weighted.TestingNonnegative
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint.Potential
 

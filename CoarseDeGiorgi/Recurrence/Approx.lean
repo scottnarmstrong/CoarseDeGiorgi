@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Selection.SourceNonnegative
-import CoarseDeGiorgi.Assembly.HybridFractional
-import CoarseDeGiorgi.Statements.H1aWeightedNorm
-import CoarseDeGiorgi.Statements.IsSmoothCore
-import CoarseDeGiorgi.Statements.MemH1a
+module
+
+public import CoarseDeGiorgi.Selection.SourceNonnegative
+public import CoarseDeGiorgi.Assembly.HybridFractional
+public import CoarseDeGiorgi.Statements.H1aWeightedNorm
+public import CoarseDeGiorgi.Statements.IsSmoothCore
+public import CoarseDeGiorgi.Statements.MemH1a
+
+@[expose] public section
 
 open Homogenization MeasureTheory Filter Topology
 open scoped BigOperators ENNReal

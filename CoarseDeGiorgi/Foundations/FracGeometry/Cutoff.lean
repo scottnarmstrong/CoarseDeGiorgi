@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.Foundations.FracGeometry.CutoffPointwise
-import Mathlib.Analysis.SpecialFunctions.Pow.Integral
-import Mathlib.Analysis.SpecialFunctions.ImproperIntegrals
-import Mathlib.MeasureTheory.Measure.Haar.NormedSpace
-import Mathlib.MeasureTheory.Group.LIntegral
-import Mathlib.MeasureTheory.Integral.IntegrableOn
+module
+
+public import CoarseDeGiorgi.Foundations.FracGeometry.CutoffPointwise
+public import Mathlib.Analysis.SpecialFunctions.Pow.Integral
+public import Mathlib.Analysis.SpecialFunctions.ImproperIntegrals
+public import Mathlib.MeasureTheory.Measure.Haar.NormedSpace
+public import Mathlib.MeasureTheory.Group.LIntegral
+public import Mathlib.MeasureTheory.Integral.IntegrableOn
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.FracGeometry
 

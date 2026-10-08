@@ -1,10 +1,14 @@
-import CoarseDeGiorgi.Harnack.Log.PowerInput
-import CoarseDeGiorgi.Harnack.Log.EnergyLimit
-import CoarseDeGiorgi.Harnack.Log.ContrastFinite
-import CoarseDeGiorgi.Weighted.Identification
-import CoarseDeGiorgi.LowerFractional.MeanCube
-import CoarseDeGiorgi.LowerFractional.CubeDomain
-import CoarseDeGiorgi.LowerFractional.Restriction
+module
+
+public import CoarseDeGiorgi.Harnack.Log.PowerInput
+public import CoarseDeGiorgi.Harnack.Log.EnergyLimit
+public import CoarseDeGiorgi.Harnack.Log.ContrastFinite
+public import CoarseDeGiorgi.Weighted.Identification
+public import CoarseDeGiorgi.LowerFractional.MeanCube
+public import CoarseDeGiorgi.LowerFractional.CubeDomain
+public import CoarseDeGiorgi.LowerFractional.Restriction
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.Log
 

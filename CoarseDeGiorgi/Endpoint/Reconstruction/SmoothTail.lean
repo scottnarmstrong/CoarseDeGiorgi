@@ -1,8 +1,13 @@
-import CoarseDeGiorgi.Endpoint.Reconstruction.SmoothReconstruction
-import CoarseDeGiorgi.Endpoint.Reconstruction.MomentTail
-import CoarseDeGiorgi.Endpoint.Morrey.Approximation
+module
+
+public import CoarseDeGiorgi.Endpoint.Reconstruction.SmoothReconstruction
+public import CoarseDeGiorgi.Endpoint.Reconstruction.MomentTail
+public import CoarseDeGiorgi.Endpoint.Morrey.Approximation
 
 /-! # A reconstruction limit inherits its summable block tail bound -/
+
+@[expose] public section
+
 namespace CoarseDeGiorgi.Endpoint.Reconstruction
 open Homogenization MeasureTheory Filter
 open scoped ENNReal Topology BigOperators

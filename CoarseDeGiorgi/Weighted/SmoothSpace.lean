@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Weighted.GradientRepresentation
-import CoarseDeGiorgi.Weighted.SmoothCore
-import Homogenization.CoarseGraining.ResponseIdentities.Foundations.Algebra
-import Mathlib.Analysis.InnerProductSpace.ProdL2
+module
+
+public import CoarseDeGiorgi.Weighted.GradientRepresentation
+public import CoarseDeGiorgi.Weighted.SmoothCore
+public import Homogenization.CoarseGraining.ResponseIdentities.Foundations.Algebra
+public import Mathlib.Analysis.InnerProductSpace.ProdL2
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted
 

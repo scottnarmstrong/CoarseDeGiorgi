@@ -1,38 +1,42 @@
-import CoarseDeGiorgi.Statements.LowerResponseExistsUnique
-import CoarseDeGiorgi.Statements.UpperResponseExistsUnique
-import CoarseDeGiorgi.Statements.SimplexIndex
-import CoarseDeGiorgi.Statements.AlphaParam
-import CoarseDeGiorgi.Statements.AuxCube
-import CoarseDeGiorgi.Statements.AuxAverage
-import CoarseDeGiorgi.Assembly.ParameterDefs
-import CoarseDeGiorgi.Statements.Contrast
-import CoarseDeGiorgi.Statements.FracNorm
-import CoarseDeGiorgi.Statements.GridOffset
-import CoarseDeGiorgi.Statements.H1aWeightedNorm
-import CoarseDeGiorgi.Statements.LowerCellAverage
-import CoarseDeGiorgi.Statements.LowerMoment
-import CoarseDeGiorgi.Statements.LowerResponseInv
-import CoarseDeGiorgi.Statements.LowerResponseInvOnCell
-import CoarseDeGiorgi.Statements.OriginCube
-import CoarseDeGiorgi.Statements.ParamR
-import CoarseDeGiorgi.Statements.ParamTheta
-import CoarseDeGiorgi.Statements.RBoundaryParam
-import CoarseDeGiorgi.Statements.RStarParam
-import CoarseDeGiorgi.Statements.Simplex
-import CoarseDeGiorgi.Statements.SimplexCell
-import CoarseDeGiorgi.Statements.SimplexCellIsOpenBoundedConvexDomain
-import CoarseDeGiorgi.Statements.SimplexCellNonempty
-import CoarseDeGiorgi.Statements.SimplexCellSubsetOriginCube
-import CoarseDeGiorgi.Statements.SpatialMomentRange
-import CoarseDeGiorgi.Statements.Triangulation
-import CoarseDeGiorgi.Statements.TriangulationCard
-import CoarseDeGiorgi.Statements.UpperCellAverage
-import CoarseDeGiorgi.Statements.UpperMoment
-import CoarseDeGiorgi.Statements.UpperResponse
-import CoarseDeGiorgi.Statements.UpperResponseOnCell
-import CoarseDeGiorgi.Statements.WeightedCoeffOnSimplexCell
-import CoarseDeGiorgi.Moments.Cells
-import Mathlib.Analysis.CStarAlgebra.Matrix
+module
+
+public import CoarseDeGiorgi.Statements.LowerResponseExistsUnique
+public import CoarseDeGiorgi.Statements.UpperResponseExistsUnique
+public import CoarseDeGiorgi.Statements.SimplexIndex
+public import CoarseDeGiorgi.Statements.AlphaParam
+public import CoarseDeGiorgi.Statements.AuxCube
+public import CoarseDeGiorgi.Statements.AuxAverage
+public import CoarseDeGiorgi.Assembly.ParameterDefs
+public import CoarseDeGiorgi.Statements.Contrast
+public import CoarseDeGiorgi.Statements.FracNorm
+public import CoarseDeGiorgi.Statements.GridOffset
+public import CoarseDeGiorgi.Statements.H1aWeightedNorm
+public import CoarseDeGiorgi.Statements.LowerCellAverage
+public import CoarseDeGiorgi.Statements.LowerMoment
+public import CoarseDeGiorgi.Statements.LowerResponseInv
+public import CoarseDeGiorgi.Statements.LowerResponseInvOnCell
+public import CoarseDeGiorgi.Statements.OriginCube
+public import CoarseDeGiorgi.Statements.ParamR
+public import CoarseDeGiorgi.Statements.ParamTheta
+public import CoarseDeGiorgi.Statements.RBoundaryParam
+public import CoarseDeGiorgi.Statements.RStarParam
+public import CoarseDeGiorgi.Statements.Simplex
+public import CoarseDeGiorgi.Statements.SimplexCell
+public import CoarseDeGiorgi.Statements.SimplexCellIsOpenBoundedConvexDomain
+public import CoarseDeGiorgi.Statements.SimplexCellNonempty
+public import CoarseDeGiorgi.Statements.SimplexCellSubsetOriginCube
+public import CoarseDeGiorgi.Statements.SpatialMomentRange
+public import CoarseDeGiorgi.Statements.Triangulation
+public import CoarseDeGiorgi.Statements.TriangulationCard
+public import CoarseDeGiorgi.Statements.UpperCellAverage
+public import CoarseDeGiorgi.Statements.UpperMoment
+public import CoarseDeGiorgi.Statements.UpperResponse
+public import CoarseDeGiorgi.Statements.UpperResponseOnCell
+public import CoarseDeGiorgi.Statements.WeightedCoeffOnSimplexCell
+public import CoarseDeGiorgi.Moments.Cells
+public import Mathlib.Analysis.CStarAlgebra.Matrix
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

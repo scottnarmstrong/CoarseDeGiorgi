@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Weighted.TestingNonnegative
-import CoarseDeGiorgi.Weighted.HarmonicCore
-import CoarseDeGiorgi.Statements.Csub
-import CoarseDeGiorgi.Statements.Csol
+module
+
+public import CoarseDeGiorgi.Weighted.TestingNonnegative
+public import CoarseDeGiorgi.Weighted.HarmonicCore
+public import CoarseDeGiorgi.Statements.Csub
+public import CoarseDeGiorgi.Statements.Csol
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted
 

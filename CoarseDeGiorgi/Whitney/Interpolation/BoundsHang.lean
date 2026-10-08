@@ -1,4 +1,6 @@
-import CoarseDeGiorgi.Whitney.Interpolation.BoundsCellBary
+module
+
+public import CoarseDeGiorgi.Whitney.Interpolation.BoundsCellBary
 
 /-!
 # Every vertex of a Whitney simplex is free or interpolated from free vertices
@@ -7,6 +9,8 @@ For a Whitney vertex `z` in a closed selected cube `D̄`, the value at `z` of ev
 affine on the closure of each Whitney simplex is a convex combination of its values at free
 vertices lying in `D̄`.
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.WhitneyInterp
 

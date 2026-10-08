@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.LowerFractional.CubeGates
-import CoarseDeGiorgi.LowerFractional.CubeScaleGate
-import CoarseDeGiorgi.LowerFractional.CompactCover
-import CoarseDeGiorgi.Statements.FractionalReconstruction
+module
+
+public import CoarseDeGiorgi.LowerFractional.CubeGates
+public import CoarseDeGiorgi.LowerFractional.CubeScaleGate
+public import CoarseDeGiorgi.LowerFractional.CompactCover
+public import CoarseDeGiorgi.Statements.FractionalReconstruction
 
 /-! The bounds of `p.lower.fractional` for cubes `Q ⊆ □₀`, and integrability of `H¹_a(□₀)` in `L^r(□₀)`. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.LowerFractional
 open Homogenization MeasureTheory Aliases

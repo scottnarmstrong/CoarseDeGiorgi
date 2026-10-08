@@ -1,10 +1,15 @@
-import CoarseDeGiorgi.NegSobolev.GaussianBasic
-import CoarseDeGiorgi.Statements.OriginCube
-import Mathlib.Analysis.CStarAlgebra.Matrix
-import Mathlib.Analysis.Convolution
-import Mathlib.MeasureTheory.Integral.Bochner.Set
+module
+
+public import CoarseDeGiorgi.NegSobolev.GaussianBasic
+public import CoarseDeGiorgi.Statements.OriginCube
+public import Mathlib.Analysis.CStarAlgebra.Matrix
+public import Mathlib.Analysis.Convolution
+public import Mathlib.MeasureTheory.Integral.Bochner.Set
+public import Mathlib.Algebra.Order.Star.Real
 
 /-! # Positivity of entrywise Gaussian matrix averages -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators Matrix.Norms.L2Operator

@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.Defs
-import Mathlib.Analysis.SpecificLimits.Basic
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.Defs
+public import Mathlib.Analysis.SpecificLimits.Basic
 
 /-! # Nonnegative geometric summation for reconstruction tails -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

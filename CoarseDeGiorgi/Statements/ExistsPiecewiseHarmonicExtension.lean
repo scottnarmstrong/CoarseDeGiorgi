@@ -1,10 +1,15 @@
-import CoarseDeGiorgi.Statements.IsPiecewiseHarmonicExtension
-import CoarseDeGiorgi.Statements.IsTriadicWidth
-import CoarseDeGiorgi.Statements.SelectionInterval
-import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
-import CoarseDeGiorgi.Statements.OriginCube
+module
 
-import CoarseDeGiorgi.Whitney.Harmonic.ExistsWide
+public import CoarseDeGiorgi.Statements.IsPiecewiseHarmonicExtension
+public import CoarseDeGiorgi.Statements.IsTriadicWidth
+public import CoarseDeGiorgi.Statements.SelectionInterval
+public import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
+public import CoarseDeGiorgi.Statements.OriginCube
+
+public import CoarseDeGiorgi.Whitney.Harmonic.ExistsWide
+
+@[expose] public section
+
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator NNReal
 

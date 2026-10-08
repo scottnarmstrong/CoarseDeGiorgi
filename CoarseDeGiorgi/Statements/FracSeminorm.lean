@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Statements.FracKernel
-import Homogenization.Ambient.CoefficientField
-import Mathlib.MeasureTheory.Measure.Prod
+module
+
+public import CoarseDeGiorgi.Statements.FracKernel
+public import Homogenization.Ambient.CoefficientField
+public import Mathlib.MeasureTheory.Measure.Prod
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal

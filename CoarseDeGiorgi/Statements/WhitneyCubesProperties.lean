@@ -1,6 +1,10 @@
-import Homogenization.Ambient.CoefficientField
-import Homogenization.Multiscale.CubeAverage
-import CoarseDeGiorgi.Foundations.Triadic.WhitneyCubesProof
+module
+
+public import Homogenization.Ambient.CoefficientField
+public import Homogenization.Multiscale.CubeAverage
+public import CoarseDeGiorgi.Foundations.Triadic.WhitneyCubesProof
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal

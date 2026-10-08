@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.NegSobolev.GaussDerivScaling
-import CoarseDeGiorgi.NegSobolev.TestNormWeakDeriv
-import CoarseDeGiorgi.NegSobolev.GaussianBasic
-import Mathlib.Analysis.Calculus.Deriv.Polynomial
+module
+
+public import CoarseDeGiorgi.NegSobolev.GaussDerivScaling
+public import CoarseDeGiorgi.NegSobolev.TestNormWeakDeriv
+public import CoarseDeGiorgi.NegSobolev.GaussianBasic
+public import Mathlib.Analysis.Calculus.Deriv.Polynomial
 
 /-! Polynomial factors of Gaussian derivatives and their integrability. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Polynomial
 open scoped BigOperators

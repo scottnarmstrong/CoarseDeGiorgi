@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Weighted.Truncation.Closure
-import Mathlib.Analysis.Calculus.MeanValue
+module
+
+public import CoarseDeGiorgi.Weighted.Truncation.Closure
+public import Mathlib.Analysis.Calculus.MeanValue
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted
 

@@ -1,9 +1,11 @@
-import CoarseDeGiorgi.Selection.SurfaceMeasurability
-import Mathlib.MeasureTheory.Function.ConvergenceInMeasure
-import CoarseDeGiorgi.Selection.TraceTransport
-import CoarseDeGiorgi.Selection.SourceRadius
-import CoarseDeGiorgi.Statements.IntegratedSlicing
-import CoarseDeGiorgi.Statements.CriticalSurfaceEmbedding
+module
+
+public import CoarseDeGiorgi.Selection.SurfaceMeasurability
+public import Mathlib.MeasureTheory.Function.ConvergenceInMeasure
+public import CoarseDeGiorgi.Selection.TraceTransport
+public import CoarseDeGiorgi.Selection.SourceRadius
+public import CoarseDeGiorgi.Statements.IntegratedSlicing
+public import CoarseDeGiorgi.Statements.CriticalSurfaceEmbedding
 
 /-!
 # A subsequence with a.e. summable surface errors (Proposition `p.good.radius`, Step 1)
@@ -12,6 +14,8 @@ Global fractional convergence `fracNorm univ α r (G i) → 0` gives a subsequen
 for almost every radius `τ` in a measurable interval, the series of `r`-th powers of the surface
 fractional norms is finite (so the terms tend to zero), and the `L²` surface norms tend to zero.
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.GoodRadius
 

@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Statements.MemH1a
-import CoarseDeGiorgi.Statements.SmoothGrad
-import Homogenization.Ambient.CoefficientField
-import Mathlib.MeasureTheory.Integral.Bochner.Set
+module
+
+public import CoarseDeGiorgi.Statements.MemH1a
+public import CoarseDeGiorgi.Statements.SmoothGrad
+public import Homogenization.Ambient.CoefficientField
+public import Mathlib.MeasureTheory.Integral.Bochner.Set
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal

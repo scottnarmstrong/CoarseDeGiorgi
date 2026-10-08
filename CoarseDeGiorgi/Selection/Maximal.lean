@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Selection.IntervalCover
-import Mathlib.MeasureTheory.Measure.Regular
-import Mathlib.Topology.Semicontinuity.Basic
-import Mathlib.Topology.Order.Compact
-import Mathlib.MeasureTheory.Constructions.BorelSpace.Order
+module
+
+public import CoarseDeGiorgi.Selection.IntervalCover
+public import Mathlib.MeasureTheory.Measure.Regular
+public import Mathlib.Topology.Semicontinuity.Basic
+public import Mathlib.Topology.Order.Compact
+public import Mathlib.MeasureTheory.Constructions.BorelSpace.Order
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Selection
 

@@ -1,6 +1,8 @@
-import CoarseDeGiorgi.SharpnessExamples.ScalarIntegrability
-import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
-import Mathlib.Analysis.SpecialFunctions.Trigonometric.DerivHyp
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.ScalarIntegrability
+public import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
+public import Mathlib.Analysis.SpecialFunctions.Trigonometric.DerivHyp
 
 /-! # The radial and axial profiles in Theorem F
 
@@ -8,6 +10,8 @@ Index `n` denotes manuscript index `j = n + 1`. The annular profile is kept
 as its defining integral, so its flux derivative agrees exactly with the
 source. All interfaces use their continuous values.
 -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set
 open CoarseDeGiorgi.Sharpness

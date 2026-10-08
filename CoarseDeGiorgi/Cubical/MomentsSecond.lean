@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Cubical.Counting
-import CoarseDeGiorgi.Cubical.EnnrealSum
+module
+
+public import CoarseDeGiorgi.Cubical.Counting
+public import CoarseDeGiorgi.Cubical.EnnrealSum
 
 /-! # The second inequality of Lemma `l.cubical.simplicial.moments`: simplices are controlled by cubes -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Cubical
 open Homogenization MeasureTheory

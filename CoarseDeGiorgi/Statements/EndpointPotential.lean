@@ -1,13 +1,18 @@
-import CoarseDeGiorgi.Statements.ParamTheta
-import CoarseDeGiorgi.Statements.MemH1a0
-import CoarseDeGiorgi.Statements.LowerMoment
-import CoarseDeGiorgi.Statements.UpperMoment
-import CoarseDeGiorgi.Statements.RStarParam
-import CoarseDeGiorgi.Statements.WeightedEnergy
-import CoarseDeGiorgi.Statements.SmoothGrad
+module
 
-import CoarseDeGiorgi.Endpoint.Potential.Main
-import CoarseDeGiorgi.Statements.DirichletReconstruction
+public import CoarseDeGiorgi.Statements.ParamTheta
+public import CoarseDeGiorgi.Statements.MemH1a0
+public import CoarseDeGiorgi.Statements.LowerMoment
+public import CoarseDeGiorgi.Statements.UpperMoment
+public import CoarseDeGiorgi.Statements.RStarParam
+public import CoarseDeGiorgi.Statements.WeightedEnergy
+public import CoarseDeGiorgi.Statements.SmoothGrad
+
+public import CoarseDeGiorgi.Endpoint.Potential.Main
+public import CoarseDeGiorgi.Statements.DirichletReconstruction
+
+@[expose] public section
+
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator
 

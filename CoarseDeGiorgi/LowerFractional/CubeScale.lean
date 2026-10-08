@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.LowerFractional.TilingLocal
+module
+
+public import CoarseDeGiorgi.LowerFractional.TilingLocal
 
 /-! The unit-cube containment forces nonnegative absolute scales. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.LowerFractional
 

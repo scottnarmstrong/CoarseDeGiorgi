@@ -1,5 +1,9 @@
-import Homogenization.Geometry.TriadicPartition
-import Mathlib.Tactic.Positivity
+module
+
+public import Homogenization.Geometry.TriadicPartition
+public import Mathlib.Tactic.Positivity
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Triadic
 

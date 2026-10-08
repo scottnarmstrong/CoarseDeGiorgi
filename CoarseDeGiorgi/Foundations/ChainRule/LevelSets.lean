@@ -1,4 +1,8 @@
-import CoarseDeGiorgi.Foundations.ChainRule.PositivePart
+module
+
+public import CoarseDeGiorgi.Foundations.ChainRule.PositivePart
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations
 

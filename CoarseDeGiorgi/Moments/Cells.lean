@@ -1,21 +1,25 @@
-import CoarseDeGiorgi.Foundations.Simplex.Basic
-import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
-import CoarseDeGiorgi.Statements.SimplexIndex
-import CoarseDeGiorgi.Statements.GridOffset
-import CoarseDeGiorgi.Statements.OriginCube
-import CoarseDeGiorgi.Statements.Simplex
-import CoarseDeGiorgi.Statements.SimplexCell
-import CoarseDeGiorgi.Statements.Triangulation
-import Homogenization.Ambient.CoefficientField
-import Mathlib.Data.Fintype.Perm
-import Mathlib.Algebra.Ring.Parity
-import Mathlib.MeasureTheory.Integral.IntegrableOn
+module
+
+public import CoarseDeGiorgi.Foundations.Simplex.Basic
+public import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
+public import CoarseDeGiorgi.Statements.SimplexIndex
+public import CoarseDeGiorgi.Statements.GridOffset
+public import CoarseDeGiorgi.Statements.OriginCube
+public import CoarseDeGiorgi.Statements.Simplex
+public import CoarseDeGiorgi.Statements.SimplexCell
+public import CoarseDeGiorgi.Statements.Triangulation
+public import Homogenization.Ambient.CoefficientField
+public import Mathlib.Data.Fintype.Perm
+public import Mathlib.Algebra.Ring.Parity
+public import Mathlib.MeasureTheory.Integral.IntegrableOn
 
 /-! # Audited simplex cells for response moments
 
 The public cell names alias the `Statements/` definitions. The geometric bridge
 identifies the normalized-coordinate simplex `simplexCell` with the Kuhn API.
 -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

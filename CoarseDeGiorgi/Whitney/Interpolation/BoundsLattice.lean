@@ -1,10 +1,14 @@
-import CoarseDeGiorgi.Whitney.Interpolation.BoundsBary
+module
+
+public import CoarseDeGiorgi.Whitney.Interpolation.BoundsBary
 
 /-!
 # Lattice points of a Kuhn simplex are vertices
 
 `lat t a` says that `a` is a coordinate of the vertex lattice `t (ℤ - 1/2)` of mesh `t`.
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.WhitneyInterp
 

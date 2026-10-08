@@ -1,13 +1,17 @@
-import CoarseDeGiorgi.Assembly.HybridFractional
-import CoarseDeGiorgi.Harnack.Iterations.ExponentRange
-import CoarseDeGiorgi.Harnack.Powers.SignedPower
-import CoarseDeGiorgi.Harnack.Crossover.Normalization
-import CoarseDeGiorgi.Harnack.CrossoverFinal.Parameters
-import CoarseDeGiorgi.Harnack.Scalar.BombieriLemmas
-import CoarseDeGiorgi.Statements.IsWeightedSupersolution
-import CoarseDeGiorgi.Statements.SpatialMomentRange
-import CoarseDeGiorgi.Statements.ParamR
-import CoarseDeGiorgi.Statements.ChiParam
+module
+
+public import CoarseDeGiorgi.Assembly.HybridFractional
+public import CoarseDeGiorgi.Harnack.Iterations.ExponentRange
+public import CoarseDeGiorgi.Harnack.Powers.SignedPower
+public import CoarseDeGiorgi.Harnack.Crossover.Normalization
+public import CoarseDeGiorgi.Harnack.CrossoverFinal.Parameters
+public import CoarseDeGiorgi.Harnack.Scalar.BombieriLemmas
+public import CoarseDeGiorgi.Statements.IsWeightedSupersolution
+public import CoarseDeGiorgi.Statements.SpatialMomentRange
+public import CoarseDeGiorgi.Statements.ParamR
+public import CoarseDeGiorgi.Statements.ChiParam
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.CrossoverFinal
 

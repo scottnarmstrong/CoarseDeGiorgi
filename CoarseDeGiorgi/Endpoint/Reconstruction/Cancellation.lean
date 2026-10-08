@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Endpoint.Reconstruction.ProjectionPoincare
-import CoarseDeGiorgi.Endpoint.Reconstruction.Poisson
-import CoarseDeGiorgi.Endpoint.Morrey.Smooth
+module
+
+public import CoarseDeGiorgi.Endpoint.Reconstruction.ProjectionPoincare
+public import CoarseDeGiorgi.Endpoint.Reconstruction.Poisson
+public import CoarseDeGiorgi.Endpoint.Morrey.Smooth
 
 /-! # Cancellation of parent-cell means in Dirichlet duality -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint.Reconstruction
 

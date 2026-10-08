@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Weighted.UpperSpecNorm
-import Mathlib.Analysis.Normed.Module.FiniteDimension
+module
+
+public import CoarseDeGiorgi.Weighted.UpperSpecNorm
+public import Mathlib.Analysis.Normed.Module.FiniteDimension
 
 /-! # Sums of positive semidefinite matrices controlled by their quadratic forms -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Cubical
 

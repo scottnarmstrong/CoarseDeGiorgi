@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Harnack.Log.GlobalOscillation
-import CoarseDeGiorgi.Harnack.Log.OverlapPaths
-import CoarseDeGiorgi.LowerFractional.MeanCube
-import CoarseDeGiorgi.LowerFractional.CubeDomain
+module
+
+public import CoarseDeGiorgi.Harnack.Log.GlobalOscillation
+public import CoarseDeGiorgi.Harnack.Log.OverlapPaths
+public import CoarseDeGiorgi.LowerFractional.MeanCube
+public import CoarseDeGiorgi.LowerFractional.CubeDomain
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.Log
 

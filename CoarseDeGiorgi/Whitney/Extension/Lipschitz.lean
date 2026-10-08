@@ -1,11 +1,15 @@
-import CoarseDeGiorgi.Whitney.Extension.CellLipschitz
-import CoarseDeGiorgi.Whitney.Extension.LipschitzGlue
+module
+
+public import CoarseDeGiorgi.Whitney.Extension.CellLipschitz
+public import CoarseDeGiorgi.Whitney.Extension.LipschitzGlue
 
 /-!
 # Lipschitz extension of the boundary data
 
 The last paragraph of the proof of Proposition `p.affine.extension`.
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.WhitneyExt
 

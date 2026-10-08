@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Whitney.Harmonic.AdmissibleWide
-import CoarseDeGiorgi.Whitney.Harmonic.GlueData
-import CoarseDeGiorgi.Whitney.Harmonic.Cellwise2Wide
+module
+
+public import CoarseDeGiorgi.Whitney.Harmonic.AdmissibleWide
+public import CoarseDeGiorgi.Whitney.Harmonic.GlueData
+public import CoarseDeGiorgi.Whitney.Harmonic.Cellwise2Wide
 
 /-! The glued Lipschitz extension and the admissible correction. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Whitney.Harmonic.Wide
 

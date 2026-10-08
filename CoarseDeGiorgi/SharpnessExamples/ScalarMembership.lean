@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.SharpnessExamples.ScalarProfileLipschitz
-import CoarseDeGiorgi.Weighted.Lipschitz
-import CoarseDeGiorgi.Whitney.ExteriorCells
-import Mathlib.Analysis.Calculus.ContDiff.RCLike
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.ScalarProfileLipschitz
+public import CoarseDeGiorgi.Weighted.Lipschitz
+public import CoarseDeGiorgi.Whitney.ExteriorCells
+public import Mathlib.Analysis.Calculus.ContDiff.RCLike
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set
 open CoarseDeGiorgi.Sharpness

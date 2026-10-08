@@ -1,7 +1,9 @@
-import CoarseDeGiorgi.SharpnessExamples.CylinderResponseAverages
-import CoarseDeGiorgi.SharpnessExamples.CylinderFractionBridge
-import CoarseDeGiorgi.SharpnessExamples.CylinderFiniteMeans
-import CoarseDeGiorgi.Besov.CellBounds
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.CylinderResponseAverages
+public import CoarseDeGiorgi.SharpnessExamples.CylinderFractionBridge
+public import CoarseDeGiorgi.SharpnessExamples.CylinderFiniteMeans
+public import CoarseDeGiorgi.Besov.CellBounds
 
 /-! # Level bounds for the anisotropic cylinder from coefficient averages
 
@@ -9,6 +11,8 @@ The proof of Proposition `p.sharpness.polynomial` bounds the response means by a
 coefficient over the simplices (the bounds `e.upper.norm.bound`, `e.lower.norm.bound`) and the
 averages of the diagonal field by the cylinder fractions. No cell response is computed.
 -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

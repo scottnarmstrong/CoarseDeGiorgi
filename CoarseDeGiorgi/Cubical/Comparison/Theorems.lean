@@ -1,16 +1,18 @@
-import CoarseDeGiorgi.Statements.CubicalSimplicialEquivalence
-import CoarseDeGiorgi.Statements.CubicalRatioComparison
-import CoarseDeGiorgi.Statements.LocalBoundedness
-import CoarseDeGiorgi.Statements.Harnack
-import CoarseDeGiorgi.Statements.IsWeightedSolution
-import CoarseDeGiorgi.Statements.IsWeightedSubsolution
-import CoarseDeGiorgi.Statements.IsWeightedSupersolution
-import CoarseDeGiorgi.Statements.LocallyBoundedAbove
-import CoarseDeGiorgi.Statements.NonnegativeEssInf
-import CoarseDeGiorgi.Statements.NormalizedLpMoment
-import CoarseDeGiorgi.Statements.ParamTheta
-import CoarseDeGiorgi.Statements.PositivePart
-import CoarseDeGiorgi.Statements.RStarParam
+module
+
+public import CoarseDeGiorgi.Statements.CubicalSimplicialEquivalence
+public import CoarseDeGiorgi.Statements.CubicalRatioComparison
+public import CoarseDeGiorgi.Statements.LocalBoundedness
+public import CoarseDeGiorgi.Statements.Harnack
+public import CoarseDeGiorgi.Statements.IsWeightedSolution
+public import CoarseDeGiorgi.Statements.IsWeightedSubsolution
+public import CoarseDeGiorgi.Statements.IsWeightedSupersolution
+public import CoarseDeGiorgi.Statements.LocallyBoundedAbove
+public import CoarseDeGiorgi.Statements.NonnegativeEssInf
+public import CoarseDeGiorgi.Statements.NormalizedLpMoment
+public import CoarseDeGiorgi.Statements.ParamTheta
+public import CoarseDeGiorgi.Statements.PositivePart
+public import CoarseDeGiorgi.Statements.RStarParam
 
 /-!
 # Theorems A, C and Corollary B with `Θ̃`
@@ -19,6 +21,8 @@ The moment conditions transfer by Proposition `p.cubical.simplicial.equivalence`
 by `e.cubical.simplicial.ratio`. The weak Harnack helper additionally takes the statement of
 `weak_harnack_range` as the hypothesis `hW`.
 -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

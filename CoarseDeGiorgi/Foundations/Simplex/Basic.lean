@@ -1,11 +1,13 @@
-import Homogenization.Geometry.ConvexDomain
-import Mathlib.Data.Fin.Tuple.Sort
-import Mathlib.Tactic.FunProp
-import Mathlib.Tactic.Linarith
-import Mathlib.Tactic.NormNum
-import Mathlib.Tactic.Positivity
-import Mathlib.Tactic.Push
-import Mathlib.Tactic.Ring
+module
+
+public import Homogenization.Geometry.ConvexDomain
+public import Mathlib.Data.Fin.Tuple.Sort
+public import Mathlib.Tactic.FunProp
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Tactic.NormNum
+public import Mathlib.Tactic.Positivity
+public import Mathlib.Tactic.Push
+public import Mathlib.Tactic.Ring
 
 /-!
 # Open Kuhn simplices
@@ -13,6 +15,8 @@ import Mathlib.Tactic.Ring
 The plain sets below transcribe `e.simplex.def`. The coordinatewise
 bounds are equivalent to the bounds on the first and last ordered coordinates.
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Simplex
 

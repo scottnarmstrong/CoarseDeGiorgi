@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Selection.Coarea
-import CoarseDeGiorgi.Foundations.FracGeometry.SurfaceSum
-import CoarseDeGiorgi.Statements.SurfaceFracNorm
+module
+
+public import CoarseDeGiorgi.Selection.Coarea
+public import CoarseDeGiorgi.Foundations.FracGeometry.SurfaceSum
+public import CoarseDeGiorgi.Statements.SurfaceFracNorm
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Selection
 

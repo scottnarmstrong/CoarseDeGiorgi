@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Foundations.PoincareW11Mean
-import Mathlib.Analysis.Calculus.LineDeriv.IntegrationByParts
+module
+
+public import CoarseDeGiorgi.Foundations.PoincareW11Mean
+public import Mathlib.Analysis.Calculus.LineDeriv.IntegrationByParts
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations
 

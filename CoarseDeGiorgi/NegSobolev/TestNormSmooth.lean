@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.NegSobolev.TestNormConvolution
-import Mathlib.Analysis.Calculus.ContDiff.FiniteDimension
+module
+
+public import CoarseDeGiorgi.NegSobolev.TestNormConvolution
+public import Mathlib.Analysis.Calculus.ContDiff.FiniteDimension
 
 /-! Differentiation of Gaussian convolutions with arbitrary finite-exponent input. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Filter
 open scoped BigOperators Topology

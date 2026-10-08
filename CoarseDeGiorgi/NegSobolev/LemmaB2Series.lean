@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.Statements.BesovCubeNorm
-import CoarseDeGiorgi.Statements.CubeCell
-import Mathlib.Analysis.SpecificLimits.Basic
-import Mathlib.Analysis.SpecialFunctions.Pow.NNReal
+module
+
+public import CoarseDeGiorgi.Statements.BesovCubeNorm
+public import CoarseDeGiorgi.Statements.CubeCell
+public import Mathlib.Analysis.SpecificLimits.Basic
+public import Mathlib.Analysis.SpecialFunctions.Pow.NNReal
 
 /-! The geometric-series step of `l.negative.sobolev`, including infinite negative norms. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

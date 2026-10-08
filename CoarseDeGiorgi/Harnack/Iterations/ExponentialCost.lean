@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.Harnack.Iterations.RadiusSums
-import Mathlib.Analysis.SpecialFunctions.Log.Basic
-import Mathlib.Analysis.SpecialFunctions.Pow.Real
-import Mathlib.Analysis.SpecialFunctions.Pow.NNReal
-import Mathlib.Analysis.SpecialFunctions.ExpDeriv
-import Mathlib.Tactic
+module
+
+public import CoarseDeGiorgi.Harnack.Iterations.RadiusSums
+public import Mathlib.Analysis.SpecialFunctions.Log.Basic
+public import Mathlib.Analysis.SpecialFunctions.Pow.Real
+public import Mathlib.Analysis.SpecialFunctions.Pow.NNReal
+public import Mathlib.Analysis.SpecialFunctions.ExpDeriv
+public import Mathlib.Tactic
+
+@[expose] public section
 
 open scoped BigOperators ENNReal
 

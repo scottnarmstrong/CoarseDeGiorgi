@@ -1,4 +1,8 @@
-import CoarseDeGiorgi.Selection.Coarea
+module
+
+public import CoarseDeGiorgi.Selection.Coarea
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Selection
 

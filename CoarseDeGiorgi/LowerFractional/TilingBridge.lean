@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.LowerFractional.TilingGrid
-import CoarseDeGiorgi.LowerFractional.AuxTiling
+module
+
+public import CoarseDeGiorgi.LowerFractional.TilingGrid
+public import CoarseDeGiorgi.LowerFractional.AuxTiling
 
 /-! Finite incidence bridge between the actual global simplices and the
 auxiliary descendants. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.LowerFractional
 

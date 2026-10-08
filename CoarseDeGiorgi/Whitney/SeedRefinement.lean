@@ -1,5 +1,7 @@
-import CoarseDeGiorgi.Whitney.SeedResidual
-import Mathlib.Topology.Algebra.InfiniteSum.Constructions
+module
+
+public import CoarseDeGiorgi.Whitney.SeedResidual
+public import Mathlib.Topology.Algebra.InfiniteSum.Constructions
 
 /-!
 # Refinement of the triadic nodal partition
@@ -8,6 +10,8 @@ Splitting a common rounding threshold into its three triadic subintervals
 couples a fine vertex with a coarse vertex. This realizes fine interpolation
 without choosing a cell on a face.
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Whitney
 

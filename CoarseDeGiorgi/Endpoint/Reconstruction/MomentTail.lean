@@ -1,7 +1,12 @@
-import CoarseDeGiorgi.Statements.LowerMoment
-import Mathlib.Topology.Algebra.InfiniteSum.ENNReal
+module
+
+public import CoarseDeGiorgi.Statements.LowerMoment
+public import Mathlib.Topology.Algebra.InfiniteSum.ENNReal
 
 /-! # Finite and vanishing tails of the reconstruction costs -/
+
+@[expose] public section
+
 namespace CoarseDeGiorgi.Endpoint.Reconstruction
 open Homogenization MeasureTheory Filter
 open scoped ENNReal Topology BigOperators

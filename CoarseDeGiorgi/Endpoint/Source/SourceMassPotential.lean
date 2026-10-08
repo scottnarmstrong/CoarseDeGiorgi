@@ -1,16 +1,20 @@
-import CoarseDeGiorgi.Statements.Contrast
-import CoarseDeGiorgi.Statements.ParamTheta
-import CoarseDeGiorgi.Statements.IsWeightedSupersolution
-import CoarseDeGiorgi.Statements.IsWeightedSolution
-import CoarseDeGiorgi.Statements.MemH1a0
-import CoarseDeGiorgi.Statements.NonnegativeEssInf
-import CoarseDeGiorgi.Endpoint.Capacitary.Main
-import CoarseDeGiorgi.Endpoint.Rescaling.RemoteBound
-import CoarseDeGiorgi.Statements.InteriorWeakHarnack
-import CoarseDeGiorgi.Endpoint.Source.Main
+module
+
+public import CoarseDeGiorgi.Statements.Contrast
+public import CoarseDeGiorgi.Statements.ParamTheta
+public import CoarseDeGiorgi.Statements.IsWeightedSupersolution
+public import CoarseDeGiorgi.Statements.IsWeightedSolution
+public import CoarseDeGiorgi.Statements.MemH1a0
+public import CoarseDeGiorgi.Statements.NonnegativeEssInf
+public import CoarseDeGiorgi.Endpoint.Capacitary.Main
+public import CoarseDeGiorgi.Endpoint.Rescaling.RemoteBound
+public import CoarseDeGiorgi.Statements.InteriorWeakHarnack
+public import CoarseDeGiorgi.Endpoint.Source.Main
 
 /-! The source mass estimate together with the potential of the restricted source measure:
 `l.source.mass`, including its final sentence. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

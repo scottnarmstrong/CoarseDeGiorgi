@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.NegSobolev.GaussDerivLocal
-import CoarseDeGiorgi.NegSobolev.TestNormZero
+module
+
+public import CoarseDeGiorgi.NegSobolev.GaussDerivLocal
+public import CoarseDeGiorgi.NegSobolev.TestNormZero
 
 /-! Integrability and Lebesgue bounds for kernels dominated by a Gaussian. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Convolution

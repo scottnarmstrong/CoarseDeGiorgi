@@ -1,9 +1,11 @@
-import CoarseDeGiorgi.SharpnessExamples.BesovLebesgue
-import CoarseDeGiorgi.SharpnessExamples.NearAxis
-import CoarseDeGiorgi.SharpnessExamples.NearAxisReplacement
-import CoarseDeGiorgi.SharpnessExamples.ScalarSumSubsolution
-import CoarseDeGiorgi.Statements.BesovCubeNorm
-import CoarseDeGiorgi.Statements.Csol
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.BesovLebesgue
+public import CoarseDeGiorgi.SharpnessExamples.NearAxis
+public import CoarseDeGiorgi.SharpnessExamples.NearAxisReplacement
+public import CoarseDeGiorgi.SharpnessExamples.ScalarSumSubsolution
+public import CoarseDeGiorgi.Statements.BesovCubeNorm
+public import CoarseDeGiorgi.Statements.Csol
 
 /-! # Sharpness of the coefficient range, with cube quasi-norms and unboundedness near the axis
 
@@ -11,6 +13,8 @@ Theorem F of the paper, assembled from the scalar cylinder construction: the fin
 cube quasi-norms (summed bound over the scales), of the Lebesgue norms in the case of order zero,
 and the essential unboundedness of the solution near every point of the singular segment.
 -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Topology
 open CoarseDeGiorgi.Weighted

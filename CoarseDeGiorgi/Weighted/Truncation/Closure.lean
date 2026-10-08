@@ -1,4 +1,8 @@
-import CoarseDeGiorgi.Weighted.Truncation.Energy
+module
+
+public import CoarseDeGiorgi.Weighted.Truncation.Energy
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted
 

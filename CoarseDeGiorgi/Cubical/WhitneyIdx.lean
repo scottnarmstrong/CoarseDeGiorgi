@@ -1,12 +1,16 @@
-import CoarseDeGiorgi.Cubical.Box
-import CoarseDeGiorgi.Cubical.BallShrink
-import CoarseDeGiorgi.Cubical.KuhnBall
+module
+
+public import CoarseDeGiorgi.Cubical.Box
+public import CoarseDeGiorgi.Cubical.BallShrink
+public import CoarseDeGiorgi.Cubical.KuhnBall
 
 /-! # Maximal triadic cubes inside an open set (Whitney decomposition)
 
 A cube `box j z` is *good* for `S` if the closed sup-ball of radius `3^{-j}` about its center
 lies in `S` (this contains the cube and is the `3·closure` condition up to a harmless constant).
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Cubical
 open Homogenization MeasureTheory

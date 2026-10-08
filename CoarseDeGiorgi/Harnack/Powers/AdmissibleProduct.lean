@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Harnack.Powers.Chain
-import CoarseDeGiorgi.Harnack.Calculus.BoundedAlgebra
-import CoarseDeGiorgi.Weighted.TestingCompactSupport
+module
+
+public import CoarseDeGiorgi.Harnack.Powers.Chain
+public import CoarseDeGiorgi.Harnack.Calculus.BoundedAlgebra
+public import CoarseDeGiorgi.Weighted.TestingCompactSupport
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.Powers
 

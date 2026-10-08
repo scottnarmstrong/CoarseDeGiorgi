@@ -1,12 +1,17 @@
-import CoarseDeGiorgi.Whitney.SeedCellAffine
-import CoarseDeGiorgi.Whitney.LiftSurfaceLayer
-import CoarseDeGiorgi.Selection.CommonRadius
-import Mathlib.Analysis.Normed.Module.RCLike.Real
-import CoarseDeGiorgi.Selection.SourceResponses
-import CoarseDeGiorgi.Weighted.LowerSpecNorm
-import CoarseDeGiorgi.Statements.UpperResponseSpec
+module
+
+public import CoarseDeGiorgi.Whitney.SeedCellAffine
+public import CoarseDeGiorgi.Whitney.LiftSurfaceLayer
+public import CoarseDeGiorgi.Selection.CommonRadius
+public import Mathlib.Analysis.Normed.Module.RCLike.Real
+public import CoarseDeGiorgi.Selection.SourceResponses
+public import CoarseDeGiorgi.Weighted.LowerSpecNorm
+public import CoarseDeGiorgi.Statements.UpperResponseSpec
 
 /-! # Actual seed cells in the response sampling grid -/
+
+@[expose] public section
+
 namespace CoarseDeGiorgi.Whitney
 open Homogenization MeasureTheory Set
 open scoped ENNReal Matrix.Norms.L2Operator

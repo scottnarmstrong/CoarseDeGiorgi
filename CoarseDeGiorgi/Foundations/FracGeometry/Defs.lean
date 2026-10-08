@@ -1,20 +1,24 @@
-import Homogenization.Multiscale.CubeAverage
-import Homogenization.Sobolev.WeakDerivatives
-import Mathlib.Analysis.SpecialFunctions.Pow.Real
-import Mathlib.MeasureTheory.Constructions.Pi
-import Mathlib.MeasureTheory.Function.LpSeminorm.Basic
-import Mathlib.MeasureTheory.Integral.Bochner.Set
-import Mathlib.MeasureTheory.Measure.Prod
+module
 
-import CoarseDeGiorgi.Foundations.Euclid.Gagliardo
-import CoarseDeGiorgi.Statements.EuclidDist
-import CoarseDeGiorgi.Statements.FracSeminorm
-import CoarseDeGiorgi.Statements.FracNorm
-import CoarseDeGiorgi.Statements.CubeSurface
-import CoarseDeGiorgi.Statements.CubeFaceMeasure
-import CoarseDeGiorgi.Statements.SurfaceMeasure
-import CoarseDeGiorgi.Statements.SurfaceFracSeminorm
-import CoarseDeGiorgi.Statements.SurfaceFracNorm
+public import Homogenization.Multiscale.CubeAverage
+public import Homogenization.Sobolev.WeakDerivatives
+public import Mathlib.Analysis.SpecialFunctions.Pow.Real
+public import Mathlib.MeasureTheory.Constructions.Pi
+public import Mathlib.MeasureTheory.Function.LpSeminorm.Basic
+public import Mathlib.MeasureTheory.Integral.Bochner.Set
+public import Mathlib.MeasureTheory.Measure.Prod
+
+public import CoarseDeGiorgi.Foundations.Euclid.Gagliardo
+public import CoarseDeGiorgi.Statements.EuclidDist
+public import CoarseDeGiorgi.Statements.FracSeminorm
+public import CoarseDeGiorgi.Statements.FracNorm
+public import CoarseDeGiorgi.Statements.CubeSurface
+public import CoarseDeGiorgi.Statements.CubeFaceMeasure
+public import CoarseDeGiorgi.Statements.SurfaceMeasure
+public import CoarseDeGiorgi.Statements.SurfaceFracSeminorm
+public import CoarseDeGiorgi.Statements.SurfaceFracNorm
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.FracGeometry
 

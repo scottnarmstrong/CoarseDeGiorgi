@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.SharpnessExamples.Parameters
-import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
-import CoarseDeGiorgi.Sharpness.LineEquation.AxisGeometry
-import Mathlib.Topology.Instances.Matrix
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.Parameters
+public import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
+public import CoarseDeGiorgi.Sharpness.LineEquation.AxisGeometry
+public import Mathlib.Topology.Instances.Matrix
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open CoarseDeGiorgi.Sharpness

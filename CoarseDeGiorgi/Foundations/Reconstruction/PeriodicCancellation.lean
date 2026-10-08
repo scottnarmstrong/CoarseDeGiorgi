@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.PeriodicEnvelope
-import CoarseDeGiorgi.Foundations.Reconstruction.CancellationJets
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.PeriodicEnvelope
+public import CoarseDeGiorgi.Foundations.Reconstruction.CancellationJets
 
 /-! # Fine periodic cancellation: support and quantitative envelope bounds -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

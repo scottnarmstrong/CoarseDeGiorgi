@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.LowerFractional.DescendantHolder
-import CoarseDeGiorgi.LowerFractional.LocalHolder
-import CoarseDeGiorgi.Statements.TriangulationIn
+module
+
+public import CoarseDeGiorgi.LowerFractional.DescendantHolder
+public import CoarseDeGiorgi.LowerFractional.LocalHolder
+public import CoarseDeGiorgi.Statements.TriangulationIn
 
 /-! Local descendant Hölder estimate (the step of the proof of `p.lower.fractional` that
 used the global mean, redone over `𝒯_k(Q)`). -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.LowerFractional
 

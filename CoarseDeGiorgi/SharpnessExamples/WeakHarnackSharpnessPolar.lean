@@ -1,13 +1,17 @@
-import CoarseDeGiorgi.SharpnessExamples.WeakHarnackSharpnessField
-import Mathlib.MeasureTheory.Constructions.HaarToSphere
-import Mathlib.Analysis.SpecialFunctions.Pow.Integral
-import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.WeakHarnackSharpnessField
+public import Mathlib.MeasureTheory.Constructions.HaarToSphere
+public import Mathlib.Analysis.SpecialFunctions.Pow.Integral
+public import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
 
 /-! # Radial integrals for the weak Harnack sharpness example
 
 Polar coordinates in the supremum norm of `Vec d`, and the radial majorant
 `ω(r) = r^{-β} (1 - log r)^{-3}` split at a radius `h`.
 -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set
 open scoped BigOperators ENNReal

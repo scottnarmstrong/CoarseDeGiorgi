@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Foundations.FractionalSobolev.Sequence
-import Mathlib.Algebra.Order.Floor.Ring
-import Mathlib.MeasureTheory.Measure.Prod
+module
+
+public import CoarseDeGiorgi.Foundations.FractionalSobolev.Sequence
+public import Mathlib.Algebra.Order.Floor.Ring
+public import Mathlib.MeasureTheory.Measure.Prod
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.FractionalSobolev
 open Homogenization MeasureTheory

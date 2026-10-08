@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Assembly.ClassicalMomentsPartition
-import CoarseDeGiorgi.Foundations.FracGeometry.FlatCoordinates
-import CoarseDeGiorgi.Sharpness.LineEquation.AxisGeometry
-import Mathlib.MeasureTheory.Measure.Lebesgue.Basic
+module
+
+public import CoarseDeGiorgi.Assembly.ClassicalMomentsPartition
+public import CoarseDeGiorgi.Foundations.FracGeometry.FlatCoordinates
+public import CoarseDeGiorgi.Sharpness.LineEquation.AxisGeometry
+public import Mathlib.MeasureTheory.Measure.Lebesgue.Basic
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open CoarseDeGiorgi.Foundations.FracGeometry

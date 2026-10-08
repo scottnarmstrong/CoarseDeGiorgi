@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.SharpnessExamples.ScalarFluxRegularity
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.ScalarFluxRegularity
 
 /-! # Cutoff flux coordinates for the cylinder subsolution -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set Filter Topology
 open CoarseDeGiorgi.Sharpness

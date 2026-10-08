@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Whitney.Extension.Geometry
+module
+
+public import CoarseDeGiorgi.Whitney.Extension.Geometry
 
 /-!
 # Boundary patches `Σ_z` and `Σ_D`
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.WhitneyExt
 

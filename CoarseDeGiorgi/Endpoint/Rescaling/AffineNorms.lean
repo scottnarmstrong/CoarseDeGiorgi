@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Endpoint.Rescaling.AffineMeasure
-import CoarseDeGiorgi.Statements.NonnegativeEssInf
-import CoarseDeGiorgi.Statements.NormalizedLpMoment
+module
+
+public import CoarseDeGiorgi.Endpoint.Rescaling.AffineMeasure
+public import CoarseDeGiorgi.Statements.NonnegativeEssInf
+public import CoarseDeGiorgi.Statements.NormalizedLpMoment
 
 /-! Transport of finite norms and essential values, including nonmeasurable functions. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped ENNReal

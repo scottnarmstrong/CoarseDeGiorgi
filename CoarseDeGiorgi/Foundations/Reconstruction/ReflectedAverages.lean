@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.AuxProjection
-import CoarseDeGiorgi.Foundations.Reconstruction.PeriodicReflection
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.AuxProjection
+public import CoarseDeGiorgi.Foundations.Reconstruction.PeriodicReflection
 
 /-! # Reflected averages: exact volume factors and strong L¹ convergence -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.PeriodicMeasure
-import CoarseDeGiorgi.Foundations.Reconstruction.AssemblyBlocks
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.PeriodicMeasure
+public import CoarseDeGiorgi.Foundations.Reconstruction.AssemblyBlocks
 
 /-! # The concrete periodic smoother as a physical-space probability average -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

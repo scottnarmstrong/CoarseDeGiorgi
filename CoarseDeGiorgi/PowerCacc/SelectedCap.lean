@@ -1,19 +1,23 @@
-import CoarseDeGiorgi.PowerCacc.Glue
-import CoarseDeGiorgi.Harnack.PowerCaccioppoli.CapFacts
-import CoarseDeGiorgi.Harnack.PowerCaccioppoli.InteriorFatou
-import CoarseDeGiorgi.Harnack.PowerCaccioppoli.InteriorLimit
-import CoarseDeGiorgi.Harnack.PowerCaccioppoli.SignedLiminf
-import CoarseDeGiorgi.Harnack.PowerCaccioppoli.ExteriorTraceBound
-import CoarseDeGiorgi.Harnack.PowerCaccioppoli.SurfaceTraceLimits
-import CoarseDeGiorgi.Harnack.Selection.Cap
-import CoarseDeGiorgi.Statements.PowerFactor
-import CoarseDeGiorgi.Statements.SurfaceFracNorm
+module
+
+public import CoarseDeGiorgi.PowerCacc.Glue
+public import CoarseDeGiorgi.Harnack.PowerCaccioppoli.CapFacts
+public import CoarseDeGiorgi.Harnack.PowerCaccioppoli.InteriorFatou
+public import CoarseDeGiorgi.Harnack.PowerCaccioppoli.InteriorLimit
+public import CoarseDeGiorgi.Harnack.PowerCaccioppoli.SignedLiminf
+public import CoarseDeGiorgi.Harnack.PowerCaccioppoli.ExteriorTraceBound
+public import CoarseDeGiorgi.Harnack.PowerCaccioppoli.SurfaceTraceLimits
+public import CoarseDeGiorgi.Harnack.Selection.Cap
+public import CoarseDeGiorgi.Statements.PowerFactor
+public import CoarseDeGiorgi.Statements.SurfaceFracNorm
 
 /-! # The signed cap limit on one selected surface
 
 The approximants are the caps `ṽ_i = v_i ∧ N` of one fixed smooth sequence `v_i → v`.  Each has an
 extension test (`SplitTest`) and an exterior pairing bound; the limit `i → ∞` is taken as in the
 proof of Proposition `p.power.caccioppoli`, Step 1. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.PowerCacc
 

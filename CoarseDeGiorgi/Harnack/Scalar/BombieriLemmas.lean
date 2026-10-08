@@ -1,11 +1,15 @@
-import CoarseDeGiorgi.Statements.OriginCube
-import Mathlib.MeasureTheory.Function.LpSeminorm.CompareExp
-import Mathlib.MeasureTheory.Integral.Bochner.Set
-import Mathlib.MeasureTheory.Integral.Lebesgue.Markov
-import Mathlib.MeasureTheory.Integral.Bochner.Basic
-import Mathlib.Analysis.SpecialFunctions.Pow.Real
+module
+
+public import CoarseDeGiorgi.Statements.OriginCube
+public import Mathlib.MeasureTheory.Function.LpSeminorm.CompareExp
+public import Mathlib.MeasureTheory.Integral.Bochner.Set
+public import Mathlib.MeasureTheory.Integral.Lebesgue.Markov
+public import Mathlib.MeasureTheory.Integral.Bochner.Basic
+public import Mathlib.Analysis.SpecialFunctions.Pow.Real
 
 /-! Scalar infrastructure for the Appendix B logarithm-to-integral lemma. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.Scalar
 

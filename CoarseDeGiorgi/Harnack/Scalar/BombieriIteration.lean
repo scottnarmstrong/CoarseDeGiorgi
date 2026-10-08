@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Harnack.Scalar.BombieriLemmas
-import Mathlib.Analysis.SpecificLimits.Basic
+module
+
+public import CoarseDeGiorgi.Harnack.Scalar.BombieriLemmas
+public import Mathlib.Analysis.SpecificLimits.Basic
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.Scalar
 

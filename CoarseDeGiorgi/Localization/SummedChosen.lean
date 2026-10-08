@@ -1,6 +1,11 @@
-import CoarseDeGiorgi.Localization.SummedFamily
+module
+
+public import CoarseDeGiorgi.Localization.SummedFamily
 
 /-! # Bound and convergence for the chosen covers -/
+
+@[expose] public section
+
 namespace CoarseDeGiorgi.Localization
 open Homogenization MeasureTheory Set Filter Topology
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

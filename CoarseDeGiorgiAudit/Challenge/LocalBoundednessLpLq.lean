@@ -1,4 +1,6 @@
-import Mathlib
+module
+
+public import Mathlib
 
 /-!
 Local boundedness under coefficient moments (Theorem A and Corollary B of the manuscript, via
@@ -13,6 +15,8 @@ with `C = C(d,p,q,κ)`, `C_η = C_η(d,p,q,κ,η)`, and the right-hand norms fin
 Derivation: `θ = (d−1)/(4κ) ∈ (0,θ₀)` and `s = t = (θ₀−θ)/2` in the discussion after Theorem D(i) (indices with `θ > 0`), whose exponent is then
 `θ`.
 -/
+
+@[expose] public section
 
 open MeasureTheory
 open scoped BigOperators ENNReal Matrix Matrix.Norms.L2Operator

@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.ProjectionL1
-import Homogenization.Besov.Duality.ProjectedPairing.Averages
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.ProjectionL1
+public import Homogenization.Besov.Duality.ProjectedPairing.Averages
 
 /-! # Nesting and parent-cell cancellation for triadic projections -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

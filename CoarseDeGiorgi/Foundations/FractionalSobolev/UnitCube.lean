@@ -1,4 +1,8 @@
-import CoarseDeGiorgi.Foundations.FractionalSobolev.UnitCubeEstimate
+module
+
+public import CoarseDeGiorgi.Foundations.FractionalSobolev.UnitCubeEstimate
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.FractionalSobolev
 open Homogenization MeasureTheory

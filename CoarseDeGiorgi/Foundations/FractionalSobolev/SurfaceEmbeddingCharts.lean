@@ -1,11 +1,15 @@
-import CoarseDeGiorgi.Foundations.FractionalSobolev.UnitCube
-import CoarseDeGiorgi.Statements.SurfaceFracNorm
-import CoarseDeGiorgi.Foundations.FracGeometry.FaceHausdorff
-import CoarseDeGiorgi.Foundations.FracGeometry.SurfaceVolume
-import CoarseDeGiorgi.Foundations.FracGeometry.Defs
-import CoarseDeGiorgi.Statements.FracNorm
-import Mathlib.MeasureTheory.Measure.Lebesgue.EqHaar
-import Mathlib.MeasureTheory.Function.LpSeminorm.CompareExp
+module
+
+public import CoarseDeGiorgi.Foundations.FractionalSobolev.UnitCube
+public import CoarseDeGiorgi.Statements.SurfaceFracNorm
+public import CoarseDeGiorgi.Foundations.FracGeometry.FaceHausdorff
+public import CoarseDeGiorgi.Foundations.FracGeometry.SurfaceVolume
+public import CoarseDeGiorgi.Foundations.FracGeometry.Defs
+public import CoarseDeGiorgi.Statements.FracNorm
+public import Mathlib.MeasureTheory.Measure.Lebesgue.EqHaar
+public import Mathlib.MeasureTheory.Function.LpSeminorm.CompareExp
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.FractionalSobolev
 open Homogenization MeasureTheory Set

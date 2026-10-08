@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.NegSobolev.TestNormRestriction
-import Mathlib.Analysis.MeanInequalitiesPow
+module
+
+public import CoarseDeGiorgi.NegSobolev.TestNormRestriction
+public import Mathlib.Analysis.MeanInequalitiesPow
 
 /-! Bounding the Sobolev expression by the sum of its constituent norms. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal

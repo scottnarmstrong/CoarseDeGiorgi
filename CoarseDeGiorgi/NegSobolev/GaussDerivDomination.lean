@@ -1,10 +1,14 @@
-import CoarseDeGiorgi.NegSobolev.GaussDerivPolynomial
-import CoarseDeGiorgi.NegSobolev.GaussDerivLp
-import Mathlib.Analysis.SpecialFunctions.Gaussian.PoissonSummation
-import Mathlib.Topology.ContinuousMap.Bounded.Normed
-import Mathlib.Topology.ContinuousMap.ZeroAtInfty
+module
+
+public import CoarseDeGiorgi.NegSobolev.GaussDerivPolynomial
+public import CoarseDeGiorgi.NegSobolev.GaussDerivLp
+public import Mathlib.Analysis.SpecialFunctions.Gaussian.PoissonSummation
+public import Mathlib.Topology.ContinuousMap.Bounded.Normed
+public import Mathlib.Topology.ContinuousMap.ZeroAtInfty
 
 /-! A wider Gaussian dominates each fixed order of Gaussian derivatives. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Polynomial Filter
 open scoped BigOperators Topology

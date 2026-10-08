@@ -1,5 +1,7 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.AssemblyBlocks
-import CoarseDeGiorgi.Foundations.Reconstruction.AssemblySeries
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.AssemblyBlocks
+public import CoarseDeGiorgi.Foundations.Reconstruction.AssemblySeries
 
 /-! # Explicit inputs: the block bounds and the smoothing convergence
 
@@ -7,6 +9,8 @@ All objects use the existing reconstruction kernels and reflected averages.
 Neither input contains a fractional seminorm conclusion. The finite-series
 premise in the tail bound is exactly the case used in the assembly.
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

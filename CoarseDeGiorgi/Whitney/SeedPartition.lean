@@ -1,6 +1,8 @@
-import CoarseDeGiorgi.Whitney.SeedNodal
-import Mathlib.MeasureTheory.Measure.Lebesgue.Basic
-import Mathlib.Topology.Algebra.InfiniteSum.ENNReal
+module
+
+public import CoarseDeGiorgi.Whitney.SeedNodal
+public import Mathlib.MeasureTheory.Measure.Lebesgue.Basic
+public import Mathlib.Topology.Algebra.InfiniteSum.ENNReal
 
 /-!
 # Partition identity for Kuhn nodal hats
@@ -9,6 +11,8 @@ A hat is the length of the interval of common rounding thresholds producing
 its vertex. These intervals partition `[0,1)`, including on simplex faces.
 This proves the nodal partition without choosing a simplex at a boundary.
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Whitney
 

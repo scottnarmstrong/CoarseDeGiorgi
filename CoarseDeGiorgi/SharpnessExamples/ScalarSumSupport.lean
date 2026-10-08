@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.SharpnessExamples.ScalarLargeSets
-import CoarseDeGiorgi.SharpnessExamples.ScalarGradientBounds
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.ScalarLargeSets
+public import CoarseDeGiorgi.SharpnessExamples.ScalarGradientBounds
 
 /-! # Pointwise finite support of the value and gradient series -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set Filter Topology
 open CoarseDeGiorgi.Sharpness

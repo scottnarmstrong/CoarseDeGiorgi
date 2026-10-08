@@ -1,6 +1,10 @@
-import Homogenization.Sobolev.Truncation.Approx
-import Homogenization.Sobolev.W1p.WeakGradientClosure
-import Mathlib.MeasureTheory.Function.UniformIntegrable
+module
+
+public import Homogenization.Sobolev.Truncation.Approx
+public import Homogenization.Sobolev.W1p.WeakGradientClosure
+public import Mathlib.MeasureTheory.Function.UniformIntegrable
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations
 

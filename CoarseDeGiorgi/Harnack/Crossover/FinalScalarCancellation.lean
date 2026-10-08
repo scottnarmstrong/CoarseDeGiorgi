@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.Harnack.Crossover.Integrability
-import CoarseDeGiorgi.Harnack.Crossover.ScalarPremises
-import CoarseDeGiorgi.Harnack.Scalar.Bombieri
-import CoarseDeGiorgi.Statements.ParamR
-import CoarseDeGiorgi.Statements.ChiParam
-import CoarseDeGiorgi.Statements.IsWeightedSupersolution
+module
+
+public import CoarseDeGiorgi.Harnack.Crossover.Integrability
+public import CoarseDeGiorgi.Harnack.Crossover.ScalarPremises
+public import CoarseDeGiorgi.Harnack.Scalar.Bombieri
+public import CoarseDeGiorgi.Statements.ParamR
+public import CoarseDeGiorgi.Statements.ChiParam
+public import CoarseDeGiorgi.Statements.IsWeightedSupersolution
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.Crossover
 

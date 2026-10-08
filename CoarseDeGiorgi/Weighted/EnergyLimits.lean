@@ -1,4 +1,8 @@
-import CoarseDeGiorgi.Weighted.L1Tools
+module
+
+public import CoarseDeGiorgi.Weighted.L1Tools
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted
 

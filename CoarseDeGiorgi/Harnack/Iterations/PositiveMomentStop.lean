@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Harnack.Iterations.MomentDomain
-import CoarseDeGiorgi.Harnack.Iterations.PowerMomentChain
+module
+
+public import CoarseDeGiorgi.Harnack.Iterations.MomentDomain
+public import CoarseDeGiorgi.Harnack.Iterations.PowerMomentChain
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal

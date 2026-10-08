@@ -1,11 +1,15 @@
-import CoarseDeGiorgi.Whitney.Harmonic.Geometry
-import CoarseDeGiorgi.Statements.EuclidLipConst
-import CoarseDeGiorgi.Foundations.Euclid.Basic
-import CoarseDeGiorgi.Foundations.FracGeometry.Defs
-import Mathlib.Topology.Connected.Basic
-import Mathlib.Analysis.Normed.Affine.Convex
+module
+
+public import CoarseDeGiorgi.Whitney.Harmonic.Geometry
+public import CoarseDeGiorgi.Statements.EuclidLipConst
+public import CoarseDeGiorgi.Foundations.Euclid.Basic
+public import CoarseDeGiorgi.Foundations.FracGeometry.Defs
+public import Mathlib.Topology.Connected.Basic
+public import Mathlib.Analysis.Normed.Affine.Convex
 
 /-! Gluing of Lipschitz functions across the reference cube; Euclidean Lipschitz constants. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Whitney.Harmonic
 

@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.SharpnessExamples.PolynomialEllipticity
-import CoarseDeGiorgi.Sharpness.LineEquation.AxisGeometry
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.PolynomialEllipticity
+public import CoarseDeGiorgi.Sharpness.LineEquation.AxisGeometry
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

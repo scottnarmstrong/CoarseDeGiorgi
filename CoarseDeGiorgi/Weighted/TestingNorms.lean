@@ -1,6 +1,10 @@
-import Mathlib.MeasureTheory.Function.LpSeminorm.CompareExp
-import Mathlib.Analysis.MeanInequalities
-import CoarseDeGiorgi.Foundations.Iteration.HoleFilling
+module
+
+public import Mathlib.MeasureTheory.Function.LpSeminorm.CompareExp
+public import Mathlib.Analysis.MeanInequalities
+public import CoarseDeGiorgi.Foundations.Iteration.HoleFilling
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted
 

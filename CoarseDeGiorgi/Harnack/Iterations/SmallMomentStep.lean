@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Harnack.Iterations.MomentPower
-import CoarseDeGiorgi.Statements.PowerFactor
-import Mathlib.Tactic
+module
+
+public import CoarseDeGiorgi.Harnack.Iterations.MomentPower
+public import CoarseDeGiorgi.Statements.PowerFactor
+public import Mathlib.Tactic
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped ENNReal

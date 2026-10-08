@@ -1,0 +1,54 @@
+name: Palomar preflight
+
+# Runs the Palomar registry's own submission verifier (the reusable workflow of
+# PalomarRegistry/PalomarSubmission, mode `full`) on a commit of this
+# repository and one of its comparator configurations. A passing run's
+# `mechanical-report` artifact has `"status": "pass"`. The workflow reference
+# and `pipeline_commit` are the same pinned PalomarSubmission commit. Started
+# by hand only; the repository must be public.
+
+"on":
+  workflow_dispatch:
+    inputs:
+      commit:
+        description: Full 40-character commit of this repository to verify
+        required: true
+        type: string
+      comparator_config_path:
+        description: Comparator configuration to verify (one registry entry each)
+        required: true
+        type: choice
+        options:
+          - comparators/Harnack.json
+          - comparators/HarnackBesov.json
+          - comparators/HarnackLpLq.json
+          - comparators/HarnackSobolev.json
+          - comparators/HarnackUniform.json
+          - comparators/LocalBoundednessBesov.json
+          - comparators/LocalBoundednessLpLq.json
+          - comparators/LocalBoundednessSobolev.json
+          - comparators/LocalBoundednessUniform.json
+          - comparators/ResponseQuadraticForms.json
+          - comparators/Sharpness.json
+          - comparators/SharpnessPolynomial.json
+          - comparators/SharpnessWeakHarnack.json
+          - comparators/WeakHarnack.json
+          - comparators/WeakHarnackBesov.json
+          - comparators/WeakHarnackLpLq.json
+          - comparators/WeakHarnackUniform.json
+
+permissions:
+  contents: read
+
+jobs:
+  palomar:
+    uses: PalomarRegistry/PalomarSubmission/.github/workflows/submission.yml@d4e41c1d5b0d114c4859e6e5831dc6d3ad1d0d44
+    with:
+      repository: ${{ github.repository }}
+      commit: ${{ inputs.commit }}
+      pipeline_commit: d4e41c1d5b0d114c4859e6e5831dc6d3ad1d0d44
+      # Palomar requires exactly twelve lowercase letters or digits.
+      request_id: cdgpreflight
+      mode: full
+      execution_profile: palomar-standard-v1
+      options: ${{ format('{{"comparator_config_path":"{0}","authorization_relationship":"I am a responsible author or maintainer"}}', inputs.comparator_config_path) }}

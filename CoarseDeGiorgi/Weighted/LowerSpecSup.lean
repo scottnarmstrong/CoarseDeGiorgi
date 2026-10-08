@@ -1,4 +1,8 @@
-import CoarseDeGiorgi.Weighted.LowerSpecDefs
+module
+
+public import CoarseDeGiorgi.Weighted.LowerSpecDefs
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted.LowerResponseImpl
 

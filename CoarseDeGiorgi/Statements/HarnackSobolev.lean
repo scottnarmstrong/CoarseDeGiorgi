@@ -1,12 +1,17 @@
-import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
-import CoarseDeGiorgi.Statements.OriginCube
-import CoarseDeGiorgi.Statements.IsWeightedSolution
-import CoarseDeGiorgi.Statements.NonnegativeEssInf
-import CoarseDeGiorgi.Statements.NegSobolevNorm
-import CoarseDeGiorgi.Statements.IsOpenOriginCube
+module
 
-import CoarseDeGiorgi.NegSobolev.CorollarySobolev
-import CoarseDeGiorgi.Statements.MomentBoundsSobolev
+public import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
+public import CoarseDeGiorgi.Statements.OriginCube
+public import CoarseDeGiorgi.Statements.IsWeightedSolution
+public import CoarseDeGiorgi.Statements.NonnegativeEssInf
+public import CoarseDeGiorgi.Statements.NegSobolevNorm
+public import CoarseDeGiorgi.Statements.IsOpenOriginCube
+
+public import CoarseDeGiorgi.NegSobolev.CorollarySobolev
+public import CoarseDeGiorgi.Statements.MomentBoundsSobolev
+
+@[expose] public section
+
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator
 

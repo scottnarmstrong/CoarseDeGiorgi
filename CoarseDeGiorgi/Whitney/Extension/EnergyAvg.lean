@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.Whitney.Extension.EnergyCell
-import CoarseDeGiorgi.Statements.FracKernelWithDimension
+module
+
+public import CoarseDeGiorgi.Whitney.Extension.EnergyCell
+public import CoarseDeGiorgi.Statements.FracKernelWithDimension
 
 /-!
 # Jensen bounds for the patch means of a near Whitney cube
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.WhitneyExt
 

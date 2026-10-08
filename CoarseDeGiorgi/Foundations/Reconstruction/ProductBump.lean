@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.Defs
-import Mathlib.Analysis.Calculus.BumpFunction.Normed
-import Mathlib.Analysis.Calculus.BumpFunction.FiniteDimension
-import Mathlib.MeasureTheory.Integral.Pi
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.Defs
+public import Mathlib.Analysis.Calculus.BumpFunction.Normed
+public import Mathlib.Analysis.Calculus.BumpFunction.FiniteDimension
+public import Mathlib.MeasureTheory.Integral.Pi
 
 /-! # A nonnegative smooth probability bump with sup-norm cube support -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

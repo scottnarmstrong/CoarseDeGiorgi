@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.LowerFractional.Aliases
-import CoarseDeGiorgi.Foundations.Simplex.Partition
+module
+
+public import CoarseDeGiorgi.LowerFractional.Aliases
+public import CoarseDeGiorgi.Foundations.Simplex.Partition
 
 /-! A threefold cube is tiled by its 3^d child cubes and their Kuhn simplices.
 The local indexing is a concrete witness, not another copy of the `Statements/` cells. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.LowerFractional
 

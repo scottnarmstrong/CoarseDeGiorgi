@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Foundations.FractionalSobolev.Levels
-import CoarseDeGiorgi.Foundations.FractionalSobolev.SetEstimate
+module
+
+public import CoarseDeGiorgi.Foundations.FractionalSobolev.Levels
+public import CoarseDeGiorgi.Foundations.FractionalSobolev.SetEstimate
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.FractionalSobolev
 open Homogenization MeasureTheory

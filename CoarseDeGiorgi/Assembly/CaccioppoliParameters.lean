@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Assembly.CaccioppoliDefs
-import Mathlib.Tactic
+module
+
+public import CoarseDeGiorgi.Assembly.CaccioppoliDefs
+public import Mathlib.Tactic
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Assembly
 

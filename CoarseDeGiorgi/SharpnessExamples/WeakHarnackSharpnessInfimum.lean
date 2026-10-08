@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.SharpnessExamples.WeakHarnackSharpnessSupersolution
-import CoarseDeGiorgi.Statements.NonnegativeEssInf
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.WeakHarnackSharpnessSupersolution
+public import CoarseDeGiorgi.Statements.NonnegativeEssInf
 
 /-! # Nonnegativity and the common essential infimum of the supersolutions -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set Filter Topology
 open scoped BigOperators ENNReal ContDiff

@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.SharpnessExamples.WeakHarnackSharpnessLimit
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.WeakHarnackSharpnessLimit
 
 /-! # The ratio of the `L^η` mean to the infimum tends to infinity -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set Filter Topology
 open scoped BigOperators ENNReal ContDiff

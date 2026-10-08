@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.ProductBump
-import Mathlib.MeasureTheory.Measure.Haar.NormedSpace
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.ProductBump
+public import Mathlib.MeasureTheory.Measure.Haar.NormedSpace
 
 /-! # Scaled probability bumps and their sup-norm bounds -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

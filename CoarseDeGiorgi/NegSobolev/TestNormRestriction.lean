@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Statements.SobolevNorm
-import Mathlib.MeasureTheory.Measure.Prod
+module
+
+public import CoarseDeGiorgi.Statements.SobolevNorm
+public import Mathlib.MeasureTheory.Measure.Prod
 
 /-! Restriction and evaluation bounds for the Sobolev norm. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal

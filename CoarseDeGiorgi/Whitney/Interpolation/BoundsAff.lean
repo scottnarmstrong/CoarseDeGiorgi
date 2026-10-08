@@ -1,12 +1,16 @@
-import CoarseDeGiorgi.Whitney.Interpolation.BoundsHang
-import CoarseDeGiorgi.Statements.IsWhitneyInterpolant
-import CoarseDeGiorgi.Foundations.Simplex.Basic
-import Mathlib.Analysis.Calculus.FDeriv.Add
-import Mathlib.Analysis.Calculus.FDeriv.Linear
+module
+
+public import CoarseDeGiorgi.Whitney.Interpolation.BoundsHang
+public import CoarseDeGiorgi.Statements.IsWhitneyInterpolant
+public import CoarseDeGiorgi.Foundations.Simplex.Basic
+public import Mathlib.Analysis.Calculus.FDeriv.Add
+public import Mathlib.Analysis.Calculus.FDeriv.Linear
 
 /-!
 # Affine functions on Whitney simplices: closure, openness, derivative
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.WhitneyInterp
 

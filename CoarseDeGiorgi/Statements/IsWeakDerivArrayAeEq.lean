@@ -1,6 +1,11 @@
-import CoarseDeGiorgi.Statements.IsWeakDerivArray
+module
 
-import CoarseDeGiorgi.NegSobolev.SobolevNormFacts
+public import CoarseDeGiorgi.Statements.IsWeakDerivArray
+
+public import CoarseDeGiorgi.NegSobolev.SobolevNormFacts
+
+@[expose] public section
+
 open Homogenization MeasureTheory
 
 namespace CoarseDeGiorgi

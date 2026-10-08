@@ -1,15 +1,17 @@
-import CoarseDeGiorgi.ExteriorIntegral.MainWide
-import CoarseDeGiorgi.GoodRadiusEnergy.TraceL2
-import CoarseDeGiorgi.GoodRadiusEnergy.Approx
-import CoarseDeGiorgi.GoodRadiusEnergy.Glue
-import CoarseDeGiorgi.GoodRadiusEnergy.Limit
-import CoarseDeGiorgi.Whitney.LiftTestingLimit
-import CoarseDeGiorgi.Assembly.CaccioppoliEnergy
-import CoarseDeGiorgi.Whitney.SourceWitnessCore
-import CoarseDeGiorgi.Whitney.ExteriorCells
-import CoarseDeGiorgi.Harnack.PowerCaccioppoli.TraceControl
-import CoarseDeGiorgi.PowerCacc.OneSurface
-import CoarseDeGiorgi.Selection.SourceRadius
+module
+
+public import CoarseDeGiorgi.ExteriorIntegral.MainWide
+public import CoarseDeGiorgi.GoodRadiusEnergy.TraceL2
+public import CoarseDeGiorgi.GoodRadiusEnergy.Approx
+public import CoarseDeGiorgi.GoodRadiusEnergy.Glue
+public import CoarseDeGiorgi.GoodRadiusEnergy.Limit
+public import CoarseDeGiorgi.Whitney.LiftTestingLimit
+public import CoarseDeGiorgi.Assembly.CaccioppoliEnergy
+public import CoarseDeGiorgi.Whitney.SourceWitnessCore
+public import CoarseDeGiorgi.Whitney.ExteriorCells
+public import CoarseDeGiorgi.Harnack.PowerCaccioppoli.TraceControl
+public import CoarseDeGiorgi.PowerCacc.OneSurface
+public import CoarseDeGiorgi.Selection.SourceRadius
 
 /-! # Proposition `p.good.radius.energy` (`good_radius_energy_bound`) from the three extension statements
 
@@ -18,6 +20,8 @@ approximant `vᵢ`, the function equal to `(vᵢ - k)₊` on `τ□̄₀` and to
 extension of its trace outside is a nonnegative test function; Lemma `l.exterior.integral` bounds
 the exterior pairing; only the numbers (pairings and surface norms) pass to the limit along the
 subsequence. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Filter Topology
 open scoped BigOperators ENNReal NNReal Matrix.Norms.L2Operator

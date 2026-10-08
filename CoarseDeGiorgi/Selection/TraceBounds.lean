@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Selection.SourceRadius
-import CoarseDeGiorgi.Selection.TraceTransport
-import CoarseDeGiorgi.Selection.SurfaceMeasurability
+module
+
+public import CoarseDeGiorgi.Selection.SourceRadius
+public import CoarseDeGiorgi.Selection.TraceTransport
+public import CoarseDeGiorgi.Selection.SurfaceMeasurability
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Selection
 

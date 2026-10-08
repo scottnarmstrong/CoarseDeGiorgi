@@ -1,7 +1,12 @@
-import CoarseDeGiorgi.Localization.Bumps
-import CoarseDeGiorgi.Foundations.FracGeometry.ChartLipschitz
+module
+
+public import CoarseDeGiorgi.Localization.Bumps
+public import CoarseDeGiorgi.Foundations.FracGeometry.ChartLipschitz
 
 /-! # Uniform partition bounds independent of the cover cardinality -/
+
+@[expose] public section
+
 namespace CoarseDeGiorgi.Localization
 open Homogenization Set Metric CoarseDeGiorgi.Foundations
 open scoped BigOperators Topology ContDiff NNReal

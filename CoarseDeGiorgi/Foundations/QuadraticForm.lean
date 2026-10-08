@@ -1,6 +1,10 @@
-import Homogenization.Ambient.CoefficientField
-import Homogenization.Sobolev.WeakDerivatives
-import Mathlib.LinearAlgebra.Matrix.PosDef
+module
+
+public import Homogenization.Ambient.CoefficientField
+public import Homogenization.Sobolev.WeakDerivatives
+public import Mathlib.LinearAlgebra.Matrix.PosDef
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations
 

@@ -1,17 +1,21 @@
-import CoarseDeGiorgi.Statements.WhitneyCubesProperties
-import CoarseDeGiorgi.Statements.IsFreeVertex
-import CoarseDeGiorgi.Statements.IsWhitneyVertex
-import CoarseDeGiorgi.Statements.ExteriorCellSet
-import CoarseDeGiorgi.Statements.ExteriorCellVertex
-import CoarseDeGiorgi.Statements.ExteriorCellCenter
-import CoarseDeGiorgi.Statements.ExteriorCell
-import CoarseDeGiorgi.Statements.WhitneyAdmissible
-import CoarseDeGiorgi.Statements.FivefoldClosedTriadicCube
-import CoarseDeGiorgi.Whitney.Interpolation.BoundsLattice
+module
+
+public import CoarseDeGiorgi.Statements.WhitneyCubesProperties
+public import CoarseDeGiorgi.Statements.IsFreeVertex
+public import CoarseDeGiorgi.Statements.IsWhitneyVertex
+public import CoarseDeGiorgi.Statements.ExteriorCellSet
+public import CoarseDeGiorgi.Statements.ExteriorCellVertex
+public import CoarseDeGiorgi.Statements.ExteriorCellCenter
+public import CoarseDeGiorgi.Statements.ExteriorCell
+public import CoarseDeGiorgi.Statements.WhitneyAdmissible
+public import CoarseDeGiorgi.Statements.FivefoldClosedTriadicCube
+public import CoarseDeGiorgi.Whitney.Interpolation.BoundsLattice
 
 /-!
 # Whitney cells as Kuhn simplices; covering and neighbouring cubes
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.WhitneyInterp
 

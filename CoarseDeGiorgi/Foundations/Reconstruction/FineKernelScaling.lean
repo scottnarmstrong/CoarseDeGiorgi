@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.FineKernelSmooth
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.FineKernelSmooth
 
 /-! # Physical scaling and uniform higher derivative bounds -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

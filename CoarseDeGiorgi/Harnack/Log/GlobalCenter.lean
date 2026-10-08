@@ -1,13 +1,17 @@
-import CoarseDeGiorgi.Harnack.Log.Centering
-import CoarseDeGiorgi.Harnack.Log.LocalOscillation
-import CoarseDeGiorgi.Harnack.Log.ContrastFinite
-import CoarseDeGiorgi.Harnack.Log.Membership
-import CoarseDeGiorgi.Statements.SpatialMomentRange
-import CoarseDeGiorgi.Statements.Contrast
-import CoarseDeGiorgi.Statements.UpperMoment
-import CoarseDeGiorgi.Statements.LowerMoment
-import CoarseDeGiorgi.Statements.ParamR
-import CoarseDeGiorgi.Statements.WeightedEnergy
+module
+
+public import CoarseDeGiorgi.Harnack.Log.Centering
+public import CoarseDeGiorgi.Harnack.Log.LocalOscillation
+public import CoarseDeGiorgi.Harnack.Log.ContrastFinite
+public import CoarseDeGiorgi.Harnack.Log.Membership
+public import CoarseDeGiorgi.Statements.SpatialMomentRange
+public import CoarseDeGiorgi.Statements.Contrast
+public import CoarseDeGiorgi.Statements.UpperMoment
+public import CoarseDeGiorgi.Statements.LowerMoment
+public import CoarseDeGiorgi.Statements.ParamR
+public import CoarseDeGiorgi.Statements.WeightedEnergy
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.Log
 

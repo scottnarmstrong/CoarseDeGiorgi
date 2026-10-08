@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Assembly.ClassicalMomentsSeries
-import CoarseDeGiorgi.Statements.LowerMoment
-import CoarseDeGiorgi.Statements.UpperMoment
-import CoarseDeGiorgi.Harnack.Moments.LevelMeans
+module
+
+public import CoarseDeGiorgi.Assembly.ClassicalMomentsSeries
+public import CoarseDeGiorgi.Statements.LowerMoment
+public import CoarseDeGiorgi.Statements.UpperMoment
+public import CoarseDeGiorgi.Harnack.Moments.LevelMeans
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.Moments
 

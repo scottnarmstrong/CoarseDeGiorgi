@@ -1,6 +1,11 @@
-import CoarseDeGiorgi.Statements.IsWhitneyInterpolant
+module
 
-import CoarseDeGiorgi.Whitney.Interpolation.Unique
+public import CoarseDeGiorgi.Statements.IsWhitneyInterpolant
+
+public import CoarseDeGiorgi.Whitney.Interpolation.Unique
+
+@[expose] public section
+
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator
 

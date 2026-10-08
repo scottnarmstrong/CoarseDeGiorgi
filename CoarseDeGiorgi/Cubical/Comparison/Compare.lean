@@ -1,4 +1,6 @@
-import CoarseDeGiorgi.Cubical.Comparison.Core
+module
+
+public import CoarseDeGiorgi.Cubical.Comparison.Core
 
 /-!
 # Comparison of the weighted sums of Proposition `p.cubical.simplicial.equivalence`
@@ -6,6 +8,8 @@ import CoarseDeGiorgi.Cubical.Comparison.Core
 For sequences `X, Y` of cell averages with the two-sided bound of Lemma `l.cubical.simplicial.moments`, compare the weighted sums
 `∑ 3^{-ks} (X k)^{1/(2p)}` and `∑ 3^{-ks} (Y k)^{1/(2p)}`.
 -/
+
+@[expose] public section
 
 open scoped ENNReal
 

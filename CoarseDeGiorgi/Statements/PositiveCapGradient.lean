@@ -1,4 +1,8 @@
-import CoarseDeGiorgi.Statements.PositiveTruncationGradient
+module
+
+public import CoarseDeGiorgi.Statements.PositiveTruncationGradient
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

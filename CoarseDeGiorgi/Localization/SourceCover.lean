@@ -1,10 +1,15 @@
-import CoarseDeGiorgi.Localization.Assembly
+module
+
+public import CoarseDeGiorgi.Localization.Assembly
 
 /-! # The annular and inner-cube instances of compact localization
 
 All cubes and partitions are chosen from the radii alone, before the function.
 The general cutoff estimate is `exists_localization_sum_constant`.
 -/
+
+@[expose] public section
+
 namespace CoarseDeGiorgi.Localization
 open Homogenization Set MeasureTheory
 open scoped BigOperators ENNReal

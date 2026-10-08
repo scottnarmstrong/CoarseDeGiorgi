@@ -1,4 +1,8 @@
-import CoarseDeGiorgi.Selection.SurfaceEnergy
+module
+
+public import CoarseDeGiorgi.Selection.SurfaceEnergy
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Selection
 

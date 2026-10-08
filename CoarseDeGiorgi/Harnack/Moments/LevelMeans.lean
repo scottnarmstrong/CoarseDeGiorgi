@@ -1,11 +1,15 @@
-import CoarseDeGiorgi.Assembly.ClassicalMomentsPartition
-import CoarseDeGiorgi.Statements.LowerCellAverage
-import CoarseDeGiorgi.Statements.UpperCellAverage
-import CoarseDeGiorgi.Harnack.Moments.LowerAggregation
-import CoarseDeGiorgi.Harnack.Moments.UpperGluing
-import CoarseDeGiorgi.Weighted.UpperSpecNorm
-import CoarseDeGiorgi.Weighted.LowerSpecNorm
-import Mathlib.Analysis.MeanInequalitiesPow
+module
+
+public import CoarseDeGiorgi.Assembly.ClassicalMomentsPartition
+public import CoarseDeGiorgi.Statements.LowerCellAverage
+public import CoarseDeGiorgi.Statements.UpperCellAverage
+public import CoarseDeGiorgi.Harnack.Moments.LowerAggregation
+public import CoarseDeGiorgi.Harnack.Moments.UpperGluing
+public import CoarseDeGiorgi.Weighted.UpperSpecNorm
+public import CoarseDeGiorgi.Weighted.LowerSpecNorm
+public import Mathlib.Analysis.MeanInequalitiesPow
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.Moments
 

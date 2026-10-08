@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.VectorProjectionLp
-import CoarseDeGiorgi.Foundations.Reconstruction.ReflectedAverages
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.VectorProjectionLp
+public import CoarseDeGiorgi.Foundations.Reconstruction.ReflectedAverages
 
 /-! # Euclidean Lᵖ bounds for exact auxiliary and reflected increments -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

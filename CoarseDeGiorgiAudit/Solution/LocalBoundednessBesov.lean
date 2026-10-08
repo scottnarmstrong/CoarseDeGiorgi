@@ -1,11 +1,13 @@
-import Mathlib
-import CoarseDeGiorgiAudit.Defs
-import CoarseDeGiorgiAudit.DefsCells
-import CoarseDeGiorgiAudit.Solution.Bridge
-import CoarseDeGiorgiAudit.Solution.BridgeBesov
-import CoarseDeGiorgiAudit.Solution.BridgeChallengeLp
-import CoarseDeGiorgi.Statements.LocalBoundedness
-import CoarseDeGiorgiAudit.Solution.BridgeBesovCube
+module
+
+public import Mathlib
+public import CoarseDeGiorgiAudit.Defs
+public import CoarseDeGiorgiAudit.DefsCells
+public import CoarseDeGiorgiAudit.Solution.Bridge
+public import CoarseDeGiorgiAudit.Solution.BridgeBesov
+public import CoarseDeGiorgiAudit.Solution.BridgeChallengeLp
+public import CoarseDeGiorgi.Statements.LocalBoundedness
+public import CoarseDeGiorgiAudit.Solution.BridgeBesovCube
 
 /-!
 # Local boundedness under finite cube quasi-norms (Theorems A, D(ii), Corollary B)
@@ -40,6 +42,8 @@ Here `C = C(d,p,q,s,t)` and `C_η = C_η(d,p,q,s,t,η)` are nonnegative;
 the right-hand norms are finite when `R < 1`. Subsolutions use the smooth-core
 closure `H¹ₐ`. The quasi-norm is written out below as `cubeQuasiNorm`.
 -/
+
+@[expose] public section
 
 open MeasureTheory
 open scoped BigOperators ENNReal Matrix Matrix.Norms.L2Operator

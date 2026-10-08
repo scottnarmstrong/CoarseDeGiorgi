@@ -1,8 +1,13 @@
-import CoarseDeGiorgi.Endpoint.Chaining.Restriction
-import CoarseDeGiorgi.Endpoint.Chaining.Norms
-import CoarseDeGiorgi.Endpoint.Chaining.Algebra
+module
+
+public import CoarseDeGiorgi.Endpoint.Chaining.Restriction
+public import CoarseDeGiorgi.Endpoint.Chaining.Norms
+public import CoarseDeGiorgi.Endpoint.Chaining.Algebra
 
 /-! The interior weak Harnack estimate from fixed-scale rescaled cube estimates. -/
+
+@[expose] public section
+
 namespace CoarseDeGiorgi.Endpoint
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

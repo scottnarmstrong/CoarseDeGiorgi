@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Weighted.ZeroCore
-import CoarseDeGiorgi.Weighted.LowerResponse
-import CoarseDeGiorgi.Weighted.ResponseBoundsLower
+module
+
+public import CoarseDeGiorgi.Weighted.ZeroCore
+public import CoarseDeGiorgi.Weighted.LowerResponse
+public import CoarseDeGiorgi.Weighted.ResponseBoundsLower
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped ENNReal Matrix.Norms.L2Operator

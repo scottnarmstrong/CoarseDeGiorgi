@@ -1,4 +1,6 @@
-import Mathlib
+module
+
+public import Mathlib
 
 /-!
 Harnack inequality under coefficient moments (Theorem D(i) of the manuscript with Theorem C, Harnack part).
@@ -10,6 +12,8 @@ and every nonnegative weighted solution `u` on `cube 1`,
 Solutions are taken in the weighted space `H¹ₐ`: limits of smooth functions in squared mean plus
 weighted energy, converging in `L¹` on compact subsets, with an explicit gradient `G`.
 -/
+
+@[expose] public section
 
 open MeasureTheory
 open scoped BigOperators ENNReal Matrix Matrix.Norms.L2Operator

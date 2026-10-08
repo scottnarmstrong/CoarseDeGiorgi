@@ -1,13 +1,17 @@
-import CoarseDeGiorgi.Statements.NormalizedLpMoment
-import CoarseDeGiorgi.Statements.IsWeightedSupersolution
-import CoarseDeGiorgi.Statements.CrossoverExponent
-import CoarseDeGiorgi.Statements.Contrast
-import CoarseDeGiorgi.Harnack.Calculus.Moments
-import CoarseDeGiorgi.Assembly.HybridFractional
-import CoarseDeGiorgi.Weighted.PairOperations
-import CoarseDeGiorgi.Weighted.Identification
-import Mathlib.Analysis.SpecialFunctions.Pow.Continuity
-import Mathlib.MeasureTheory.Integral.Lebesgue.DominatedConvergence
+module
+
+public import CoarseDeGiorgi.Statements.NormalizedLpMoment
+public import CoarseDeGiorgi.Statements.IsWeightedSupersolution
+public import CoarseDeGiorgi.Statements.CrossoverExponent
+public import CoarseDeGiorgi.Statements.Contrast
+public import CoarseDeGiorgi.Harnack.Calculus.Moments
+public import CoarseDeGiorgi.Assembly.HybridFractional
+public import CoarseDeGiorgi.Weighted.PairOperations
+public import CoarseDeGiorgi.Weighted.Identification
+public import Mathlib.Analysis.SpecialFunctions.Pow.Continuity
+public import Mathlib.MeasureTheory.Integral.Lebesgue.DominatedConvergence
+
+@[expose] public section
 
 open Homogenization MeasureTheory Filter Topology
 open scoped ENNReal

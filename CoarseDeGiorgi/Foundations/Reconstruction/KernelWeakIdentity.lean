@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.LowestKernel
-import CoarseDeGiorgi.Foundations.Reconstruction.ReflectedAverages
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.LowestKernel
+public import CoarseDeGiorgi.Foundations.Reconstruction.ReflectedAverages
 
 /-! # Reconstructing scalar blocks from the reflected weak gradient -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

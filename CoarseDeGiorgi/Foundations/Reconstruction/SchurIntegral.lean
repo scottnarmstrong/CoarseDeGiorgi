@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.Defs
-import Mathlib.MeasureTheory.Integral.MeanInequalities
-import Mathlib.MeasureTheory.Measure.WithDensity
-import Mathlib.MeasureTheory.Integral.Prod
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.Defs
+public import Mathlib.MeasureTheory.Integral.MeanInequalities
+public import Mathlib.MeasureTheory.Measure.WithDensity
+public import Mathlib.MeasureTheory.Integral.Prod
 
 /-! # The two-integral kernel bound in nonnegative form -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

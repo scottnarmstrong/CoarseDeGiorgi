@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Harnack.PowerCaccioppoli.SurfaceTraceLimits
+module
+
+public import CoarseDeGiorgi.Harnack.PowerCaccioppoli.SurfaceTraceLimits
 
 /-! # Pass selected trace control through a pairing bound -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.PowerCaccioppoli
 

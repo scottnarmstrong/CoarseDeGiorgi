@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Assembly.HybridEmbedding
-import CoarseDeGiorgi.Assembly.HybridRadius
+module
+
+public import CoarseDeGiorgi.Assembly.HybridEmbedding
+public import CoarseDeGiorgi.Assembly.HybridRadius
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Assembly
 

@@ -1,5 +1,9 @@
-import Mathlib
-import CoarseDeGiorgiAudit.Defs
+module
+
+public import Mathlib
+public import CoarseDeGiorgiAudit.Defs
+
+@[expose] public section
 
 open MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

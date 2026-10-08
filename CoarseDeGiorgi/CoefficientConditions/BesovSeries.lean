@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.CoefficientConditions.BesovLevel
-import CoarseDeGiorgi.Statements.Contrast
-import CoarseDeGiorgi.Statements.UpperMoment
-import CoarseDeGiorgi.Statements.LowerMoment
+module
+
+public import CoarseDeGiorgi.CoefficientConditions.BesovLevel
+public import CoarseDeGiorgi.Statements.Contrast
+public import CoarseDeGiorgi.Statements.UpperMoment
+public import CoarseDeGiorgi.Statements.LowerMoment
 
 /-! # The series comparison for `moment_bounds_besov` -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

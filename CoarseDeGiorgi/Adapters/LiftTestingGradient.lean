@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.LowerFractional.Restriction
-import CoarseDeGiorgi.Foundations.Reconstruction.Representatives
+module
+
+public import CoarseDeGiorgi.LowerFractional.Restriction
+public import CoarseDeGiorgi.Foundations.Reconstruction.Representatives
 
 /-! Recover the actual gradient from the value equalities exported by lift
 admissibility. The represented gradients are not assumed equal. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Adapters
 

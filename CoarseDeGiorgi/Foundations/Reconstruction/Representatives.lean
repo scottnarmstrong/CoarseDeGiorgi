@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.Geometry
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.Geometry
 
 /-! # Representative invariance and elementary branches of reconstruction -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

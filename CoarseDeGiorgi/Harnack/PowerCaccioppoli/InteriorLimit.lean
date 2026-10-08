@@ -1,11 +1,15 @@
-import CoarseDeGiorgi.Harnack.PowerLimits.SignedInterior
-import CoarseDeGiorgi.Assembly.LocalBoundedness
-import CoarseDeGiorgi.Weighted.Energy
-import CoarseDeGiorgi.Weighted.GradientHilbert
-import CoarseDeGiorgi.Weighted.UpperResponseAffine
-import CoarseDeGiorgi.Whitney.LiftZeroExtension
+module
+
+public import CoarseDeGiorgi.Harnack.PowerLimits.SignedInterior
+public import CoarseDeGiorgi.Assembly.LocalBoundedness
+public import CoarseDeGiorgi.Weighted.Energy
+public import CoarseDeGiorgi.Weighted.GradientHilbert
+public import CoarseDeGiorgi.Weighted.UpperResponseAffine
+public import CoarseDeGiorgi.Whitney.LiftZeroExtension
 
 /-! # Signed-interior pairing on a smaller domain -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.PowerCaccioppoli
 

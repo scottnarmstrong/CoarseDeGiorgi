@@ -1,4 +1,8 @@
-import CoarseDeGiorgi.Whitney.Extension.EnergyCube
+module
+
+public import CoarseDeGiorgi.Whitney.Extension.EnergyCube
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.WhitneyExt
 

@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Whitney.LiftClosure
-import CoarseDeGiorgi.Whitney.LiftCell
-import Mathlib.Topology.Algebra.InfiniteSum.ENNReal
+module
+
+public import CoarseDeGiorgi.Whitney.LiftClosure
+public import CoarseDeGiorgi.Whitney.LiftCell
+public import Mathlib.Topology.Algebra.InfiniteSum.ENNReal
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Whitney
 open Homogenization MeasureTheory Set Filter Topology

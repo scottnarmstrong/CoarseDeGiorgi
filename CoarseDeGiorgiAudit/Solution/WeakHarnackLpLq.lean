@@ -1,8 +1,12 @@
-import Mathlib
-import CoarseDeGiorgi.Statements.WeakHarnackRange
-import CoarseDeGiorgi.Statements.MomentBoundsLebesgue
-import CoarseDeGiorgiAudit.Defs
-import CoarseDeGiorgiAudit.Solution.Bridge
+module
+
+public import Mathlib
+public import CoarseDeGiorgi.Statements.WeakHarnackRange
+public import CoarseDeGiorgi.Statements.MomentBoundsLebesgue
+public import CoarseDeGiorgiAudit.Defs
+public import CoarseDeGiorgiAudit.Solution.Bridge
+
+@[expose] public section
 
 open MeasureTheory
 open scoped BigOperators ENNReal Matrix Matrix.Norms.L2Operator
@@ -12,8 +16,6 @@ namespace CoarseDeGiorgiAudit.WeakHarnackLpLq
 section ChallengeCopies
 
 attribute [-instance] Homogenization.instMeasurableSpaceVec
-open private instModuleVecOCS from Homogenization.Sobolev.H1.OriginCubeSymmetry
-attribute [-instance] instModuleVecOCS
 
 
 /-! ## Ambient space and cubes -/

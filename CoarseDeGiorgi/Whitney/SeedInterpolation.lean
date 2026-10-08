@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Whitney.SeedAffine
-import CoarseDeGiorgi.Whitney.SeedRefinement
+module
+
+public import CoarseDeGiorgi.Whitney.SeedAffine
+public import CoarseDeGiorgi.Whitney.SeedRefinement
 
 /-! # Refinement of arbitrary nodal interpolants -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Whitney
 

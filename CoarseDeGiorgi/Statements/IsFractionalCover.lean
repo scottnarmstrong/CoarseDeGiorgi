@@ -1,8 +1,12 @@
-import Homogenization.Ambient.CoefficientField
-import Mathlib.Analysis.Calculus.ContDiff.Defs
-import Mathlib.Topology.Algebra.Support
-import CoarseDeGiorgi.Statements.AuxCube
-import CoarseDeGiorgi.Statements.OriginCube
+module
+
+public import Homogenization.Ambient.CoefficientField
+public import Mathlib.Analysis.Calculus.ContDiff.Defs
+public import Mathlib.Topology.Algebra.Support
+public import CoarseDeGiorgi.Statements.AuxCube
+public import CoarseDeGiorgi.Statements.OriginCube
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 

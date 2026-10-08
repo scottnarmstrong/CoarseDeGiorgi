@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Weighted.HarmonicCore
-import Mathlib.Analysis.InnerProductSpace.LaxMilgram
+module
+
+public import CoarseDeGiorgi.Weighted.HarmonicCore
+public import Mathlib.Analysis.InnerProductSpace.LaxMilgram
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted
 

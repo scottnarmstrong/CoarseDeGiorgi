@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.LowerFractional.CubeDomain
-import CoarseDeGiorgi.Foundations.FracGeometry.Defs
+module
+
+public import CoarseDeGiorgi.LowerFractional.CubeDomain
+public import CoarseDeGiorgi.Foundations.FracGeometry.Defs
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Assembly
 

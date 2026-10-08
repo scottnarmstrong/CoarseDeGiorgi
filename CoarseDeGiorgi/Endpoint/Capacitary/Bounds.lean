@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Endpoint.Capacitary.Geometry
-import CoarseDeGiorgi.Statements.NonnegativeEssInf
-import Mathlib.MeasureTheory.Function.LpSeminorm.Monotonicity
+module
+
+public import CoarseDeGiorgi.Endpoint.Capacitary.Geometry
+public import CoarseDeGiorgi.Statements.NonnegativeEssInf
+public import Mathlib.MeasureTheory.Function.LpSeminorm.Monotonicity
 
 /-! Essential bounds used on the interior and remote cubes. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint
 

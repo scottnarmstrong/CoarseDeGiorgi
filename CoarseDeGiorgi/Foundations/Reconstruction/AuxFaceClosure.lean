@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.CubeCutoffL1
-import Homogenization.Geometry.Translation
-import Mathlib.MeasureTheory.SpecificCodomains.Pi
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.CubeCutoffL1
+public import Homogenization.Geometry.Translation
+public import Mathlib.MeasureTheory.SpecificCodomains.Pi
 
 /-! # Face-zero weak identities on the exact auxiliary cube -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

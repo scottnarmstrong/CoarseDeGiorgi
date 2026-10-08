@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.Representatives
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.Representatives
 
 /-! # The exact reconstruction statement in dimension zero -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

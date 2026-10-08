@@ -1,10 +1,14 @@
-import CoarseDeGiorgi.Endpoint.Rescaling.CellMoments
-import CoarseDeGiorgi.Endpoint.Rescaling.DiscountShift
-import CoarseDeGiorgi.Statements.UpperMoment
-import CoarseDeGiorgi.Statements.LowerMoment
-import CoarseDeGiorgi.Statements.Contrast
+module
+
+public import CoarseDeGiorgi.Endpoint.Rescaling.CellMoments
+public import CoarseDeGiorgi.Endpoint.Rescaling.DiscountShift
+public import CoarseDeGiorgi.Statements.UpperMoment
+public import CoarseDeGiorgi.Statements.LowerMoment
+public import CoarseDeGiorgi.Statements.Contrast
 
 /-! Uniform moment and contrast bounds for the interior lattice maps. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

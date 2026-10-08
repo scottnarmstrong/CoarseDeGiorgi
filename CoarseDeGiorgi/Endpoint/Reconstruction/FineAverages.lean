@@ -1,12 +1,16 @@
-import CoarseDeGiorgi.Endpoint.Reconstruction.FineCells
-import CoarseDeGiorgi.LowerFractional.AuxNorm
-import CoarseDeGiorgi.Weighted.ZeroBoundary
+module
+
+public import CoarseDeGiorgi.Endpoint.Reconstruction.FineCells
+public import CoarseDeGiorgi.LowerFractional.AuxNorm
+public import CoarseDeGiorgi.Weighted.ZeroBoundary
 
 /-! # The fine projection's same-index spatial norm bound
 
 The step field uses cubes of side `3^(-k)`. Its norm is bounded by the response
 moment at index `k`, rather than by the moment at index `k+1`.
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint.Reconstruction
 

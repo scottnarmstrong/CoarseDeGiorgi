@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Assembly.ClassicalMomentsPartition
+module
+
+public import CoarseDeGiorgi.Assembly.ClassicalMomentsPartition
 
 /-! Refinement of a unit Kuhn simplex by the triadic simplex partition. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set
 open scoped ENNReal

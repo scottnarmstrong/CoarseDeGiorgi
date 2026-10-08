@@ -1,10 +1,15 @@
-import CoarseDeGiorgi.Statements.FracNorm
-import CoarseDeGiorgi.Foundations.FracGeometry.Cutoff
-import CoarseDeGiorgi.Foundations.FracGeometry.Defs
-import CoarseDeGiorgi.Statements.SurfaceFracNorm
-import Mathlib.Analysis.MeanInequalities
+module
+
+public import CoarseDeGiorgi.Statements.FracNorm
+public import CoarseDeGiorgi.Foundations.FracGeometry.Cutoff
+public import CoarseDeGiorgi.Foundations.FracGeometry.Defs
+public import CoarseDeGiorgi.Statements.SurfaceFracNorm
+public import Mathlib.Analysis.MeanInequalities
 
 /-! # Powered fractional norms of finite sums with bounded overlap -/
+
+@[expose] public section
+
 namespace CoarseDeGiorgi.Localization
 open Homogenization MeasureTheory Set
 open CoarseDeGiorgi.Foundations

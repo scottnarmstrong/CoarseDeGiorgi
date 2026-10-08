@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.Endpoint.Capacitary.Seed
-import CoarseDeGiorgi.Weighted.Lipschitz
-import CoarseDeGiorgi.Weighted.TestingCompactSupport
-import CoarseDeGiorgi.Moments.Cells
+module
+
+public import CoarseDeGiorgi.Endpoint.Capacitary.Seed
+public import CoarseDeGiorgi.Weighted.Lipschitz
+public import CoarseDeGiorgi.Weighted.TestingCompactSupport
+public import CoarseDeGiorgi.Moments.Cells
 
 /-! Affine data of the fixed capacitary seed on level-four simplices. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint
 

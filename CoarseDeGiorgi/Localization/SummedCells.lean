@@ -1,16 +1,21 @@
-import CoarseDeGiorgi.Localization.Geometry
-import CoarseDeGiorgi.Assembly.ClassicalMomentsPartition
-import CoarseDeGiorgi.Statements.LowerCellAverage
-import CoarseDeGiorgi.Statements.LowerResponseInvOnCell
-import CoarseDeGiorgi.Statements.TriangulationIn
-import CoarseDeGiorgi.Statements.SimplexCellNonempty
-import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
+module
+
+public import CoarseDeGiorgi.Localization.Geometry
+public import CoarseDeGiorgi.Assembly.ClassicalMomentsPartition
+public import CoarseDeGiorgi.Statements.LowerCellAverage
+public import CoarseDeGiorgi.Statements.LowerResponseInvOnCell
+public import CoarseDeGiorgi.Statements.TriangulationIn
+public import CoarseDeGiorgi.Statements.SimplexCellNonempty
+public import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
 
 /-! # Cells of the level-`k` triangulation counted over a bounded-overlap cover
 
 For a family of auxiliary cubes with overlap at most `4^d`, the sum over the cubes of the
 weights of the cells contained in each cube is at most `4^d` times the weight of the whole
 triangulation, which is `ofReal (lowerCellAverage ..)`. -/
+
+@[expose] public section
+
 namespace CoarseDeGiorgi.Localization
 open Homogenization MeasureTheory Set
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

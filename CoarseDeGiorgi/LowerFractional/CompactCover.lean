@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.LowerFractional.CubeDomain
-import CoarseDeGiorgi.Localization.Geometry
+module
+
+public import CoarseDeGiorgi.LowerFractional.CubeDomain
+public import CoarseDeGiorgi.Localization.Geometry
 
 /-! The unit cube `□₀` as the auxiliary cube `auxCube 1 0`, with its domain facts. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.LowerFractional
 

@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.SmoothingConvergence
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.SmoothingConvergence
 
 /-! # Smoothing estimate for fractional reconstruction -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

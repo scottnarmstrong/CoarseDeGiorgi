@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.Defs
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.Defs
 
 /-! # Geometry of the exact auxiliary cube and its descendants -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

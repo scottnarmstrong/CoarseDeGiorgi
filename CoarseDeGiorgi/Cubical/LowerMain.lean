@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Cubical.LowerSub
+module
+
+public import CoarseDeGiorgi.Cubical.LowerSub
 
 /-! # Countable lower aggregation `e.lower.cube.aggregation` -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Cubical
 open Homogenization MeasureTheory

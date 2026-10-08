@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Assembly.CaccioppoliEnergy
-import Mathlib.Analysis.Convex.Measure
+module
+
+public import CoarseDeGiorgi.Assembly.CaccioppoliEnergy
+public import Mathlib.Analysis.Convex.Measure
 
 /-! # Signed-test integral splitting -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.PowerCaccioppoli
 

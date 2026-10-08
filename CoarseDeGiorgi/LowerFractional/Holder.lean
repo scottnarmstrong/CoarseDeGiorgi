@@ -1,7 +1,11 @@
-import Mathlib.Analysis.MeanInequalities
+module
+
+public import Mathlib.Analysis.MeanInequalities
 
 /-! Finite Hölder arithmetic for `e.lower.spatial.holder`.
 The weights are abstract: no response matrix is selected here. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.LowerFractional
 

@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Weighted.UpperSpecDefs
-import Mathlib.Analysis.InnerProductSpace.Rayleigh
-import Mathlib.Analysis.Matrix.Hermitian
+module
+
+public import CoarseDeGiorgi.Weighted.UpperSpecDefs
+public import Mathlib.Analysis.InnerProductSpace.Rayleigh
+public import Mathlib.Analysis.Matrix.Hermitian
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted.UpperResponseImpl
 

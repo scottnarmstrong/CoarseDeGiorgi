@@ -1,10 +1,12 @@
-import CoarseDeGiorgi.Statements.CubeSurface
-import CoarseDeGiorgi.Statements.SurfaceMeasure
-import CoarseDeGiorgi.Statements.EuclidDist
-import CoarseDeGiorgi.Foundations.Euclid.Basic
-import CoarseDeGiorgi.Foundations.FracGeometry.Defs
-import CoarseDeGiorgi.Foundations.FracGeometry.SurfaceSupport
-import CoarseDeGiorgi.Foundations.FracGeometry.SurfaceVolume
+module
+
+public import CoarseDeGiorgi.Statements.CubeSurface
+public import CoarseDeGiorgi.Statements.SurfaceMeasure
+public import CoarseDeGiorgi.Statements.EuclidDist
+public import CoarseDeGiorgi.Foundations.Euclid.Basic
+public import CoarseDeGiorgi.Foundations.FracGeometry.Defs
+public import CoarseDeGiorgi.Foundations.FracGeometry.SurfaceSupport
+public import CoarseDeGiorgi.Foundations.FracGeometry.SurfaceVolume
 
 /-!
 # Surface patch area
@@ -12,6 +14,8 @@ import CoarseDeGiorgi.Foundations.FracGeometry.SurfaceVolume
 Upper and lower area bounds for Euclidean balls on the cube surface, for the summed-face
 measure `surfaceMeasure`.
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.WhitneyExt
 

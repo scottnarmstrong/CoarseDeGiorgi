@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Endpoint.Morrey.Smooth
-import Homogenization.Sobolev.W1p.H1GradientUpgrade
-import Mathlib.MeasureTheory.Function.ConvergenceInMeasure
+module
+
+public import CoarseDeGiorgi.Endpoint.Morrey.Smooth
+public import Homogenization.Sobolev.W1p.H1GradientUpgrade
+public import Mathlib.MeasureTheory.Function.ConvergenceInMeasure
 
 /-! # Passage of Morrey estimates to weak representatives -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint.Morrey
 

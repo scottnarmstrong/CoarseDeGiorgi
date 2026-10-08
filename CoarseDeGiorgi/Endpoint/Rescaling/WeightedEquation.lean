@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Endpoint.Rescaling.WeightedCompletion
-import CoarseDeGiorgi.Statements.IsWeightedSolution
-import CoarseDeGiorgi.Statements.IsWeightedSupersolution
+module
+
+public import CoarseDeGiorgi.Endpoint.Rescaling.WeightedCompletion
+public import CoarseDeGiorgi.Statements.IsWeightedSolution
+public import CoarseDeGiorgi.Statements.IsWeightedSupersolution
 
 /-! Affine transport of the literal weighted solution and supersolution classes. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped ENNReal Pointwise

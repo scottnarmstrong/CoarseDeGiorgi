@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Weighted.LowerResponseHilbert
+module
+
+public import CoarseDeGiorgi.Weighted.LowerResponseHilbert
 
 /-! Finite matrix representation of the Riesz energy and uniqueness by polarization. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted
 

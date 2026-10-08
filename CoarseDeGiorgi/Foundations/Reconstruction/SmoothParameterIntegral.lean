@@ -1,10 +1,14 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.FineKernelDeriv
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.FineKernelDeriv
 
 /-! # Smooth parameter integrals over a compact interval
 
 Compactness gives local uniform dominators. Induction differentiates the
 integral into the complete space of continuous linear maps.
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

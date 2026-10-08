@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.OrthantDecomposition
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.OrthantDecomposition
 
 /-! # Integration by parts on the reflected fundamental box with an L¹ gradient -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.AuxProjection
-import CoarseDeGiorgi.LowerFractional.CubeDomain
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.AuxProjection
+public import CoarseDeGiorgi.LowerFractional.CubeDomain
 
 /-! Exact geometric tiling by the auxiliary descendants. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.LowerFractional
 

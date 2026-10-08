@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Statements.GoodRadiusExists
-import CoarseDeGiorgi.PowerCacc.OneSurface
-import CoarseDeGiorgi.Assembly.HybridEmbedding
+module
+
+public import CoarseDeGiorgi.Statements.GoodRadiusExists
+public import CoarseDeGiorgi.PowerCacc.OneSurface
+public import CoarseDeGiorgi.Assembly.HybridEmbedding
 
 /-! # The one-surface estimate for powers, from the three extension statements -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.PowerCacc
 

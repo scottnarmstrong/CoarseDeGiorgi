@@ -1,17 +1,22 @@
-import CoarseDeGiorgi.Localization.SourceCover
-import CoarseDeGiorgi.Selection.TraceTransport
-import CoarseDeGiorgi.Selection.SourceRadius
-import CoarseDeGiorgi.Selection.TraceBounds
-import CoarseDeGiorgi.Selection.SamplingMoment
-import Mathlib.MeasureTheory.Function.ConvergenceInMeasure
-import CoarseDeGiorgi.Statements.CriticalSurfaceEmbedding
-import CoarseDeGiorgi.Statements.IntegratedSlicing
+module
+
+public import CoarseDeGiorgi.Localization.SourceCover
+public import CoarseDeGiorgi.Selection.TraceTransport
+public import CoarseDeGiorgi.Selection.SourceRadius
+public import CoarseDeGiorgi.Selection.TraceBounds
+public import CoarseDeGiorgi.Selection.SamplingMoment
+public import Mathlib.MeasureTheory.Function.ConvergenceInMeasure
+public import CoarseDeGiorgi.Statements.CriticalSurfaceEmbedding
+public import CoarseDeGiorgi.Statements.IntegratedSlicing
 
 /-! # Uniform trace and simultaneous selection from surface agreement
 
 The slicing constant of `integrated_slicing` is chosen before radii and all concrete data.
 Agreement is needed only on almost every surface in the original interval.
 -/
+
+@[expose] public section
+
 namespace CoarseDeGiorgi.Adapters
 open Homogenization MeasureTheory Set CoarseDeGiorgi.Localization CoarseDeGiorgi.Selection
 open scoped ENNReal BigOperators

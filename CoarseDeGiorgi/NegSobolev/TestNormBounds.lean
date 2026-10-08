@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.NegSobolev.TestNormTranslation
-import CoarseDeGiorgi.NegSobolev.TestNormArray
-import CoarseDeGiorgi.NegSobolev.TestNormRestriction
+module
+
+public import CoarseDeGiorgi.NegSobolev.TestNormTranslation
+public import CoarseDeGiorgi.NegSobolev.TestNormArray
+public import CoarseDeGiorgi.NegSobolev.TestNormRestriction
 
 /-! Uniform integer and fractional bounds for the weak Gaussian derivative arrays. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal

@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Cubical.WhitneyIdx
+module
+
+public import CoarseDeGiorgi.Cubical.WhitneyIdx
 
 /-! # Layers of the Whitney decomposition: disjointness, coverage and the volume bound -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Cubical
 open Homogenization MeasureTheory

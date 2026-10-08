@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Whitney.LiftSurfaceLayer
-import CoarseDeGiorgi.Weighted.Energy
+module
+
+public import CoarseDeGiorgi.Whitney.LiftSurfaceLayer
+public import CoarseDeGiorgi.Weighted.Energy
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.Pairing
 

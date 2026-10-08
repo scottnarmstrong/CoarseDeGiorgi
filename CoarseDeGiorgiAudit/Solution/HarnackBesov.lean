@@ -1,11 +1,13 @@
-import Mathlib
-import CoarseDeGiorgiAudit.Defs
-import CoarseDeGiorgiAudit.DefsCells
-import CoarseDeGiorgiAudit.Solution.Bridge
-import CoarseDeGiorgiAudit.Solution.BridgeBesov
-import CoarseDeGiorgiAudit.Solution.BridgeChallengeLp
-import CoarseDeGiorgi.Statements.Harnack
-import CoarseDeGiorgiAudit.Solution.BridgeBesovCube
+module
+
+public import Mathlib
+public import CoarseDeGiorgiAudit.Defs
+public import CoarseDeGiorgiAudit.DefsCells
+public import CoarseDeGiorgiAudit.Solution.Bridge
+public import CoarseDeGiorgiAudit.Solution.BridgeBesov
+public import CoarseDeGiorgiAudit.Solution.BridgeChallengeLp
+public import CoarseDeGiorgi.Statements.Harnack
+public import CoarseDeGiorgiAudit.Solution.BridgeBesovCube
 
 /-!
 # Harnack inequality under finite cube quasi-norms (Theorems C, D(ii))
@@ -30,6 +32,8 @@ The weighted space is the smooth-core closure `H¹ₐ`, and solutions satisfy
 the weak flux equation against smooth compactly supported tests. The
 quasi-norm is written out below as `cubeQuasiNorm`.
 -/
+
+@[expose] public section
 
 open MeasureTheory
 open scoped BigOperators ENNReal Matrix Matrix.Norms.L2Operator

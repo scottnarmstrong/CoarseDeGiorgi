@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Harnack.Log.FiniteCover
-import CoarseDeGiorgi.Harnack.LogLimit.OverlapHolder
-import CoarseDeGiorgi.Localization.Geometry
-import CoarseDeGiorgi.Foundations.Reconstruction.Geometry
-import Mathlib.Algebra.BigOperators.Group.Finset.Basic
+module
+
+public import CoarseDeGiorgi.Harnack.Log.FiniteCover
+public import CoarseDeGiorgi.Harnack.LogLimit.OverlapHolder
+public import CoarseDeGiorgi.Localization.Geometry
+public import CoarseDeGiorgi.Foundations.Reconstruction.Geometry
+public import Mathlib.Algebra.BigOperators.Group.Finset.Basic
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.Log
 
@@ -249,7 +253,7 @@ theorem adjacentLogGrid_means_close_of_holder {d : ℕ}
       _ = 2 * B * (volume O).toReal ^ (1 - 1 / r) / (volume O).toReal := by ring
   simpa [z', Q, Q', O] using hclose'
 
-private noncomputable def fixedLogGrid_edgeFactor {d : ℕ} (r : ℝ)
+noncomputable def fixedLogGrid_edgeFactor {d : ℕ} (r : ℝ)
     (e : (Fin d → ℤ) × Fin d) : ℝ :=
   let O := auxCube 4 e.1 ∩ auxCube 4 (Function.update e.1 e.2 (e.1 e.2 + 1))
   2 * (volume O).toReal ^ (1 - 1 / r) / (volume O).toReal

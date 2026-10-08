@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.Statements.NegSobolevNorm
-import CoarseDeGiorgi.NegSobolev.LemmaB2Scaling
-import Mathlib.Analysis.Matrix.PosDef
-import Mathlib.MeasureTheory.Function.L1Space.Integrable
+module
+
+public import CoarseDeGiorgi.Statements.NegSobolevNorm
+public import CoarseDeGiorgi.NegSobolev.LemmaB2Scaling
+public import Mathlib.Analysis.Matrix.PosDef
+public import Mathlib.MeasureTheory.Function.L1Space.Integrable
 
 /-! Matrix and normalized dual-testing estimates for `l.negative.sobolev`. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

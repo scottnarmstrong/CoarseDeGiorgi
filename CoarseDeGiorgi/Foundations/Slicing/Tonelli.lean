@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Foundations.Slicing.MidpointAveraging
+module
+
+public import CoarseDeGiorgi.Foundations.Slicing.MidpointAveraging
 
 /-! The Tonelli step converting averaged surface kernels into exterior tails. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Slicing
 

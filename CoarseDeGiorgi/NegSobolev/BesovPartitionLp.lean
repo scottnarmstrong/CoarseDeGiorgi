@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.NegSobolev.GaussianContraction
-import Mathlib.MeasureTheory.Function.LpSeminorm.Indicator
+module
+
+public import CoarseDeGiorgi.NegSobolev.GaussianContraction
+public import Mathlib.MeasureTheory.Function.LpSeminorm.Indicator
 
 /-! # The Lebesgue norm of a finite partition step function -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal

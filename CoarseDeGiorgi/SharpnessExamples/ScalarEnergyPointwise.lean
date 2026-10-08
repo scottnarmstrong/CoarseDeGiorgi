@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.SharpnessExamples.ScalarEnergyScaling
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.ScalarEnergyScaling
 
 /-! # Pointwise majorants for the weighted cylinder value and gradient -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set
 open CoarseDeGiorgi.Sharpness

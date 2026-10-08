@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.Statements.SurfaceMeasure
-import CoarseDeGiorgi.Foundations.FracGeometry.FaceHausdorff
-import CoarseDeGiorgi.Foundations.FracGeometry.Defs
-import CoarseDeGiorgi.Statements.FracNorm
-import CoarseDeGiorgi.Statements.SurfaceFracNorm
-import Mathlib.MeasureTheory.Integral.Prod
+module
+
+public import CoarseDeGiorgi.Statements.SurfaceMeasure
+public import CoarseDeGiorgi.Foundations.FracGeometry.FaceHausdorff
+public import CoarseDeGiorgi.Foundations.FracGeometry.Defs
+public import CoarseDeGiorgi.Statements.FracNorm
+public import CoarseDeGiorgi.Statements.SurfaceFracNorm
+public import Mathlib.MeasureTheory.Integral.Prod
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Selection
 

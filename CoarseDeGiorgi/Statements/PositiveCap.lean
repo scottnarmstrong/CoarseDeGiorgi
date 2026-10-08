@@ -1,4 +1,8 @@
-import CoarseDeGiorgi.Statements.PositivePart
+module
+
+public import CoarseDeGiorgi.Statements.PositivePart
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

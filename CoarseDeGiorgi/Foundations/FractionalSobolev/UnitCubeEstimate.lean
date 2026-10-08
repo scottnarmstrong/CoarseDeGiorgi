@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Foundations.FractionalSobolev.UnitCubeExtension
-import CoarseDeGiorgi.Statements.DnpvTheorem6_5
+module
+
+public import CoarseDeGiorgi.Foundations.FractionalSobolev.UnitCubeExtension
+public import CoarseDeGiorgi.Statements.DnpvTheorem6_5
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.FractionalSobolev
 open Homogenization MeasureTheory

@@ -1,6 +1,10 @@
-import Mathlib.Analysis.MeanInequalities
+module
+
+public import Mathlib.Analysis.MeanInequalities
 
 /-! # Normalized finite power means for response comparisons -/
+
+@[expose] public section
 
 open scoped BigOperators
 

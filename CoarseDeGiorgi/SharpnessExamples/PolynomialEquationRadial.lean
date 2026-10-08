@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.SharpnessExamples.PolynomialEquationFlux
-import Mathlib.Analysis.SpecialFunctions.Pow.Deriv
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.PolynomialEquationFlux
+public import Mathlib.Analysis.SpecialFunctions.Pow.Deriv
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set Filter Topology
 

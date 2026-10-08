@@ -1,18 +1,22 @@
-import CoarseDeGiorgi.Statements.Contrast
-import CoarseDeGiorgi.Statements.ParamTheta
-import CoarseDeGiorgi.Statements.IsWeightedSupersolution
-import CoarseDeGiorgi.Statements.NormalizedLpMoment
-import CoarseDeGiorgi.Statements.NonnegativeEssInf
-import CoarseDeGiorgi.Statements.HarnackEtaParam
-import CoarseDeGiorgi.Statements.CrossoverEstimate
-import CoarseDeGiorgi.PowerCacc.HarnackForm
-import CoarseDeGiorgi.Harnack.Final.CrossoverAverage
-import CoarseDeGiorgi.Harnack.CrossoverFinal.PowerIntegrability
-import CoarseDeGiorgi.Harnack.Iterations.UniformThreeIterations
-import CoarseDeGiorgi.Harnack.WeakHarnack.CrossoverAssembly
-import CoarseDeGiorgi.Harnack.Calculus.Moments
-import CoarseDeGiorgi.Harnack.Iterations.MomentNormalization
-import Mathlib.Tactic
+module
+
+public import CoarseDeGiorgi.Statements.Contrast
+public import CoarseDeGiorgi.Statements.ParamTheta
+public import CoarseDeGiorgi.Statements.IsWeightedSupersolution
+public import CoarseDeGiorgi.Statements.NormalizedLpMoment
+public import CoarseDeGiorgi.Statements.NonnegativeEssInf
+public import CoarseDeGiorgi.Statements.HarnackEtaParam
+public import CoarseDeGiorgi.Statements.CrossoverEstimate
+public import CoarseDeGiorgi.PowerCacc.HarnackForm
+public import CoarseDeGiorgi.Harnack.Final.CrossoverAverage
+public import CoarseDeGiorgi.Harnack.CrossoverFinal.PowerIntegrability
+public import CoarseDeGiorgi.Harnack.Iterations.UniformThreeIterations
+public import CoarseDeGiorgi.Harnack.WeakHarnack.CrossoverAssembly
+public import CoarseDeGiorgi.Harnack.Calculus.Moments
+public import CoarseDeGiorgi.Harnack.Iterations.MomentNormalization
+public import Mathlib.Tactic
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

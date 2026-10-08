@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Endpoint.Reconstruction.BlockEstimates
+module
+
+public import CoarseDeGiorgi.Endpoint.Reconstruction.BlockEstimates
 
 /-! # Same-index weighted estimates for the Dirichlet blocks -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint.Reconstruction
 

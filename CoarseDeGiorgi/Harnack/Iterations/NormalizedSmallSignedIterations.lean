@@ -1,10 +1,14 @@
-import CoarseDeGiorgi.Harnack.Iterations.NormalizedSmallChain
-import CoarseDeGiorgi.Harnack.Iterations.SmallMomentStep
-import CoarseDeGiorgi.Harnack.Iterations.SignedMomentStep
-import CoarseDeGiorgi.Harnack.Iterations.ExponentRange
-import CoarseDeGiorgi.Harnack.Moments.MomentComparison
-import CoarseDeGiorgi.Statements.CrossoverExponent
-import CoarseDeGiorgi.Statements.ChiParam
+module
+
+public import CoarseDeGiorgi.Harnack.Iterations.NormalizedSmallChain
+public import CoarseDeGiorgi.Harnack.Iterations.SmallMomentStep
+public import CoarseDeGiorgi.Harnack.Iterations.SignedMomentStep
+public import CoarseDeGiorgi.Harnack.Iterations.ExponentRange
+public import CoarseDeGiorgi.Harnack.Moments.MomentComparison
+public import CoarseDeGiorgi.Statements.CrossoverExponent
+public import CoarseDeGiorgi.Statements.ChiParam
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped ENNReal

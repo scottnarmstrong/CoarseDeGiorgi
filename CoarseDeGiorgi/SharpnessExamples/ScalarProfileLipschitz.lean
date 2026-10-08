@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.SharpnessExamples.ScalarProfileCalculus
-import Mathlib.Analysis.Calculus.MeanValue
-import Mathlib.Topology.MetricSpace.Lipschitz
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.ScalarProfileCalculus
+public import Mathlib.Analysis.Calculus.MeanValue
+public import Mathlib.Topology.MetricSpace.Lipschitz
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set
 open scoped NNReal

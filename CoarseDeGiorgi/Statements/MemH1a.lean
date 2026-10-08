@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Statements.IsSmoothCore
-import CoarseDeGiorgi.Statements.SmoothGrad
-import CoarseDeGiorgi.Statements.WeightedEnergy
-import Homogenization.Ambient.CoefficientField
-import Homogenization.CoarseGraining.Definitions
+module
+
+public import CoarseDeGiorgi.Statements.IsSmoothCore
+public import CoarseDeGiorgi.Statements.SmoothGrad
+public import CoarseDeGiorgi.Statements.WeightedEnergy
+public import Homogenization.Ambient.CoefficientField
+public import Homogenization.CoarseGraining.Definitions
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal

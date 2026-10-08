@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Selection.CommonRadius
-import CoarseDeGiorgi.Selection.Maximal
+module
+
+public import CoarseDeGiorgi.Selection.CommonRadius
+public import CoarseDeGiorgi.Selection.Maximal
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Selection
 

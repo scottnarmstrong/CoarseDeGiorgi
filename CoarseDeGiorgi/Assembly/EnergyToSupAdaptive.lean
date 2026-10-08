@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Assembly.EnergyToSupStep
-import CoarseDeGiorgi.Foundations.Iteration.AdaptiveLevels
+module
+
+public import CoarseDeGiorgi.Assembly.EnergyToSupStep
+public import CoarseDeGiorgi.Foundations.Iteration.AdaptiveLevels
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Assembly
 open Filter Foundations.Iteration

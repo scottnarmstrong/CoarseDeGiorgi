@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.NegSobolev.BesovPartitionBounds
-import CoarseDeGiorgi.NegSobolev.BesovPartitionLower
+module
+
+public import CoarseDeGiorgi.NegSobolev.BesovPartitionBounds
+public import CoarseDeGiorgi.NegSobolev.BesovPartitionLower
 
 /-! # A complete level comparison for a finite equal-volume partition -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.KernelOperator
-import CoarseDeGiorgi.Foundations.Reconstruction.KernelApproximation
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.KernelOperator
+public import CoarseDeGiorgi.Foundations.Reconstruction.KernelApproximation
 
 /-! # Integrability and subtraction for bounded kernel operators -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

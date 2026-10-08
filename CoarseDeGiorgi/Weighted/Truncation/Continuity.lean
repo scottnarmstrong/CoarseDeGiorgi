@@ -1,5 +1,9 @@
 
-import CoarseDeGiorgi.Weighted.Truncation.Truncate
+module
+
+public import CoarseDeGiorgi.Weighted.Truncation.Truncate
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted
 

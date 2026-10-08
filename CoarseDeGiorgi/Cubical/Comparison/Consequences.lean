@@ -1,15 +1,19 @@
-import CoarseDeGiorgi.Statements.CubicalSimplicialEquivalence
-import CoarseDeGiorgi.Statements.CubicalSimplicialEquivalenceConstOne
-import CoarseDeGiorgi.Statements.Contrast
-import CoarseDeGiorgi.Statements.CubeContrast
-import CoarseDeGiorgi.Statements.SpatialMomentRange
-import CoarseDeGiorgi.Statements.CubeSpatialMomentRange
+module
+
+public import CoarseDeGiorgi.Statements.CubicalSimplicialEquivalence
+public import CoarseDeGiorgi.Statements.CubicalSimplicialEquivalenceConstOne
+public import CoarseDeGiorgi.Statements.Contrast
+public import CoarseDeGiorgi.Statements.CubeContrast
+public import CoarseDeGiorgi.Statements.SpatialMomentRange
+public import CoarseDeGiorgi.Statements.CubeSpatialMomentRange
 
 /-!
 # Consequences of Proposition `p.cubical.simplicial.equivalence`
 
 The inequalities with constant one, the equivalence of the conditions `e.spatial.moment.range`, and `e.cubical.simplicial.ratio`.
 -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

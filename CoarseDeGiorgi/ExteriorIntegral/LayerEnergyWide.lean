@@ -1,13 +1,17 @@
-import CoarseDeGiorgi.ExteriorIntegral.Geometry
-import CoarseDeGiorgi.Harnack.Pairing.ArbitraryLayer
-import CoarseDeGiorgi.Harnack.WeakHarnack.SelectionAdapters
-import CoarseDeGiorgi.Selection.SourceRepresentatives
-import CoarseDeGiorgi.Weighted.GradientHilbert
-import CoarseDeGiorgi.Statements.SurfaceEnergyMaximal
-import CoarseDeGiorgi.Statements.SelectionInterval
-import CoarseDeGiorgi.Statements.MemH1a
+module
+
+public import CoarseDeGiorgi.ExteriorIntegral.Geometry
+public import CoarseDeGiorgi.Harnack.Pairing.ArbitraryLayer
+public import CoarseDeGiorgi.Harnack.WeakHarnack.SelectionAdapters
+public import CoarseDeGiorgi.Selection.SourceRepresentatives
+public import CoarseDeGiorgi.Weighted.GradientHilbert
+public import CoarseDeGiorgi.Statements.SurfaceEnergyMaximal
+public import CoarseDeGiorgi.Statements.SelectionInterval
+public import CoarseDeGiorgi.Statements.MemH1a
 
 /-! # Step 1 of the exterior integral: the energy of `v` on one layer -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.ExteriorIntegral.WideWidth
 

@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.FineKernelDeriv
-import Mathlib.Analysis.Calculus.Deriv.Inv
-import Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.FineKernelDeriv
+public import Mathlib.Analysis.Calculus.Deriv.Inv
+public import Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus
 
 /-! # Divergence of the physical-space fine kernel -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

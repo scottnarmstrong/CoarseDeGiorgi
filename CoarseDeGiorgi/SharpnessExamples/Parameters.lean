@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Sharpness.Defs
-import CoarseDeGiorgi.Foundations.Euclid.Basic
-import Mathlib
+module
+
+public import CoarseDeGiorgi.Sharpness.Defs
+public import CoarseDeGiorgi.Foundations.Euclid.Basic
+public import Mathlib
+
+@[expose] public section
 
 open Homogenization
 open CoarseDeGiorgi.Sharpness

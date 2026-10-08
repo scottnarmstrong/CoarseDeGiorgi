@@ -1,13 +1,15 @@
-import CoarseDeGiorgi.Statements.LowerFractionalBound
-import CoarseDeGiorgi.Harnack.Selection.Radius
-import CoarseDeGiorgi.Harnack.Selection.CoareaLr
-import CoarseDeGiorgi.Selection.SourceConstants
-import CoarseDeGiorgi.Selection.SourceResponses
-import CoarseDeGiorgi.Selection.SourceRepresentatives
-import CoarseDeGiorgi.Assembly.HybridFractional
-import CoarseDeGiorgi.Assembly.HybridParameters
-import CoarseDeGiorgi.Statements.AlphaParam
-import CoarseDeGiorgi.Statements.ParamR
+module
+
+public import CoarseDeGiorgi.Statements.LowerFractionalBound
+public import CoarseDeGiorgi.Harnack.Selection.Radius
+public import CoarseDeGiorgi.Harnack.Selection.CoareaLr
+public import CoarseDeGiorgi.Selection.SourceConstants
+public import CoarseDeGiorgi.Selection.SourceResponses
+public import CoarseDeGiorgi.Selection.SourceRepresentatives
+public import CoarseDeGiorgi.Assembly.HybridFractional
+public import CoarseDeGiorgi.Assembly.HybridParameters
+public import CoarseDeGiorgi.Statements.AlphaParam
+public import CoarseDeGiorgi.Statements.ParamR
 
 /-!
 # Step 2 of Proposition `p.good.radius`: excluding the bad radii
@@ -17,6 +19,8 @@ fractional bound is fed by the localization bound of Proposition `p.fractional.l
 (exponent `δ^{-α}`), supplied through the bound on `fracNorm univ F` for a measurable function `F`
 agreeing with `w₀` on almost every selected surface.
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.GoodRadius
 

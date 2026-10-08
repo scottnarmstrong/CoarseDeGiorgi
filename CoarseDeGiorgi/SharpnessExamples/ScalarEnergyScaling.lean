@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.SharpnessExamples.ScalarGradientBounds
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.ScalarGradientBounds
 
 /-! # Scalar algebra behind the summable cylinder energy bound -/
+
+@[expose] public section
 
 open Homogenization
 

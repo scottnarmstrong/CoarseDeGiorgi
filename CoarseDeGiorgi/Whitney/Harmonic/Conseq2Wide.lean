@@ -1,11 +1,15 @@
-import CoarseDeGiorgi.Whitney.Harmonic.Conseq2
-import CoarseDeGiorgi.Whitney.Harmonic.ConseqWide
-import CoarseDeGiorgi.Whitney.Harmonic.GaussGreen
-import CoarseDeGiorgi.Weighted.Identification
-import CoarseDeGiorgi.Foundations.Reconstruction.Representatives
-import CoarseDeGiorgi.Statements.CubeFaceMeasure
+module
+
+public import CoarseDeGiorgi.Whitney.Harmonic.Conseq2
+public import CoarseDeGiorgi.Whitney.Harmonic.ConseqWide
+public import CoarseDeGiorgi.Whitney.Harmonic.GaussGreen
+public import CoarseDeGiorgi.Weighted.Identification
+public import CoarseDeGiorgi.Foundations.Reconstruction.Representatives
+public import CoarseDeGiorgi.Statements.CubeFaceMeasure
 
 /-! The `W^{1,1}` and trace assertions of Proposition `p.whitney.extension`. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Whitney.Harmonic.Wide
 

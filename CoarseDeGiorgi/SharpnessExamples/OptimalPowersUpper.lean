@@ -1,6 +1,8 @@
-import CoarseDeGiorgi.SharpnessExamples.OptimalPowersSeries
-import CoarseDeGiorgi.SharpnessExamples.OptimalPowersField
-import CoarseDeGiorgi.CoefficientConditions.BesovSeries
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.OptimalPowersSeries
+public import CoarseDeGiorgi.SharpnessExamples.OptimalPowersField
+public import CoarseDeGiorgi.CoefficientConditions.BesovSeries
 
 /-! # Upper bounds for `Λ_ε` and `λ_ε^{-1}` from coefficient averages
 
@@ -8,6 +10,8 @@ Step 3 of the proof of Proposition `p.sharpness.polynomial`: `Λ_ε ≤ C ε^{-2
 `λ_ε^{-1} ≤ C` from the averages of the diagonal cylinder field over the simplices and the summed
 cylinder bound.
 -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

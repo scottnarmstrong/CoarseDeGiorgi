@@ -1,11 +1,15 @@
-import Mathlib.Analysis.Normed.Module.Ball.Pointwise
-import CoarseDeGiorgi.Endpoint.Rescaling.AffineEnergy
-import CoarseDeGiorgi.Endpoint.Rescaling.LatticeCells
-import CoarseDeGiorgi.Endpoint.CubeInterface
-import CoarseDeGiorgi.Endpoint.Interface
-import CoarseDeGiorgi.LowerFractional.CompactCover
+module
+
+public import Mathlib.Analysis.Normed.Module.Ball.Pointwise
+public import CoarseDeGiorgi.Endpoint.Rescaling.AffineEnergy
+public import CoarseDeGiorgi.Endpoint.Rescaling.LatticeCells
+public import CoarseDeGiorgi.Endpoint.CubeInterface
+public import CoarseDeGiorgi.Endpoint.Interface
+public import CoarseDeGiorgi.LowerFractional.CompactCover
 
 /-! Geometry of the fixed grid cubes and their affine parametrizations. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set
 open scoped ENNReal Pointwise

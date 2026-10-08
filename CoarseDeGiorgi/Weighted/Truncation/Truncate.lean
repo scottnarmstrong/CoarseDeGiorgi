@@ -1,4 +1,8 @@
-import CoarseDeGiorgi.Weighted.Truncation.Algebra
+module
+
+public import CoarseDeGiorgi.Weighted.Truncation.Algebra
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted
 

@@ -1,4 +1,10 @@
-import CoarseDeGiorgi.Statements.EuclidDist
+module
+
+public import CoarseDeGiorgi.Statements.EuclidDist
+public import Mathlib.Analysis.CStarAlgebra.Matrix
+public import Mathlib.Basic.NNReal.Defs
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator NNReal

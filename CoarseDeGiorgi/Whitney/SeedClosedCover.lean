@@ -1,7 +1,12 @@
-import CoarseDeGiorgi.Whitney.SeedCellAffine
-import Mathlib.MeasureTheory.Measure.OpenPos
+module
+
+public import CoarseDeGiorgi.Whitney.SeedCellAffine
+public import Mathlib.MeasureTheory.Measure.OpenPos
 
 /-! # Closed Kuhn cells cover the closed cube -/
+
+@[expose] public section
+
 namespace CoarseDeGiorgi.Whitney
 open Homogenization MeasureTheory Set
 open scoped Topology

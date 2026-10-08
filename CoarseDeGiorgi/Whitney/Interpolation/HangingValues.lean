@@ -1,10 +1,14 @@
-import CoarseDeGiorgi.Whitney.Interpolation.HangingGeom
+module
+
+public import CoarseDeGiorgi.Whitney.Interpolation.HangingGeom
 
 /-! # Values at free and hanging vertices
 
 `vertexVal` is the prescribed value at a free vertex and, at a hanging vertex `z`, the affine
 interpolation of the free values over the face `F_z` of the larger mesh (the mesh `3^s`, `s` the
 smallest scale of a selected cube whose closure contains `z`). -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Whitney.Interpolation
 

@@ -1,7 +1,12 @@
-import CoarseDeGiorgi.Whitney.LiftZeroExtension
-import CoarseDeGiorgi.Weighted.Testing
+module
+
+public import CoarseDeGiorgi.Whitney.LiftZeroExtension
+public import CoarseDeGiorgi.Weighted.Testing
 
 /-! # Testing and the limit of approximation pairings -/
+
+@[expose] public section
+
 namespace CoarseDeGiorgi.Whitney
 open Homogenization MeasureTheory Set Filter Topology
 open scoped ENNReal

@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.PeriodicKernelSmooth
-import CoarseDeGiorgi.Foundations.Reconstruction.PeriodicFields
-import Mathlib.MeasureTheory.Integral.IntervalIntegral.Periodic
-import Mathlib.MeasureTheory.Constructions.Pi
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.PeriodicKernelSmooth
+public import CoarseDeGiorgi.Foundations.Reconstruction.PeriodicFields
+public import Mathlib.MeasureTheory.Integral.IntervalIntegral.Periodic
+public import Mathlib.MeasureTheory.Constructions.Pi
 
 /-! # Translation invariance of ordinary periodic-box integration -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

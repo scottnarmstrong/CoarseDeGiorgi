@@ -1,12 +1,16 @@
-import CoarseDeGiorgi.Endpoint.Rescaling.FiniteAggregation
-import CoarseDeGiorgi.Endpoint.Rescaling.ResponseCovariance
-import CoarseDeGiorgi.Endpoint.Rescaling.LatticeCells
-import CoarseDeGiorgi.Statements.UpperSubadditivityCountable
-import CoarseDeGiorgi.Statements.LowerAggregationCountable
-import CoarseDeGiorgi.Statements.UpperCellAverage
-import CoarseDeGiorgi.Statements.LowerCellAverage
+module
+
+public import CoarseDeGiorgi.Endpoint.Rescaling.FiniteAggregation
+public import CoarseDeGiorgi.Endpoint.Rescaling.ResponseCovariance
+public import CoarseDeGiorgi.Endpoint.Rescaling.LatticeCells
+public import CoarseDeGiorgi.Statements.UpperSubadditivityCountable
+public import CoarseDeGiorgi.Statements.LowerAggregationCountable
+public import CoarseDeGiorgi.Statements.UpperCellAverage
+public import CoarseDeGiorgi.Statements.LowerCellAverage
 
 /-! Refinement and shifted finite-average bounds for both response families. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

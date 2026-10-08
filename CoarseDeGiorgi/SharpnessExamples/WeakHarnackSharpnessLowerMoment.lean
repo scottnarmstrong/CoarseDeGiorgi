@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.SharpnessExamples.WeakHarnackSharpnessLower
-import CoarseDeGiorgi.SharpnessExamples.WeakHarnackSharpnessAnalysis
-import Mathlib.Analysis.PSeries
-import Mathlib.Analysis.Complex.ExponentialBounds
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.WeakHarnackSharpnessLower
+public import CoarseDeGiorgi.SharpnessExamples.WeakHarnackSharpnessAnalysis
+public import Mathlib.Analysis.PSeries
+public import Mathlib.Analysis.Complex.ExponentialBounds
 
 /-! # Positivity of the lower moment of the weak Harnack field -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

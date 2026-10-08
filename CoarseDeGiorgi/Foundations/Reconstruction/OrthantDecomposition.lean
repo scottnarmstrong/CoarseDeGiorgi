@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.SignReflection
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.SignReflection
 
 /-! # Ordinary volume integration over the reflected box -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

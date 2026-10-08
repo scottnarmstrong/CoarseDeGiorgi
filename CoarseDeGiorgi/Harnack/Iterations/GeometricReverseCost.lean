@@ -1,4 +1,8 @@
-import CoarseDeGiorgi.Harnack.Iterations.SmallMomentStep
+module
+
+public import CoarseDeGiorgi.Harnack.Iterations.SmallMomentStep
+
+@[expose] public section
 
 open scoped ENNReal
 namespace CoarseDeGiorgi.Harnack.Iterations

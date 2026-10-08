@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Statements.OriginCube
-import CoarseDeGiorgi.Harnack.Scalar.BombieriCore
+module
+
+public import CoarseDeGiorgi.Statements.OriginCube
+public import CoarseDeGiorgi.Harnack.Scalar.BombieriCore
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped ENNReal

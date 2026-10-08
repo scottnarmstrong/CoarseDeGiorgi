@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Statements.GaussianKernel
-import Mathlib.Analysis.Convolution
-import Mathlib.MeasureTheory.Function.L1Space.Integrable
+module
+
+public import CoarseDeGiorgi.Statements.GaussianKernel
+public import Mathlib.Analysis.Convolution
+public import Mathlib.MeasureTheory.Function.L1Space.Integrable
 
 /-! Fubini for an even integrable kernel and bounded dual tests. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal

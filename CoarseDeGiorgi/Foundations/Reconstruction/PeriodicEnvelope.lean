@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.PeriodicMeasure
-import CoarseDeGiorgi.Foundations.Reconstruction.WrapDistance
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.PeriodicMeasure
+public import CoarseDeGiorgi.Foundations.Reconstruction.WrapDistance
 
 /-! # Periodic sup-norm support envelopes with both integral bounds -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

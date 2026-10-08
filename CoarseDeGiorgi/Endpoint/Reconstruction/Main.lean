@@ -1,8 +1,13 @@
-import CoarseDeGiorgi.Endpoint.Reconstruction.WeightedLimit
-import CoarseDeGiorgi.Endpoint.Potential.Params
-import CoarseDeGiorgi.Statements.UpperMoment
+module
+
+public import CoarseDeGiorgi.Endpoint.Reconstruction.WeightedLimit
+public import CoarseDeGiorgi.Endpoint.Potential.Params
+public import CoarseDeGiorgi.Statements.UpperMoment
 
 /-! # Dirichlet reconstruction with the endpoint scales -/
+
+@[expose] public section
+
 namespace CoarseDeGiorgi.Endpoint.Reconstruction
 open Homogenization MeasureTheory Filter
 open scoped ENNReal Topology BigOperators

@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Whitney.LiftCell
-import CoarseDeGiorgi.Weighted.TestingCompactSupport
-import CoarseDeGiorgi.Weighted.Truncation.Continuity
-import CoarseDeGiorgi.Weighted.PairSeparation
+module
+
+public import CoarseDeGiorgi.Whitney.LiftCell
+public import CoarseDeGiorgi.Weighted.TestingCompactSupport
+public import CoarseDeGiorgi.Weighted.Truncation.Continuity
+public import CoarseDeGiorgi.Weighted.PairSeparation
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Whitney
 

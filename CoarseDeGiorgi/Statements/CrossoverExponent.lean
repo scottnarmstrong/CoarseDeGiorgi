@@ -1,4 +1,8 @@
-import CoarseDeGiorgi.Statements.Contrast
+module
+
+public import CoarseDeGiorgi.Statements.Contrast
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

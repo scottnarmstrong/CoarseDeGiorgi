@@ -1,4 +1,8 @@
-import CoarseDeGiorgi.Weighted.Truncation.Chain
+module
+
+public import CoarseDeGiorgi.Weighted.Truncation.Chain
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted
 

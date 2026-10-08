@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.SharpnessExamples.ScalarSumSupport
-import CoarseDeGiorgi.SharpnessExamples.ScalarEnergyIntegral
-import CoarseDeGiorgi.SharpnessExamples.ScalarSeries
-import CoarseDeGiorgi.Weighted.Truncation.Closure
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.ScalarSumSupport
+public import CoarseDeGiorgi.SharpnessExamples.ScalarEnergyIntegral
+public import CoarseDeGiorgi.SharpnessExamples.ScalarSeries
+public import CoarseDeGiorgi.Weighted.Truncation.Closure
 
 /-! # An integrable weighted density for the cylinder series -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set
 open scoped ENNReal BigOperators

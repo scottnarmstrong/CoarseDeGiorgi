@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Statements.CubeFaceMeasure
-import Homogenization.Ambient.CoefficientField
+module
+
+public import CoarseDeGiorgi.Statements.CubeFaceMeasure
+public import Homogenization.Ambient.CoefficientField
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal

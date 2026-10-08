@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.SharpnessExamples.PolynomialEquationInterface
-import Mathlib.Analysis.SpecialFunctions.ExpDeriv
-import CoarseDeGiorgi.Sharpness.LineEquation.CutoffLimit
-import Mathlib.Analysis.Calculus.Deriv.Pow
-import Mathlib.Analysis.Calculus.ContDiff.Deriv
-import Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.PolynomialEquationInterface
+public import Mathlib.Analysis.SpecialFunctions.ExpDeriv
+public import CoarseDeGiorgi.Sharpness.LineEquation.CutoffLimit
+public import Mathlib.Analysis.Calculus.Deriv.Pow
+public import Mathlib.Analysis.Calculus.ContDiff.Deriv
+public import Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set Filter
 open Topology

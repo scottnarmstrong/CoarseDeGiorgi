@@ -1,11 +1,15 @@
-import CoarseDeGiorgi.Endpoint.Capacitary.Affine
-import CoarseDeGiorgi.Assembly.ClassicalMomentsPartition
-import CoarseDeGiorgi.Whitney.LiftSums
-import CoarseDeGiorgi.Whitney.LiftZeroExtension
-import CoarseDeGiorgi.Statements.UpperResponseSpec
-import CoarseDeGiorgi.Statements.UpperResponseOnCell
+module
+
+public import CoarseDeGiorgi.Endpoint.Capacitary.Affine
+public import CoarseDeGiorgi.Assembly.ClassicalMomentsPartition
+public import CoarseDeGiorgi.Whitney.LiftSums
+public import CoarseDeGiorgi.Whitney.LiftZeroExtension
+public import CoarseDeGiorgi.Statements.UpperResponseSpec
+public import CoarseDeGiorgi.Statements.UpperResponseOnCell
 
 /-! A finite cellwise harmonic replacement of the capacitary seed. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint
 

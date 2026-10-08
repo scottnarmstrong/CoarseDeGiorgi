@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Foundations.Euclid.Basic
-import Mathlib.Analysis.SpecialFunctions.Pow.Real
-import Mathlib.MeasureTheory.Integral.Lebesgue.Add
-import Mathlib.MeasureTheory.Measure.Prod
+module
+
+public import CoarseDeGiorgi.Foundations.Euclid.Basic
+public import Mathlib.Analysis.SpecialFunctions.Pow.Real
+public import Mathlib.MeasureTheory.Integral.Lebesgue.Add
+public import Mathlib.MeasureTheory.Measure.Prod
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Euclid
 

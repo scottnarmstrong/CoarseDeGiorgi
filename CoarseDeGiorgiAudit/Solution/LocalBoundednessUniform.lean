@@ -1,6 +1,10 @@
-import Mathlib
-import CoarseDeGiorgiAudit.Solution.LocalBoundednessLpLq
-import CoarseDeGiorgiAudit.Solution.Uniform.Bounds
+module
+
+public import Mathlib
+public import CoarseDeGiorgiAudit.Solution.LocalBoundednessLpLq
+public import CoarseDeGiorgiAudit.Solution.Uniform.Bounds
+
+@[expose] public section
 
 attribute [-instance] Homogenization.instMeasurableSpaceVec
 

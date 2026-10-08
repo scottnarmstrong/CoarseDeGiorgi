@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Weighted.ZeroCore
-import CoarseDeGiorgi.Foundations.PoincareW11Zero
+module
+
+public import CoarseDeGiorgi.Weighted.ZeroCore
+public import CoarseDeGiorgi.Foundations.PoincareW11Zero
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted
 

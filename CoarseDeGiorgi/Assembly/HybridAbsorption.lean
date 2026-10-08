@@ -1,4 +1,8 @@
-import CoarseDeGiorgi.Assembly.CaccioppoliAbsorption
+module
+
+public import CoarseDeGiorgi.Assembly.CaccioppoliAbsorption
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Assembly
 

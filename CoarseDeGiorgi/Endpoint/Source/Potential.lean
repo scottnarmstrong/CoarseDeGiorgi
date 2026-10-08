@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.Weighted.TestingApproximation
-import CoarseDeGiorgi.Weighted.HarmonicCore
-import Mathlib.Analysis.Normed.Module.HahnBanach
-import Mathlib.Analysis.InnerProductSpace.Dual
+module
+
+public import CoarseDeGiorgi.Weighted.TestingApproximation
+public import CoarseDeGiorgi.Weighted.HarmonicCore
+public import Mathlib.Analysis.Normed.Module.HahnBanach
+public import Mathlib.Analysis.InnerProductSpace.Dual
 
 /-! Existence of the potential of a bounded functional on smooth tests (Riesz in `H¹_{a,0}`). -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint
 

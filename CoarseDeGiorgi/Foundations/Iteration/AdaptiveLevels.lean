@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Foundations.Iteration.Decay
-import CoarseDeGiorgi.Foundations.Iteration.Dyadic
-import Mathlib.Topology.Algebra.InfiniteSum.Real
+module
+
+public import CoarseDeGiorgi.Foundations.Iteration.Decay
+public import CoarseDeGiorgi.Foundations.Iteration.Dyadic
+public import Mathlib.Topology.Algebra.InfiniteSum.Real
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Iteration
 

@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.SharpnessExamples.CylinderAveragesMoments
-import Mathlib.Algebra.Order.Archimedean.Basic
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.CylinderAveragesMoments
+public import Mathlib.Algebra.Order.Archimedean.Basic
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal

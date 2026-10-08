@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Weighted.Truncation.Chain
-import Mathlib.Analysis.SpecialFunctions.SmoothTransition
-import Mathlib.Analysis.SpecialFunctions.Pow.Deriv
+module
+
+public import CoarseDeGiorgi.Weighted.Truncation.Chain
+public import Mathlib.Analysis.SpecialFunctions.SmoothTransition
+public import Mathlib.Analysis.SpecialFunctions.Pow.Deriv
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.Powers
 

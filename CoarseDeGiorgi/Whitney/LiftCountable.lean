@@ -1,4 +1,8 @@
-import CoarseDeGiorgi.Whitney.LiftSums
+module
+
+public import CoarseDeGiorgi.Whitney.LiftSums
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Whitney
 open Homogenization MeasureTheory Set Filter Topology

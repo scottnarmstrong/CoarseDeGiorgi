@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.Weighted.TestingApproximation
-import CoarseDeGiorgi.Weighted.TestingCompactSupport
-import CoarseDeGiorgi.Weighted.Truncation.Continuity
-import CoarseDeGiorgi.Weighted.UpperResponseAffine
+module
+
+public import CoarseDeGiorgi.Weighted.TestingApproximation
+public import CoarseDeGiorgi.Weighted.TestingCompactSupport
+public import CoarseDeGiorgi.Weighted.Truncation.Continuity
+public import CoarseDeGiorgi.Weighted.UpperResponseAffine
 
 /-! Positive parts `(w - s)_+` of zero-boundary pairs minus nonnegative pairs stay in `H¹_{a,0}`. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint
 

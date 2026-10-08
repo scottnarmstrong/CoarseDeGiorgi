@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Harnack.Iterations.GeometricEndpoints
-import CoarseDeGiorgi.Harnack.Iterations.EndpointGeometry
-import CoarseDeGiorgi.Harnack.Iterations.StoppingExponents
+module
+
+public import CoarseDeGiorgi.Harnack.Iterations.GeometricEndpoints
+public import CoarseDeGiorgi.Harnack.Iterations.EndpointGeometry
+public import CoarseDeGiorgi.Harnack.Iterations.StoppingExponents
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal

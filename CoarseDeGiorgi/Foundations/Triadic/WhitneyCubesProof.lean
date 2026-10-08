@@ -1,4 +1,8 @@
-import CoarseDeGiorgi.Foundations.Triadic.WhitneyCubesDefs
+module
+
+public import CoarseDeGiorgi.Foundations.Triadic.WhitneyCubesDefs
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Triadic
 

@@ -1,19 +1,23 @@
-import CoarseDeGiorgi.Assembly.CaccioppoliWindow
-import CoarseDeGiorgi.Assembly.CaccioppoliParameters
-import CoarseDeGiorgi.Assembly.LocalBoundedness
-import CoarseDeGiorgi.Harnack.Powers.SignedPower
-import CoarseDeGiorgi.Statements.IsWeightedSupersolution
-import CoarseDeGiorgi.Statements.PowerFactor
-import CoarseDeGiorgi.Statements.GammaLoc
-import CoarseDeGiorgi.Statements.SigmaUpper
-import CoarseDeGiorgi.Statements.SigmaLower
-import CoarseDeGiorgi.Statements.AlphaParam
-import CoarseDeGiorgi.Statements.ParamTheta
-import CoarseDeGiorgi.Statements.ParamR
-import CoarseDeGiorgi.Statements.SpatialMomentRange
-import CoarseDeGiorgi.Statements.Contrast
-import CoarseDeGiorgi.Statements.UpperMoment
-import CoarseDeGiorgi.Statements.WeightedEnergy
+module
+
+public import CoarseDeGiorgi.Assembly.CaccioppoliWindow
+public import CoarseDeGiorgi.Assembly.CaccioppoliParameters
+public import CoarseDeGiorgi.Assembly.LocalBoundedness
+public import CoarseDeGiorgi.Harnack.Powers.SignedPower
+public import CoarseDeGiorgi.Statements.IsWeightedSupersolution
+public import CoarseDeGiorgi.Statements.PowerFactor
+public import CoarseDeGiorgi.Statements.GammaLoc
+public import CoarseDeGiorgi.Statements.SigmaUpper
+public import CoarseDeGiorgi.Statements.SigmaLower
+public import CoarseDeGiorgi.Statements.AlphaParam
+public import CoarseDeGiorgi.Statements.ParamTheta
+public import CoarseDeGiorgi.Statements.ParamR
+public import CoarseDeGiorgi.Statements.SpatialMomentRange
+public import CoarseDeGiorgi.Statements.Contrast
+public import CoarseDeGiorgi.Statements.UpperMoment
+public import CoarseDeGiorgi.Statements.WeightedEnergy
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.PowerCacc
 

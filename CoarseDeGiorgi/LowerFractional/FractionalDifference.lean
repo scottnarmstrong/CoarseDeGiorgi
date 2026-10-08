@@ -1,10 +1,14 @@
-import CoarseDeGiorgi.Statements.FracSeminorm
-import CoarseDeGiorgi.Weighted.L1Tools
-import Mathlib.MeasureTheory.Integral.Prod
-import Mathlib.Analysis.SpecialFunctions.Pow.Continuity
+module
+
+public import CoarseDeGiorgi.Statements.FracSeminorm
+public import CoarseDeGiorgi.Weighted.L1Tools
+public import Mathlib.MeasureTheory.Integral.Prod
+public import Mathlib.Analysis.SpecialFunctions.Pow.Continuity
 
 /-! A raw Lᵖ representation of the fractional seminorm and its
 Fatou property. The scalar carrier norm is used only on scalar differences. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.LowerFractional
 

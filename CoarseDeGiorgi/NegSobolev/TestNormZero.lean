@@ -1,10 +1,14 @@
-import CoarseDeGiorgi.NegSobolev.GaussDerivLp
-import CoarseDeGiorgi.NegSobolev.GaussianContraction
-import CoarseDeGiorgi.Statements.SobolevNormZero
-import Mathlib.Analysis.Convolution
+module
+
+public import CoarseDeGiorgi.NegSobolev.GaussDerivLp
+public import CoarseDeGiorgi.NegSobolev.GaussianContraction
+public import CoarseDeGiorgi.Statements.SobolevNormZero
+public import Mathlib.Analysis.Convolution
 
 /-! Gaussian convolution for arbitrary finite-exponent input, including the
 order-zero Sobolev test-function estimate. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Convolution

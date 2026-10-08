@@ -1,7 +1,11 @@
-import Homogenization.Ambient.CoefficientField
-import Mathlib.MeasureTheory.Function.LpSeminorm.Basic
-import Mathlib.MeasureTheory.Measure.Prod
-import CoarseDeGiorgi.Foundations.FractionalSobolev.Sobolev
+module
+
+public import Homogenization.Ambient.CoefficientField
+public import Mathlib.MeasureTheory.Function.LpSeminorm.Basic
+public import Mathlib.MeasureTheory.Measure.Prod
+public import CoarseDeGiorgi.Foundations.FractionalSobolev.Sobolev
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal

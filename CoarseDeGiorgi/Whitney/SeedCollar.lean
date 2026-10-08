@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Whitney.SeedProjection
-import CoarseDeGiorgi.Statements.WhitneyCubesProperties
+module
+
+public import CoarseDeGiorgi.Whitney.SeedProjection
+public import CoarseDeGiorgi.Statements.WhitneyCubesProperties
 
 /-! # The active Whitney collar -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Whitney
 

@@ -1,14 +1,19 @@
-import Homogenization.Ambient.CoefficientField
-import Mathlib.LinearAlgebra.Matrix.PosDef
-import Mathlib.MeasureTheory.Function.L1Space.Integrable
-import CoarseDeGiorgi.Statements.OriginCube
-import CoarseDeGiorgi.Statements.BesovCubeNorm
-import CoarseDeGiorgi.Statements.NegSobolevNorm
-import CoarseDeGiorgi.Statements.IsOpenOriginCube
+module
 
-import CoarseDeGiorgi.NegSobolev.LemmaB2Assembly
-import CoarseDeGiorgi.NegSobolev.TestNormGaussian
-import CoarseDeGiorgi.Statements.BesovAverages
+public import Homogenization.Ambient.CoefficientField
+public import Mathlib.LinearAlgebra.Matrix.PosDef
+public import Mathlib.MeasureTheory.Function.L1Space.Integrable
+public import CoarseDeGiorgi.Statements.OriginCube
+public import CoarseDeGiorgi.Statements.BesovCubeNorm
+public import CoarseDeGiorgi.Statements.NegSobolevNorm
+public import CoarseDeGiorgi.Statements.IsOpenOriginCube
+
+public import CoarseDeGiorgi.NegSobolev.LemmaB2Assembly
+public import CoarseDeGiorgi.NegSobolev.TestNormGaussian
+public import CoarseDeGiorgi.Statements.BesovAverages
+
+@[expose] public section
+
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator
 

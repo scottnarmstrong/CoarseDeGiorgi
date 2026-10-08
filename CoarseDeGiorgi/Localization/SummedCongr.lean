@@ -1,10 +1,15 @@
-import CoarseDeGiorgi.Statements.FracNorm
-import CoarseDeGiorgi.Statements.FracKernel
-import CoarseDeGiorgi.Statements.FracSeminorm
-import Mathlib.MeasureTheory.Function.LpSeminorm.Basic
-import Mathlib.MeasureTheory.Measure.Prod
+module
+
+public import CoarseDeGiorgi.Statements.FracNorm
+public import CoarseDeGiorgi.Statements.FracKernel
+public import CoarseDeGiorgi.Statements.FracSeminorm
+public import Mathlib.MeasureTheory.Function.LpSeminorm.Basic
+public import Mathlib.MeasureTheory.Measure.Prod
 
 /-! # The fractional norms only depend on the a.e. class -/
+
+@[expose] public section
+
 namespace CoarseDeGiorgi.Localization
 open Homogenization MeasureTheory
 open scoped ENNReal

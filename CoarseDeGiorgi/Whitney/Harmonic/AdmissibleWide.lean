@@ -1,13 +1,17 @@
-import CoarseDeGiorgi.Whitney.Harmonic.GeometryWide
-import CoarseDeGiorgi.Whitney.Harmonic.Admissible
-import CoarseDeGiorgi.Whitney.Harmonic.CellId
-import CoarseDeGiorgi.Statements.WhitneyInterpolationSpec
-import CoarseDeGiorgi.Statements.WhitneyAffineExtensionDef
-import CoarseDeGiorgi.Weighted.TestingCompactSupport
-import CoarseDeGiorgi.Weighted.Lipschitz
-import CoarseDeGiorgi.Weighted.Truncation.Energy
+module
+
+public import CoarseDeGiorgi.Whitney.Harmonic.GeometryWide
+public import CoarseDeGiorgi.Whitney.Harmonic.Admissible
+public import CoarseDeGiorgi.Whitney.Harmonic.CellId
+public import CoarseDeGiorgi.Statements.WhitneyInterpolationSpec
+public import CoarseDeGiorgi.Statements.WhitneyAffineExtensionDef
+public import CoarseDeGiorgi.Weighted.TestingCompactSupport
+public import CoarseDeGiorgi.Weighted.Lipschitz
+public import CoarseDeGiorgi.Weighted.Truncation.Energy
 
 /-! Admissibility of the piecewise harmonic extension: `H = Φ + ξ` with `ξ ∈ H¹_{a,0}`. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Whitney.Harmonic.Wide
 

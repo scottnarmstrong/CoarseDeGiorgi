@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Statements.WeightedEnergy
-import CoarseDeGiorgi.Harnack.LogLimit.EnergyLimit
-import Mathlib.Order.LiminfLimsup
+module
+
+public import CoarseDeGiorgi.Statements.WeightedEnergy
+public import CoarseDeGiorgi.Harnack.LogLimit.EnergyLimit
+public import Mathlib.Order.LiminfLimsup
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.Log
 

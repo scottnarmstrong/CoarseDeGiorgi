@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.SharpnessExamples.ScalarFluxDefs
-import CoarseDeGiorgi.SharpnessExamples.ScalarGradientBounds
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.ScalarFluxDefs
+public import CoarseDeGiorgi.SharpnessExamples.ScalarGradientBounds
 
 /-! # Identification of the cutoff field with the weighted source gradient -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set Filter Topology
 open CoarseDeGiorgi.Sharpness

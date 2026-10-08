@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Endpoint.Capacitary.Truncation
-import CoarseDeGiorgi.Statements.IsWeightedSupersolution
+module
+
+public import CoarseDeGiorgi.Endpoint.Capacitary.Truncation
+public import CoarseDeGiorgi.Statements.IsWeightedSupersolution
 
 /-! Variational inequalities for the capacitary function. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint
 

@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Assembly.ClassicalMomentsPartition
-import CoarseDeGiorgi.Weighted.ResponseBoundsMoments
-import CoarseDeGiorgi.Weighted.UpperSpecNorm
-import CoarseDeGiorgi.Statements.SimplexCellSubsetOriginCube
-import Mathlib.MeasureTheory.Function.L1Space.Integrable
+module
+
+public import CoarseDeGiorgi.Assembly.ClassicalMomentsPartition
+public import CoarseDeGiorgi.Weighted.ResponseBoundsMoments
+public import CoarseDeGiorgi.Weighted.UpperSpecNorm
+public import CoarseDeGiorgi.Statements.SimplexCellSubsetOriginCube
+public import Mathlib.MeasureTheory.Function.L1Space.Integrable
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Assembly.ClassicalMomentsImpl
 

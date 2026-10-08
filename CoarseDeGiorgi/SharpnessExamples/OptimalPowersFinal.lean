@@ -1,16 +1,20 @@
-import CoarseDeGiorgi.Statements.Contrast
-import CoarseDeGiorgi.Statements.ParamTheta
-import CoarseDeGiorgi.Statements.PositivePart
-import CoarseDeGiorgi.Statements.IsWeightedSubsolution
-import CoarseDeGiorgi.Statements.IsWeightedSolution
-import CoarseDeGiorgi.SharpnessExamples.OptimalPowersConstruction
-import CoarseDeGiorgi.SharpnessExamples.PolynomialEllipticity
-import CoarseDeGiorgi.SharpnessExamples.PolynomialTraces
-import CoarseDeGiorgi.SharpnessExamples.PolynomialNormExports
-import CoarseDeGiorgi.SharpnessExamples.OptimalPowersMoments
-import CoarseDeGiorgi.SharpnessExamples.OptimalPowersLower
-import CoarseDeGiorgi.SharpnessExamples.OptimalPowersCombine
-import CoarseDeGiorgi.SharpnessExamples.OptimalPowersFailure
+module
+
+public import CoarseDeGiorgi.Statements.Contrast
+public import CoarseDeGiorgi.Statements.ParamTheta
+public import CoarseDeGiorgi.Statements.PositivePart
+public import CoarseDeGiorgi.Statements.IsWeightedSubsolution
+public import CoarseDeGiorgi.Statements.IsWeightedSolution
+public import CoarseDeGiorgi.SharpnessExamples.OptimalPowersConstruction
+public import CoarseDeGiorgi.SharpnessExamples.PolynomialEllipticity
+public import CoarseDeGiorgi.SharpnessExamples.PolynomialTraces
+public import CoarseDeGiorgi.SharpnessExamples.PolynomialNormExports
+public import CoarseDeGiorgi.SharpnessExamples.OptimalPowersMoments
+public import CoarseDeGiorgi.SharpnessExamples.OptimalPowersLower
+public import CoarseDeGiorgi.SharpnessExamples.OptimalPowersCombine
+public import CoarseDeGiorgi.SharpnessExamples.OptimalPowersFailure
+
+@[expose] public section
 
 open Homogenization MeasureTheory Filter Topology
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

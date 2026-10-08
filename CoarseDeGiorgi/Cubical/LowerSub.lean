@@ -1,11 +1,15 @@
-import CoarseDeGiorgi.Cubical.UpperSub
-import CoarseDeGiorgi.Weighted.LowerSpecNorm
-import CoarseDeGiorgi.Weighted.LowerSpecSup
-import CoarseDeGiorgi.LowerFractional.Restriction
-import CoarseDeGiorgi.Weighted.ResponseBoundsLower
-import CoarseDeGiorgi.Statements.LowerResponseInv
+module
+
+public import CoarseDeGiorgi.Cubical.UpperSub
+public import CoarseDeGiorgi.Weighted.LowerSpecNorm
+public import CoarseDeGiorgi.Weighted.LowerSpecSup
+public import CoarseDeGiorgi.LowerFractional.Restriction
+public import CoarseDeGiorgi.Weighted.ResponseBoundsLower
+public import CoarseDeGiorgi.Statements.LowerResponseInv
 
 /-! # Countable lower aggregation (quadratic form version) -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Cubical
 open Homogenization MeasureTheory

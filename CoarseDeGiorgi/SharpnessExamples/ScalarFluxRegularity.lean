@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.SharpnessExamples.ScalarFluxRadial
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.ScalarFluxRadial
 
 /-! # Derivative and Lipschitz bounds for the matched radial flux -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set Filter Topology
 open scoped NNReal

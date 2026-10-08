@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Assembly.HybridEmbedding
-import CoarseDeGiorgi.Assembly.HybridParameters
+module
+
+public import CoarseDeGiorgi.Assembly.HybridEmbedding
+public import CoarseDeGiorgi.Assembly.HybridParameters
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Assembly
 open Homogenization MeasureTheory

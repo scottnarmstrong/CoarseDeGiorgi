@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Endpoint.Reconstruction.SmoothProjection
-import CoarseDeGiorgi.Endpoint.Reconstruction.EnergyBound
+module
+
+public import CoarseDeGiorgi.Endpoint.Reconstruction.SmoothProjection
+public import CoarseDeGiorgi.Endpoint.Reconstruction.EnergyBound
 
 /-! # Finite Dirichlet reconstruction for bounded H10 gradients -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint.Reconstruction
 

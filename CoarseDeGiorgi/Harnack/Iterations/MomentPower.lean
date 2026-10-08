@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Statements.NormalizedLpMoment
-import Mathlib.Analysis.SpecialFunctions.Pow.Real
-import Mathlib.MeasureTheory.Integral.Lebesgue.Basic
-import Mathlib.Tactic
+module
+
+public import CoarseDeGiorgi.Statements.NormalizedLpMoment
+public import Mathlib.Analysis.SpecialFunctions.Pow.Real
+public import Mathlib.MeasureTheory.Integral.Lebesgue.Basic
+public import Mathlib.Tactic
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped ENNReal

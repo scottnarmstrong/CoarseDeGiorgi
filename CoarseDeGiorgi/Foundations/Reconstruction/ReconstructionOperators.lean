@@ -1,8 +1,13 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.ReconstructionKernels
-import CoarseDeGiorgi.Foundations.Reconstruction.OperatorDifference
-import CoarseDeGiorgi.Foundations.Reconstruction.IncrementPairing
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.ReconstructionKernels
+public import CoarseDeGiorgi.Foundations.Reconstruction.OperatorDifference
+public import CoarseDeGiorgi.Foundations.Reconstruction.IncrementPairing
 
 /-! # Uniform operator bounds at each reconstruction scale -/
+
+@[expose] public section
+
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 open Homogenization MeasureTheory
 open scoped ENNReal

@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.ReflectedCells
-import Homogenization.Geometry.CubeMetric
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.ReflectedCells
+public import Homogenization.Geometry.CubeMetric
 
 /-! # The reflected parent-center field and its geometric displacement bound -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

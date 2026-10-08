@@ -1,11 +1,16 @@
-import CoarseDeGiorgi.Selection.SurfaceEnergy
-import CoarseDeGiorgi.Whitney.LiftZeroExtension
+module
+
+public import CoarseDeGiorgi.Selection.SurfaceEnergy
+public import CoarseDeGiorgi.Whitney.LiftZeroExtension
 
 /-! # Surface maximal control of exterior layer energy
 
 The density version uses the summed-face surface measure `surfaceMeasure` and proves
 the constant 54 of the manuscript. Cell containment is the Whitney geometry input.
 -/
+
+@[expose] public section
+
 namespace CoarseDeGiorgi.Whitney
 open Homogenization MeasureTheory Set Metric
 open scoped ENNReal BigOperators

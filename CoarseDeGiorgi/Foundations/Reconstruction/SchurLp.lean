@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.SchurIntegral
-import CoarseDeGiorgi.Foundations.Reconstruction.VectorProjectionLp
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.SchurIntegral
+public import CoarseDeGiorgi.Foundations.Reconstruction.VectorProjectionLp
 
 /-! # The Euclidean vector-to-scalar Schur bound -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

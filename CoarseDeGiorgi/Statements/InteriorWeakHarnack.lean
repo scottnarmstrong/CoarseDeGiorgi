@@ -1,11 +1,16 @@
-import CoarseDeGiorgi.Statements.Contrast
-import CoarseDeGiorgi.Statements.ParamTheta
-import CoarseDeGiorgi.Statements.IsWeightedSupersolution
-import CoarseDeGiorgi.Statements.NonnegativeEssInf
-import CoarseDeGiorgi.Statements.HarnackEtaParam
+module
 
-import CoarseDeGiorgi.Endpoint.Chaining.WeakHarnack
-import CoarseDeGiorgi.Endpoint.Rescaling.LocalCubes
+public import CoarseDeGiorgi.Statements.Contrast
+public import CoarseDeGiorgi.Statements.ParamTheta
+public import CoarseDeGiorgi.Statements.IsWeightedSupersolution
+public import CoarseDeGiorgi.Statements.NonnegativeEssInf
+public import CoarseDeGiorgi.Statements.HarnackEtaParam
+
+public import CoarseDeGiorgi.Endpoint.Chaining.WeakHarnack
+public import CoarseDeGiorgi.Endpoint.Rescaling.LocalCubes
+
+@[expose] public section
+
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator
 

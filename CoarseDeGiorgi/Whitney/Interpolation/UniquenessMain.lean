@@ -1,10 +1,14 @@
-import CoarseDeGiorgi.Whitney.Interpolation.BoundsAff
+module
+
+public import CoarseDeGiorgi.Whitney.Interpolation.BoundsAff
 
 /-!
 # Uniqueness of the Whitney interpolant on the exterior
 
 The first assertion of Lemma `l.whitney.interpolation`.
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.WhitneyInterp
 

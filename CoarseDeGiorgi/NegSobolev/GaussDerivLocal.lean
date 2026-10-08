@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.NegSobolev.GaussDerivDomination
-import Mathlib.Algebra.BigOperators.Pi
-import Mathlib.Analysis.Calculus.ParametricIntegral
+module
+
+public import CoarseDeGiorgi.NegSobolev.GaussDerivDomination
+public import Mathlib.Algebra.BigOperators.Pi
+public import Mathlib.Analysis.Calculus.ParametricIntegral
 
 /-! Coordinate differential formulas and local domination of Gaussian derivatives. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators Topology

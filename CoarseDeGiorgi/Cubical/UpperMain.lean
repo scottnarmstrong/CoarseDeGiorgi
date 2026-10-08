@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Cubical.UpperSub
+module
+
+public import CoarseDeGiorgi.Cubical.UpperSub
 
 /-! # Countable upper subadditivity `e.upper.subadditivity` -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Cubical
 open Homogenization MeasureTheory

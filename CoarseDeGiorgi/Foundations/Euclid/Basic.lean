@@ -1,5 +1,9 @@
-import Homogenization.Ambient.Basic
-import Mathlib.Analysis.InnerProductSpace.PiL2
+module
+
+public import Homogenization.Ambient.Basic
+public import Mathlib.Analysis.InnerProductSpace.PiL2
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Euclid
 

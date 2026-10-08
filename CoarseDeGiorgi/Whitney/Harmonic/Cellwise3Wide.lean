@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Whitney.Harmonic.Cellwise2Wide
+module
+
+public import CoarseDeGiorgi.Whitney.Harmonic.Cellwise2Wide
 
 /-! Linearity of the piecewise harmonic extension in the datum. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Whitney.Harmonic.Wide
 

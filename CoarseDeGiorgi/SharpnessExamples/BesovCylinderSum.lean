@@ -1,11 +1,15 @@
-import CoarseDeGiorgi.SharpnessExamples.BesovGeometricSum
-import CoarseDeGiorgi.SharpnessExamples.CylinderAveragesDiscounted
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.BesovGeometricSum
+public import CoarseDeGiorgi.SharpnessExamples.CylinderAveragesDiscounted
 
 /-! # The summed cylinder averages over simplex levels
 
 The summed bound `e.sharpness.cylinder.discount` for the discounted levels of the cylinder fractions
 in the simplex triangulations.
 -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators

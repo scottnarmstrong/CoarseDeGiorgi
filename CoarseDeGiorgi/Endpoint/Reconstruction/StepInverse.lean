@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Endpoint.Reconstruction.Cancellation
+module
+
+public import CoarseDeGiorgi.Endpoint.Reconstruction.Cancellation
 
 /-! # Inverse bounds for fields constant on equal-volume cells -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint.Reconstruction
 

@@ -1,11 +1,16 @@
-import CoarseDeGiorgi.Localization.SummedCore
-import CoarseDeGiorgi.Harnack.WeakHarnack.ApproximationBridge
+module
+
+public import CoarseDeGiorgi.Localization.SummedCore
+public import CoarseDeGiorgi.Harnack.WeakHarnack.ApproximationBridge
 
 /-! # Convergence of the localized functions
 
 If the weighted norms on the unit cube tend to zero, so do the weighted norms on every
 fixed cube of the cover; the continuous inclusion then gives convergence in each local
 fractional norm. -/
+
+@[expose] public section
+
 namespace CoarseDeGiorgi.Localization
 open Homogenization MeasureTheory Set Filter Topology
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

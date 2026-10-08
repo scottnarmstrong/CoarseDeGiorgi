@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Statements.ArrayFracSeminorm
-import CoarseDeGiorgi.Foundations.Reconstruction.AssemblyTranslation
-import Mathlib.MeasureTheory.Function.LpSeminorm.TriangleInequality
+module
+
+public import CoarseDeGiorgi.Statements.ArrayFracSeminorm
+public import CoarseDeGiorgi.Foundations.Reconstruction.AssemblyTranslation
+public import Mathlib.MeasureTheory.Function.LpSeminorm.TriangleInequality
 
 /-! Component estimates for Euclidean derivative arrays and their fractional norms. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal

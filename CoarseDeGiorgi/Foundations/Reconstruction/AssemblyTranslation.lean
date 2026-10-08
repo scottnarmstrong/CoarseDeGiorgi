@@ -1,12 +1,16 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.AssemblySeminorm
-import CoarseDeGiorgi.Foundations.FracGeometry.Cutoff
-import CoarseDeGiorgi.Foundations.FracGeometry.TranslationComparison
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.AssemblySeminorm
+public import CoarseDeGiorgi.Foundations.FracGeometry.Cutoff
+public import CoarseDeGiorgi.Foundations.FracGeometry.TranslationComparison
 
 /-! # Euclidean block estimates from translated `L^r` bounds
 
 The cutoff radial integral supplies the finite dimensional constant.
 Its numerator uses `min 2` and therefore also bounds the same integral with `min 1`.
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

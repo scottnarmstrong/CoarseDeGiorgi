@@ -1,4 +1,6 @@
-import Mathlib
+module
+
+public import Mathlib
 
 /-!
 # Theorem C: Harnack inequality (1.11)
@@ -13,6 +15,8 @@ solution on `cube 1` satisfies
 Here `a(△)` is the upper response and `a_*⁻¹(△)` the inverse lower response of
 each cell `△`, both defined below by polarization.
 -/
+
+@[expose] public section
 
 open MeasureTheory
 open scoped BigOperators ENNReal Matrix Matrix.Norms.L2Operator

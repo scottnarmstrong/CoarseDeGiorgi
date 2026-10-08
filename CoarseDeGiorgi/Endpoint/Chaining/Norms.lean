@@ -1,8 +1,13 @@
-import CoarseDeGiorgi.Endpoint.Chaining.Geometry
-import CoarseDeGiorgi.Harnack.Iterations.NormalizedMomentOrder
-import Mathlib.Order.ConditionallyCompleteLattice.Finset
+module
+
+public import CoarseDeGiorgi.Endpoint.Chaining.Geometry
+public import CoarseDeGiorgi.Harnack.Iterations.NormalizedMomentOrder
+public import Mathlib.Order.ConditionallyCompleteLattice.Finset
 
 /-! Essential values, finite coverings, and volume corrections used in chaining. -/
+
+@[expose] public section
+
 namespace CoarseDeGiorgi.Endpoint
 open Homogenization MeasureTheory Filter
 open scoped BigOperators ENNReal

@@ -1,9 +1,11 @@
-import CoarseDeGiorgi.Whitney.SeedProjection
-import CoarseDeGiorgi.Foundations.FracGeometry.Defs
-import CoarseDeGiorgi.Foundations.FracGeometry.SurfaceSupport
-import CoarseDeGiorgi.Foundations.FracGeometry.SurfaceVolume
-import CoarseDeGiorgi.Statements.FracNorm
-import CoarseDeGiorgi.Statements.SurfaceFracNorm
+module
+
+public import CoarseDeGiorgi.Whitney.SeedProjection
+public import CoarseDeGiorgi.Foundations.FracGeometry.Defs
+public import CoarseDeGiorgi.Foundations.FracGeometry.SurfaceSupport
+public import CoarseDeGiorgi.Foundations.FracGeometry.SurfaceVolume
+public import CoarseDeGiorgi.Statements.FracNorm
+public import CoarseDeGiorgi.Statements.SurfaceFracNorm
 
 /-!
 # Surface patch area
@@ -12,6 +14,8 @@ All estimates below use the surface measure `surfaceMeasure`, the sum of the fac
 measures. In particular, they do not identify this measure with a Hausdorff measure for the ambient
 sup metric.
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Whitney
 

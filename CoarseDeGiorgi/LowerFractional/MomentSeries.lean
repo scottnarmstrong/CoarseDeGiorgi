@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.LowerFractional.Aliases
-import Mathlib.Analysis.SpecialFunctions.Pow.Continuity
+module
+
+public import CoarseDeGiorgi.LowerFractional.Aliases
+public import Mathlib.Analysis.SpecialFunctions.Pow.Continuity
 
 /-! The lower spatial moment and its half series `e.lower.half.series`. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.LowerFractional
 

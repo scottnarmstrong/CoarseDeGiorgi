@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Weighted.LowerResponseHilbert
-import CoarseDeGiorgi.Weighted.HarmonicCore
+module
+
+public import CoarseDeGiorgi.Weighted.LowerResponseHilbert
+public import CoarseDeGiorgi.Weighted.HarmonicCore
 
 /-! Literal Riesz identities, harmonic attainment and square completion. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted
 

@@ -1,11 +1,15 @@
-import CoarseDeGiorgi.SharpnessExamples.PolynomialDefs
-import CoarseDeGiorgi.SharpnessExamples.PolynomialEquationDivergence
-import CoarseDeGiorgi.SharpnessExamples.PolynomialEquationMembership
-import CoarseDeGiorgi.SharpnessExamples.PolynomialEquationInterface
-import CoarseDeGiorgi.SharpnessExamples.ScalarTest
-import CoarseDeGiorgi.Sharpness.LineEquation.CutoffLimit
-import CoarseDeGiorgi.Sharpness.LineEquation.AxisGeometry
-import CoarseDeGiorgi.Statements.IsWeightedSolution
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.PolynomialDefs
+public import CoarseDeGiorgi.SharpnessExamples.PolynomialEquationDivergence
+public import CoarseDeGiorgi.SharpnessExamples.PolynomialEquationMembership
+public import CoarseDeGiorgi.SharpnessExamples.PolynomialEquationInterface
+public import CoarseDeGiorgi.SharpnessExamples.ScalarTest
+public import CoarseDeGiorgi.Sharpness.LineEquation.CutoffLimit
+public import CoarseDeGiorgi.Sharpness.LineEquation.AxisGeometry
+public import CoarseDeGiorgi.Statements.IsWeightedSolution
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set Filter
 open CoarseDeGiorgi.Sharpness

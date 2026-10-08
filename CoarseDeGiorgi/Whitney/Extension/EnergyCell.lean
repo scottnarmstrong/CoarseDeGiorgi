@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Whitney.Extension.CellLipschitz
+module
+
+public import CoarseDeGiorgi.Whitney.Extension.CellLipschitz
 
 /-!
 # The energy of `L_h f` on one Whitney simplex
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.WhitneyExt
 

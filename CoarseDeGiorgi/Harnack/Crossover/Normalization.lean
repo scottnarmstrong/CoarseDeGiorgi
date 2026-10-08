@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.Statements.Contrast
-import CoarseDeGiorgi.Statements.CrossoverExponent
-import CoarseDeGiorgi.Statements.SpatialMomentRange
-import Homogenization.CoarseGraining.ResponseIdentities.Foundations.Algebra
-import Mathlib.Analysis.SpecialFunctions.Log.Basic
-import Mathlib.Analysis.SpecialFunctions.Pow.Real
+module
+
+public import CoarseDeGiorgi.Statements.Contrast
+public import CoarseDeGiorgi.Statements.CrossoverExponent
+public import CoarseDeGiorgi.Statements.SpatialMomentRange
+public import Homogenization.CoarseGraining.ResponseIdentities.Foundations.Algebra
+public import Mathlib.Analysis.SpecialFunctions.Log.Basic
+public import Mathlib.Analysis.SpecialFunctions.Pow.Real
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.Crossover
 

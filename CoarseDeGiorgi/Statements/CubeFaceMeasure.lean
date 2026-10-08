@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Statements.FaceCoordinateMeasures
-import Homogenization.Ambient.CoefficientField
-import Mathlib.MeasureTheory.Constructions.Pi
+module
+
+public import CoarseDeGiorgi.Statements.FaceCoordinateMeasures
+public import Homogenization.Ambient.CoefficientField
+public import Mathlib.MeasureTheory.Constructions.Pi
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal

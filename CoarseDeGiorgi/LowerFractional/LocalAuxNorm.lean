@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.LowerFractional.AuxNorm
-import CoarseDeGiorgi.LowerFractional.LocalDescendant
+module
+
+public import CoarseDeGiorgi.LowerFractional.AuxNorm
+public import CoarseDeGiorgi.LowerFractional.LocalDescendant
 
 /-! Local Lr estimate for the auxiliary averages (`e.lower.cube.aggregation`). -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.LowerFractional
 

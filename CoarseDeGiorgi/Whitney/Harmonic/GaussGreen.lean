@@ -1,7 +1,9 @@
-import CoarseDeGiorgi.Whitney.Harmonic.GaussGreenLine
-import CoarseDeGiorgi.Selection.Coarea
-import CoarseDeGiorgi.Statements.ClosedReferenceCube
-import CoarseDeGiorgi.Statements.OriginCube
+module
+
+public import CoarseDeGiorgi.Whitney.Harmonic.GaussGreenLine
+public import CoarseDeGiorgi.Selection.Coarea
+public import CoarseDeGiorgi.Statements.ClosedReferenceCube
+public import CoarseDeGiorgi.Statements.OriginCube
 
 /-! # Gauss-Green on the exterior of a closed cube
 
@@ -10,6 +12,8 @@ For a Lipschitz function `Φ` and a smooth test function `φ` supported in `□�
 `τ□̄₀` orthogonal to `eᵢ`.  The proof splits off the coordinate `i` by Fubini and applies the
 fundamental theorem of calculus for absolutely continuous functions on each line.
 -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set
 open scoped BigOperators ENNReal NNReal

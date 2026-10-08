@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Whitney.Harmonic.Glue
-import CoarseDeGiorgi.Selection.Coarea
-import CoarseDeGiorgi.Statements.CubeSurface
+module
+
+public import CoarseDeGiorgi.Whitney.Harmonic.Glue
+public import CoarseDeGiorgi.Selection.Coarea
+public import CoarseDeGiorgi.Statements.CubeSurface
 
 /-! The face measures live on the cube surface; boundedness of Lipschitz boundary data. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Whitney.Harmonic
 

@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Weighted.ResponseBounds
-import Mathlib.Analysis.CStarAlgebra.Matrix
+module
+
+public import CoarseDeGiorgi.Weighted.ResponseBounds
+public import Mathlib.Analysis.CStarAlgebra.Matrix
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted
 

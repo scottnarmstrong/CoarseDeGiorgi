@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Statements.OriginCube
-import CoarseDeGiorgi.Statements.GridOffset
-import Homogenization.CoarseGraining.Definitions
-import Mathlib.MeasureTheory.Function.L1Space.Integrable
+module
+
+public import CoarseDeGiorgi.Statements.OriginCube
+public import CoarseDeGiorgi.Statements.GridOffset
+public import Homogenization.CoarseGraining.Definitions
+public import Mathlib.MeasureTheory.Function.L1Space.Integrable
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

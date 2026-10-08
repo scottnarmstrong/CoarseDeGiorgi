@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Foundations.FracGeometry.FaceHausdorff
-import CoarseDeGiorgi.Foundations.FracGeometry.Cutoff
-import CoarseDeGiorgi.Foundations.FracGeometry.SurfaceSupport
-import CoarseDeGiorgi.Foundations.FracGeometry.SurfaceVolume
+module
+
+public import CoarseDeGiorgi.Foundations.FracGeometry.FaceHausdorff
+public import CoarseDeGiorgi.Foundations.FracGeometry.Cutoff
+public import CoarseDeGiorgi.Foundations.FracGeometry.SurfaceSupport
+public import CoarseDeGiorgi.Foundations.FracGeometry.SurfaceVolume
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.FracGeometry
 open Homogenization MeasureTheory Set

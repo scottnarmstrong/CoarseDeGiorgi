@@ -1,37 +1,39 @@
-import CoarseDeGiorgi.Statements.LocalBoundedness
-import CoarseDeGiorgi.Statements.WeakHarnackRange
-import CoarseDeGiorgi.Statements.WeakHarnack
-import CoarseDeGiorgi.Statements.Harnack
-import CoarseDeGiorgi.Statements.MomentBoundsLebesgue
-import CoarseDeGiorgi.Statements.MomentBoundsBesov
-import CoarseDeGiorgi.Statements.MomentBoundsSobolev
-import CoarseDeGiorgi.Statements.ClassicalMomentsConverse
-import CoarseDeGiorgi.Statements.Sharpness
-import CoarseDeGiorgi.Statements.OptimalPowers
-import CoarseDeGiorgi.Statements.WeakHarnackSharpness
-import CoarseDeGiorgi.Statements.CubicalSimplicialEquivalence
-import CoarseDeGiorgi.Statements.LocalBoundednessCubical
-import CoarseDeGiorgi.Statements.WeakHarnackCubical
-import CoarseDeGiorgi.Statements.HarnackCubical
-import CoarseDeGiorgi.Statements.LocalBoundednessSobolev
-import CoarseDeGiorgi.Statements.HarnackSobolev
-import CoarseDeGiorgiAudit.Solution.Harnack
-import CoarseDeGiorgiAudit.Solution.WeakHarnack
-import CoarseDeGiorgiAudit.Solution.ResponseQuadraticForms
-import CoarseDeGiorgiAudit.Solution.HarnackLpLq
-import CoarseDeGiorgiAudit.Solution.WeakHarnackLpLq
-import CoarseDeGiorgiAudit.Solution.LocalBoundednessLpLq
-import CoarseDeGiorgiAudit.Solution.HarnackUniform
-import CoarseDeGiorgiAudit.Solution.WeakHarnackUniform
-import CoarseDeGiorgiAudit.Solution.LocalBoundednessUniform
-import CoarseDeGiorgiAudit.Solution.HarnackBesov
-import CoarseDeGiorgiAudit.Solution.WeakHarnackBesov
-import CoarseDeGiorgiAudit.Solution.LocalBoundednessBesov
-import CoarseDeGiorgiAudit.Solution.HarnackSobolev
-import CoarseDeGiorgiAudit.Solution.LocalBoundednessSobolev
-import CoarseDeGiorgiAudit.Solution.Sharpness
-import CoarseDeGiorgiAudit.Solution.SharpnessPolynomial
-import CoarseDeGiorgiAudit.Solution.SharpnessWeakHarnack
+module
+
+public import CoarseDeGiorgi.Statements.LocalBoundedness
+public import CoarseDeGiorgi.Statements.WeakHarnackRange
+public import CoarseDeGiorgi.Statements.WeakHarnack
+public import CoarseDeGiorgi.Statements.Harnack
+public import CoarseDeGiorgi.Statements.MomentBoundsLebesgue
+public import CoarseDeGiorgi.Statements.MomentBoundsBesov
+public import CoarseDeGiorgi.Statements.MomentBoundsSobolev
+public import CoarseDeGiorgi.Statements.ClassicalMomentsConverse
+public import CoarseDeGiorgi.Statements.Sharpness
+public import CoarseDeGiorgi.Statements.OptimalPowers
+public import CoarseDeGiorgi.Statements.WeakHarnackSharpness
+public import CoarseDeGiorgi.Statements.CubicalSimplicialEquivalence
+public import CoarseDeGiorgi.Statements.LocalBoundednessCubical
+public import CoarseDeGiorgi.Statements.WeakHarnackCubical
+public import CoarseDeGiorgi.Statements.HarnackCubical
+public import CoarseDeGiorgi.Statements.LocalBoundednessSobolev
+public import CoarseDeGiorgi.Statements.HarnackSobolev
+public import CoarseDeGiorgiAudit.Solution.Harnack
+public import CoarseDeGiorgiAudit.Solution.WeakHarnack
+public import CoarseDeGiorgiAudit.Solution.ResponseQuadraticForms
+public import CoarseDeGiorgiAudit.Solution.HarnackLpLq
+public import CoarseDeGiorgiAudit.Solution.WeakHarnackLpLq
+public import CoarseDeGiorgiAudit.Solution.LocalBoundednessLpLq
+public import CoarseDeGiorgiAudit.Solution.HarnackUniform
+public import CoarseDeGiorgiAudit.Solution.WeakHarnackUniform
+public import CoarseDeGiorgiAudit.Solution.LocalBoundednessUniform
+public import CoarseDeGiorgiAudit.Solution.HarnackBesov
+public import CoarseDeGiorgiAudit.Solution.WeakHarnackBesov
+public import CoarseDeGiorgiAudit.Solution.LocalBoundednessBesov
+public import CoarseDeGiorgiAudit.Solution.HarnackSobolev
+public import CoarseDeGiorgiAudit.Solution.LocalBoundednessSobolev
+public import CoarseDeGiorgiAudit.Solution.Sharpness
+public import CoarseDeGiorgiAudit.Solution.SharpnessPolynomial
+public import CoarseDeGiorgiAudit.Solution.SharpnessWeakHarnack
 
 /-!
 # Axiom dependencies of the main results
@@ -50,6 +52,8 @@ imported by any other module; it belongs to the `CoarseDeGiorgiAudit`
 library, which is not a default target. After `lake build CoarseDeGiorgiAudit`,
 print the report with `lake env lean CoarseDeGiorgiAudit/AxiomsAudit.lean`.
 -/
+
+@[expose] public section
 
 /-! ## Main theorems of the library -/
 

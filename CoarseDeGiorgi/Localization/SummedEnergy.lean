@@ -1,11 +1,16 @@
-import CoarseDeGiorgi.Localization.OverlapIntegral
-import CoarseDeGiorgi.Weighted.Energy
-import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
+module
+
+public import CoarseDeGiorgi.Localization.OverlapIntegral
+public import CoarseDeGiorgi.Weighted.Energy
+public import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
 
 /-! # Bounded overlap of the local energies
 
 The sum over the cover of the energies on the cubes is at most `4^d` times the energy on a
 containing cube (exponent one, so no loss from the number of cubes). -/
+
+@[expose] public section
+
 namespace CoarseDeGiorgi.Localization
 open Homogenization MeasureTheory Set
 open scoped BigOperators ENNReal

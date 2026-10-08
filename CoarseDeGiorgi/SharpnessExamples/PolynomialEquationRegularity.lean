@@ -1,4 +1,8 @@
-import CoarseDeGiorgi.SharpnessExamples.PolynomialDefs
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.PolynomialDefs
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set
 open scoped BigOperators ENNReal

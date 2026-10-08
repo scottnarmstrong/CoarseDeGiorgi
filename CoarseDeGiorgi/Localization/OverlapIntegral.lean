@@ -1,8 +1,13 @@
-import CoarseDeGiorgi.Localization.SparseSum
-import CoarseDeGiorgi.Localization.Geometry
-import CoarseDeGiorgi.Statements.WeightedEnergy
+module
+
+public import CoarseDeGiorgi.Localization.SparseSum
+public import CoarseDeGiorgi.Localization.Geometry
+public import CoarseDeGiorgi.Statements.WeightedEnergy
 
 /-! # Bounded-overlap integrals and the finite-sum energy loss -/
+
+@[expose] public section
+
 namespace CoarseDeGiorgi.Localization
 open Homogenization MeasureTheory Set
 open scoped BigOperators ENNReal

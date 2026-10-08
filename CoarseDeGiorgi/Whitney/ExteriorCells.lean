@@ -1,11 +1,15 @@
-import CoarseDeGiorgi.Whitney.SeedData
-import CoarseDeGiorgi.Whitney.SourceWitnessExterior
-import CoarseDeGiorgi.Moments.Cells
-import CoarseDeGiorgi.Statements.ExteriorCell
-import CoarseDeGiorgi.Statements.ExteriorCellCenter
-import CoarseDeGiorgi.Statements.ExteriorCellSet
+module
+
+public import CoarseDeGiorgi.Whitney.SeedData
+public import CoarseDeGiorgi.Whitney.SourceWitnessExterior
+public import CoarseDeGiorgi.Moments.Cells
+public import CoarseDeGiorgi.Statements.ExteriorCell
+public import CoarseDeGiorgi.Statements.ExteriorCellCenter
+public import CoarseDeGiorgi.Statements.ExteriorCellSet
 
 /-! # Exterior cells and their Whitney seed cells -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set Metric
 

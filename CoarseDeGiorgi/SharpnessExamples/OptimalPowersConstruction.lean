@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.SharpnessExamples.PolynomialEquationWeak
-import CoarseDeGiorgi.SharpnessExamples.OptimalPowersField
-import CoarseDeGiorgi.Weighted.ResponseBounds
-import CoarseDeGiorgi.Weighted.TestingTruncation
-import CoarseDeGiorgi.Whitney.ExteriorCells
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.PolynomialEquationWeak
+public import CoarseDeGiorgi.SharpnessExamples.OptimalPowersField
+public import CoarseDeGiorgi.Weighted.ResponseBounds
+public import CoarseDeGiorgi.Weighted.TestingTruncation
+public import CoarseDeGiorgi.Whitney.ExteriorCells
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 

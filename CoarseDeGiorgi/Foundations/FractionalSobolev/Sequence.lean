@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Foundations.FractionalSobolev.Basic
-import Mathlib.MeasureTheory.Integral.MeanInequalities
-import Mathlib.MeasureTheory.Integral.Lebesgue.Countable
-import Mathlib.Analysis.SpecificLimits.Basic
-import Mathlib.Topology.Algebra.InfiniteSum.NatInt
+module
+
+public import CoarseDeGiorgi.Foundations.FractionalSobolev.Basic
+public import Mathlib.MeasureTheory.Integral.MeanInequalities
+public import Mathlib.MeasureTheory.Integral.Lebesgue.Countable
+public import Mathlib.Analysis.SpecificLimits.Basic
+public import Mathlib.Topology.Algebra.InfiniteSum.NatInt
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.FractionalSobolev
 open MeasureTheory

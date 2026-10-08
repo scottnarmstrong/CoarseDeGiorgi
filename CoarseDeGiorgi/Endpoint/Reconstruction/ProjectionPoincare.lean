@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Endpoint.Reconstruction.LocalPoincare
-import CoarseDeGiorgi.Endpoint.Reconstruction.PartitionLp
+module
+
+public import CoarseDeGiorgi.Endpoint.Reconstruction.LocalPoincare
+public import CoarseDeGiorgi.Endpoint.Reconstruction.PartitionLp
 
 /-! # Scale-sharp Poincaré for a triadic projection residual -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint.Reconstruction
 

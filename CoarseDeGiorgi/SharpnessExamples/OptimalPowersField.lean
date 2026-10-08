@@ -1,11 +1,15 @@
-import CoarseDeGiorgi.SharpnessExamples.PolynomialDefs
-import CoarseDeGiorgi.Statements.ParamTheta
-import CoarseDeGiorgi.Assembly.ClassicalMomentsPartition
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.PolynomialDefs
+public import CoarseDeGiorgi.Statements.ParamTheta
+public import CoarseDeGiorgi.Assembly.ClassicalMomentsPartition
 
 /-! # The polynomial cylinder's conductivities on the active parameter range
 
 These are the facts about the shared field `polynomialCoefficientFamily` that the moment bounds
 use; they do not involve any response computation. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

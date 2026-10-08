@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Statements.WhitneyCubes
-import CoarseDeGiorgi.Statements.InfSupDist
-import CoarseDeGiorgi.Statements.PointSupDist
-import CoarseDeGiorgi.Foundations.Triadic.LocalFiniteness
+module
+
+public import CoarseDeGiorgi.Statements.WhitneyCubes
+public import CoarseDeGiorgi.Statements.InfSupDist
+public import CoarseDeGiorgi.Statements.PointSupDist
+public import CoarseDeGiorgi.Foundations.Triadic.LocalFiniteness
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Triadic
 

@@ -1,10 +1,14 @@
-import CoarseDeGiorgi.Whitney.ExteriorCells
-import CoarseDeGiorgi.Statements.IsPiecewiseHarmonicExtension
-import CoarseDeGiorgi.Statements.IsTriadicWidth
-import CoarseDeGiorgi.Statements.WhitneyCubesProperties
-import CoarseDeGiorgi.Statements.PointSupDist
-import CoarseDeGiorgi.Whitney.SourceWitnessExterior
-import CoarseDeGiorgi.Whitney.SeedClosedCover
+module
+
+public import CoarseDeGiorgi.Whitney.ExteriorCells
+public import CoarseDeGiorgi.Statements.IsPiecewiseHarmonicExtension
+public import CoarseDeGiorgi.Statements.IsTriadicWidth
+public import CoarseDeGiorgi.Statements.WhitneyCubesProperties
+public import CoarseDeGiorgi.Statements.PointSupDist
+public import CoarseDeGiorgi.Whitney.SourceWitnessExterior
+public import CoarseDeGiorgi.Whitney.SeedClosedCover
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set Filter
 open scoped BigOperators ENNReal NNReal

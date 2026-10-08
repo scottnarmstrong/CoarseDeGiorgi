@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.SharpnessExamples.ScalarFluxAxial
-import CoarseDeGiorgi.SharpnessExamples.ScalarFluxSign
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.ScalarFluxAxial
+public import CoarseDeGiorgi.SharpnessExamples.ScalarFluxSign
 
 /-! # The weak subsolution inequality for the cutoff cylinder flux -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set Filter Topology
 open scoped BigOperators

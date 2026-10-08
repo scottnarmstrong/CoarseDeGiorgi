@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Foundations.FractionalSobolev.LevelEstimate
-import CoarseDeGiorgi.Foundations.FractionalSobolev.LayerNorm
-import CoarseDeGiorgi.Foundations.FractionalSobolev.Truncation
+module
+
+public import CoarseDeGiorgi.Foundations.FractionalSobolev.LevelEstimate
+public import CoarseDeGiorgi.Foundations.FractionalSobolev.LayerNorm
+public import CoarseDeGiorgi.Foundations.FractionalSobolev.Truncation
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.FractionalSobolev
 open Homogenization MeasureTheory Filter

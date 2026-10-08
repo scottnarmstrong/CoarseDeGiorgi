@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Harnack.CrossoverFinal.ConditionalAssembly
-import CoarseDeGiorgi.Harnack.Iterations.UniformSmallIterations
-import CoarseDeGiorgi.Statements.LogEstimate
-import CoarseDeGiorgi.PowerCacc.HarnackForm
+module
+
+public import CoarseDeGiorgi.Harnack.CrossoverFinal.ConditionalAssembly
+public import CoarseDeGiorgi.Harnack.Iterations.UniformSmallIterations
+public import CoarseDeGiorgi.Statements.LogEstimate
+public import CoarseDeGiorgi.PowerCacc.HarnackForm
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped ENNReal

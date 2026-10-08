@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.PeriodicFields
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.PeriodicFields
 
 /-! # Circular sup-distance and compact-support envelopes -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

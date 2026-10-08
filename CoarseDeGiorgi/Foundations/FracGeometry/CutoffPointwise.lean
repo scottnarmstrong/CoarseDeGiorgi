@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Foundations.FracGeometry.Defs
-import Mathlib.MeasureTheory.Function.LpSeminorm.Indicator
+module
+
+public import CoarseDeGiorgi.Foundations.FracGeometry.Defs
+public import Mathlib.MeasureTheory.Function.LpSeminorm.Indicator
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.FracGeometry
 

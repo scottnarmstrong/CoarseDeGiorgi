@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.Statements.OriginCube
-import Homogenization.Geometry.ConvexDomain
-import Mathlib.Analysis.Normed.Module.Convex
-import Mathlib.Analysis.Normed.Module.FiniteDimension
+module
+
+public import CoarseDeGiorgi.Statements.OriginCube
+public import Homogenization.Geometry.ConvexDomain
+public import Mathlib.Analysis.Normed.Module.Convex
+public import Mathlib.Analysis.Normed.Module.FiniteDimension
 
 /-! Elementary geometry of the cubes `originCube r`. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint
 

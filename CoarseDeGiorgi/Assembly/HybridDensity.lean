@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Localization.SourceCover
-import CoarseDeGiorgi.Localization.LowerFractional
+module
+
+public import CoarseDeGiorgi.Localization.SourceCover
+public import CoarseDeGiorgi.Localization.LowerFractional
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Assembly
 

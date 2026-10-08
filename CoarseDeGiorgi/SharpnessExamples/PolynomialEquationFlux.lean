@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.SharpnessExamples.PolynomialEquationGradient
-import CoarseDeGiorgi.SharpnessExamples.PolynomialField
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.PolynomialEquationGradient
+public import CoarseDeGiorgi.SharpnessExamples.PolynomialField
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set
 open scoped BigOperators Matrix.Norms.L2Operator

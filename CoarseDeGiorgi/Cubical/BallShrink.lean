@@ -1,8 +1,12 @@
-import Homogenization.Geometry.ConvexDomain
-import Mathlib.MeasureTheory.Measure.Lebesgue.EqHaar
-import Mathlib.Analysis.Convex.Combination
+module
+
+public import Homogenization.Geometry.ConvexDomain
+public import Mathlib.MeasureTheory.Measure.Lebesgue.EqHaar
+public import Mathlib.Analysis.Convex.Combination
 
 /-! # Boundary layers of a convex body containing a sup-norm ball -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Cubical
 open Homogenization MeasureTheory

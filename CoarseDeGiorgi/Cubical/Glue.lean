@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Whitney.SourceWitnessCorrection
-import CoarseDeGiorgi.LowerFractional.Restriction
+module
+
+public import CoarseDeGiorgi.Whitney.SourceWitnessCorrection
+public import CoarseDeGiorgi.LowerFractional.Restriction
 
 /-! # Countable gluing of cellwise corrections, with the gradient identified on every cell -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Cubical
 open Homogenization MeasureTheory Set Filter Topology CoarseDeGiorgi.Whitney

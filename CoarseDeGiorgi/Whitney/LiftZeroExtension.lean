@@ -1,10 +1,15 @@
-import CoarseDeGiorgi.Weighted.PairOperations
+module
+
+public import CoarseDeGiorgi.Weighted.PairOperations
 
 /-! # Zero extension of weighted zero-boundary pairs
 
 The cell's supported smooth approximations are already global functions. They
 therefore serve as ambient approximations without a new smoothing step.
 -/
+
+@[expose] public section
+
 namespace CoarseDeGiorgi.Whitney
 open Homogenization MeasureTheory Set Filter Topology
 open scoped ENNReal

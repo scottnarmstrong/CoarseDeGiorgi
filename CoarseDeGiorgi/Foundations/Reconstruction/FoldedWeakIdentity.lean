@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.FoldedTests
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.FoldedTests
 
 /-! # The weak-gradient identity for compactly cut off folded tests -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

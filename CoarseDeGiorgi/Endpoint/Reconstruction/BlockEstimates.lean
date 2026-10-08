@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Endpoint.Reconstruction.DirichletDualBound
-import CoarseDeGiorgi.Endpoint.Reconstruction.MorreyLocalToGlobal
-import CoarseDeGiorgi.Endpoint.Reconstruction.BlockScales
+module
+
+public import CoarseDeGiorgi.Endpoint.Reconstruction.DirichletDualBound
+public import CoarseDeGiorgi.Endpoint.Reconstruction.MorreyLocalToGlobal
+public import CoarseDeGiorgi.Endpoint.Reconstruction.BlockScales
 
 /-! # Simultaneous Lr and L-infinity estimates for Dirichlet increments -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint.Reconstruction
 

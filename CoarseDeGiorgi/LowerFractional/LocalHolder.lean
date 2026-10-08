@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.LowerFractional.CellHolder
+module
+
+public import CoarseDeGiorgi.LowerFractional.CellHolder
 
 /-! Local Hölder: the weight is a sum over a given family of cells. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.LowerFractional
 

@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.LowerFractional.TilingBridge
-import CoarseDeGiorgi.LowerFractional.AverageContraction
+module
+
+public import CoarseDeGiorgi.LowerFractional.TilingBridge
+public import CoarseDeGiorgi.LowerFractional.AverageContraction
 
 /-! Actual descendant averages, obtained from the proved global incidence
 bridge and the simplex response weights (`l.lower.averages`). -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.LowerFractional
 

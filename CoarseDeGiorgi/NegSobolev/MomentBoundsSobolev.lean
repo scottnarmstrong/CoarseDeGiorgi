@@ -1,8 +1,13 @@
-import CoarseDeGiorgi.Statements.MomentBoundsBesov
-import CoarseDeGiorgi.Statements.NegSobolevNorm
-import CoarseDeGiorgi.Statements.IsOpenOriginCube
+module
+
+public import CoarseDeGiorgi.Statements.MomentBoundsBesov
+public import CoarseDeGiorgi.Statements.NegSobolevNorm
+public import CoarseDeGiorgi.Statements.IsOpenOriginCube
 
 /-! The Sobolev moment bounds, conditional on `l.negative.sobolev`. -/
+
+@[expose] public section
+
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator
 namespace CoarseDeGiorgi.NegSobolev

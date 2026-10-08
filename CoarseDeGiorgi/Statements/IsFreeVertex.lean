@@ -1,4 +1,8 @@
-import CoarseDeGiorgi.Statements.IsWhitneyVertex
+module
+
+public import CoarseDeGiorgi.Statements.IsWhitneyVertex
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

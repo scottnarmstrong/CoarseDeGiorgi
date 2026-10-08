@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Weighted.HarmonicReplacement
-import CoarseDeGiorgi.Weighted.PairSeparation
+module
+
+public import CoarseDeGiorgi.Weighted.HarmonicReplacement
+public import CoarseDeGiorgi.Weighted.PairSeparation
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted
 

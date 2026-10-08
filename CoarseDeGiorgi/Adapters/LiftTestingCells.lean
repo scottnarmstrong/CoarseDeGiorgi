@@ -1,11 +1,15 @@
-import CoarseDeGiorgi.Whitney.LiftCell
-import CoarseDeGiorgi.Whitney.LiftZeroExtension
-import CoarseDeGiorgi.Adapters.LiftTestingGradient
-import CoarseDeGiorgi.Weighted.TestingCompactSupport
-import CoarseDeGiorgi.Weighted.Truncation.PositivePart
-import CoarseDeGiorgi.Weighted.ZeroCore
+module
+
+public import CoarseDeGiorgi.Whitney.LiftCell
+public import CoarseDeGiorgi.Whitney.LiftZeroExtension
+public import CoarseDeGiorgi.Adapters.LiftTestingGradient
+public import CoarseDeGiorgi.Weighted.TestingCompactSupport
+public import CoarseDeGiorgi.Weighted.Truncation.PositivePart
+public import CoarseDeGiorgi.Weighted.ZeroCore
 
 /-! Actual exterior gradients and energy contraction on the harmonic cells. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Adapters
 

@@ -1,13 +1,16 @@
-import CoarseDeGiorgi.Statements.GaussianKernel
-import Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral
-import Mathlib.MeasureTheory.Integral.Pi
-import Mathlib.Tactic
+module
+
+public import CoarseDeGiorgi.Statements.GaussianKernel
+public import Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral
+public import Mathlib.MeasureTheory.Integral.Pi
+public import Mathlib.Tactic
 
 /-! # Elementary estimates for the Gaussian kernel
 
 All distances here use `vecNormSq`, the Euclidean squared length on `Vec d`.
 -/
 
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators

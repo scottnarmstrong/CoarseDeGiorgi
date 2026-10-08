@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Weighted.LowerSpecSup
-import Mathlib.Algebra.QuadraticDiscriminant
+module
+
+public import CoarseDeGiorgi.Weighted.LowerSpecSup
+public import Mathlib.Algebra.QuadraticDiscriminant
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Weighted.LowerResponseImpl
 

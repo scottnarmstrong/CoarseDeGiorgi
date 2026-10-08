@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Statements.AuxDescendantAverage
-import CoarseDeGiorgi.Statements.AuxDescendantCube
-import CoarseDeGiorgi.Statements.AuxDescendantIndices
-import Homogenization.Ambient.CoefficientField
+module
+
+public import CoarseDeGiorgi.Statements.AuxDescendantAverage
+public import CoarseDeGiorgi.Statements.AuxDescendantCube
+public import CoarseDeGiorgi.Statements.AuxDescendantIndices
+public import Homogenization.Ambient.CoefficientField
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal

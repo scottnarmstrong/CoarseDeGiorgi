@@ -1,11 +1,16 @@
-import CoarseDeGiorgi.Localization.Assembly
-import CoarseDeGiorgi.Localization.OverlapIntegral
+module
+
+public import CoarseDeGiorgi.Localization.Assembly
+public import CoarseDeGiorgi.Localization.OverlapIntegral
 
 /-! # Local mass control for localization covers
 
 The finite-overlap estimate bounds the sum of local Lʳ masses on a cover by
 the mass on a containing cube.
 -/
+
+@[expose] public section
+
 namespace CoarseDeGiorgi.Localization
 open Homogenization MeasureTheory Set
 open scoped BigOperators ENNReal

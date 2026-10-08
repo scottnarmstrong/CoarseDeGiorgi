@@ -1,4 +1,8 @@
-import CoarseDeGiorgi.Harnack.Iterations.SmallSignedIterations
+module
+
+public import CoarseDeGiorgi.Harnack.Iterations.SmallSignedIterations
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped ENNReal

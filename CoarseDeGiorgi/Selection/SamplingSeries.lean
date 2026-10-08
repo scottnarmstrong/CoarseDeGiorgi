@@ -1,4 +1,8 @@
-import CoarseDeGiorgi.Selection.Sampling
+module
+
+public import CoarseDeGiorgi.Selection.Sampling
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Selection
 

@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Endpoint.Source.Geometry
-import CoarseDeGiorgi.Harnack.Iterations.MomentNormalization
-import Mathlib.MeasureTheory.Function.LpSeminorm.TriangleInequality
+module
+
+public import CoarseDeGiorgi.Endpoint.Source.Geometry
+public import CoarseDeGiorgi.Harnack.Iterations.MomentNormalization
+public import Mathlib.MeasureTheory.Function.LpSeminorm.TriangleInequality
 
 /-! The normalized quasi-triangle estimate used at the endpoint, including exponents below one. -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory ENNReal
 open scoped ENNReal

@@ -1,8 +1,12 @@
-import CoarseDeGiorgi.Adapters.UniformSurface
-import CoarseDeGiorgi.Harnack.Selection.CoareaLr
-import CoarseDeGiorgi.Selection.QuantitativeRadius
-import CoarseDeGiorgi.Selection.SourceRadius
-import CoarseDeGiorgi.Selection.SurfaceEnergy
+module
+
+public import CoarseDeGiorgi.Adapters.UniformSurface
+public import CoarseDeGiorgi.Harnack.Selection.CoareaLr
+public import CoarseDeGiorgi.Selection.QuantitativeRadius
+public import CoarseDeGiorgi.Selection.SourceRadius
+public import CoarseDeGiorgi.Selection.SurfaceEnergy
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.Selection
 

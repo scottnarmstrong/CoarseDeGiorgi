@@ -1,4 +1,6 @@
-import CoarseDeGiorgi.Weighted.UpperResponse
+module
+
+public import CoarseDeGiorgi.Weighted.UpperResponse
 
 /-! # Cellwise harmonic replacement for the Whitney lift
 
@@ -6,6 +8,8 @@ The seed's eventual affine-cell and geometric properties are separate inputs.
 This module uses the proved weighted Dirichlet replacement and response, without
 importing any of the main-result statement files.
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Whitney
 open Homogenization MeasureTheory

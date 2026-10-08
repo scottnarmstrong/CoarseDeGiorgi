@@ -1,20 +1,24 @@
-import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
-import CoarseDeGiorgi.Statements.IsWeightedSupersolution
-import CoarseDeGiorgi.Statements.ChiParam
-import CoarseDeGiorgi.Statements.Contrast
-import CoarseDeGiorgi.Statements.CrossoverExponent
-import CoarseDeGiorgi.Statements.HarnackEtaParam
-import CoarseDeGiorgi.Statements.LowerMoment
-import CoarseDeGiorgi.Statements.NonnegativeEssInf
-import CoarseDeGiorgi.Statements.NormalizedLpMoment
-import CoarseDeGiorgi.Statements.OriginCube
-import CoarseDeGiorgi.Statements.ParamR
-import CoarseDeGiorgi.Statements.ParamTheta
-import CoarseDeGiorgi.Statements.SpatialMomentRange
-import CoarseDeGiorgi.Statements.UpperMoment
-import CoarseDeGiorgi.Harnack.Crossover.Normalization
-import CoarseDeGiorgi.Harnack.WeakHarnack.CrossoverMomentBridge
-import CoarseDeGiorgi.Harnack.WeakHarnack.EpsilonUniform
+module
+
+public import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
+public import CoarseDeGiorgi.Statements.IsWeightedSupersolution
+public import CoarseDeGiorgi.Statements.ChiParam
+public import CoarseDeGiorgi.Statements.Contrast
+public import CoarseDeGiorgi.Statements.CrossoverExponent
+public import CoarseDeGiorgi.Statements.HarnackEtaParam
+public import CoarseDeGiorgi.Statements.LowerMoment
+public import CoarseDeGiorgi.Statements.NonnegativeEssInf
+public import CoarseDeGiorgi.Statements.NormalizedLpMoment
+public import CoarseDeGiorgi.Statements.OriginCube
+public import CoarseDeGiorgi.Statements.ParamR
+public import CoarseDeGiorgi.Statements.ParamTheta
+public import CoarseDeGiorgi.Statements.SpatialMomentRange
+public import CoarseDeGiorgi.Statements.UpperMoment
+public import CoarseDeGiorgi.Harnack.Crossover.Normalization
+public import CoarseDeGiorgi.Harnack.WeakHarnack.CrossoverMomentBridge
+public import CoarseDeGiorgi.Harnack.WeakHarnack.EpsilonUniform
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped ENNReal

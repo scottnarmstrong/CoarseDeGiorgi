@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Statements.GammaRec
-import CoarseDeGiorgi.Statements.ParamR
-import CoarseDeGiorgi.Statements.RBoundaryParam
-import CoarseDeGiorgi.Statements.RStarParam
+module
+
+public import CoarseDeGiorgi.Statements.GammaRec
+public import CoarseDeGiorgi.Statements.ParamR
+public import CoarseDeGiorgi.Statements.RBoundaryParam
+public import CoarseDeGiorgi.Statements.RStarParam
+
+@[expose] public section
 
 namespace CoarseDeGiorgi
 

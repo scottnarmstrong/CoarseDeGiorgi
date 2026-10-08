@@ -1,10 +1,14 @@
-import CoarseDeGiorgi.Harnack.Iterations.ExponentialCost
-import CoarseDeGiorgi.Harnack.Iterations.MomentNormalization
-import CoarseDeGiorgi.Harnack.Iterations.PowerMomentChain
-import CoarseDeGiorgi.Harnack.Iterations.StoppingExponents
-import CoarseDeGiorgi.Harnack.ReverseMoments.MomentConversion
-import CoarseDeGiorgi.Harnack.Scalar.BombieriLemmas
-import Mathlib.Tactic
+module
+
+public import CoarseDeGiorgi.Harnack.Iterations.ExponentialCost
+public import CoarseDeGiorgi.Harnack.Iterations.MomentNormalization
+public import CoarseDeGiorgi.Harnack.Iterations.PowerMomentChain
+public import CoarseDeGiorgi.Harnack.Iterations.StoppingExponents
+public import CoarseDeGiorgi.Harnack.ReverseMoments.MomentConversion
+public import CoarseDeGiorgi.Harnack.Scalar.BombieriLemmas
+public import Mathlib.Tactic
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal

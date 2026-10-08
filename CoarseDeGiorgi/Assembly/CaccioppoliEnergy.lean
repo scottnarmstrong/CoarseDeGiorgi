@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Assembly.CaccioppoliDefs
-import CoarseDeGiorgi.Statements.IsWeightedSubsolution
+module
+
+public import CoarseDeGiorgi.Assembly.CaccioppoliDefs
+public import CoarseDeGiorgi.Statements.IsWeightedSubsolution
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Assembly
 

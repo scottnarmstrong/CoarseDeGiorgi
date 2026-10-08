@@ -1,13 +1,17 @@
-import CoarseDeGiorgi.NegSobolev.LemmaB2Heat
-import CoarseDeGiorgi.NegSobolev.LemmaB2Series
-import CoarseDeGiorgi.Statements.IsOpenOriginCube
-import CoarseDeGiorgi.Statements.Triangulation
-import CoarseDeGiorgi.Statements.SimplexCell
+module
+
+public import CoarseDeGiorgi.NegSobolev.LemmaB2Heat
+public import CoarseDeGiorgi.NegSobolev.LemmaB2Series
+public import CoarseDeGiorgi.Statements.IsOpenOriginCube
+public import CoarseDeGiorgi.Statements.Triangulation
+public import CoarseDeGiorgi.Statements.SimplexCell
 
 /-! `l.negative.sobolev` assembled from `p.besov.averages` and the Gaussian Sobolev test estimate.
 The first input is the heat-average comparison `p.besov.averages`.
 The second states the Gaussian test estimate uniformly in time and the test function.
 -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Statements.ClosedTriadicCube
-import CoarseDeGiorgi.Statements.WhitneyAdmissible
-import Homogenization.Multiscale.CubeAverage
+module
+
+public import CoarseDeGiorgi.Statements.ClosedTriadicCube
+public import CoarseDeGiorgi.Statements.WhitneyAdmissible
+public import Homogenization.Multiscale.CubeAverage
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal

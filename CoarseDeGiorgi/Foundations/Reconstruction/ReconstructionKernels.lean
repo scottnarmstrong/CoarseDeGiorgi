@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.LowestBounds
-import CoarseDeGiorgi.Foundations.Reconstruction.AssemblyInputs
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.LowestBounds
+public import CoarseDeGiorgi.Foundations.Reconstruction.AssemblyInputs
 
 /-! # The concrete kernel sequence consumed by the committed assembly -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

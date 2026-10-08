@@ -1,10 +1,14 @@
-import CoarseDeGiorgi.LowerFractional.SpatialWeights
-import CoarseDeGiorgi.LowerFractional.MeanGradient
-import CoarseDeGiorgi.LowerFractional.Holder
-import CoarseDeGiorgi.Statements.EuclidNorm
+module
+
+public import CoarseDeGiorgi.LowerFractional.SpatialWeights
+public import CoarseDeGiorgi.LowerFractional.MeanGradient
+public import CoarseDeGiorgi.LowerFractional.Holder
+public import CoarseDeGiorgi.Statements.EuclidNorm
 
 /-! Hölder for the actual simplex response weights and restricted H1a pairs.
 The incidence and disjointness inputs are geometric, not analytic estimates. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.LowerFractional
 

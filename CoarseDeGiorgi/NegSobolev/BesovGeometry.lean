@@ -1,9 +1,13 @@
-import CoarseDeGiorgi.NegSobolev.GaussianCells
-import CoarseDeGiorgi.Assembly.ClassicalMomentsPartition
-import CoarseDeGiorgi.CoefficientConditions.BesovGeom
-import CoarseDeGiorgi.Statements.CubeCellIsOpenBoundedConvexDomain
+module
+
+public import CoarseDeGiorgi.NegSobolev.GaussianCells
+public import CoarseDeGiorgi.Assembly.ClassicalMomentsPartition
+public import CoarseDeGiorgi.CoefficientConditions.BesovGeom
+public import CoarseDeGiorgi.Statements.CubeCellIsOpenBoundedConvexDomain
 
 /-! # Measure partitions for the two triadic families -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal

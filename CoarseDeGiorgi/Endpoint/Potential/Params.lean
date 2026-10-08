@@ -1,11 +1,15 @@
-import CoarseDeGiorgi.Statements.ParamTheta
-import CoarseDeGiorgi.Statements.RStarParam
-import CoarseDeGiorgi.Statements.ParamR
-import CoarseDeGiorgi.Statements.AlphaParam
-import CoarseDeGiorgi.Statements.OriginCube
-import CoarseDeGiorgi.Statements.AuxCube
-import CoarseDeGiorgi.LowerFractional.CubeDomain
-import CoarseDeGiorgi.Harnack.Scalar.BombieriLemmas
+module
+
+public import CoarseDeGiorgi.Statements.ParamTheta
+public import CoarseDeGiorgi.Statements.RStarParam
+public import CoarseDeGiorgi.Statements.ParamR
+public import CoarseDeGiorgi.Statements.AlphaParam
+public import CoarseDeGiorgi.Statements.OriginCube
+public import CoarseDeGiorgi.Statements.AuxCube
+public import CoarseDeGiorgi.LowerFractional.CubeDomain
+public import CoarseDeGiorgi.Harnack.Scalar.BombieriLemmas
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Endpoint.Potential
 

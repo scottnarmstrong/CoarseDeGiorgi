@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Statements.EuclideanSetDistance
-import CoarseDeGiorgi.Statements.UpperResponseOnCell
-import CoarseDeGiorgi.Statements.CubeSurface
+module
+
+public import CoarseDeGiorgi.Statements.EuclideanSetDistance
+public import CoarseDeGiorgi.Statements.UpperResponseOnCell
+public import CoarseDeGiorgi.Statements.CubeSurface
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

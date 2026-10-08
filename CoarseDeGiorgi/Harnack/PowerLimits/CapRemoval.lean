@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Harnack.Selection.Cap
-import CoarseDeGiorgi.Assembly.CaccioppoliEnergy
-import CoarseDeGiorgi.Assembly.LocalBoundedness
-import Mathlib.MeasureTheory.Integral.Lebesgue.DominatedConvergence
+module
+
+public import CoarseDeGiorgi.Harnack.Selection.Cap
+public import CoarseDeGiorgi.Assembly.CaccioppoliEnergy
+public import CoarseDeGiorgi.Assembly.LocalBoundedness
+public import Mathlib.MeasureTheory.Integral.Lebesgue.DominatedConvergence
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Harnack.PowerLimits
 

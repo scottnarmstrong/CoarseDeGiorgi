@@ -1,6 +1,8 @@
-import CoarseDeGiorgi.Foundations.Simplex.Basic
-import Mathlib.MeasureTheory.Measure.Lebesgue.EqHaar
-import Mathlib.Data.Fintype.Perm
+module
+
+public import CoarseDeGiorgi.Foundations.Simplex.Basic
+public import Mathlib.MeasureTheory.Measure.Lebesgue.EqHaar
+public import Mathlib.Data.Fintype.Perm
 
 /-! # The Kuhn partition and its cell volumes
 
@@ -8,6 +10,8 @@ The exceptional set is the union of the translated coordinate diagonals.
 Sorting gives coverage off those diagonals; uniqueness of sorted injective
 tuples gives disjointness. Coordinate permutations make all cell volumes equal.
 -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Simplex
 

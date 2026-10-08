@@ -1,9 +1,13 @@
-import Mathlib.Analysis.SpecialFunctions.Log.Basic
-import Mathlib.Analysis.SpecialFunctions.Pow.NNReal
-import Mathlib.Analysis.Real.Sqrt
-import Mathlib.Tactic
+module
+
+public import Mathlib.Analysis.SpecialFunctions.Log.Basic
+public import Mathlib.Analysis.SpecialFunctions.Pow.NNReal
+public import Mathlib.Analysis.Real.Sqrt
+public import Mathlib.Tactic
 
 /-! Fixed prefactors and contrast powers are absorbed in the endpoint exponential. -/
+
+@[expose] public section
 
 open scoped ENNReal
 

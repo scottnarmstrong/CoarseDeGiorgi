@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.Harnack.Iterations.SmallMomentChain
-import CoarseDeGiorgi.Harnack.Iterations.EndpointGeometry
-import CoarseDeGiorgi.Harnack.Iterations.PositiveMomentStop
+module
+
+public import CoarseDeGiorgi.Harnack.Iterations.SmallMomentChain
+public import CoarseDeGiorgi.Harnack.Iterations.EndpointGeometry
+public import CoarseDeGiorgi.Harnack.Iterations.PositiveMomentStop
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal

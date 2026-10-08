@@ -1,7 +1,11 @@
-import Mathlib.Analysis.SpecialFunctions.Pow.Real
-import Mathlib.Analysis.SpecialFunctions.Log.Basic
+module
+
+public import Mathlib.Analysis.SpecialFunctions.Pow.Real
+public import Mathlib.Analysis.SpecialFunctions.Log.Basic
 
 /-! # Elementary real analysis for the weak Harnack level bound -/
+
+@[expose] public section
 
 open Real
 

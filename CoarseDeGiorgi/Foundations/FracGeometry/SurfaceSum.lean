@@ -1,5 +1,9 @@
-import CoarseDeGiorgi.Foundations.FracGeometry.SurfaceLocalization
-import Mathlib.Analysis.MeanInequalities
+module
+
+public import CoarseDeGiorgi.Foundations.FracGeometry.SurfaceLocalization
+public import Mathlib.Analysis.MeanInequalities
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.FracGeometry
 open Homogenization MeasureTheory Set

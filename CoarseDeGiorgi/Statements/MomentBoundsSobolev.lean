@@ -1,13 +1,18 @@
-import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
-import CoarseDeGiorgi.Statements.Contrast
-import CoarseDeGiorgi.Statements.LowerMoment
-import CoarseDeGiorgi.Statements.OriginCube
-import CoarseDeGiorgi.Statements.UpperMoment
-import CoarseDeGiorgi.Statements.NegSobolevNorm
-import CoarseDeGiorgi.Statements.IsOpenOriginCube
+module
 
-import CoarseDeGiorgi.NegSobolev.MomentBoundsSobolev
-import CoarseDeGiorgi.Statements.NegativeSobolevBound
+public import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
+public import CoarseDeGiorgi.Statements.Contrast
+public import CoarseDeGiorgi.Statements.LowerMoment
+public import CoarseDeGiorgi.Statements.OriginCube
+public import CoarseDeGiorgi.Statements.UpperMoment
+public import CoarseDeGiorgi.Statements.NegSobolevNorm
+public import CoarseDeGiorgi.Statements.IsOpenOriginCube
+
+public import CoarseDeGiorgi.NegSobolev.MomentBoundsSobolev
+public import CoarseDeGiorgi.Statements.NegativeSobolevBound
+
+@[expose] public section
+
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator
 

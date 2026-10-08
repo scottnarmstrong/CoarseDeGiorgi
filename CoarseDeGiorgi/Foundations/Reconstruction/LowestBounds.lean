@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Foundations.Reconstruction.LowestScaling
-import CoarseDeGiorgi.Foundations.Reconstruction.PeriodicFields
+module
+
+public import CoarseDeGiorgi.Foundations.Reconstruction.LowestScaling
+public import CoarseDeGiorgi.Foundations.Reconstruction.PeriodicFields
 
 /-! # Scale-uniform bounds on the lowest kernel and its derivatives -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Foundations.Reconstruction
 

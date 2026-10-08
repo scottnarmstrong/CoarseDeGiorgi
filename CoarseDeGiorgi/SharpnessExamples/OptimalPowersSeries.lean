@@ -1,12 +1,16 @@
-import CoarseDeGiorgi.SharpnessExamples.OptimalPowersCells
-import CoarseDeGiorgi.SharpnessExamples.BesovCylinderSum
-import CoarseDeGiorgi.Assembly.ClassicalMomentsSeries
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.OptimalPowersCells
+public import CoarseDeGiorgi.SharpnessExamples.BesovCylinderSum
+public import CoarseDeGiorgi.Assembly.ClassicalMomentsSeries
 
 /-! # The summed cylinder bound for the normalized half-power series of the moments
 
 Step 3 of the proof of Proposition `p.sharpness.polynomial`: Minkowski (already in the level
 bounds), square-root subadditivity, and the summed bound `e.sharpness.cylinder.discount`.
 -/
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

@@ -1,4 +1,8 @@
-import CoarseDeGiorgi.Selection.SourceResponses
+module
+
+public import CoarseDeGiorgi.Selection.SourceResponses
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.Selection
 open scoped ENNReal

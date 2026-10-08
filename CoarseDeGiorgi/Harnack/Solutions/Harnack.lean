@@ -1,11 +1,15 @@
-import CoarseDeGiorgi.Harnack.Solutions.Solutions
-import CoarseDeGiorgi.Harnack.Scalar.BombieriLemmas
-import CoarseDeGiorgi.Harnack.ContrastBound.RootHypotheses
-import CoarseDeGiorgi.Statements.HarnackEtaParam
-import CoarseDeGiorgi.Statements.IsWeightedSupersolution
-import CoarseDeGiorgi.Statements.NormalizedLpMoment
-import CoarseDeGiorgi.Statements.NonnegativeEssInf
-import Mathlib.Topology.Instances.ENNReal.Lemmas
+module
+
+public import CoarseDeGiorgi.Harnack.Solutions.Solutions
+public import CoarseDeGiorgi.Harnack.Scalar.BombieriLemmas
+public import CoarseDeGiorgi.Harnack.ContrastBound.RootHypotheses
+public import CoarseDeGiorgi.Statements.HarnackEtaParam
+public import CoarseDeGiorgi.Statements.IsWeightedSupersolution
+public import CoarseDeGiorgi.Statements.NormalizedLpMoment
+public import CoarseDeGiorgi.Statements.NonnegativeEssInf
+public import Mathlib.Topology.Instances.ENNReal.Lemmas
+
+@[expose] public section
 
 open Homogenization MeasureTheory Filter Topology
 open scoped BigOperators ENNReal Matrix.Norms.L2Operator

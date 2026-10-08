@@ -1,16 +1,20 @@
-import Mathlib
-import CoarseDeGiorgiAudit.Defs
-import CoarseDeGiorgiAudit.DefsCells
-import CoarseDeGiorgiAudit.DefsResponses
-import CoarseDeGiorgiAudit.Solution.Bridge
-import CoarseDeGiorgiAudit.Solution.BridgeCells
-import CoarseDeGiorgi.Statements.UpperResponseSpec
-import CoarseDeGiorgi.Statements.LowerResponseInvSpec
-import CoarseDeGiorgi.Statements.UpperResponseOnCell
-import CoarseDeGiorgi.Statements.LowerResponseInvOnCell
-import CoarseDeGiorgi.Statements.SimplexCellIsOpenBoundedConvexDomain
-import CoarseDeGiorgi.Statements.SimplexCellNonempty
-import CoarseDeGiorgi.Statements.WeightedCoeffOnSimplexCell
+module
+
+public import Mathlib
+public import CoarseDeGiorgiAudit.Defs
+public import CoarseDeGiorgiAudit.DefsCells
+public import CoarseDeGiorgiAudit.DefsResponses
+public import CoarseDeGiorgiAudit.Solution.Bridge
+public import CoarseDeGiorgiAudit.Solution.BridgeCells
+public import CoarseDeGiorgi.Statements.UpperResponseSpec
+public import CoarseDeGiorgi.Statements.LowerResponseInvSpec
+public import CoarseDeGiorgi.Statements.UpperResponseOnCell
+public import CoarseDeGiorgi.Statements.LowerResponseInvOnCell
+public import CoarseDeGiorgi.Statements.SimplexCellIsOpenBoundedConvexDomain
+public import CoarseDeGiorgi.Statements.SimplexCellNonempty
+public import CoarseDeGiorgi.Statements.WeightedCoeffOnSimplexCell
+
+@[expose] public section
 
 attribute [-instance] Homogenization.instMeasurableSpaceVec
 attribute [-instance] Homogenization.instMeasurableSpaceMat

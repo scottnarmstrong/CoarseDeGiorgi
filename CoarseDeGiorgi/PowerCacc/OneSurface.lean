@@ -1,22 +1,26 @@
-import CoarseDeGiorgi.PowerCacc.SelectedCap
-import CoarseDeGiorgi.PowerCacc.CapApprox
-import CoarseDeGiorgi.PowerCacc.Hypotheses
-import CoarseDeGiorgi.Harnack.PowerCaccioppoli.SignedSurface
-import CoarseDeGiorgi.Harnack.PowerCaccioppoli.SurfaceArithmetic
-import CoarseDeGiorgi.Harnack.PowerCaccioppoli.SurfaceParameters
-import CoarseDeGiorgi.Selection.SourceNonnegative
-import CoarseDeGiorgi.Selection.SourceRadius
-import CoarseDeGiorgi.Whitney.SourceWitnessCore
-import CoarseDeGiorgi.Statements.PositiveCap
-import CoarseDeGiorgi.Statements.LowerMoment
-import CoarseDeGiorgi.Statements.GammaLoc
-import CoarseDeGiorgi.Statements.IsWeightedSupersolution
+module
+
+public import CoarseDeGiorgi.PowerCacc.SelectedCap
+public import CoarseDeGiorgi.PowerCacc.CapApprox
+public import CoarseDeGiorgi.PowerCacc.Hypotheses
+public import CoarseDeGiorgi.Harnack.PowerCaccioppoli.SignedSurface
+public import CoarseDeGiorgi.Harnack.PowerCaccioppoli.SurfaceArithmetic
+public import CoarseDeGiorgi.Harnack.PowerCaccioppoli.SurfaceParameters
+public import CoarseDeGiorgi.Selection.SourceNonnegative
+public import CoarseDeGiorgi.Selection.SourceRadius
+public import CoarseDeGiorgi.Whitney.SourceWitnessCore
+public import CoarseDeGiorgi.Statements.PositiveCap
+public import CoarseDeGiorgi.Statements.LowerMoment
+public import CoarseDeGiorgi.Statements.GammaLoc
+public import CoarseDeGiorgi.Statements.IsWeightedSupersolution
 
 /-! # The one-surface estimate for powers (Proposition `p.power.caccioppoli`, Step 1)
 
 One smooth sequence `v_i → v`, one good radius from `p.good.radius` (independent of the cap `N`), the caps
 `ṽ_i = v_i ∧ N`, and the extension of `p.whitney.extension`,
 with the exterior integral bound of `l.exterior.integral`. -/
+
+@[expose] public section
 
 namespace CoarseDeGiorgi.PowerCacc
 

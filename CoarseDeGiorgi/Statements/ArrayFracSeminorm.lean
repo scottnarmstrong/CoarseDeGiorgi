@@ -1,7 +1,11 @@
-import CoarseDeGiorgi.Statements.EuclidDist
-import Homogenization.Ambient.CoefficientField
-import Mathlib.Analysis.SpecialFunctions.Pow.Real
-import Mathlib.MeasureTheory.Measure.Prod
+module
+
+public import CoarseDeGiorgi.Statements.EuclidDist
+public import Homogenization.Ambient.CoefficientField
+public import Mathlib.Analysis.SpecialFunctions.Pow.Real
+public import Mathlib.MeasureTheory.Measure.Prod
+
+@[expose] public section
 
 open Homogenization MeasureTheory
 open scoped BigOperators ENNReal

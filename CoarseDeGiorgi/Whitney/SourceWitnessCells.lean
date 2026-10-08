@@ -1,9 +1,14 @@
-import CoarseDeGiorgi.Whitney.SourceWitnessResponse
-import CoarseDeGiorgi.Whitney.SourceWitnessCore
-import CoarseDeGiorgi.Foundations.Simplex.Partition
-import CoarseDeGiorgi.Statements.WhitneyCubesProperties
+module
+
+public import CoarseDeGiorgi.Whitney.SourceWitnessResponse
+public import CoarseDeGiorgi.Whitney.SourceWitnessCore
+public import CoarseDeGiorgi.Foundations.Simplex.Partition
+public import CoarseDeGiorgi.Statements.WhitneyCubesProperties
 
 /-! # Canonical active seed cells and their finite layers -/
+
+@[expose] public section
+
 namespace CoarseDeGiorgi.Whitney
 open Homogenization MeasureTheory Set
 noncomputable section

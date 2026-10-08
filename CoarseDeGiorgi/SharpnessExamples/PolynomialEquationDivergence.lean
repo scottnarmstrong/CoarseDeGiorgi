@@ -1,6 +1,10 @@
-import CoarseDeGiorgi.SharpnessExamples.PolynomialEquationTransverseLipschitz
-import CoarseDeGiorgi.SharpnessExamples.CylinderAxial
-import CoarseDeGiorgi.SharpnessExamples.ScalarFluxCalculus
+module
+
+public import CoarseDeGiorgi.SharpnessExamples.PolynomialEquationTransverseLipschitz
+public import CoarseDeGiorgi.SharpnessExamples.CylinderAxial
+public import CoarseDeGiorgi.SharpnessExamples.ScalarFluxCalculus
+
+@[expose] public section
 
 open Homogenization MeasureTheory Set Filter Topology
 open CoarseDeGiorgi.Sharpness
