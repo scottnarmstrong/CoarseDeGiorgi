@@ -1,0 +1,60 @@
+cff-version: 1.2.0
+message: "If you use this formalization, please cite it as below."
+title: "CoarseDeGiorgi: a Lean 4 formalization of local boundedness and Harnack inequalities under coarse ellipticity"
+abstract: >-
+  A machine-checked Lean 4 / mathlib formalization of local boundedness above
+  for weak subsolutions, and of the weak Harnack and Harnack inequalities for
+  nonnegative weak supersolutions and solutions, of divergence-form elliptic
+  equations with symmetric, possibly degenerate and unbounded coefficients in
+  dimension d >= 3. The hypothesis bounds two coarse ellipticity constants,
+  discounted spatial moments of two coarse-grained matrices of the
+  coefficient field on the simplices of triadic triangulations; it holds in
+  the moment range of Bella and Schäffner and under a Besov-type
+  negative-regularity condition on the coefficients and their inverses.
+  Explicit examples, also formalized, show that this condition is sharp in its
+  whole range and that the powers of the coarse ellipticity ratio in
+  the local bound are optimal. Built on the public CoarseGraining library. The
+  library contains no sorry and no custom axiom; each Mathlib-only comparator
+  challenge contains one intentional statement-level sorry, checked against
+  its completed solution.
+type: software
+authors:
+  - family-names: Armstrong
+    given-names: Scott
+    affiliation: "CNRS and Laboratoire Jacques-Louis Lions, Sorbonne Université; Courant Institute School of Mathematics, Computing, and Data Science, New York University"
+  - family-names: Avelin
+    given-names: Benny
+    affiliation: "Department of Mathematics, Uppsala University"
+  - family-names: Kuusi
+    given-names: Tuomo
+    affiliation: "Department of Mathematics and Statistics, University of Helsinki"
+  - family-names: Turpeinen
+    given-names: Aatu
+    affiliation: "Department of Mathematics and Statistics, University of Helsinki"
+keywords:
+  - Lean
+  - mathlib
+  - formal verification
+  - elliptic equations
+  - degenerate coefficients
+  - local boundedness
+  - Harnack inequality
+  - coarse graining
+  - partial differential equations
+license: Apache-2.0
+repository-code: "https://github.com/scottnarmstrong/CoarseDeGiorgi"
+references:
+  - type: article
+    title: "Coarse ellipticity and De Giorgi–Nash–Moser theory in the optimal range"
+    authors:
+      - family-names: Armstrong
+        given-names: Scott
+      - family-names: Avelin
+        given-names: Benny
+      - family-names: Kuusi
+        given-names: Tuomo
+      - family-names: Turpeinen
+        given-names: Aatu
+    year: 2026
+    url: "https://github.com/scottnarmstrong/CoarseDeGiorgi/blob/main/paper/coarse-grained-dgnm.pdf"
+    notes: "The manuscript formalized by this repository; a PDF is included as paper/coarse-grained-dgnm.pdf."

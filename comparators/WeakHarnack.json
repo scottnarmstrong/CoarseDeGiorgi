@@ -1,0 +1,14 @@
+{
+  "challenge_module": "CoarseDeGiorgiAudit.Challenge.WeakHarnack",
+  "solution_module": "CoarseDeGiorgiAudit.Solution.WeakHarnack",
+  "theorem_names": [
+    "CoarseDeGiorgiAudit.WeakHarnack.weakHarnack"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "enable_nanoda": true
+}

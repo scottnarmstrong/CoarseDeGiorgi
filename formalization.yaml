@@ -1,0 +1,627 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/mathlib-initiative/formalization.yaml/main/schema/formalization.schema.json
+version: "v0.4"
+
+project:
+  name: "De Giorgi–Nash–Moser theory under coarse ellipticity"
+  description: >-
+    A Lean formalization of the paper of Armstrong, Avelin, Kuusi and
+    Turpeinen on divergence-form elliptic equations whose symmetric
+    coefficients may be degenerate and unbounded. Theorems A and C of the
+    paper, the latter with its whole range of weak Harnack exponents up to
+    the endpoint, Corollary B, Theorem D (integrability, cube quasi-norms and
+    negative Sobolev norms) and Corollary E (coefficients in negative Sobolev
+    spaces) for finite exponents, Theorem F (sharpness of the range),
+    Proposition 11.2 (optimality of the powers), Proposition 11.3 (optimality
+    of the range of weak Harnack exponents), Appendix B (averages over
+    simplices or cubes and Gaussian averages) for finite exponents, and
+    Proposition 3.4 with Appendix C (cubes in place of simplices) for
+    summability index one and finite exponents are proved in Lean, together
+    with the intermediate results of the paper in the forms their proofs use,
+    relying only on Lean's standard axioms. Not formalized: infinite
+    exponents in Theorem D, Appendix B, Proposition 3.4 and Lemma C.1, other
+    summability indices in Proposition 3.4, and remarks and comparisons with
+    other work;
+    CORRESPONDENCE.md gives the status of every numbered statement. The
+    central results: subsolutions are locally bounded above, nonnegative
+    supersolutions satisfy the weak Harnack inequality for every exponent up
+    to an optimal endpoint, and nonnegative solutions satisfy the Harnack
+    inequality, with explicit dependence on a coarse ellipticity
+    ratio. Instead of pointwise
+    bounds, the hypothesis is a moment condition on two coarse-grained
+    matrices of the coefficients, computed on the simplices of triadic
+    triangulations. It holds under a Besov-type negative-regularity condition
+    on the coefficients and their inverses, and this condition is sharp in its
+    whole range: in every dimension d >= 3, outside the range and on its
+    boundary, explicit scalar coefficients have unbounded solutions. Its case
+    of order zero, of Lebesgue moments, is the optimal moment range of Bella
+    and Schäffner, whose sharpness is thereby also proved, endpoint included.
+    The powers of the coarse ellipticity ratio in the local bound and
+    the range of exponents in the weak Harnack inequality are also shown to be
+    optimal. It builds on the CoarseGraining library. The manuscript is
+    included as a PDF.
+  authors:
+    - "Scott Armstrong"
+    - "Benny Avelin"
+    - "Tuomo Kuusi"
+    - "Aatu Turpeinen"
+  responsible_maintainers:
+    - "Scott Armstrong"
+    - "Benny Avelin"
+    - "Tuomo Kuusi"
+    - "Aatu Turpeinen"
+  affiliations:
+    - "Scott Armstrong: CNRS and Laboratoire Jacques-Louis Lions, Sorbonne Université; Courant Institute School of Mathematics, Computing, and Data Science, New York University"
+    - "Benny Avelin: Department of Mathematics, Uppsala University"
+    - "Tuomo Kuusi: Department of Mathematics and Statistics, University of Helsinki"
+    - "Aatu Turpeinen: Department of Mathematics and Statistics, University of Helsinki"
+  license: "Apache-2.0"
+  funding:
+    - "Scott Armstrong and Tuomo Kuusi were supported by the European Research Council (ERC) under the European Union's Horizon Europe research and innovation programme, grant agreement No. 101200828."
+    - "Tuomo Kuusi and Aatu Turpeinen were supported by the Academy of Finland."
+
+classification:
+  arxiv: ["math.AP"]
+  msc2020: ["35J70", "35B65", "35J15", "35B45"]
+
+sources:
+  - title: "Coarse ellipticity and De Giorgi–Nash–Moser theory in the optimal range"
+    authors:
+      - "Scott Armstrong"
+      - "Benny Avelin"
+      - "Tuomo Kuusi"
+      - "Aatu Turpeinen"
+    type: "paper"
+    url: "paper/coarse-grained-dgnm.pdf"
+    location: "paper/coarse-grained-dgnm.pdf"
+    relationship: "formalizes"
+    note: >-
+      The manuscript under formalization, included in the repository as a
+      PDF. Its introduction states Theorem A (local boundedness above),
+      Corollary B (L^eta bounds), Theorem C (weak Harnack and Harnack
+      inequalities), Theorem D (conditions on the coefficients: (i)
+      integrability, (ii) cube quasi-norms of negative order, (iii) negative
+      Sobolev norms), Corollary E (coefficients in negative Sobolev spaces)
+      and Theorem F (sharpness of the range). Formalized: Theorems A, C (for
+      every weak Harnack exponent 0 < eta <= r*/2) and F, Corollaries B and
+      E, the three parts of Theorem D for finite exponents, Proposition 11.2
+      (optimality of the powers of the coarse ellipticity ratio in
+      Theorem A and Corollary B), Proposition 11.3 (optimality of the range of
+      weak Harnack exponents), Proposition B.1 and Lemma B.2 (Gaussian
+      averages and negative Sobolev norms) for finite exponents, and
+      Proposition 3.4 with Appendix C (cubical and simplicial constants) for
+      summability index one and finite exponents. Not formalized: the
+      infinite exponents in Theorem D and in Appendix B, and the remark after
+      Proposition B.1 comparing Gaussian averages with the Besov space defined
+      through the Fourier transform (cited from Kerkyacharian and Petrushev).
+      Section 1.5 of the included manuscript says that all its results are
+      formalized, with summability index one and, for Proposition 3.4 and
+      Appendix C, finite exponents; the exceptions are the infinite exponents
+      just listed.
+    license: "all rights reserved"
+    author_endorsement: "participated"
+  - title: "Local boundedness and Harnack inequality for solutions of linear non-uniformly elliptic equations"
+    authors:
+      - "Peter Bella"
+      - "Mathias Schäffner"
+    type: "paper"
+    id: "arxiv:1901.07958"
+    relationship: "background"
+    note: >-
+      Proves local boundedness and the Harnack inequality in the moment range
+      1/p + 1/q < 2/(d-1), for possibly nonsymmetric coefficients and d >= 2.
+      Part (i) of Theorem D recovers this range for symmetric coefficients
+      with d >= 3 and finite exponents, for a different solution class, and
+      Theorem F gives explicit scalar examples beyond it and on its boundary,
+      in every dimension d >= 3; the paper's arguments are not formalized
+      here.
+    license: ""
+    author_endorsement: "not-contacted"
+  - title: "Hitchhiker's guide to the fractional Sobolev spaces"
+    authors:
+      - "Eleonora Di Nezza"
+      - "Giampiero Palatucci"
+      - "Enrico Valdinoci"
+    type: "paper"
+    id: "arxiv:1104.4345"
+    relationship: "background"
+    note: >-
+      Theorems 6.5 and 6.7 of Di Nezza, Palatucci and Valdinoci (the latter
+      on the unit cube), the fractional Sobolev inequality, are formalized
+      and proved here; the manuscript uses them in the cube and on the cube
+      boundary.
+    license: ""
+    author_endorsement: "not-contacted"
+
+related_formalizations:
+  - id: "https://github.com/scottnarmstrong/CoarseGraining"
+    relationship: "builds-on"
+    note: >-
+      The CoarseGraining library (Armstrong, Kuusi) supplies the coefficient
+      fields, weak derivatives and Sobolev spaces, triadic cubes, cube
+      averages and Poincaré inequalities; pinned as a Lake dependency.
+  - id: "https://github.com/scottnarmstrong/DeGiorgi"
+    relationship: "supersedes"
+    note: >-
+      For symmetric coefficients in d >= 3, the uniformly elliptic comparator
+      theorems here give the Harnack inequality with constant
+      exp(C sqrt(Lambda/lambda)), the weak Harnack inequality with constants
+      of the same form for every exponent below d/(d-2), and local
+      boundedness with every power kappa > (d-1)/4 of 1 + Lambda/lambda, as
+      consequences of results for degenerate and unbounded coefficients. Not
+      superseded: DeGiorgi's Hölder continuity, its nonsymmetric
+      coefficients, and its statements on balls for H^1 weak solutions.
+
+status:
+  scope: >-
+    Formalized and proved: Theorem A with Corollary B for every 0 < eta < 2,
+    the weak Harnack inequality of Theorem C for every exponent
+    0 < eta <= r*/2, endpoint included, and the Harnack inequality, the three
+    parts of Theorem D for finite exponents (the coarse ellipticity
+    constants bounded by Lebesgue norms, by cube quasi-norms and by negative
+    Sobolev norms of the coefficients), Corollary E (local boundedness and
+    the Harnack inequality for coefficients in negative Sobolev spaces, with
+    d - 1 in place of d), Proposition B.1 and Lemma B.2 for finite exponents
+    (averages over simplices or cubes against Gaussian averages, and cube
+    quasi-norms against negative Sobolev norms), the range condition of part
+    (i) (indices with a positive slack exist only below the Bella-Schäffner
+    threshold), and
+    Theorem F, the sharpness of the range, boundary included, by explicit
+    scalar coefficients with unbounded solutions. Proposition 11.2, the
+    optimality of the powers of the coarse ellipticity ratio in
+    Theorem A and Corollary B, and Proposition 11.3, the optimality of the
+    range of weak Harnack exponents for each choice of the parameters, are
+    also formalized and proved, as are Proposition 3.4, Lemma C.1 and (3.20)
+    for summability index one and finite exponents (the constants computed
+    on triadic cubes are equivalent to those on simplices) and Theorems A
+    and C and Corollary B under the cubical hypothesis. Not formalized:
+    infinite exponents in Theorem D, Appendix B, Proposition 3.4 and Lemma
+    C.1, and the comparison with the Fourier-analytic Besov space after
+    Proposition B.1. The supporting development
+    includes the weighted energy space, the
+    coarse-grained matrices on simplices, the embedding into fractional
+    Sobolev spaces, the fractional Sobolev inequality of
+    Di Nezza-Palatucci-Valdinoci, the choice of a good radius, the
+    interpolation on Whitney simplices with the piecewise affine and
+    piecewise harmonic extensions, the Caccioppoli and energy-to-supremum
+    iterations, the logarithmic and power estimates behind the Harnack
+    inequality, and, for the endpoint of the weak Harnack inequality, the
+    rescaling of the estimates to small cubes, a reconstruction of functions
+    with zero boundary values scale by scale, potentials of measures and a
+    capacitary comparison, and, for the negative Sobolev norms, Sobolev
+    norms of every order through weak derivative arrays, Gaussian kernels and
+    their derivatives, and duality. Mathlib-only restatements of the main
+    results are checked by leanprover/comparator (see COMPARATORS.md).
+  sorry_count: 0
+  sorry_in_definitions: 0
+  # Checked by CoarseDeGiorgiAudit/AxiomsAudit.lean (every declaration below).
+  axioms: ["propext", "Classical.choice", "Quot.sound"]
+  main_results:
+    - declaration: "CoarseDeGiorgi.local_boundedness"
+      file: "CoarseDeGiorgi/Statements/LocalBoundedness.lean"
+      sorry_count: 0
+      axioms: ["propext", "Classical.choice", "Quot.sound"]
+      comparator_config: ""
+      literature_dependencies: []
+    - declaration: "CoarseDeGiorgi.weak_harnack_range"
+      file: "CoarseDeGiorgi/Statements/WeakHarnackRange.lean"
+      sorry_count: 0
+      axioms: ["propext", "Classical.choice", "Quot.sound"]
+      comparator_config: "comparators/WeakHarnack.json"
+      literature_dependencies: []
+    - declaration: "CoarseDeGiorgi.weak_harnack"
+      file: "CoarseDeGiorgi/Statements/WeakHarnack.lean"
+      sorry_count: 0
+      axioms: ["propext", "Classical.choice", "Quot.sound"]
+      comparator_config: ""
+      literature_dependencies: []
+    - declaration: "CoarseDeGiorgi.harnack"
+      file: "CoarseDeGiorgi/Statements/Harnack.lean"
+      sorry_count: 0
+      axioms: ["propext", "Classical.choice", "Quot.sound"]
+      comparator_config: "comparators/Harnack.json"
+      literature_dependencies: []
+    - declaration: "CoarseDeGiorgi.moment_bounds_lebesgue"
+      file: "CoarseDeGiorgi/Statements/MomentBoundsLebesgue.lean"
+      sorry_count: 0
+      axioms: ["propext", "Classical.choice", "Quot.sound"]
+      comparator_config: "comparators/HarnackLpLq.json"
+      literature_dependencies: []
+    - declaration: "CoarseDeGiorgi.moment_bounds_besov"
+      file: "CoarseDeGiorgi/Statements/MomentBoundsBesov.lean"
+      sorry_count: 0
+      axioms: ["propext", "Classical.choice", "Quot.sound"]
+      comparator_config: "comparators/HarnackBesov.json"
+      literature_dependencies: []
+    - declaration: "CoarseDeGiorgi.moment_bounds_sobolev"
+      file: "CoarseDeGiorgi/Statements/MomentBoundsSobolev.lean"
+      sorry_count: 0
+      axioms: ["propext", "Classical.choice", "Quot.sound"]
+      comparator_config: "comparators/HarnackSobolev.json"
+      literature_dependencies: []
+    - declaration: "CoarseDeGiorgi.classical_moments_converse"
+      file: "CoarseDeGiorgi/Statements/ClassicalMomentsConverse.lean"
+      sorry_count: 0
+      axioms: ["propext", "Classical.choice", "Quot.sound"]
+      literature_dependencies: []
+    - declaration: "CoarseDeGiorgi.sharpness"
+      file: "CoarseDeGiorgi/Statements/Sharpness.lean"
+      sorry_count: 0
+      axioms: ["propext", "Classical.choice", "Quot.sound"]
+      comparator_config: "comparators/Sharpness.json"
+      literature_dependencies: []
+    - declaration: "CoarseDeGiorgi.optimal_powers"
+      file: "CoarseDeGiorgi/Statements/OptimalPowers.lean"
+      sorry_count: 0
+      axioms: ["propext", "Classical.choice", "Quot.sound"]
+      comparator_config: "comparators/SharpnessPolynomial.json"
+      literature_dependencies: []
+    - declaration: "CoarseDeGiorgi.weak_harnack_sharpness"
+      file: "CoarseDeGiorgi/Statements/WeakHarnackSharpness.lean"
+      sorry_count: 0
+      axioms: ["propext", "Classical.choice", "Quot.sound"]
+      comparator_config: "comparators/SharpnessWeakHarnack.json"
+      literature_dependencies: []
+    - declaration: "CoarseDeGiorgi.cubical_simplicial_equivalence"
+      file: "CoarseDeGiorgi/Statements/CubicalSimplicialEquivalence.lean"
+      sorry_count: 0
+      axioms: ["propext", "Classical.choice", "Quot.sound"]
+      comparator_config: ""
+      literature_dependencies: []
+    - declaration: "CoarseDeGiorgi.local_boundedness_cubical"
+      file: "CoarseDeGiorgi/Statements/LocalBoundednessCubical.lean"
+      sorry_count: 0
+      axioms: ["propext", "Classical.choice", "Quot.sound"]
+      comparator_config: ""
+      literature_dependencies: []
+    - declaration: "CoarseDeGiorgi.weak_harnack_cubical"
+      file: "CoarseDeGiorgi/Statements/WeakHarnackCubical.lean"
+      sorry_count: 0
+      axioms: ["propext", "Classical.choice", "Quot.sound"]
+      comparator_config: ""
+      literature_dependencies: []
+    - declaration: "CoarseDeGiorgi.harnack_cubical"
+      file: "CoarseDeGiorgi/Statements/HarnackCubical.lean"
+      sorry_count: 0
+      axioms: ["propext", "Classical.choice", "Quot.sound"]
+      comparator_config: ""
+      literature_dependencies: []
+    - declaration: "CoarseDeGiorgi.local_boundedness_sobolev"
+      file: "CoarseDeGiorgi/Statements/LocalBoundednessSobolev.lean"
+      sorry_count: 0
+      axioms: ["propext", "Classical.choice", "Quot.sound"]
+      comparator_config: "comparators/LocalBoundednessSobolev.json"
+      literature_dependencies: []
+    - declaration: "CoarseDeGiorgi.harnack_sobolev"
+      file: "CoarseDeGiorgi/Statements/HarnackSobolev.lean"
+      sorry_count: 0
+      axioms: ["propext", "Classical.choice", "Quot.sound"]
+      comparator_config: "comparators/HarnackSobolev.json"
+      literature_dependencies: []
+    - declaration: "CoarseDeGiorgiAudit.Harnack.harnack"
+      file: "CoarseDeGiorgiAudit/Solution/Harnack.lean"
+      sorry_count: 0
+      axioms: ["propext", "Classical.choice", "Quot.sound"]
+      comparator_config: "comparators/Harnack.json"
+      literature_dependencies: []
+    - declaration: "CoarseDeGiorgiAudit.WeakHarnack.weakHarnack"
+      file: "CoarseDeGiorgiAudit/Solution/WeakHarnack.lean"
+      sorry_count: 0
+      axioms: ["propext", "Classical.choice", "Quot.sound"]
+      comparator_config: "comparators/WeakHarnack.json"
+      literature_dependencies: []
+    - declaration: "CoarseDeGiorgiAudit.ResponseQuadraticForms.responseQuadraticForms"
+      file: "CoarseDeGiorgiAudit/Solution/ResponseQuadraticForms.lean"
+      sorry_count: 0
+      axioms: ["propext", "Classical.choice", "Quot.sound"]
+      comparator_config: "comparators/ResponseQuadraticForms.json"
+      literature_dependencies: []
+    - declaration: "CoarseDeGiorgiAudit.HarnackLpLq.harnackLpLq"
+      file: "CoarseDeGiorgiAudit/Solution/HarnackLpLq.lean"
+      sorry_count: 0
+      axioms: ["propext", "Classical.choice", "Quot.sound"]
+      comparator_config: "comparators/HarnackLpLq.json"
+      literature_dependencies: []
+    - declaration: "CoarseDeGiorgiAudit.WeakHarnackLpLq.weakHarnackLpLq"
+      file: "CoarseDeGiorgiAudit/Solution/WeakHarnackLpLq.lean"
+      sorry_count: 0
+      axioms: ["propext", "Classical.choice", "Quot.sound"]
+      comparator_config: "comparators/WeakHarnackLpLq.json"
+      literature_dependencies: []
+    - declaration: "CoarseDeGiorgiAudit.LocalBoundednessLpLq.localBoundednessLpLq"
+      file: "CoarseDeGiorgiAudit/Solution/LocalBoundednessLpLq.lean"
+      sorry_count: 0
+      axioms: ["propext", "Classical.choice", "Quot.sound"]
+      comparator_config: "comparators/LocalBoundednessLpLq.json"
+      literature_dependencies: []
+    - declaration: "CoarseDeGiorgiAudit.HarnackUniform.harnackUniform"
+      file: "CoarseDeGiorgiAudit/Solution/HarnackUniform.lean"
+      sorry_count: 0
+      axioms: ["propext", "Classical.choice", "Quot.sound"]
+      comparator_config: "comparators/HarnackUniform.json"
+      literature_dependencies: []
+    - declaration: "CoarseDeGiorgiAudit.WeakHarnackUniform.weakHarnackUniform"
+      file: "CoarseDeGiorgiAudit/Solution/WeakHarnackUniform.lean"
+      sorry_count: 0
+      axioms: ["propext", "Classical.choice", "Quot.sound"]
+      comparator_config: "comparators/WeakHarnackUniform.json"
+      literature_dependencies: []
+    - declaration: "CoarseDeGiorgiAudit.LocalBoundednessUniform.localBoundednessUniform"
+      file: "CoarseDeGiorgiAudit/Solution/LocalBoundednessUniform.lean"
+      sorry_count: 0
+      axioms: ["propext", "Classical.choice", "Quot.sound"]
+      comparator_config: "comparators/LocalBoundednessUniform.json"
+      literature_dependencies: []
+    - declaration: "CoarseDeGiorgiAudit.HarnackBesov.harnackBesov"
+      file: "CoarseDeGiorgiAudit/Solution/HarnackBesov.lean"
+      sorry_count: 0
+      axioms: ["propext", "Classical.choice", "Quot.sound"]
+      comparator_config: "comparators/HarnackBesov.json"
+      literature_dependencies: []
+    - declaration: "CoarseDeGiorgiAudit.WeakHarnackBesov.weakHarnackBesov"
+      file: "CoarseDeGiorgiAudit/Solution/WeakHarnackBesov.lean"
+      sorry_count: 0
+      axioms: ["propext", "Classical.choice", "Quot.sound"]
+      comparator_config: "comparators/WeakHarnackBesov.json"
+      literature_dependencies: []
+    - declaration: "CoarseDeGiorgiAudit.LocalBoundednessBesov.localBoundednessBesov"
+      file: "CoarseDeGiorgiAudit/Solution/LocalBoundednessBesov.lean"
+      sorry_count: 0
+      axioms: ["propext", "Classical.choice", "Quot.sound"]
+      comparator_config: "comparators/LocalBoundednessBesov.json"
+      literature_dependencies: []
+    - declaration: "CoarseDeGiorgiAudit.HarnackSobolev.harnackSobolev"
+      file: "CoarseDeGiorgiAudit/Solution/HarnackSobolev.lean"
+      sorry_count: 0
+      axioms: ["propext", "Classical.choice", "Quot.sound"]
+      comparator_config: "comparators/HarnackSobolev.json"
+      literature_dependencies: []
+    - declaration: "CoarseDeGiorgiAudit.LocalBoundednessSobolev.localBoundednessSobolev"
+      file: "CoarseDeGiorgiAudit/Solution/LocalBoundednessSobolev.lean"
+      sorry_count: 0
+      axioms: ["propext", "Classical.choice", "Quot.sound"]
+      comparator_config: "comparators/LocalBoundednessSobolev.json"
+      literature_dependencies: []
+    - declaration: "CoarseDeGiorgiAudit.Sharpness.sharpness"
+      file: "CoarseDeGiorgiAudit/Solution/Sharpness.lean"
+      sorry_count: 0
+      axioms: ["propext", "Classical.choice", "Quot.sound"]
+      comparator_config: "comparators/Sharpness.json"
+      literature_dependencies: []
+    - declaration: "CoarseDeGiorgiAudit.SharpnessPolynomial.sharpnessPolynomial"
+      file: "CoarseDeGiorgiAudit/Solution/SharpnessPolynomial.lean"
+      sorry_count: 0
+      axioms: ["propext", "Classical.choice", "Quot.sound"]
+      comparator_config: "comparators/SharpnessPolynomial.json"
+      literature_dependencies: []
+    - declaration: "CoarseDeGiorgiAudit.SharpnessWeakHarnack.sharpnessWeakHarnack"
+      file: "CoarseDeGiorgiAudit/Solution/SharpnessWeakHarnack.lean"
+      sorry_count: 0
+      axioms: ["propext", "Classical.choice", "Quot.sound"]
+      comparator_config: "comparators/SharpnessWeakHarnack.json"
+      literature_dependencies: []
+
+automation:
+  methods:
+    - method: "agent"
+      models:
+        - "claude-opus-5-5"
+        - "gpt-6-luna"
+        - "gpt-6-sol"
+        - "gpt-6.1-sol"
+        - "claude-sonnet-5"
+      framework: >-
+        Claude Code (Anthropic) and Codex (OpenAI). Claude Opus 5.5 coordinated
+        the work: it planned bounded proof tasks, assigned them to parallel
+        worker agents, and carried out the statement audits and the audits of
+        completed proofs. The Lean code was written by GPT-6 Luna, GPT-6 Sol and GPT-6.1 Sol
+        running in Codex and by Claude Sonnet 5 subagents in Claude Code.
+      tool_setup: >-
+        Lake builds with Lean and Mathlib v4.35.0-rc2 and the public
+        CoarseGraining library at a pinned revision. Each main statement was
+        audited against the manuscript and approved by the authors before its
+        proof; each completed proof received a separate audit. The Mathlib-only
+        restatements were checked with leanprover/comparator (Lean kernel and
+        nanoda replay).
+      cost:
+        wall_time: >-
+          Agent-assisted work, including
+          statement review, proof development, comparator checks and cleanup.
+        spend_usd: >-
+          Not separately tracked (subscription accounts). The work used less
+          than one weekly quota of a ChatGPT subscription and less than half
+          of a Claude Max weekly quota.
+        hardware: "one 16-CPU Linux machine"
+      prompting_notes: >-
+        The authors wrote and revised the manuscript, approved the formal
+        statements, and directed the formalization.
+  spend_usd: >-
+    Not separately tracked (subscription accounts): less than one weekly quota
+    of a ChatGPT subscription and less than half of a Claude Max weekly
+    quota.
+  notes: >-
+    Lean code was written with the listed AI models under the authors'
+    supervision. The Lean kernel checks the formal proofs; the library contains
+    no sorry and no custom axiom. Each Mathlib-only comparator challenge
+    (CoarseDeGiorgiAudit/Challenge/*.lean) contains exactly one intentional
+    statement-level sorry, filled by the corresponding
+    CoarseDeGiorgiAudit/Solution/*.lean and checked by leanprover/comparator.
+
+fidelity:
+  divergences: >-
+    Rendering conventions: the ambient space is Fin d -> R and cubes are open
+    and centred at the origin; the operator norm is the l2 operator norm; the
+    coefficient class requires almost-everywhere measurability, positive
+    definiteness (including symmetry) and integrability of the trace and
+    inverse trace, matching the manuscript's standing assumption; sub-, super-
+    and solutions are elements of the weighted space H^1_a with an explicit
+    weak gradient; norms, the coarse ellipticity constants and their
+    ratio Theta are valued in the extended nonnegative reals, and the Harnack
+    constants use the real value of Theta; the coarse ellipticity
+    constants are formalized with scale summability one and finite spatial
+    exponents, and the results of Section 2 and Appendix A for bounded open
+    convex domains, the cases the paper uses. Theorem A and Corollary B are
+    one declaration; the three parts of Theorem D are three declarations,
+    for finite exponents, and in part (iii) epsilon <= 2 min(s, t) is written
+    as epsilon <= 2s and epsilon <= 2t; Corollary E is two declarations
+    (local bound and Harnack inequality) with independent constants, and its
+    slack theta is an argument fixed by its defining equation; the cube
+    quasi-norm and the negative Sobolev norm take entrywise integrability of
+    the matrix field as an argument, which their Mathlib-only restatements
+    omit; the Sobolev and negative Sobolev norms are defined on open sets and
+    for finite exponents, the Sobolev norm as an infimum over arrays of weak
+    derivatives (equal to the value at the weak derivatives, a proved
+    theorem), with the Euclidean norm over the ordered index tuples of an
+    array; Proposition B.1 is one declaration for both families of cells
+    with one constant, for 1 <= p < infinity, and Lemma B.2 is stated for
+    1 < p < infinity; Theorem F names the integrability exponents xi and zeta (p and q
+    in the manuscript), gives the scalar weight as a Borel function on all
+    of R^d that does not depend on x_1, provides the entrywise integrability
+    that the quasi-norms take as arguments, and writes infinite essential suprema
+    as infinite L^infinity norms; Proposition 11.2 indexes its families by
+    every real epsilon, asserts the properties for 0 < epsilon < 1/8, writes
+    each comparison with one explicit constant, states the L^eta comparison
+    for 1/2 < rho_2 <= 1, and states the final limit in the extended
+    nonnegative reals. Proposition 3.4, Lemma C.1 and (3.20) are formalized
+    for summability index one and finite exponents, Proposition 3.4 as two
+    declarations, (3.20) without the condition (3.19), and the countable
+    subadditivity (2.15)-(2.16) for partitions into bounded open convex
+    pieces; the cubical forms of Theorems A and C and Corollary B assume the
+    cubical constants finite and positive. Proposition 9.7 applies to every
+    zero-boundary solution of the equation of the potential, and the measure
+    of Lemma 9.8 is a measure on R^d carried by the cube and finite on its
+    compact subsets, whose restriction to (3/4) of the cube has its action
+    bounded by the energy and a potential given by its equation against
+    smooth compactly supported functions. Proposition 11.3 asserts a radial profile, indexes its
+    supersolutions by every real epsilon, asserts the properties for
+    0 < epsilon < 1/8, and states the limit in the extended nonnegative
+    reals. Lemma 4.1 is proved with the averages over cubes of side 3^(1-k)
+    in place of 3^(-k), Lemma 5.1 for integrability above one, Lemma 11.1
+    for the radii and centres that the constructions use, and Lemmas 9.3
+    and 9.4 with larger powers of the inverse radius gap; the small exponent
+    p_* of Section 9 is c / sqrt(1 + Theta) instead of c / sqrt(Theta), with
+    some c in (0, r/4] depending only on the parameters. Proofs that differ
+    from the paper's: Lemma 4.2 (explicit reconstruction kernels instead of
+    Neumann problems), Lemma 9.6 (Dirichlet problems on the cube with
+    Calderón-Zygmund estimates for cubes and Morrey's inequality instead of
+    Newtonian potentials), Proposition 9.7 (symmetric truncations without the
+    positivity of the potential, and a sum over level sets instead of the
+    decreasing rearrangement), Lemma 9.8 (the potential by the Riesz
+    representation theorem instead of the Lax-Milgram lemma, and a
+    capacitary function whose uniqueness is not used), Proposition 11.3
+    (smooth supersolutions), Lemma C.1 (Whitney cubes Q with 2Q inside the
+    simplex instead of 3Q), the subsolution in each cylinder of Theorem F,
+    Proposition B.1 (the upper bound cell by cell, for the operator norm)
+    and Lemma B.2 (derivatives of Gaussian averages bounded by domination
+    with a wider Gaussian instead of Young's inequality, one extremal test
+    function instead of a supremum, and the comparison of the sums over all
+    scales for cubes).
+    The formal constants are chosen after the parameters and before the
+    coefficient field and the function, as in the manuscript.
+
+review:
+  status: "author-verified"
+  reviewers:
+    - "Scott Armstrong"
+    - "Benny Avelin"
+    - "Tuomo Kuusi"
+    - "Aatu Turpeinen"
+  notes: >-
+    The Lean kernel checks the formal proofs (no unresolved sorry or custom
+    axiom). The authors reviewed the theorem statements; separate agent reviews
+    checked the statements against the manuscript and audited each proof. This
+    is not external peer review.
+
+alignment:
+  namespace: "CoarseDeGiorgi"
+  statements:
+    - source: "Theorem A (t.cg.local.boundedness) and Corollary B (c.lr.bound), with (e.cg.local.boundedness) and (e.lr.bound)"
+      lean: "CoarseDeGiorgi.local_boundedness"
+      module: "CoarseDeGiorgi.Statements.LocalBoundedness"
+      status: "proved"
+      note: "Joint statement with the power Theta^((d-1)/(4 theta)), and Corollary B for every 0 < eta < 2 with the gamma of Theorem A."
+    - source: "Theorem C (t.harnack), weak Harnack inequality (e.weak.harnack)"
+      lean: "CoarseDeGiorgi.weak_harnack_range"
+      module: "CoarseDeGiorgi.Statements.WeakHarnackRange"
+      status: "proved"
+      note: "For every 0 < eta <= r*/2, with r* = dr/(d - (1-t)r) and r = 2q/(q+1), and a constant depending on eta; the endpoint is proved in Section 9.5 (ss.harnack.endpoint). Comparator-checked via comparators/WeakHarnack.json; with part (i) of Theorem D in WeakHarnackLpLq.json and WeakHarnackUniform.json (every exponent below d/(d-2)), with part (ii) in WeakHarnackBesov.json."
+    - source: "Section 9.4 (s.harnack): the weak Harnack inequality (e.weak.harnack) at eta = r/4, proved first"
+      lean: "CoarseDeGiorgi.weak_harnack"
+      module: "CoarseDeGiorgi.Statements.WeakHarnack"
+      status: "proved"
+      note: "Exponent r/4 = q/(2(q+1)), the first step of the proof of Theorem C; the whole range is CoarseDeGiorgi.weak_harnack_range."
+    - source: "Theorem C (t.harnack), Harnack inequality (e.harnack)"
+      lean: "CoarseDeGiorgi.harnack"
+      module: "CoarseDeGiorgi.Statements.Harnack"
+      status: "proved"
+      note: "Comparator-checked via comparators/Harnack.json."
+    - source: "Theorem D (t.coefficient.conditions), part (i) (c.classical.moments), with (e.classical.series)"
+      lean: "CoarseDeGiorgi.moment_bounds_lebesgue"
+      module: "CoarseDeGiorgi.Statements.MomentBoundsLebesgue"
+      status: "proved"
+      note: "For finite p and q. Combined with Theorems A and C and Corollary B in comparators/HarnackLpLq.json, WeakHarnackLpLq.json and LocalBoundednessLpLq.json; uniformly elliptic specializations in HarnackUniform.json, WeakHarnackUniform.json and LocalBoundednessUniform.json."
+    - source: "Theorem D (t.coefficient.conditions), part (ii) (c.negative.regularity), with (e.negative.regularity.norm) and (e.negative.regularity.series)"
+      lean: "CoarseDeGiorgi.moment_bounds_besov"
+      module: "CoarseDeGiorgi.Statements.MomentBoundsBesov"
+      status: "proved"
+      note: "For finite p and q, with the cube quasi-norm CoarseDeGiorgi.besovCubeNorm. Combined with Theorems A and C and Corollary B in comparators/HarnackBesov.json, WeakHarnackBesov.json and LocalBoundednessBesov.json."
+    - source: "Theorem D (t.coefficient.conditions), part (iii) (c.negative.sobolev), with (e.negative.sobolev.norm) and (e.negative.sobolev.series)"
+      lean: "CoarseDeGiorgi.moment_bounds_sobolev"
+      module: "CoarseDeGiorgi.Statements.MomentBoundsSobolev"
+      status: "proved"
+      note: "For finite p and q, with the negative Sobolev norm CoarseDeGiorgi.negSobolevNorm; epsilon <= 2 min(s, t) is written as two hypotheses. Proved from part (ii) and Lemma B.2 (l.negative.sobolev, CoarseDeGiorgi.negative_sobolev_bound), which uses Proposition B.1 (p.besov.averages, CoarseDeGiorgi.besov_averages)."
+    - source: "Corollary E (c.sobolev.coefficients), local bound (e.sobolev.local.boundedness)"
+      lean: "CoarseDeGiorgi.local_boundedness_sobolev"
+      module: "CoarseDeGiorgi.Statements.LocalBoundednessSobolev"
+      status: "proved"
+      note: "The power (d-1)/(2 theta) of the product of the two negative Sobolev norms; constants chosen independently of those of harnack_sobolev. Comparator-checked via comparators/LocalBoundednessSobolev.json."
+    - source: "Corollary E (c.sobolev.coefficients), Harnack inequality (e.sobolev.harnack)"
+      lean: "CoarseDeGiorgi.harnack_sobolev"
+      module: "CoarseDeGiorgi.Statements.HarnackSobolev"
+      status: "proved"
+      note: "Constant exp(C N^(1/2)), N the product of the two negative Sobolev norms. Comparator-checked via comparators/HarnackSobolev.json."
+    - source: "Discussion after Theorem D, (e.classical.moment.range): indices with a positive slack exist only if 1/p + 1/q < 2/(d-1)"
+      lean: "CoarseDeGiorgi.classical_moments_converse"
+      module: "CoarseDeGiorgi.Statements.ClassicalMomentsConverse"
+      status: "proved"
+    - source: "Theorem F (t.sharpness), with (e.sharpness)"
+      lean: "CoarseDeGiorgi.sharpness"
+      module: "CoarseDeGiorgi.Statements.Sharpness"
+      status: "proved"
+      note: "Sharpness of the range of Theorem D for every theta_0 <= 0 and d >= 3, by a scalar field a(y) I with finite cube quasi-norms (Lebesgue norms at a zero order) and a solution essentially unbounded near every point of the segment; the constructions of Section 11 are in CoarseDeGiorgi/SharpnessExamples/. The Lean statement and the comparator name the integrability exponents xi and zeta, where Theorem F writes p and q. Comparator-checked via comparators/Sharpness.json."
+    - source: "Proposition 11.2 (p.sharpness.polynomial), with (e.sharpness.polynomial.traces), (e.sharpness.polynomial.constants), (e.sharpness.polynomial.norms) and (e.sharpness.polynomial.failure)"
+      lean: "CoarseDeGiorgi.optimal_powers"
+      module: "CoarseDeGiorgi.Statements.OptimalPowers"
+      status: "proved"
+      note: "Optimality of the powers (d-1)/(4 theta) and (d-1)/(2 eta theta) of Theta in Theorem A and Corollary B. Comparator-checked via comparators/SharpnessPolynomial.json."
+    - source: "Proposition 11.3 (p.sharpness.weak.harnack), with (e.sharpness.weak.harnack.failure)"
+      lean: "CoarseDeGiorgi.weak_harnack_sharpness"
+      module: "CoarseDeGiorgi.Statements.WeakHarnackSharpness"
+      status: "proved"
+      note: "A radial field a(|x|) I satisfying the hypothesis and supersolutions with a fixed positive infimum for which the weak Harnack inequality fails for every eta > r*/2. Comparator-checked via comparators/SharpnessWeakHarnack.json."
+    - source: "Proposition 3.4 (p.cubical.simplicial.equivalence), with (e.Lambda.cube.simplex.equivalence) and (e.lambda.cube.simplex.equivalence)"
+      lean: "CoarseDeGiorgi.cubical_simplicial_equivalence"
+      module: "CoarseDeGiorgi.Statements.CubicalSimplicialEquivalence"
+      status: "proved"
+      note: "For summability index one and finite p, q, in the range (e.cubical.simplicial.range); the inequalities with constant one are CoarseDeGiorgi.cubical_simplicial_equivalence_const_one."
+    - source: "After (e.cubical.simplicial.ratio): Theorem A and Corollary B with the cubical ratio"
+      lean: "CoarseDeGiorgi.local_boundedness_cubical"
+      module: "CoarseDeGiorgi.Statements.LocalBoundednessCubical"
+      status: "proved"
+      note: "Under the cubical hypothesis (finite cubical upper constant, positive cubical lower constant) and (e.cubical.simplicial.range), with the cubical ratio in place of Theta."
+    - source: "After (e.cubical.simplicial.ratio): Theorem C, weak Harnack inequality with the cubical ratio"
+      lean: "CoarseDeGiorgi.weak_harnack_cubical"
+      module: "CoarseDeGiorgi.Statements.WeakHarnackCubical"
+      status: "proved"
+      note: "Under the cubical hypothesis (finite cubical upper constant, positive cubical lower constant) and (e.cubical.simplicial.range), with the cubical ratio in place of Theta."
+    - source: "After (e.cubical.simplicial.ratio): Theorem C, Harnack inequality with the cubical ratio"
+      lean: "CoarseDeGiorgi.harnack_cubical"
+      module: "CoarseDeGiorgi.Statements.HarnackCubical"
+      status: "proved"
+      note: "Under the cubical hypothesis (finite cubical upper constant, positive cubical lower constant) and (e.cubical.simplicial.range), with the cubical ratio in place of Theta."
+
+acknowledgements: >-
+  Scott Armstrong and Tuomo Kuusi were supported by the European Research
+  Council (ERC) under the European Union's Horizon Europe research and
+  innovation programme, grant agreement No. 101200828. Tuomo Kuusi and Aatu
+  Turpeinen were supported by the Academy of Finland. Built on Lean 4,
+  Mathlib, Lake, the CoarseGraining library, and leanprover/comparator.

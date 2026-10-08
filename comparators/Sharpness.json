@@ -1,0 +1,14 @@
+{
+  "challenge_module": "CoarseDeGiorgiAudit.Challenge.Sharpness",
+  "solution_module": "CoarseDeGiorgiAudit.Solution.Sharpness",
+  "theorem_names": [
+    "CoarseDeGiorgiAudit.Sharpness.sharpness"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "enable_nanoda": true
+}

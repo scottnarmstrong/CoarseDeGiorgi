@@ -1,0 +1,14 @@
+{
+  "challenge_module": "CoarseDeGiorgiAudit.Challenge.HarnackSobolev",
+  "solution_module": "CoarseDeGiorgiAudit.Solution.HarnackSobolev",
+  "theorem_names": [
+    "CoarseDeGiorgiAudit.HarnackSobolev.harnackSobolev"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "enable_nanoda": true
+}

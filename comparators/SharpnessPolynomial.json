@@ -1,0 +1,14 @@
+{
+  "challenge_module": "CoarseDeGiorgiAudit.Challenge.SharpnessPolynomial",
+  "solution_module": "CoarseDeGiorgiAudit.Solution.SharpnessPolynomial",
+  "theorem_names": [
+    "CoarseDeGiorgiAudit.SharpnessPolynomial.sharpnessPolynomial"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "enable_nanoda": true
+}

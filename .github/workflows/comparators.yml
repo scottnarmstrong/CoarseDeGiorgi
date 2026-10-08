@@ -1,0 +1,202 @@
+name: Comparators
+
+# Runs leanprover/comparator, through scripts/verify_comparator.sh, on every
+# configuration in comparators/. For each one it checks that the solution
+# proves a theorem whose statement, with its whole dependency closure, is
+# identical to the Mathlib-only challenge's, that the proof uses only the
+# permitted axioms, and that both the Lean kernel and the independent nanoda
+# kernel accept the solution (every configuration sets "enable_nanoda": true).
+#
+# Mathlib oleans come from `lake exe cache get`; the CoarseGraining dependency
+# and the project build are cached between runs. The first run on an empty
+# cache builds everything and may take several hours.
+
+"on":
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# Cancel superseded runs on the same ref.
+concurrency:
+  group: comparators-${{ github.ref }}
+  cancel-in-progress: true
+
+# Pinned sandbox and second kernel. The comparator and lean4export revisions
+# are pinned in scripts/verify_comparator.sh, which also checks that their
+# toolchains match ./lean-toolchain.
+env:
+  LANDRUN_REV: "811cfff51ceaf3d9843708aa6d22e9b84ccac8b4"  # zouuup/landrun
+  NANODA_REV: "68d5ca9db226849b41a6fff59d796ff19d0a8840"   # robsimmons/nanoda_lib
+
+jobs:
+  comparator:
+    name: Comparator audit
+    runs-on: ubuntu-24.04
+    timeout-minutes: 360
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+
+      # The build, the exported environments and the second kernel need more
+      # disk than a hosted runner has free at start. Only remove preinstalled,
+      # unused SDKs on disposable hosted runners, and fail at once if less than
+      # 20 GB is available.
+      - name: Free runner disk space
+        run: |
+          set -Eeuo pipefail
+          if [[ "${RUNNER_ENVIRONMENT:-}" == github-hosted ]]; then
+            sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL
+            sudo docker image prune --all --force > /dev/null || true
+          fi
+          df -h .
+          available_kib="$(df -Pk . | awk 'NR==2 {print $4}')"
+          test "$available_kib" -ge 20971520
+
+      # Provision the toolchain and Mathlib exactly as the build workflow does, so
+      # that the build artifacts the two workflows share through their cache
+      # keys replay instead of being rebuilt.
+      - name: Set up Lean and Mathlib cache
+        uses: leanprover/lean-action@v1
+        with:
+          build: false
+          use-mathlib-cache: true
+
+      - name: Restore project and dependency build artifacts
+        id: cache-restore
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            .lake/build
+            .lake/packages/CoarseGraining/.lake/build
+          key: lake-cmp-${{ hashFiles('lean-toolchain', 'lake-manifest.json') }}-${{ github.sha }}
+          restore-keys: |
+            lake-cmp-${{ hashFiles('lean-toolchain', 'lake-manifest.json') }}-
+            lake-build-${{ hashFiles('lean-toolchain', 'lake-manifest.json') }}-
+
+      # Remove the audit library's build artifacts so that no stale challenge
+      # or solution olean is checked, then build the library and the audit
+      # library. The step has its own time limit, below the job's, so that a
+      # first build that runs out of time still reaches the step that saves
+      # its artifacts.
+      - name: Build the challenges and solutions
+        timeout-minutes: 300
+        run: |
+          rm -rf .lake/build/lib/lean/CoarseDeGiorgiAudit .lake/build/ir/CoarseDeGiorgiAudit
+          lake build CoarseDeGiorgiAudit
+
+      - name: Restore verification tools
+        id: tools-cache
+        uses: actions/cache/restore@v4
+        with:
+          path: ~/tools
+          key: cmp-tools-${{ hashFiles('scripts/verify_comparator.sh', 'lean-toolchain') }}-${{ env.LANDRUN_REV }}-${{ env.NANODA_REV }}
+
+      - name: Set up Go (for landrun)
+        if: steps.tools-cache.outputs.cache-hit != 'true'
+        uses: actions/setup-go@v5
+        with:
+          go-version: "1.24"
+
+      - name: Build landrun
+        if: steps.tools-cache.outputs.cache-hit != 'true'
+        run: |
+          mkdir -p ~/tools/bin
+          CGO_ENABLED=0 GOBIN="$HOME/tools/bin" \
+            go install "github.com/zouuup/landrun/cmd/landrun@$LANDRUN_REV"
+
+      - name: Build nanoda
+        if: steps.tools-cache.outputs.cache-hit != 'true'
+        run: |
+          command -v cargo >/dev/null || {
+            curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs \
+              | sh -s -- -y --profile minimal --default-toolchain stable
+          }
+          export PATH="$HOME/.cargo/bin:$PATH"
+          rm -rf ~/tools/nanoda_lib
+          git clone --filter=blob:none https://github.com/robsimmons/nanoda_lib ~/tools/nanoda_lib
+          git -C ~/tools/nanoda_lib checkout --detach "$NANODA_REV"
+          cd ~/tools/nanoda_lib && cargo build --release --locked
+
+      # One call of the script per configuration, each with its own temporary
+      # directory: comparator writes the exported environment of the pair to
+      # $TMPDIR, and for these challenges the export is large. The directory
+      # is deleted as soon as the pair is done. The script fetches and builds
+      # the pinned comparator and lean4export into $CDG_COMPARATOR_CACHE on
+      # its first call.
+      - name: Run the comparator on every configuration
+        run: |
+          set -uo pipefail
+          export CDG_COMPARATOR_CACHE="$HOME/tools/cdg-comparator"
+          export COMPARATOR_LANDRUN="$HOME/tools/bin/landrun"
+          export COMPARATOR_NANODA="$HOME/tools/nanoda_lib/target/release/nanoda_bin"
+          scratch="${RUNNER_TEMP:-/tmp}/comparator-scratch"
+          logs="${RUNNER_TEMP:-/tmp}/comparator-logs"
+          rm -rf "$scratch" "$logs"
+          mkdir -p "$scratch" "$logs"
+          trap 'rm -rf "$scratch"' EXIT
+          fail=0
+          count=0
+          for cfg in comparators/*.json; do
+            name=$(basename "$cfg" .json)
+            count=$((count + 1))
+            echo "::group::$name"
+            mkdir -p "$scratch/$name"
+            if TMPDIR="$scratch/$name" scripts/verify_comparator.sh "$name" 2>&1 \
+                 | tee "$logs/$name.log" \
+               && grep -q "Your solution is okay!" "$logs/$name.log"; then
+              echo "$name: OK"
+            else
+              echo "$name: FAILED"
+              fail=1
+            fi
+            rm -rf "$scratch/$name"
+            echo "::endgroup::"
+          done
+          if [ "$count" -eq 0 ]; then
+            echo "No configuration found in comparators/."
+            exit 1
+          fi
+          echo "$count configurations checked."
+          exit "$fail"
+
+      - name: Save project and dependency build artifacts
+        if: always() && steps.cache-restore.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            .lake/build
+            .lake/packages/CoarseGraining/.lake/build
+          key: lake-cmp-${{ hashFiles('lean-toolchain', 'lake-manifest.json') }}-${{ github.sha }}
+
+      # Save the tools only when both binaries exist, so that a failed setup
+      # is never restored by a later run.
+      - name: Check verification tools
+        id: tools-ok
+        if: always() && steps.tools-cache.outputs.cache-hit != 'true'
+        run: |
+          test -x "$HOME/tools/bin/landrun"
+          test -x "$HOME/tools/nanoda_lib/target/release/nanoda_bin"
+
+      - name: Save verification tools
+        if: always() && steps.tools-cache.outputs.cache-hit != 'true' && steps.tools-ok.outcome == 'success'
+        uses: actions/cache/save@v4
+        with:
+          path: ~/tools
+          key: cmp-tools-${{ hashFiles('scripts/verify_comparator.sh', 'lean-toolchain') }}-${{ env.LANDRUN_REV }}-${{ env.NANODA_REV }}
+
+      - name: Upload comparator logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: comparator-logs
+          path: ${{ runner.temp }}/comparator-logs/*.log

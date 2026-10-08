@@ -1,0 +1,14 @@
+{
+  "challenge_module": "CoarseDeGiorgiAudit.Challenge.LocalBoundednessSobolev",
+  "solution_module": "CoarseDeGiorgiAudit.Solution.LocalBoundednessSobolev",
+  "theorem_names": [
+    "CoarseDeGiorgiAudit.LocalBoundednessSobolev.localBoundednessSobolev"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "enable_nanoda": true
+}

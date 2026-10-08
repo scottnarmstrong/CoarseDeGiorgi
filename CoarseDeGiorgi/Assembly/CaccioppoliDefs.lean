@@ -1,0 +1,57 @@
+import Homogenization.Ambient.CoefficientField
+import Homogenization.Sobolev.WeakDerivatives
+import Homogenization.CoarseGraining.Definitions
+import Homogenization.Geometry.TriadicCube
+import Mathlib.Analysis.CStarAlgebra.Matrix
+import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
+import CoarseDeGiorgi.Statements.IsWeightedSubsolution
+import CoarseDeGiorgi.Statements.MemH1a
+import CoarseDeGiorgi.Statements.MemH1a0
+import CoarseDeGiorgi.Statements.SimplexIndex
+import CoarseDeGiorgi.Statements.AlphaParam
+import CoarseDeGiorgi.Statements.AuxAverage
+import CoarseDeGiorgi.Statements.AuxCube
+import CoarseDeGiorgi.Assembly.ParameterDefs
+import CoarseDeGiorgi.Statements.Contrast
+import CoarseDeGiorgi.Statements.FracNorm
+import CoarseDeGiorgi.Statements.GridOffset
+import CoarseDeGiorgi.Statements.H1aWeightedNorm
+import CoarseDeGiorgi.Statements.LowerCellAverage
+import CoarseDeGiorgi.Statements.LowerMoment
+import CoarseDeGiorgi.Statements.LowerResponseInv
+import CoarseDeGiorgi.Statements.LowerResponseInvOnCell
+import CoarseDeGiorgi.Statements.LocallyBoundedAbove
+import CoarseDeGiorgi.Statements.OriginCube
+import CoarseDeGiorgi.Statements.ParamR
+import CoarseDeGiorgi.Statements.ParamTheta
+import CoarseDeGiorgi.Statements.PositivePart
+import CoarseDeGiorgi.Statements.PositiveTruncationGradient
+import CoarseDeGiorgi.Statements.RBoundaryParam
+import CoarseDeGiorgi.Statements.RStarParam
+import CoarseDeGiorgi.Statements.Simplex
+import CoarseDeGiorgi.Statements.SimplexCell
+import CoarseDeGiorgi.Statements.SimplexCellIsOpenBoundedConvexDomain
+import CoarseDeGiorgi.Statements.SimplexCellNonempty
+import CoarseDeGiorgi.Statements.SimplexCellSubsetOriginCube
+import CoarseDeGiorgi.Statements.SpatialMomentRange
+import CoarseDeGiorgi.Statements.Triangulation
+import CoarseDeGiorgi.Statements.TriangulationCard
+import CoarseDeGiorgi.Statements.TwoLevelQuantity
+import CoarseDeGiorgi.Statements.UpperCellAverage
+import CoarseDeGiorgi.Statements.UpperMoment
+import CoarseDeGiorgi.Statements.UpperResponse
+import CoarseDeGiorgi.Statements.UpperResponseOnCell
+import CoarseDeGiorgi.Statements.UpperResponseExistsUnique
+import CoarseDeGiorgi.Statements.LowerResponseExistsUnique
+import CoarseDeGiorgi.Statements.WeightedCoeffOnSimplexCell
+
+open Homogenization MeasureTheory
+open scoped BigOperators ENNReal Matrix.Norms.L2Operator
+
+namespace CoarseDeGiorgi.Assembly.Aliases
+
+/-! Compatibility aliases for `Statements/` definitions. -/
+
+abbrev originCube {d : ℕ} (ρ : ℝ) : Set (Vec d) := CoarseDeGiorgi.originCube ρ
+
+end CoarseDeGiorgi.Assembly.Aliases

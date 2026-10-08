@@ -1,0 +1,14 @@
+{
+  "challenge_module": "CoarseDeGiorgiAudit.Challenge.LocalBoundednessLpLq",
+  "solution_module": "CoarseDeGiorgiAudit.Solution.LocalBoundednessLpLq",
+  "theorem_names": [
+    "CoarseDeGiorgiAudit.LocalBoundednessLpLq.localBoundednessLpLq"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "enable_nanoda": true
+}

@@ -1,0 +1,14 @@
+{
+  "challenge_module": "CoarseDeGiorgiAudit.Challenge.HarnackLpLq",
+  "solution_module": "CoarseDeGiorgiAudit.Solution.HarnackLpLq",
+  "theorem_names": [
+    "CoarseDeGiorgiAudit.HarnackLpLq.harnackLpLq"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "enable_nanoda": true
+}

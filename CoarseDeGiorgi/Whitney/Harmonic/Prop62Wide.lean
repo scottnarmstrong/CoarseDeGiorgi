@@ -1,0 +1,239 @@
+import CoarseDeGiorgi.Whitney.Harmonic.Eq64Wide
+import CoarseDeGiorgi.Whitney.Harmonic.TraceWide
+import CoarseDeGiorgi.Whitney.Harmonic.Cellwise3Wide
+import CoarseDeGiorgi.Whitney.Harmonic.ConseqWide
+import CoarseDeGiorgi.Whitney.Harmonic.Surface
+import CoarseDeGiorgi.Statements.EuclidLipConst
+import CoarseDeGiorgi.Statements.IsPiecewiseHarmonicExtension
+import CoarseDeGiorgi.Statements.WhitneySimplicesNearSize
+import CoarseDeGiorgi.Statements.IsTriadicWidth
+import CoarseDeGiorgi.Statements.SelectionInterval
+import CoarseDeGiorgi.Statements.IsWeightedCoeffOn
+import CoarseDeGiorgi.Statements.OriginCube
+import CoarseDeGiorgi.Statements.SurfaceFracSeminorm
+import CoarseDeGiorgi.Statements.CubeFaceMeasure
+import CoarseDeGiorgi.Statements.SampledUpperResponse
+import CoarseDeGiorgi.Statements.UpperResponseOnCell
+import CoarseDeGiorgi.Statements.SimplexCell
+import CoarseDeGiorgi.Statements.SimplexIndex
+import CoarseDeGiorgi.Statements.WeightedEnergy
+
+/-! # Proposition `p.whitney.extension` from Proposition `p.affine.extension`
+
+`harmonic_extension_of_affine` proves Proposition `p.whitney.extension` from the statement
+of Proposition `p.affine.extension` (`affine_extension`), taken verbatim as the hypothesis
+`h61`. -/
+
+open Homogenization MeasureTheory
+open scoped BigOperators ENNReal Matrix.Norms.L2Operator NNReal
+
+namespace CoarseDeGiorgi.Whitney.Harmonic.Wide
+
+open CoarseDeGiorgi CoarseDeGiorgi.Whitney.Harmonic
+
+open scoped Classical in
+theorem harmonic_extension_of_affine
+    (h61 : ∀ (d : ℕ) (_hd : 3 ≤ d) (α ξ : ℝ)
+    (_hα0 : 0 < α) (_hα1 : α < 1) (_hξ1 : 1 ≤ ξ) (_hξ2 : ξ ≤ 2),
+    ∃ C : ℝ≥0∞, C < ⊤ ∧
+      ∀ ρ₁ ρ₂ : ℝ, (hρ₁ : 1 / 2 ≤ ρ₁) → (hρ₁₂ : ρ₁ < ρ₂) → (hρ₂ : ρ₂ ≤ 1) →
+        ∀ τ : ℝ, (hJ : τ ∈ selectionInterval ρ₁ ρ₂) →
+          let hτ0 : (1 / 2 : ℝ) ≤ τ := by
+            have h1 : ρ₁ + (ρ₂ - ρ₁) / 4 < τ := hJ.1
+            linarith
+          let hτ1 : τ < 1 := by
+            have h2 : τ < ρ₁ + (ρ₂ - ρ₁) / 2 := hJ.2
+            linarith
+          ∀ h : ℝ, IsTriadicWidth h → h ≤ (ρ₂ - τ) / (100 * (d : ℝ)) →
+            -- linearity in `f`
+            (∀ f₁ f₂ : Vec d → ℝ,
+              (∃ K : ℝ≥0, LipschitzOnWith K f₁ (cubeSurface τ)) →
+              (∃ K : ℝ≥0, LipschitzOnWith K f₂ (cubeSurface τ)) →
+              ∀ c₁ c₂ : ℝ, ∀ x ∈ (closedReferenceCube (d := d) τ)ᶜ,
+                whitneyAffineExtension τ h (fun y => c₁ * f₁ y + c₂ * f₂ y) hτ0 hτ1 x =
+                  c₁ * whitneyAffineExtension τ h f₁ hτ0 hτ1 x +
+                    c₂ * whitneyAffineExtension τ h f₂ hτ0 hτ1 x) ∧
+            ∀ f : Vec d → ℝ, (∃ K : ℝ≥0, LipschitzOnWith K f (cubeSurface τ)) →
+              -- nonnegativity
+              ((∀ y ∈ cubeSurface (d := d) τ, 0 ≤ f y) →
+                ∀ x ∈ (closedReferenceCube (d := d) τ)ᶜ,
+                  0 ≤ whitneyAffineExtension τ h f hτ0 hτ1 x) ∧
+              -- a Lipschitz extension of `f` to `ℝ^d ∖ τ□₀`
+              (∃ F : Vec d → ℝ,
+                (∀ x ∈ (closedReferenceCube (d := d) τ)ᶜ,
+                  F x = whitneyAffineExtension τ h f hτ0 hτ1 x) ∧
+                (∀ y ∈ cubeSurface (d := d) τ, F y = f y) ∧
+                euclidLipConst (originCube (d := d) τ)ᶜ F < ⊤) ∧
+              -- values between `min {0, min f}` and `max {0, max f}`
+              (∀ m M : ℝ, m ≤ 0 → 0 ≤ M →
+                (∀ y ∈ cubeSurface (d := d) τ, m ≤ f y ∧ f y ≤ M) →
+                ∀ x ∈ (closedReferenceCube (d := d) τ)ᶜ,
+                  m ≤ whitneyAffineExtension τ h f hτ0 hτ1 x ∧
+                    whitneyAffineExtension τ h f hτ0 hτ1 x ≤ M) ∧
+              -- vanishing off `𝒲_h`
+              (∀ cell : ExteriorCell d τ, cell ∉ whitneySimplicesNear τ h →
+                ∀ x ∈ exteriorCellSet cell, whitneyAffineExtension τ h f hτ0 hτ1 x = 0) ∧
+              -- support: closures in `(τ + 3h)□̄₀ ⋐ ρ₂□₀`
+              ((∀ cell : ExteriorCell d τ, cell ∈ whitneySimplicesNear τ h →
+                  closure (exteriorCellSet cell) ⊆ closedReferenceCube (d := d) (τ + 3 * h)) ∧
+                closure {x | x ∈ (closedReferenceCube (d := d) τ)ᶜ ∧
+                    whitneyAffineExtension τ h f hτ0 hτ1 x ≠ 0} ⊆
+                  closedReferenceCube (d := d) (τ + 3 * h) ∧
+                closedReferenceCube (d := d) (τ + 3 * h) ⊆ originCube (d := d) ρ₂) ∧
+              -- `e.extension.scale`
+              (∀ (j : ℕ) (b : ℝ), (b = 2 ∨ b = ξ) →
+                ∑' cell : whitneySimplicesNearSize (d := d) τ h j,
+                  ∫⁻ x in exteriorCellSet cell.1,
+                    ENNReal.ofReal (vecNormSq
+                      (smoothGrad (whitneyAffineExtension τ h f hτ0 hτ1) x)) ≤
+                  C * ENNReal.ofReal ((3 : ℝ) ^ (-(j : ℤ))) *
+                    (ENNReal.ofReal ((3 : ℝ) ^ (j : ℤ) *
+                        (3 : ℝ) ^ (-((j : ℝ) *
+                          (α - ((d : ℝ) - 1) * (1 / ξ - 1 / 2))))) *
+                      surfaceFracSeminorm τ α ξ f) ^ 2 +
+                  C * ENNReal.ofReal ((3 : ℝ) ^ (-(j : ℤ))) *
+                    (ENNReal.ofReal (h⁻¹ * (3 : ℝ) ^ ((j : ℝ) *
+                        (((d : ℝ) - 1) * (1 / b - 1 / 2)))) *
+                      eLpNorm f (ENNReal.ofReal b) (surfaceMeasure τ)) ^ 2)) :
+    ∀ (d : ℕ) (_hd : 3 ≤ d) (α ξ : ℝ)
+    (_hα0 : 0 < α) (_hα1 : α < 1) (_hξ1 : 1 ≤ ξ) (_hξ2 : ξ ≤ 2),
+    ∃ C : ℝ≥0∞, C < ⊤ ∧
+      ∀ (a : CoeffField d) (ha : IsWeightedCoeffOn (originCube 1) a),
+      ∀ ρ₁ ρ₂ : ℝ, (hρ₁ : 1 / 2 ≤ ρ₁) → (hρ₁₂ : ρ₁ < ρ₂) → (hρ₂ : ρ₂ ≤ 1) →
+        ∀ τ : ℝ, (hJ : τ ∈ selectionInterval ρ₁ ρ₂) →
+          let hτ0 : (1 / 2 : ℝ) ≤ τ := by
+            have h1 : ρ₁ + (ρ₂ - ρ₁) / 4 < τ := hJ.1
+            linarith
+          let hτ1 : τ < 1 := by
+            have h2 : τ < ρ₁ + (ρ₂ - ρ₁) / 2 := hJ.2
+            linarith
+          ∀ h : ℝ, IsTriadicWidth h → h ≤ (ρ₂ - τ) / (100 * (d : ℝ)) →
+            -- linearity in `f`
+            (∀ f₁ f₂ : Vec d → ℝ,
+              (∃ K : ℝ≥0, LipschitzOnWith K f₁ (cubeSurface τ)) →
+              (∃ K : ℝ≥0, LipschitzOnWith K f₂ (cubeSurface τ)) →
+              ∀ c₁ c₂ : ℝ,
+              ∀ (H₁ H₂ H : Vec d → ℝ) (GH₁ GH₂ GH : Vec d → Vec d),
+                IsPiecewiseHarmonicExtension a τ h hτ0 hτ1 f₁ H₁ GH₁ →
+                IsPiecewiseHarmonicExtension a τ h hτ0 hτ1 f₂ H₂ GH₂ →
+                IsPiecewiseHarmonicExtension a τ h hτ0 hτ1
+                  (fun y => c₁ * f₁ y + c₂ * f₂ y) H GH →
+                ∀ᵐ x ∂(volume.restrict (closedReferenceCube (d := d) τ)ᶜ),
+                  H x = c₁ * H₁ x + c₂ * H₂ x ∧ GH x = c₁ • GH₁ x + c₂ • GH₂ x) ∧
+            ∀ f : Vec d → ℝ, (∃ K : ℝ≥0, LipschitzOnWith K f (cubeSurface τ)) →
+            ∀ (H : Vec d → ℝ) (GH : Vec d → Vec d),
+              IsPiecewiseHarmonicExtension a τ h hτ0 hτ1 f H GH →
+              -- nonnegativity
+              ((∀ y ∈ cubeSurface (d := d) τ, 0 ≤ f y) →
+                ∀ᵐ x ∂(volume.restrict (closedReferenceCube (d := d) τ)ᶜ), 0 ≤ H x) ∧
+              -- the range bound of `L_h f`
+              (∀ m M : ℝ, m ≤ 0 → 0 ≤ M →
+                (∀ y ∈ cubeSurface (d := d) τ, m ≤ f y ∧ f y ≤ M) →
+                ∀ᵐ x ∂(volume.restrict (closedReferenceCube (d := d) τ)ᶜ),
+                  m ≤ H x ∧ H x ≤ M) ∧
+              -- ordinary trace `f` on `∂(τ□₀)`
+              (∀ (i : Fin d) (φ : Vec d → ℝ), ContDiff ℝ (⊤ : ℕ∞) φ → HasCompactSupport φ →
+                tsupport φ ⊆ originCube (d := d) 1 →
+                ∫ x in originCube (d := d) 1 \ closedReferenceCube (d := d) τ,
+                    (H x * fderiv ℝ φ x (basisVec i) + GH x i * φ x) =
+                  (∫ x, f x * φ x ∂(cubeFaceMeasure τ i false)) -
+                    ∫ x, f x * φ x ∂(cubeFaceMeasure τ i true)) ∧
+              -- `H_h f ∈ W^{1,1}(□₀ ∖ τ□̄₀)` with finite energy
+              (Integrable H (volume.restrict
+                  (originCube (d := d) 1 \ closedReferenceCube (d := d) τ)) ∧
+                Integrable GH (volume.restrict
+                  (originCube (d := d) 1 \ closedReferenceCube (d := d) τ)) ∧
+                HasWeakGradientOn
+                  (originCube (d := d) 1 \ closedReferenceCube (d := d) τ) H GH ∧
+                weightedEnergy a
+                  (originCube (d := d) 1 \ closedReferenceCube (d := d) τ) GH < ⊤) ∧
+              -- vanishes outside `(τ + 3h)□̄₀`
+              (∀ᵐ x ∂(volume.restrict (closedReferenceCube (d := d) (τ + 3 * h))ᶜ),
+                H x = 0) ∧
+              -- `e.harmonic.energy`
+              (∀ (j : ℕ) (cell : ExteriorCell d τ),
+                cell ∈ whitneySimplicesNearSize (d := d) τ h j →
+                ∃ η : SimplexIndex d j, exteriorCellSet cell = simplexCell j η ∧
+                  ∀ x ∈ exteriorCellSet cell,
+                    weightedEnergy a (exteriorCellSet cell) GH =
+                      volume (exteriorCellSet cell) *
+                        ENNReal.ofReal
+                          (vecDot (smoothGrad (whitneyAffineExtension τ h f hτ0 hτ1) x)
+                            (matVecMul (upperResponseOnCell j a ha η)
+                              (smoothGrad (whitneyAffineExtension τ h f hτ0 hτ1) x))) ∧
+                    volume (exteriorCellSet cell) *
+                        ENNReal.ofReal
+                          (vecDot (smoothGrad (whitneyAffineExtension τ h f hτ0 hτ1) x)
+                            (matVecMul (upperResponseOnCell j a ha η)
+                              (smoothGrad (whitneyAffineExtension τ h f hτ0 hτ1) x))) ≤
+                      sampledUpperResponse a ha j τ *
+                        (volume (exteriorCellSet cell) *
+                          ENNReal.ofReal (vecNormSq
+                            (smoothGrad (whitneyAffineExtension τ h f hτ0 hτ1) x)))) ∧
+              -- the estimate `e.extension.scale` with the extra factor `A_j(τ)`
+              (∀ (j : ℕ) (b : ℝ), (b = 2 ∨ b = ξ) →
+                ∑' cell : whitneySimplicesNearSize (d := d) τ h j,
+                  weightedEnergy a (exteriorCellSet cell.1) GH ≤
+                  sampledUpperResponse a ha j τ *
+                    (C * ENNReal.ofReal ((3 : ℝ) ^ (-(j : ℤ))) *
+                      (ENNReal.ofReal ((3 : ℝ) ^ (j : ℤ) *
+                          (3 : ℝ) ^ (-((j : ℝ) *
+                            (α - ((d : ℝ) - 1) * (1 / ξ - 1 / 2))))) *
+                        surfaceFracSeminorm τ α ξ f) ^ 2 +
+                    C * ENNReal.ofReal ((3 : ℝ) ^ (-(j : ℤ))) *
+                      (ENNReal.ofReal (h⁻¹ * (3 : ℝ) ^ ((j : ℝ) *
+                          (((d : ℝ) - 1) * (1 / b - 1 / 2)))) *
+                        eLpNorm f (ENNReal.ofReal b) (surfaceMeasure τ)) ^ 2)) ∧
+              -- gluing with a Lipschitz `w` on `τ□̄₀`
+              (∀ w : Vec d → ℝ,
+                (∃ K : ℝ≥0, LipschitzOnWith K w (closedReferenceCube (d := d) τ)) →
+                (∀ y ∈ cubeSurface (d := d) τ, w y = f y) →
+                ∃ G : Vec d → Vec d,
+                  MemH1a0 a (originCube (d := d) 1)
+                    (fun x => if x ∈ closedReferenceCube (d := d) τ then w x else H x) G ∧
+                  (∃ K : Set (Vec d), IsCompact K ∧ K ⊆ originCube (d := d) ρ₂ ∧
+                    ∀ᵐ x ∂volume, x ∉ K →
+                      (if x ∈ closedReferenceCube (d := d) τ then w x else H x) = 0) ∧
+                  ((∀ x ∈ closedReferenceCube (d := d) τ, 0 ≤ w x) →
+                    ∀ᵐ x ∂(volume.restrict (originCube (d := d) 1)),
+                      0 ≤ (if x ∈ closedReferenceCube (d := d) τ then w x else H x))) := by
+  intro d hd α ξ hα0 hα1 hξ1 hξ2
+  obtain ⟨C, hC, h61'⟩ := h61 d hd α ξ hα0 hα1 hξ1 hξ2
+  refine ⟨C, hC, ?_⟩
+  intro a ha ρ₁ ρ₂ hρ₁ hρ₁₂ hρ₂ τ hJ hτ0 hτ1 h htri hwidth
+  have hτρ : τ < ρ₂ := by
+    have h2 : τ < ρ₁ + (ρ₂ - ρ₁) / 2 := hJ.2
+    linarith
+  have hτpos : 0 < τ := by linarith
+  have : NeZero d := ⟨by omega⟩
+  have hh : 0 < h := triadicWidth_pos htri
+  have h61x := h61' ρ₁ ρ₂ hρ₁ hρ₁₂ hρ₂ τ hJ
+  have h61y := h61x h htri hwidth
+  have hfacts : ∀ f : Vec d → ℝ, (∃ K : ℝ≥0, LipschitzOnWith K f (cubeSurface τ)) →
+      AffFacts τ h ρ₂ hτ0 hτ1 f := by
+    intro f hf
+    obtain ⟨hnn, hlip, hrange, hzero, hsupp, -⟩ := h61y.2 f hf
+    exact ⟨hnn, hlip, hrange, hzero, hsupp.1, hsupp.2.1, hsupp.2.2⟩
+  refine ⟨?_, ?_⟩
+  · intro f₁ f₂ hf₁ hf₂ c₁ c₂ H₁ H₂ H GH₁ GH₂ GH h₁ h₂ h₀
+    exact linearity_ae hd hτ0 hτ1 hρ₂ hτρ hh hwidth ha c₁ c₂ (h61y.1 f₁ f₂ hf₁ hf₂ c₁ c₂) h₁ h₂ h₀
+  · intro f hf H GH hHGH
+    have hF := hfacts f hf
+    refine ⟨?_, ?_, ?_, ?_, ?_, ?_, ?_, ?_⟩
+    · intro hf0
+      exact nonneg_bound hd hτ0 hτ1 hρ₂ hτρ hh hwidth ha hF hHGH hf0
+    · intro m M hm hM hmM
+      exact range_bound hd hτ0 hτ1 hρ₂ hτρ hh hwidth ha hF hHGH m M hm hM hmM
+    · intro i φ hφ hc hs
+      exact trace_statement hd hτ0 hτ1 hρ₂ hτρ hh hwidth ha hF hf hHGH i φ hφ hc hs
+    · exact w11_statement hd hτ0 hτ1 hρ₂ hτρ hh hwidth ha hF hf hHGH
+    · exact vanishing_outside hτ0 hτ1 hh hF hHGH
+    · intro j cell hcell
+      exact eq66_statement hd hτ0 hτ1 hρ₂ hτρ hh hwidth ha hHGH j cell hcell
+    · intro j b hb
+      exact tsum_energy_le hd hτ0 hτ1 hρ₂ hτρ hh hwidth ha hHGH j _
+        ((h61y.2 f hf).2.2.2.2.2 j b hb)
+    · intro w hw hwf
+      exact gluing_statement hd hτ0 hτ1 hρ₂ hτρ hh hwidth ha hF hHGH w hw hwf
+
+end CoarseDeGiorgi.Whitney.Harmonic.Wide

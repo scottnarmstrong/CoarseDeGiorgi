@@ -1,0 +1,14 @@
+{
+  "challenge_module": "CoarseDeGiorgiAudit.Challenge.SharpnessWeakHarnack",
+  "solution_module": "CoarseDeGiorgiAudit.Solution.SharpnessWeakHarnack",
+  "theorem_names": [
+    "CoarseDeGiorgiAudit.SharpnessWeakHarnack.sharpnessWeakHarnack"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "enable_nanoda": true
+}

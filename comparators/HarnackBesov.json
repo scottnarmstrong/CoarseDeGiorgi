@@ -1,0 +1,14 @@
+{
+  "challenge_module": "CoarseDeGiorgiAudit.Challenge.HarnackBesov",
+  "solution_module": "CoarseDeGiorgiAudit.Solution.HarnackBesov",
+  "theorem_names": [
+    "CoarseDeGiorgiAudit.HarnackBesov.harnackBesov"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "enable_nanoda": true
+}
