@@ -5,8 +5,9 @@
 
 A machine-checked **Lean 4** formalization of the manuscript
 *Coarse ellipticity and De Giorgi–Nash–Moser theory in the optimal range*
-(Scott Armstrong, Benny Avelin, Tuomo Kuusi and Aatu Turpeinen), which is
-included in this repository as a [PDF](paper/coarse-grained-dgnm.pdf).
+(Scott Armstrong, Benny Avelin, Tuomo Kuusi and Aatu Turpeinen), available as
+[arXiv:2610.11879](https://arxiv.org/abs/2610.11879) and included in this
+repository as a [PDF](paper/coarse-grained-dgnm.pdf).
 It proves local boundedness, the weak Harnack inequality and the Harnack
 inequality for divergence-form elliptic equations whose symmetric
 coefficients may be degenerate and unbounded. It also proves, by explicit

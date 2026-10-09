@@ -71,7 +71,8 @@ sources:
       - "Tuomo Kuusi"
       - "Aatu Turpeinen"
     type: "paper"
-    url: "paper/coarse-grained-dgnm.pdf"
+    id: "arxiv:2610.11879"
+    url: "https://arxiv.org/abs/2610.11879"
     location: "paper/coarse-grained-dgnm.pdf"
     relationship: "formalizes"
     note: >-
